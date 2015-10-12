@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -25,23 +26,51 @@ public class AssemblerMain {
 		initializeOperationsMap(operationMap);
 		HashMap<String, String> registerMap = new HashMap<>();
 		initializeRegistersMap(registerMap);
+		ArrayList<String> machineCodeList = new ArrayList<String>();
 
 		try {
-			FileInputStream fStream = new FileInputStream("src/input.txt");
+			FileInputStream fStream = new FileInputStream(
+					System.getProperty("user.dir") + "\\input.txt");
+			// Uncomment if in Eclipse.
+			// FileInputStream fStream = new FileInputStream("src/input.txt");
 			DataInputStream in = new DataInputStream(fStream);
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
 			String line;
 
 			while ((line = br.readLine()) != null) {
-				convertToMachineCode(line, operationMap, registerMap);
+				convertToMachineCode(line, operationMap, registerMap,
+						machineCodeList);
 			}
 			br.close();
 			in.close();
 			fStream.close();
 
+			writeMachineCodeToFile(machineCodeList);
+
 		} catch (Exception e) {
 			System.out.println("Error: " + e.getMessage());
 		}
+	}
+
+	/**
+	 * Writes data from the given machineCodeList to output.txt.
+	 * 
+	 * @param machineCodeList
+	 */
+	private static void writeMachineCodeToFile(ArrayList<String> machineCodeList) {
+		try {
+			// Uncomment if in Eclipse.
+			// PrintWriter writer = new PrintWriter("src/output.txt", "UTF-8");
+			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
+					+ "\\output.txt", "UTF-8");
+			for (int i = 0; i < machineCodeList.size(); i++) {
+				writer.println(machineCodeList.get(i));
+			}
+			writer.close();
+		} catch (Exception e) {
+			System.out.println("Error: " + e.getMessage());
+		}
+
 	}
 
 	/**
@@ -79,10 +108,11 @@ public class AssemblerMain {
 	 *            HashMap of operations and their corresponding op code.
 	 * @param registers
 	 *            HashMap of registers and their corresponding value.
+	 * @param machineCodeList
 	 */
-	public static void convertToMachineCode(String line,
+	private static void convertToMachineCode(String line,
 			HashMap<String, String> operations,
-			HashMap<String, String> registers) {
+			HashMap<String, String> registers, ArrayList<String> machineCodeList) {
 		String[] lineArray = line.split(" ");
 		String op = lineArray[0];
 		StringBuilder sb = new StringBuilder();
@@ -144,6 +174,8 @@ public class AssemblerMain {
 		// Jump Return special case.
 		if (op.equals("jr")) {
 			sb.append("xxxx xxxx");
+			// Uncomment if running in Eclipse.
+			// sb.append("xxxx xxxx\t");
 		}
 
 		// Debug helper.
@@ -153,8 +185,7 @@ public class AssemblerMain {
 
 		// Print machine code without ending spaces. Append the assembly code
 		// after.
-		System.out.println(sb.toString().trim() + "\t# " + line);
-
+		machineCodeList.add(sb.append("\t# " + line).toString().trim());
 	}
 
 	/**
@@ -166,7 +197,7 @@ public class AssemblerMain {
 	 *            number of zeros to append before the immediate.
 	 * @return String with given number of leading zeros.
 	 */
-	public static String appendZeros(String immediate, int numberOfZeros) {
+	private static String appendZeros(String immediate, int numberOfZeros) {
 		StringBuilder zeros = new StringBuilder();
 		for (int i = 0; i < numberOfZeros; i++) {
 			zeros.append("0");
@@ -181,7 +212,7 @@ public class AssemblerMain {
 	 * @param operations
 	 *            HashMap to be filled with operation values.
 	 */
-	public static void initializeOperationsMap(
+	private static void initializeOperationsMap(
 			HashMap<String, String> operations) {
 		operations.put("add", "0000");
 		operations.put("sub", "0001");
