@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym buf16b /home/ethan/Downloads/SignExtensions/buf16b.sch /home/ethan/Downloads/SignExtensions/buf16b.sym 

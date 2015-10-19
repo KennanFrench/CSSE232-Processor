@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ethan/Downloads/SignExtensions/test_signext_test_signext_sch_tb_isim_beh.exe" -prj "/home/ethan/Downloads/SignExtensions/test_signext_test_signext_sch_tb_beh.prj" "work.test_signext_test_signext_sch_tb" "work.glbl" 

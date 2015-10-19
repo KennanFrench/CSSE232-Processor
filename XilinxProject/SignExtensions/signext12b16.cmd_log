@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym signext12b16 /home/ethan/Downloads/SignExtensions/signext12b16.sch /home/ethan/Downloads/SignExtensions/signext12b16.sym 
