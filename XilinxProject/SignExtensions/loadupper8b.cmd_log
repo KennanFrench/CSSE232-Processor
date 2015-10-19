@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym loadupper8b /home/ethan/Downloads/SignExtensions/loadupper8b.sch /home/ethan/Downloads/SignExtensions/loadupper8b.sym 
