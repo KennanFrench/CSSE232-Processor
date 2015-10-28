@@ -1,0 +1,3 @@
+verilog isim_temp "PC_Register.vf"
+verilog isim_temp "PC_Register_Test_2.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

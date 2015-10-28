@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Memory.vf
+// /___/   /\     Timestamp : 10/24/2015 16:01:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath "/home/knightcm/CSSE 232/DataPath1/ipcore_dir" -intstyle ise -family spartan3e -verilog "/home/knightcm/CSSE 232/DataPath1/Memory.vf" -w "/home/knightcm/CSSE 232/DataPath1/Memory.sch"
+//Design Name: Memory
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Memory(Addra, 
+              CLK, 
+              DataIn, 
+              WriteEnable, 
+              DataOut);
+
+    input [9:0] Addra;
+    input CLK;
+    input [15:0] DataIn;
+    input WriteEnable;
+   output [15:0] DataOut;
+   
+   
+   Memory_File  XLXI_1 (.addra(Addra[9:0]), 
+                       .clka(CLK), 
+                       .dina(DataIn[15:0]), 
+                       .wea(WriteEnable), 
+                       .douta(DataOut[15:0]));
+endmodule
