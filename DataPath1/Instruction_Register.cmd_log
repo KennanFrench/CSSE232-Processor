@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym Instruction_Register {/home/knightcm/CSSE 232/DataPath1/Instruction_Register.sch} {/home/knightcm/CSSE 232/DataPath1/Instruction_Register.sym} 

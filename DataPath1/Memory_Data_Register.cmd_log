@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym Memory_Data_Register {/home/knightcm/CSSE 232/DataPath1/Memory_Data_Register.sch} {/home/knightcm/CSSE 232/DataPath1/Memory_Data_Register.sym} 

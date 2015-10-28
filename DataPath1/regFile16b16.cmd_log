@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym regFile16b16 {/home/knightcm/CSSE 232/RegisterFile/regFile16b16.sch} {/home/knightcm/CSSE 232/DataPath1/regFile16b16.sym} 

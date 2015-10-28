@@ -1,0 +1,27 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/knightcm/CSSE 232/DataPath1/Memory_Memory_sch_tb_isim_beh.exe -prj /home/knightcm/CSSE 232/DataPath1/Memory_Memory_sch_tb_beh.prj work.Memory_Memory_sch_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/knightcm/CSSE 232/DataPath1/ipcore_dir/Memory_File.v" into library work
+Analyzing Verilog file "/home/knightcm/CSSE 232/DataPath1/Memory.vf" into library work
+Analyzing Verilog file "/home/knightcm/CSSE 232/DataPath1/Memory_Test_1.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95892 KB
+Fuse CPU Usage: 1120 ms
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module Memory_File
+Compiling module Memory
+Compiling module Memory_Memory_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 8 Verilog Units
+Built simulation executable /home/knightcm/CSSE 232/DataPath1/Memory_Memory_sch_tb_isim_beh.exe
+Fuse Memory Usage: 1183708 KB
+Fuse CPU Usage: 1170 ms
+GCC CPU Usage: 920 ms
