@@ -8,8 +8,5 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">User configuration exceeds BRAM count in the selected deviceERROR:sim - User configuration exceeds BRAM count in the selected device</arg>
-</msg>
-
 </messages>
 
