@@ -1,1 +1,1 @@
-sch2hdl,-sympath,/home/knightcm/CSSE 232/DataPath1/ipcore_dir,-intstyle,ise,-family,spartan3e,-verilog,/home/knightcm/CSSE 232/DataPath1/Memory.vf,-w,/home/knightcm/CSSE 232/DataPath1/Memory.sch
+sch2hdl,-sympath,/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/ipcore_dir,-intstyle,ise,-family,spartan3e,-verilog,/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/Memory.vf,-w,/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/Memory.sch
