@@ -1,0 +1,151 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux5b1.vf
+// /___/   /\     Timestamp : 11/01/2015 19:22:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux5b1/mux5b1.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux5b1/mux5b1.sch
+//Design Name: mux5b1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_mux5b1(D0, 
+                           D1, 
+                           S0, 
+                           O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_mux5b1(D0, 
+                            D1, 
+                            E, 
+                            S0, 
+                            O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_mux5b1(D0, 
+                            D1, 
+                            D2, 
+                            D3, 
+                            E, 
+                            S0, 
+                            S1, 
+                            O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_1" *) 
+   M2_1E_MXILINX_mux5b1  I_M01 (.D0(D0), 
+                               .D1(D1), 
+                               .E(E), 
+                               .S0(S0), 
+                               .O(M01));
+   (* HU_SET = "I_M23_0" *) 
+   M2_1E_MXILINX_mux5b1  I_M23 (.D0(D2), 
+                               .D1(D3), 
+                               .E(E), 
+                               .S0(S0), 
+                               .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module mux5b1(A, 
+              B, 
+              C, 
+              D, 
+              E, 
+              S, 
+              O);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input E;
+    input [2:0] S;
+   output O;
+   
+   wire XLXN_13;
+   wire XLXN_20;
+   
+   assign XLXN_20 = 1;
+   (* HU_SET = "XLXI_1_2" *) 
+   M4_1E_MXILINX_mux5b1  XLXI_1 (.D0(A), 
+                                .D1(B), 
+                                .D2(C), 
+                                .D3(D), 
+                                .E(XLXN_20), 
+                                .S0(S[0]), 
+                                .S1(S[1]), 
+                                .O(XLXN_13));
+   (* HU_SET = "XLXI_2_3" *) 
+   M2_1_MXILINX_mux5b1  XLXI_2 (.D0(XLXN_13), 
+                               .D1(E), 
+                               .S0(S[2]), 
+                               .O(O));
+endmodule

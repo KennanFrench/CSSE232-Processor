@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym mux8b1 /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux8b1/mux8b1.sch /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux8b16/mux8b1.sym 

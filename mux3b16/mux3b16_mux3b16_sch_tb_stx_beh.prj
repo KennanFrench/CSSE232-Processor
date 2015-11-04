@@ -1,0 +1,4 @@
+verilog isim_temp "mux3b1.vf"
+verilog isim_temp "mux3b16.vf"
+verilog isim_temp "mux3b16_test.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

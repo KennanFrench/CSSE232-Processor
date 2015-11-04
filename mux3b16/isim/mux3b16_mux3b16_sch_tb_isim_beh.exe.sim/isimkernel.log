@@ -1,0 +1,28 @@
+Command line:
+   mux3b16_mux3b16_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47088
+
+Sat Oct 17 22:06:37 2015
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 239.276 Meg
+
+ Total Signals          : 595
+ Total Nets             : 191
+ Total Signal Drivers   : 137
+ Total Blocks           : 147
+ Total Primitive Blocks : 129
+ Total Processes        : 139
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 321
+
+ Total Simulation Time: 0.02 sec
+
+ Current Memory Usage: 314.778 Meg
+
+Sat Oct 17 22:06:40 2015
+
