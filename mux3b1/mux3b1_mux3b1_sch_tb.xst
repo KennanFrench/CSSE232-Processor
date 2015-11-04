@@ -1,0 +1,5 @@
+set -tmpdir "/home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b1/xst/projnav.tmp"
+set -xsthdpdir "/home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b1/xst"
+elaborate
+-ifn mux3b1_mux3b1_sch_tb.prj
+-ifmt mixed

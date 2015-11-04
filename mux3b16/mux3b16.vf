@@ -1,0 +1,116 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux3b16.vf
+// /___/   /\     Timestamp : 10/17/2015 22:05:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b16/mux3b16.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b16/mux3b16.sch
+//Design Name: mux3b16
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mux3b16(A, 
+               B, 
+               C, 
+               S, 
+               Result);
+
+    input [15:0] A;
+    input [15:0] B;
+    input [15:0] C;
+    input [1:0] S;
+   output [15:0] Result;
+   
+   
+   mux3b1  XLXI_1 (.A(A[0]), 
+                  .B(B[0]), 
+                  .C(C[0]), 
+                  .S(S[1:0]), 
+                  .Result(Result[0]));
+   mux3b1  XLXI_2 (.A(A[1]), 
+                  .B(B[1]), 
+                  .C(C[1]), 
+                  .S(S[1:0]), 
+                  .Result(Result[1]));
+   mux3b1  XLXI_3 (.A(A[2]), 
+                  .B(B[2]), 
+                  .C(C[2]), 
+                  .S(S[1:0]), 
+                  .Result(Result[2]));
+   mux3b1  XLXI_4 (.A(A[3]), 
+                  .B(B[3]), 
+                  .C(C[3]), 
+                  .S(S[1:0]), 
+                  .Result(Result[3]));
+   mux3b1  XLXI_5 (.A(A[4]), 
+                  .B(B[4]), 
+                  .C(C[4]), 
+                  .S(S[1:0]), 
+                  .Result(Result[4]));
+   mux3b1  XLXI_6 (.A(A[5]), 
+                  .B(B[5]), 
+                  .C(C[5]), 
+                  .S(S[1:0]), 
+                  .Result(Result[5]));
+   mux3b1  XLXI_7 (.A(A[6]), 
+                  .B(B[6]), 
+                  .C(C[6]), 
+                  .S(S[1:0]), 
+                  .Result(Result[6]));
+   mux3b1  XLXI_8 (.A(A[7]), 
+                  .B(B[7]), 
+                  .C(C[7]), 
+                  .S(S[1:0]), 
+                  .Result(Result[7]));
+   mux3b1  XLXI_9 (.A(A[11]), 
+                  .B(B[11]), 
+                  .C(C[11]), 
+                  .S(S[1:0]), 
+                  .Result(Result[11]));
+   mux3b1  XLXI_10 (.A(A[9]), 
+                   .B(B[9]), 
+                   .C(C[9]), 
+                   .S(S[1:0]), 
+                   .Result(Result[9]));
+   mux3b1  XLXI_11 (.A(A[8]), 
+                   .B(B[8]), 
+                   .C(C[8]), 
+                   .S(S[1:0]), 
+                   .Result(Result[8]));
+   mux3b1  XLXI_12 (.A(A[12]), 
+                   .B(B[12]), 
+                   .C(C[12]), 
+                   .S(S[1:0]), 
+                   .Result(Result[12]));
+   mux3b1  XLXI_13 (.A(A[10]), 
+                   .B(B[10]), 
+                   .C(C[10]), 
+                   .S(S[1:0]), 
+                   .Result(Result[10]));
+   mux3b1  XLXI_14 (.A(A[13]), 
+                   .B(B[13]), 
+                   .C(C[13]), 
+                   .S(S[1:0]), 
+                   .Result(Result[13]));
+   mux3b1  XLXI_15 (.A(A[14]), 
+                   .B(B[14]), 
+                   .C(C[14]), 
+                   .S(S[1:0]), 
+                   .Result(Result[14]));
+   mux3b1  XLXI_16 (.A(A[15]), 
+                   .B(B[15]), 
+                   .C(C[15]), 
+                   .S(S[1:0]), 
+                   .Result(Result[15]));
+endmodule

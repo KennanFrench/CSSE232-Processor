@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux3b1.vf
+// /___/   /\     Timestamp : 10/17/2015 22:05:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b16/mux3b1.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b1/mux3b1.sch
+//Design Name: mux3b1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mux3b1(A, 
+              B, 
+              C, 
+              S, 
+              Result);
+
+    input A;
+    input B;
+    input C;
+    input [1:0] S;
+   output Result;
+   
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_37;
+   wire XLXN_38;
+   
+   INV  XLXI_3 (.I(XLXN_38), 
+               .O(XLXN_20));
+   NAND2  XLXI_5 (.I0(C), 
+                 .I1(XLXN_19), 
+                 .O(XLXN_35));
+   NAND2  XLXI_6 (.I0(XLXN_20), 
+                 .I1(A), 
+                 .O(XLXN_34));
+   NAND2  XLXI_7 (.I0(XLXN_37), 
+                 .I1(B), 
+                 .O(XLXN_33));
+   NAND3  XLXI_8 (.I0(XLXN_35), 
+                 .I1(XLXN_33), 
+                 .I2(XLXN_34), 
+                 .O(Result));
+   XOR2  XLXI_9 (.I0(S[1]), 
+                .I1(S[0]), 
+                .O(XLXN_38));
+   AND2  XLXI_11 (.I0(S[1]), 
+                 .I1(XLXN_38), 
+                 .O(XLXN_19));
+   AND2  XLXI_14 (.I0(S[0]), 
+                 .I1(XLXN_38), 
+                 .O(XLXN_37));
+endmodule

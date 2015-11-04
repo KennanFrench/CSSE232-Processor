@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -refsym mux16b /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux16/mux16b.sch /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux16/mux16b.sym 
+sch2sym -intstyle ise -family spartan3e -refsym mux16b /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux16/mux16b.sch /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux16/mux16b.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mux16b /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux16/mux16b.sch /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux16/mux16b.sym 

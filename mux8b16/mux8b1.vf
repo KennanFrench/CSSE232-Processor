@@ -1,0 +1,148 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux8b1.vf
+// /___/   /\     Timestamp : 11/01/2015 21:09:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux8b16/mux8b1.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux8b1/mux8b1.sch
+//Design Name: mux8b1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module OR8_MXILINX_mux8b1(I0, 
+                          I1, 
+                          I2, 
+                          I3, 
+                          I4, 
+                          I5, 
+                          I6, 
+                          I7, 
+                          O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_91 (.I1(S0), 
+                 .I2(S1), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(O_DUMMY));
+   OR2  I_36_94 (.I0(S0), 
+                .I1(S1), 
+                .O(O_DUMMY));
+   OR4  I_36_95 (.I0(I4), 
+                .I1(I5), 
+                .I2(I6), 
+                .I3(I7), 
+                .O(S1));
+   OR4  I_36_112 (.I0(I0), 
+                 .I1(I1), 
+                 .I2(I2), 
+                 .I3(I3), 
+                 .O(S0));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_116 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I3), 
+                  .O(S0));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_117 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+endmodule
+`timescale 1ns / 1ps
+
+module mux8b1(A, 
+              B, 
+              C, 
+              D, 
+              E, 
+              F, 
+              G, 
+              H, 
+              S, 
+              O);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input E;
+    input F;
+    input G;
+    input H;
+    input [7:0] S;
+   output O;
+   
+   wire XLXN_27;
+   wire XLXN_30;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   
+   AND2  XLXI_1 (.I0(S[0]), 
+                .I1(A), 
+                .O(XLXN_55));
+   AND2  XLXI_2 (.I0(S[1]), 
+                .I1(B), 
+                .O(XLXN_56));
+   AND2  XLXI_3 (.I0(S[2]), 
+                .I1(C), 
+                .O(XLXN_27));
+   AND2  XLXI_4 (.I0(S[3]), 
+                .I1(D), 
+                .O(XLXN_30));
+   AND2  XLXI_9 (.I0(S[4]), 
+                .I1(E), 
+                .O(XLXN_58));
+   AND2  XLXI_10 (.I0(S[5]), 
+                 .I1(F), 
+                 .O(XLXN_59));
+   AND2  XLXI_11 (.I0(S[6]), 
+                 .I1(G), 
+                 .O(XLXN_60));
+   AND2  XLXI_12 (.I0(S[7]), 
+                 .I1(H), 
+                 .O(XLXN_54));
+   (* HU_SET = "XLXI_13_0" *) 
+   OR8_MXILINX_mux8b1  XLXI_13 (.I0(XLXN_55), 
+                               .I1(XLXN_56), 
+                               .I2(XLXN_27), 
+                               .I3(XLXN_30), 
+                               .I4(XLXN_58), 
+                               .I5(XLXN_59), 
+                               .I6(XLXN_60), 
+                               .I7(XLXN_54), 
+                               .O(O));
+endmodule

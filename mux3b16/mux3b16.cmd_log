@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym mux3b16 /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b16/mux3b16.sch /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b16/mux3b16.sym 
+xst -intstyle ise -ifn "/home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b16/mux3b16.xst" -ofn "/home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux3b16/mux3b16.syr" 
