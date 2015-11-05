@@ -1,0 +1,108 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Interrupt_Register_drc.vf
+// /___/   /\     Timestamp : 11/03/2015 19:32:01
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family spartan3e -verilog Interrupt_Register_drc.vf -w "/home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register.sch"
+//Design Name: Interrupt_Register
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FD4CE_MXILINX_Interrupt_Register(C, 
+                                        CE, 
+                                        CLR, 
+                                        D0, 
+                                        D1, 
+                                        D2, 
+                                        D3, 
+                                        Q0, 
+                                        Q1, 
+                                        Q2, 
+                                        Q3);
+
+    input C;
+    input CE;
+    input CLR;
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   
+   
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D0), 
+              .Q(Q0));
+   FDCE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D1), 
+              .Q(Q1));
+   FDCE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D2), 
+              .Q(Q2));
+   FDCE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D3), 
+              .Q(Q3));
+endmodule
+`timescale 1ns / 1ps
+
+module Interrupt_Register(CLK, 
+                          CLR, 
+                          Sw0, 
+                          Sw1, 
+                          Sw2, 
+                          Sw3, 
+                          Write, 
+                          Sw0_State, 
+                          Sw1_State, 
+                          Sw2_State, 
+                          Sw3_State);
+
+    input CLK;
+    input CLR;
+    input Sw0;
+    input Sw1;
+    input Sw2;
+    input Sw3;
+    input Write;
+   output Sw0_State;
+   output Sw1_State;
+   output Sw2_State;
+   output Sw3_State;
+   
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   FD4CE_MXILINX_Interrupt_Register  XLXI_1 (.C(CLK), 
+                                            .CE(Write), 
+                                            .CLR(CLR), 
+                                            .D0(Sw0), 
+                                            .D1(Sw1), 
+                                            .D2(Sw2), 
+                                            .D3(Sw3), 
+                                            .Q0(Sw0_State), 
+                                            .Q1(Sw1_State), 
+                                            .Q2(Sw2_State), 
+                                            .Q3(Sw3_State));
+endmodule

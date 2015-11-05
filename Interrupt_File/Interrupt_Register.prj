@@ -1,0 +1,3 @@
+verilog work "Interrupt_Register.vf"
+verilog work "Interrupt_File.vf"
+verilog work "Decoder3b8.vf"

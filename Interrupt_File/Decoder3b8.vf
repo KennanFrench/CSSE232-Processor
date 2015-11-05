@@ -1,0 +1,96 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Decoder3b8.vf
+// /___/   /\     Timestamp : 11/04/2015 19:22:14
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "/home/knightcm/CSSE 232/Interrupt_File/Decoder3b8.vf" -w "/home/knightcm/CSSE 232/Interrupt_File/Decoder3b8.sch"
+//Design Name: Decoder3b8
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Decoder3b8(Address, 
+                  CLR0, 
+                  CLR1, 
+                  CLR2, 
+                  CLR3, 
+                  CLR4, 
+                  CLR5, 
+                  CLR6, 
+                  CLR7);
+
+    input [3:0] Address;
+   output CLR0;
+   output CLR1;
+   output CLR2;
+   output CLR3;
+   output CLR4;
+   output CLR5;
+   output CLR6;
+   output CLR7;
+   
+   wire N0;
+   wire N1;
+   wire N2;
+   wire N3;
+   
+   AND4  XLXI_1 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(Address[1]), 
+                .I3(Address[0]), 
+                .O(CLR7));
+   AND4  XLXI_2 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(Address[1]), 
+                .I3(N0), 
+                .O(CLR6));
+   AND4  XLXI_3 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(N1), 
+                .I3(Address[0]), 
+                .O(CLR5));
+   AND4  XLXI_4 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(N1), 
+                .I3(N0), 
+                .O(CLR4));
+   AND4  XLXI_5 (.I0(N3), 
+                .I1(N2), 
+                .I2(Address[1]), 
+                .I3(Address[0]), 
+                .O(CLR3));
+   AND4  XLXI_6 (.I0(N3), 
+                .I1(N2), 
+                .I2(Address[1]), 
+                .I3(N0), 
+                .O(CLR2));
+   AND4  XLXI_7 (.I0(N3), 
+                .I1(N2), 
+                .I2(N1), 
+                .I3(Address[0]), 
+                .O(CLR1));
+   AND4  XLXI_8 (.I0(N3), 
+                .I1(N2), 
+                .I2(N1), 
+                .I3(N0), 
+                .O(CLR0));
+   INV  XLXI_17 (.I(Address[0]), 
+                .O(N0));
+   INV  XLXI_18 (.I(Address[1]), 
+                .O(N1));
+   INV  XLXI_19 (.I(Address[2]), 
+                .O(N2));
+   INV  XLXI_20 (.I(Address[3]), 
+                .O(N3));
+endmodule

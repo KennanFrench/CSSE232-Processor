@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/knightcm/CSSE 232/Interrupt_File/Interrupt_File.xst" -ofn "/home/knightcm/CSSE 232/Interrupt_File/Interrupt_File.syr" 
