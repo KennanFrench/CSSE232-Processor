@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Decoder3b8 {/home/knightcm/CSSE 232/Interrupt_File/Decoder3b8.sch} {/home/knightcm/CSSE 232/Interrupt_File/Decoder3b8.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Decoder3b8 {/home/knightcm/CSSE 232/Interrupt_File/Decoder3b8.sch} {/home/knightcm/CSSE 232/Interrupt_File/Decoder3b8.sym} 

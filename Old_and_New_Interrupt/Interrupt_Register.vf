@@ -1,0 +1,190 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Interrupt_Register.vf
+// /___/   /\     Timestamp : 11/04/2015 20:05:11
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "/home/knightcm/CSSE 232/Old_and_New_Interrupt/Interrupt_Register.vf" -w "/home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register.sch"
+//Design Name: Interrupt_Register
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Decoder3b8_MUSER_Interrupt_Register(Address, 
+                                           CLR0, 
+                                           CLR1, 
+                                           CLR2, 
+                                           CLR3, 
+                                           CLR4, 
+                                           CLR5, 
+                                           CLR6, 
+                                           CLR7);
+
+    input [3:0] Address;
+   output CLR0;
+   output CLR1;
+   output CLR2;
+   output CLR3;
+   output CLR4;
+   output CLR5;
+   output CLR6;
+   output CLR7;
+   
+   wire N0;
+   wire N1;
+   wire N2;
+   wire N3;
+   
+   AND4  XLXI_1 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(Address[1]), 
+                .I3(Address[0]), 
+                .O(CLR7));
+   AND4  XLXI_2 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(Address[1]), 
+                .I3(N0), 
+                .O(CLR6));
+   AND4  XLXI_3 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(N1), 
+                .I3(Address[0]), 
+                .O(CLR5));
+   AND4  XLXI_4 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(N1), 
+                .I3(N0), 
+                .O(CLR4));
+   AND4  XLXI_5 (.I0(N3), 
+                .I1(N2), 
+                .I2(Address[1]), 
+                .I3(Address[0]), 
+                .O(CLR3));
+   AND4  XLXI_6 (.I0(N3), 
+                .I1(N2), 
+                .I2(Address[1]), 
+                .I3(N0), 
+                .O(CLR2));
+   AND4  XLXI_7 (.I0(N3), 
+                .I1(N2), 
+                .I2(N1), 
+                .I3(Address[0]), 
+                .O(CLR1));
+   AND4  XLXI_8 (.I0(N3), 
+                .I1(N2), 
+                .I2(N1), 
+                .I3(N0), 
+                .O(CLR0));
+   INV  XLXI_17 (.I(Address[0]), 
+                .O(N0));
+   INV  XLXI_18 (.I(Address[1]), 
+                .O(N1));
+   INV  XLXI_19 (.I(Address[2]), 
+                .O(N2));
+   INV  XLXI_20 (.I(Address[3]), 
+                .O(N3));
+endmodule
+`timescale 1ns / 1ps
+
+module Interrupt_Register(CLR, 
+                          East_Button, 
+                          North_Button, 
+                          South_Button, 
+                          Sw0, 
+                          Sw1, 
+                          Sw2, 
+                          Sw3, 
+                          West_Button, 
+                          State);
+
+    input [3:0] CLR;
+    input East_Button;
+    input North_Button;
+    input South_Button;
+    input Sw0;
+    input Sw1;
+    input Sw2;
+    input Sw3;
+    input West_Button;
+   output [7:0] State;
+   
+   wire CLK;
+   wire CLR0;
+   wire CLR1;
+   wire CLR2;
+   wire CLR3;
+   wire CLR4;
+   wire CLR5;
+   wire CLR6;
+   wire CLR7;
+   wire G;
+   
+   FDRSE #( .INIT(1'b0) ) XLXI_8 (.C(CLK), 
+                 .CE(G), 
+                 .D(G), 
+                 .R(CLR0), 
+                 .S(North_Button), 
+                 .Q(State[0]));
+   GND  XLXI_15 (.G(G));
+   FDRSE #( .INIT(1'b0) ) XLXI_16 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR1), 
+                  .S(South_Button), 
+                  .Q(State[1]));
+   FDRSE #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR2), 
+                  .S(East_Button), 
+                  .Q(State[2]));
+   FDRSE #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR3), 
+                  .S(West_Button), 
+                  .Q(State[3]));
+   FDRSE #( .INIT(1'b0) ) XLXI_20 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR4), 
+                  .S(Sw0), 
+                  .Q(State[4]));
+   FDRSE #( .INIT(1'b0) ) XLXI_21 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR5), 
+                  .S(Sw1), 
+                  .Q(State[5]));
+   FDRSE #( .INIT(1'b0) ) XLXI_22 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR6), 
+                  .S(Sw2), 
+                  .Q(State[6]));
+   FDRSE #( .INIT(1'b0) ) XLXI_23 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR7), 
+                  .S(Sw3), 
+                  .Q(State[7]));
+   Decoder3b8_MUSER_Interrupt_Register  XLXI_25 (.Address(CLR[3:0]), 
+                                                .CLR0(CLR0), 
+                                                .CLR1(CLR1), 
+                                                .CLR2(CLR2), 
+                                                .CLR3(CLR3), 
+                                                .CLR4(CLR4), 
+                                                .CLR5(CLR5), 
+                                                .CLR6(CLR6), 
+                                                .CLR7(CLR7));
+endmodule

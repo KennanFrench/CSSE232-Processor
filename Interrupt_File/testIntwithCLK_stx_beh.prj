@@ -1,0 +1,3 @@
+verilog isim_temp "Interrupt_Register.vf"
+verilog isim_temp "testIntwithCLK.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

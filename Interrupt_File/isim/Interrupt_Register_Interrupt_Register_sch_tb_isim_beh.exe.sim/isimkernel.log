@@ -1,0 +1,10 @@
+Command line:
+   Interrupt_Register_Interrupt_Register_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  48278
+
+Wed Nov  4 20:57:25 2015
+
+
+ Elaboration Time: 0.03 sec

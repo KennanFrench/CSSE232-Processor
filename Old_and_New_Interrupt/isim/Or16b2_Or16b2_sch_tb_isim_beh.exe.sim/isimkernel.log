@@ -1,0 +1,28 @@
+Command line:
+   Or16b2_Or16b2_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50864
+
+Wed Nov  4 19:59:38 2015
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 238.186 Meg
+
+ Total Signals          : 41
+ Total Nets             : 37
+ Total Signal Drivers   : 15
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 17
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 133
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 313.688 Meg
+
+Wed Nov  4 20:00:00 2015
+

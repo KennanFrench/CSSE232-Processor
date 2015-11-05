@@ -1,0 +1,3 @@
+verilog work "Or16b2.vf"
+verilog work "Interrupt_Register.vf"
+verilog work "Old_and_New_Interrupt.vf"
