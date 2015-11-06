@@ -2,27 +2,27 @@ Command line:
    claAdde16b_claAdde16b_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  55917
+     -socket  54976
 
-Thu Nov  5 20:01:26 2015
+Fri Nov  6 17:33:18 2015
 
 
- Elaboration Time: 0.05 sec
+ Elaboration Time: 0.04 sec
 
- Current Memory Usage: 240.718 Meg
+ Current Memory Usage: 244.802 Meg
 
- Total Signals          : 1237
- Total Nets             : 324
- Total Signal Drivers   : 286
- Total Blocks           : 301
- Total Primitive Blocks : 279
- Total Processes        : 288
- Total Traceable Variables  : 21
- Total Scalar Nets and Variables : 437
+ Total Signals          : 3267
+ Total Nets             : 748
+ Total Signal Drivers   : 696
+ Total Blocks           : 723
+ Total Primitive Blocks : 601
+ Total Processes        : 714
+ Total Traceable Variables  : 37
+ Total Scalar Nets and Variables : 879
 
- Total Simulation Time: 0.05 sec
+ Total Simulation Time: 0.06 sec
 
- Current Memory Usage: 316.219 Meg
+ Current Memory Usage: 320.303 Meg
 
-Thu Nov  5 20:01:50 2015
+Fri Nov  6 17:33:49 2015
 

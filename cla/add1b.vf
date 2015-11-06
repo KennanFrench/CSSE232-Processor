@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : add1b.vf
-// /___/   /\     Timestamp : 11/05/2015 19:59:39
+// /___/   /\     Timestamp : 11/06/2015 17:31:36
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -22,56 +22,65 @@
 
 module add1b(a, 
              b, 
-             c_input, 
+             ci, 
+             co, 
              r);
 
     input a;
     input b;
-    input c_input;
+    input ci;
+   output co;
    output r;
    
+   wire anot;
+   wire bnot;
+   wire cinot;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
    wire XLXN_11;
    wire XLXN_12;
    wire XLXN_13;
    wire XLXN_14;
-   wire XLXN_16;
-   wire XLXN_17;
-   wire XLXN_18;
-   wire XLXN_20;
-   wire XLXN_50;
-   wire XLXN_55;
    
-   AND3  XLXI_22 (.I0(c_input), 
-                 .I1(XLXN_11), 
-                 .I2(XLXN_50), 
-                 .O(XLXN_16));
-   AND3  XLXI_23 (.I0(XLXN_12), 
-                 .I1(XLXN_13), 
-                 .I2(a), 
-                 .O(XLXN_17));
-   AND3  XLXI_24 (.I0(XLXN_14), 
-                 .I1(b), 
-                 .I2(XLXN_55), 
-                 .O(XLXN_18));
-   AND3  XLXI_25 (.I0(c_input), 
-                 .I1(b), 
-                 .I2(a), 
-                 .O(XLXN_20));
-   INV  XLXI_27 (.I(a), 
-                .O(XLXN_50));
-   INV  XLXI_28 (.I(b), 
+   AND2  XLXI_1 (.I0(a), 
+                .I1(ci), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(b), 
+                .I1(ci), 
+                .O(XLXN_2));
+   AND2  XLXI_3 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_3));
+   OR3  XLXI_4 (.I0(XLXN_3), 
+               .I1(XLXN_2), 
+               .I2(XLXN_1), 
+               .O(co));
+   AND3  XLXI_5 (.I0(b), 
+                .I1(a), 
+                .I2(ci), 
                 .O(XLXN_11));
-   INV  XLXI_29 (.I(c_input), 
+   AND3  XLXI_6 (.I0(bnot), 
+                .I1(anot), 
+                .I2(ci), 
                 .O(XLXN_12));
-   INV  XLXI_30 (.I(b), 
+   AND3  XLXI_7 (.I0(bnot), 
+                .I1(a), 
+                .I2(cinot), 
                 .O(XLXN_13));
-   INV  XLXI_31 (.I(c_input), 
+   AND3  XLXI_8 (.I0(b), 
+                .I1(anot), 
+                .I2(cinot), 
                 .O(XLXN_14));
-   INV  XLXI_32 (.I(a), 
-                .O(XLXN_55));
-   OR4  XLXI_33 (.I0(XLXN_20), 
-                .I1(XLXN_18), 
-                .I2(XLXN_17), 
-                .I3(XLXN_16), 
-                .O(r));
+   OR4  XLXI_9 (.I0(XLXN_14), 
+               .I1(XLXN_13), 
+               .I2(XLXN_12), 
+               .I3(XLXN_11), 
+               .O(r));
+   INV  XLXI_33 (.I(a), 
+                .O(anot));
+   INV  XLXI_34 (.I(b), 
+                .O(bnot));
+   INV  XLXI_35 (.I(ci), 
+                .O(cinot));
 endmodule
