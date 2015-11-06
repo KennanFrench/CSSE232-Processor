@@ -1,9 +1,7 @@
-xst -intstyle ise -ifn "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.xst" -ofn "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.syr" 
-xst -intstyle ise -ifn "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.xst" -ofn "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.syr" 
-sch2sym -intstyle ise -family spartan3e -w -refsym claAdder4b /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sym 
 sch2hdl -intstyle ise -family spartan3e -verilog claAdder4b_drc.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sch 
 sch2hdl -intstyle ise -family spartan3e -verilog claAdder4b_drc.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sch 
 sch2hdl -intstyle ise -family spartan3e -verilog claAdder4b_drc.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sch 
 sch2sym -intstyle ise -family spartan3e -w -refsym claAdder4b /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog claAdder4b_drc.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sch 
 sch2hdl -intstyle ise -family spartan3e -verilog claAdder4b_drc.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sch 
 sch2sym -intstyle ise -family spartan3e -w -refsym claAdder4b /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder4b.sym 

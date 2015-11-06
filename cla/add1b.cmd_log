@@ -1,1 +1,3 @@
 sch2sym -intstyle ise -family spartan3e -w -refsym add1b /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/add1b.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/add1b.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog add1b_drc.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/add1b.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym add1b /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/add1b.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/add1b.sym 

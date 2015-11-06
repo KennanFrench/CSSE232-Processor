@@ -20,7 +20,20 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Test Passed 01
-Test Passed 02
-Test Passed 03
+Add Test Passed 01
+Add Test Passed 02
+Add Test Passed 03
+Overflow Test Passed 01
+Overflow Test Passed 02
+Overflow Test Passed 03
+And Test Passed 01
+And Test Passed 02
+Zero Test Passed 01
+Sub Test Passed 01
+Zero Test Passed 02
+Sub Test Passed 02
+# run all
+Or Test Passed 01
+Or Test Passed 02
+Stopped at time : 1200 ns :  in File "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder16b_tb_01.v" Line 179 
 # exit 0
