@@ -1,0 +1,5 @@
+verilog work "add1b.vf"
+verilog work "claAdder4b.vf"
+verilog work "claAdde16b.vf"
+verilog work "claAdder16b_tb.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

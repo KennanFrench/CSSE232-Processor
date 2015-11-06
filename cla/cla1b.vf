@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : cla1b.vf
+// /___/   /\     Timestamp : 11/05/2015 13:46:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/cla1b.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/cla1b.sch
+//Design Name: cla1b
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module cla1b(ci, 
+             in1, 
+             in2, 
+             co);
+
+    input ci;
+    input in1;
+    input in2;
+   output co;
+   
+   wire XLXN_1;
+   wire XLXN_11;
+   wire XLXN_16;
+   
+   OR2  XLXI_1 (.I0(in2), 
+               .I1(in1), 
+               .O(XLXN_1));
+   OR2  XLXI_2 (.I0(XLXN_11), 
+               .I1(XLXN_16), 
+               .O(co));
+   AND2  XLXI_3 (.I0(ci), 
+                .I1(XLXN_1), 
+                .O(XLXN_16));
+   AND2  XLXI_4 (.I0(in2), 
+                .I1(in1), 
+                .O(XLXN_11));
+endmodule
