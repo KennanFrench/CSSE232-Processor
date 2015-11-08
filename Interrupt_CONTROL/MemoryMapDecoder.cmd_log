@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym MemoryMapDecoder {/home/knightcm/CSSE 232/Interrupt_CONTROL/MemoryMapDecoder.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/MemoryMapDecoder.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym MemoryMapDecoder {/home/knightcm/CSSE 232/Interrupt_CONTROL/MemoryMapDecoder.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/MemoryMapDecoder.sym} 

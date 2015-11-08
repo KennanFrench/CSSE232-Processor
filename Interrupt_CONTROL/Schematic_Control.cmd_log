@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan3e -verilog Schematic_Control_drc.vf -w {/home/knightcm/CSSE 232/Interrupt_CONTROL/Schematic_Control.sch} 
+sch2sym -intstyle ise -family spartan3e -refsym Schematic_Control {/home/knightcm/CSSE 232/Interrupt_CONTROL/Schematic_Control.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/Schematic_Control.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Schematic_Control {/home/knightcm/CSSE 232/Interrupt_CONTROL/Schematic_Control.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/Schematic_Control.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Schematic_Control {/home/knightcm/CSSE 232/Interrupt_CONTROL/Schematic_Control.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/Schematic_Control.sym} 

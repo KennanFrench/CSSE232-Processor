@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Old_and_New_Interrupt {/home/knightcm/CSSE 232/Interrupt_CONTROL/Old_and_New_Interrupt.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/Old_and_New_Interrupt.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog Old_and_New_Interrupt_drc.vf -w {/home/knightcm/CSSE 232/Interrupt_CONTROL/Old_and_New_Interrupt.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Old_and_New_Interrupt {/home/knightcm/CSSE 232/Interrupt_CONTROL/Old_and_New_Interrupt.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/Old_and_New_Interrupt.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym Old_and_New_Interrupt {/home/knightcm/CSSE 232/Interrupt_CONTROL/Old_and_New_Interrupt.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/Old_and_New_Interrupt.sym} 

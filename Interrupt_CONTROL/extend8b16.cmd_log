@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -verilog extend8b16_drc.vf -w {/home/knightcm/CSSE 232/Interrupt_CONTROL/extend8b16.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym extend8b16 {/home/knightcm/CSSE 232/Interrupt_CONTROL/extend8b16.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/extend8b16.sym} 
