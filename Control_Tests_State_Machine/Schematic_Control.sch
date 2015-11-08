@@ -32,7 +32,6 @@
         <signal name="CLR" />
         <signal name="Functioncode(3:0)" />
         <signal name="InterruptHandler" />
-        <signal name="XLXN_2" />
         <port polarity="Input" name="Opcode(3:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="InterruptIn" />
@@ -142,25 +141,13 @@
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="Opcode(3:0)">
-            <wire x2="800" y1="1200" y2="1200" x1="784" />
-            <wire x2="832" y1="1200" y2="1200" x1="800" />
-            <wire x2="928" y1="1152" y2="1152" x1="832" />
-            <wire x2="832" y1="1152" y2="1200" x1="832" />
-            <wire x2="1024" y1="1136" y2="1136" x1="928" />
-            <wire x2="928" y1="1136" y2="1152" x1="928" />
+            <wire x2="1008" y1="1136" y2="1136" x1="832" />
+            <wire x2="1024" y1="1136" y2="1136" x1="1008" />
         </branch>
         <branch name="CLK">
-            <wire x2="752" y1="240" y2="240" x1="736" />
-            <wire x2="832" y1="176" y2="176" x1="752" />
-            <wire x2="752" y1="176" y2="240" x1="752" />
-            <wire x2="832" y1="128" y2="176" x1="832" />
-            <wire x2="912" y1="128" y2="128" x1="832" />
-            <wire x2="928" y1="128" y2="128" x1="912" />
-            <wire x2="1024" y1="112" y2="112" x1="928" />
-            <wire x2="928" y1="112" y2="128" x1="928" />
+            <wire x2="1008" y1="112" y2="112" x1="736" />
+            <wire x2="1024" y1="112" y2="112" x1="1008" />
         </branch>
-        <iomarker fontsize="28" x="784" y="1200" name="Opcode(3:0)" orien="R180" />
-        <iomarker fontsize="28" x="736" y="240" name="CLK" orien="R180" />
         <instance x="1024" y="1168" name="XLXI_1" orien="R0">
         </instance>
         <instance x="720" y="656" name="XLXI_2" orien="R0" />
@@ -204,14 +191,9 @@
         </branch>
         <iomarker fontsize="28" x="1584" y="624" name="MemRead" orien="R0" />
         <branch name="ALUSrcB(1:0)">
-            <wire x2="1520" y1="944" y2="944" x1="1488" />
-            <wire x2="1520" y1="944" y2="960" x1="1520" />
-            <wire x2="1552" y1="960" y2="960" x1="1520" />
-            <wire x2="1552" y1="944" y2="960" x1="1552" />
-            <wire x2="1584" y1="944" y2="944" x1="1552" />
-            <wire x2="1600" y1="944" y2="944" x1="1584" />
+            <wire x2="1504" y1="944" y2="944" x1="1488" />
+            <wire x2="1648" y1="944" y2="944" x1="1504" />
         </branch>
-        <iomarker fontsize="28" x="1600" y="944" name="ALUSrcB(1:0)" orien="R0" />
         <branch name="ALUSrcA">
             <wire x2="1600" y1="560" y2="560" x1="1488" />
             <wire x2="1616" y1="560" y2="560" x1="1600" />
@@ -233,12 +215,9 @@
         </branch>
         <iomarker fontsize="28" x="1632" y="368" name="IRegWrite" orien="R0" />
         <branch name="IorD(2:0)">
-            <wire x2="1520" y1="1264" y2="1264" x1="1488" />
-            <wire x2="1520" y1="1264" y2="1280" x1="1520" />
-            <wire x2="1600" y1="1280" y2="1280" x1="1520" />
-            <wire x2="1616" y1="1280" y2="1280" x1="1600" />
+            <wire x2="1504" y1="1264" y2="1264" x1="1488" />
+            <wire x2="1648" y1="1264" y2="1264" x1="1504" />
         </branch>
-        <iomarker fontsize="28" x="1616" y="1280" name="IorD(2:0)" orien="R0" />
         <branch name="PCWrite">
             <wire x2="1600" y1="240" y2="240" x1="1488" />
             <wire x2="1616" y1="240" y2="240" x1="1600" />
@@ -246,13 +225,8 @@
         <iomarker fontsize="28" x="1616" y="240" name="PCWrite" orien="R0" />
         <branch name="PCWriteBne">
             <wire x2="1504" y1="176" y2="176" x1="1488" />
-            <wire x2="1504" y1="176" y2="192" x1="1504" />
-            <wire x2="1520" y1="192" y2="192" x1="1504" />
-            <wire x2="1520" y1="160" y2="192" x1="1520" />
-            <wire x2="1584" y1="160" y2="160" x1="1520" />
-            <wire x2="1600" y1="160" y2="160" x1="1584" />
+            <wire x2="1568" y1="176" y2="176" x1="1504" />
         </branch>
-        <iomarker fontsize="28" x="1600" y="160" name="PCWriteBne" orien="R0" />
         <branch name="PCWriteBeq">
             <wire x2="1600" y1="112" y2="112" x1="1488" />
             <wire x2="1616" y1="112" y2="112" x1="1600" />
@@ -290,15 +264,19 @@
         </branch>
         <iomarker fontsize="28" x="832" y="1712" name="Functioncode(3:0)" orien="R180" />
         <branch name="InterruptHandler">
-            <wire x2="880" y1="1856" y2="1856" x1="848" />
-            <wire x2="1024" y1="1840" y2="1840" x1="880" />
-            <wire x2="880" y1="1840" y2="1856" x1="880" />
+            <wire x2="1008" y1="1840" y2="1840" x1="848" />
+            <wire x2="1024" y1="1840" y2="1840" x1="1008" />
         </branch>
-        <iomarker fontsize="28" x="848" y="1856" name="InterruptHandler" orien="R180" />
         <branch name="CLR">
             <wire x2="1504" y1="1904" y2="1904" x1="1488" />
             <wire x2="1776" y1="1904" y2="1904" x1="1504" />
         </branch>
         <iomarker fontsize="28" x="1776" y="1904" name="CLR" orien="R0" />
+        <iomarker fontsize="28" x="736" y="112" name="CLK" orien="R180" />
+        <iomarker fontsize="28" x="1568" y="176" name="PCWriteBne" orien="R0" />
+        <iomarker fontsize="28" x="1648" y="944" name="ALUSrcB(1:0)" orien="R0" />
+        <iomarker fontsize="28" x="1648" y="1264" name="IorD(2:0)" orien="R0" />
+        <iomarker fontsize="28" x="832" y="1136" name="Opcode(3:0)" orien="R180" />
+        <iomarker fontsize="28" x="848" y="1840" name="InterruptHandler" orien="R180" />
     </sheet>
 </drawing>

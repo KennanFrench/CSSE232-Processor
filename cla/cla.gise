@@ -218,6 +218,7 @@
     <transform xil_pn:end_ts="1446924144" xil_pn:in_ck="7877093610062689357" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6020772950221147913" xil_pn:start_ts="1446924141">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="claAdde16b.bld"/>
@@ -227,6 +228,7 @@
     <transform xil_pn:end_ts="1446924148" xil_pn:in_ck="7877093610062689358" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1446924144">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="claAdde16b.pcf"/>
       <outfile xil_pn:name="claAdde16b_map.map"/>
@@ -240,6 +242,7 @@
     <transform xil_pn:end_ts="1446924157" xil_pn:in_ck="-4935226012614296985" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-3872219738485705569" xil_pn:start_ts="1446924148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="claAdde16b.ncd"/>
       <outfile xil_pn:name="claAdde16b.pad"/>
@@ -254,6 +257,7 @@
     <transform xil_pn:end_ts="1446924157" xil_pn:in_ck="7877093610062689226" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1446924155">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="claAdde16b.twr"/>
       <outfile xil_pn:name="claAdde16b.twx"/>
