@@ -1,3 +1,0 @@
-MODULE Interrupt_Register
-	SUBMODULE Decoder3b8
-		INSTANCE XLXI_25

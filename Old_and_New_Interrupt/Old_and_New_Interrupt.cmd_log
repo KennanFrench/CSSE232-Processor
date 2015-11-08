@@ -1,4 +1,0 @@
-xst -intstyle ise -ifn "/home/knightcm/CSSE 232/Old_and_New_Interrupt/Old_and_New_Interrupt.xst" -ofn "/home/knightcm/CSSE 232/Old_and_New_Interrupt/Old_and_New_Interrupt.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Old_and_New_Interrupt.ngc" Old_and_New_Interrupt.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Old_and_New_Interrupt_map.ncd Old_and_New_Interrupt.ngd Old_and_New_Interrupt.pcf 
-xst -intstyle ise -ifn "/home/knightcm/CSSE 232/Old_and_New_Interrupt/Old_and_New_Interrupt.xst" -ofn "/home/knightcm/CSSE 232/Old_and_New_Interrupt/Old_and_New_Interrupt.syr" 

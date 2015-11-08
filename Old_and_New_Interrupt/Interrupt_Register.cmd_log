@@ -1,4 +1,0 @@
-sch2sym -intstyle ise -family spartan3e -refsym Interrupt_Register {/home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register.sch} {/home/knightcm/CSSE 232/Old_and_New_Interrupt/Interrupt_Register.sym} 
-sch2sym -intstyle ise -family spartan3e -refsym Interrupt_Register {/home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register.sch} {/home/knightcm/CSSE 232/Old_and_New_Interrupt/Interrupt_Register.sym} 
-sch2sym -intstyle ise -family spartan3e -w -refsym Interrupt_Register {/home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register.sch} {/home/knightcm/CSSE 232/Old_and_New_Interrupt/Interrupt_Register.sym} 
-sch2sym -intstyle ise -family spartan3e -w -refsym Interrupt_Register {/home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register.sch} {/home/knightcm/CSSE 232/Old_and_New_Interrupt/Interrupt_Register.sym} 
