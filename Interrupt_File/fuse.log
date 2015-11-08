@@ -10,7 +10,7 @@ Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into li
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 94932 KB
-Fuse CPU Usage: 1050 ms
+Fuse CPU Usage: 910 ms
 Compiling module FDRSE
 Compiling module GND
 Compiling module AND4
@@ -20,9 +20,9 @@ Compiling module Interrupt_Register
 Compiling module Interrupt_Register_Interrupt_Reg...
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
+Waiting for 2 sub-compilation(s) to finish...
 Compiled 8 Verilog Units
 Built simulation executable /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Interrupt_File/Interrupt_Register_Interrupt_Register_sch_tb_isim_beh.exe
 Fuse Memory Usage: 1179256 KB
-Fuse CPU Usage: 1070 ms
-GCC CPU Usage: 440 ms
+Fuse CPU Usage: 930 ms
+GCC CPU Usage: 420 ms

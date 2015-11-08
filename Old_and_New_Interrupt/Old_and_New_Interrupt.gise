@@ -23,7 +23,6 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Decoder3b8.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Interrupt_Register.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Interrupt_Register.vf">
       <branch xil_pn:name="Implementation"/>
       <branch xil_pn:name="BehavioralSim"/>
@@ -94,11 +93,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="Interrupt_Register.vf"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.vf"/>
-      <outfile xil_pn:name="Or16b2.vf"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446685114" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6227033008384378821" xil_pn:start_ts="1446685114">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -107,35 +106,31 @@
     <transform xil_pn:end_ts="1446686228" xil_pn:in_ck="704503528840888278" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1446686228">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="Interrupt_Register.vf"/>
-      <outfile xil_pn:name="ORING_Boys.v"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.vf"/>
-      <outfile xil_pn:name="Or16b2.vf"/>
-      <outfile xil_pn:name="UM.v"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446686230" xil_pn:in_ck="704503528840888278" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7028413330501251614" xil_pn:start_ts="1446686228">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_Old_and_New_Interrupt_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_Old_and_New_Interrupt_sch_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446686230" xil_pn:in_ck="7802420774262718180" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4390614964284994085" xil_pn:start_ts="1446686230">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_Old_and_New_Interrupt_sch_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446685510" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1446685510">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -145,11 +140,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="Interrupt_Register.vf"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.vf"/>
-      <outfile xil_pn:name="Or16b2.vf"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446685511" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6227033008384378821" xil_pn:start_ts="1446685511">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -177,23 +172,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.jhd"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.lso"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.ngc"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.ngr"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.prj"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.stx"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.syr"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.xst"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_Old_and_New_Interrupt_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_Old_and_New_Interrupt_sch_tb_stx_beh.prj"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446685516" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-338366219152135800" xil_pn:start_ts="1446685516">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -202,25 +186,23 @@
     </transform>
     <transform xil_pn:end_ts="1446685520" xil_pn:in_ck="485541515096963788" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3563195730239621288" xil_pn:start_ts="1446685516">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.bld"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt.ngd"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446685523" xil_pn:in_ck="485541515096963789" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1446685520">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_map.map"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_map.mrp"/>
-      <outfile xil_pn:name="Old_and_New_Interrupt_map.ngm"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
