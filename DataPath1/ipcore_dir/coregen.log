@@ -1,5 +1,28 @@
-INFO:sim:172 - Generating IP...
-Applying current project options...
-Finished applying current project options.
+Welcome to Xilinx CORE Generator.
+Help system initialized.
+The IP Catalog has been reloaded.
+Opening project file
+/home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knig
+htcm-lamd-peterseo/DataPath1/ipcore_dir/coregen.cgp.
+Recustomize and Generate (Under Original Project Settings)INFO:sim:172 - Generating IP...
+ERROR:sim - Unable to find
+ERROR:sim -   
+   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da
+ERROR:sim -    taPath1/testMemory.coe
+ERROR:sim -    Coregen is looking for
+ERROR:sim -   
+   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da
+ERROR:sim -    taPath1/testMemory.coe
+ERROR:sim - Unable to find
+ERROR:sim -   
+   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da
+ERROR:sim -    taPath1/testMemory.coe
+ERROR:sim -    Coregen is looking for
+ERROR:sim -   
+   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da
+ERROR:sim -    taPath1/testMemory.coe
+ERROR:sim - An invalid core configuration has been detected during
+ERROR:sim -    Customization. Core parameters will be reset to their default
+   values.
 Cancelled executing Tcl generator.
-Wrote CGP file for project 'memoryFile'.
+Closed project file.
