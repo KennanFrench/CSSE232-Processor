@@ -1,0 +1,5 @@
+verilog work "alu1b.vf"
+verilog work "claAdder4b.vf"
+verilog work "claAdde16b.vf"
+verilog work "alu16b.vf"
+verilog work "testALU.vf"
