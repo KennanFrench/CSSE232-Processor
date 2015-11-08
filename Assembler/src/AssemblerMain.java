@@ -130,7 +130,7 @@ public class AssemblerMain {
 				continue;
 			}
 
-			// Get immediate value.
+			// Get immediate value. Converts current to binary.
 			immediate = Integer.toBinaryString(Integer.decode(current));
 
 			// Fix immediate value accordingly.
@@ -145,8 +145,8 @@ public class AssemblerMain {
 					immediate = immediate.substring(28);
 				}
 				// System.out.println("norm fix: " + immediate + "\n");
-			} else if (op.equals("warp") || op.equals("andi")
-					|| op.equals("ori") || op.equals("lui")) {
+			} else if (op.equals("addi") || op.equals("ori")
+					|| op.equals("lui")) {
 				// System.out.println("i branch: " + immediate);
 				if (immediate.length() < 8) {
 					extension = 8 - immediate.length();
@@ -166,9 +166,10 @@ public class AssemblerMain {
 				immediate = immediate.substring(0, 4) + " "
 						+ immediate.substring(4, 8) + " "
 						+ immediate.substring(8);
+			} else if (op.equals("warp") && (i >= 2)) {
+				immediate = current;
 			}
 			sb.append(immediate + " ");
-
 		}
 
 		// Jump Return special case.
@@ -218,8 +219,8 @@ public class AssemblerMain {
 		operations.put("sub", "0001");
 		operations.put("and", "0010");
 		operations.put("or", "0011");
-		operations.put("warp", "0100");
-		operations.put("andi", "0101");
+		operations.put("addi", "0100");
+		operations.put("warp", "0101");
 		operations.put("ori", "0110");
 		operations.put("slt", "0111");
 		operations.put("lw", "1000");
