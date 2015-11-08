@@ -63,9 +63,70 @@ module Interrupt_Register_Interrupt_Register_sch_tb();
 		Sw2 <= 0;
 		Sw3 <= 1;
 		North_Button <= 1;
-		South_Button <= 1;
 		East_Button <= 0;
+		South_Button <= 1;
 		West_Button <= 0;
 		CLR <= 8;
+		#21;
+		if (State == 8'b10011010) begin
+			$display("Test 1 Pass");
+		end else begin
+			$display("Test 1 Failed: State = %b", State);
+		end
+		#79;
+		
+		Sw0 <= 0;
+		Sw1 <= 0;
+		Sw2 <= 0;
+		Sw3 <= 0;
+		North_Button <= 0;
+		East_Button <= 0;
+		South_Button <= 0;
+		West_Button <= 0;
+		CLR <= 8;
+		#21;
+		if (State == 8'b10011010) begin
+			$display("Test 2 Pass");
+		end else begin
+			$display("Test 2 Failed: State = %b", State);
+		end
+		#79;
+		
+		CLR <= 4'b0111;
+		#21;
+		if (State == 8'b00011010) begin
+			$display("Test 3 Pass");
+		end else begin
+			$display("Test 3 Failed: State = %b", State);
+		end
+		#79;
+		
+		CLR <= 4'b0100;
+		#21;
+		if (State == 8'b00001010) begin
+			$display("Test 4 Pass");
+		end else begin
+			$display("Test 4 Failed: State = %b", State);
+		end
+		#79;
+		
+		CLR <= 4'b0011;
+		#21;
+		if (State == 8'b00000010) begin
+			$display("Test 5 Pass");
+		end else begin
+			$display("Test 5 Failed: State = %b", State);
+		end
+		#79;
+		
+		CLR <= 4'b0001;
+		#21;
+		if (State == 8'b00000000) begin
+			$display("Test 6 Pass");
+		end else begin
+			$display("Test 6 Failed: State = %b", State);
+		end
+		#79;
+		
    end
 endmodule

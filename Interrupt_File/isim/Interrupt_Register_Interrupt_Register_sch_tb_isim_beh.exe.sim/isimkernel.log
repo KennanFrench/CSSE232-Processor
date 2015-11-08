@@ -1,10 +1,28 @@
 Command line:
    Interrupt_Register_Interrupt_Register_sch_tb_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  48278
+     -simrunnum  1
+     -socket  54306
 
-Wed Nov  4 20:57:25 2015
+Sat Nov  7 22:07:37 2015
 
 
  Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 238.195 Meg
+
+ Total Signals          : 152
+ Total Nets             : 55
+ Total Signal Drivers   : 52
+ Total Blocks           : 25
+ Total Primitive Blocks : 22
+ Total Processes        : 79
+ Total Traceable Variables  : 47
+ Total Scalar Nets and Variables : 229
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 313.696 Meg
+
+Sat Nov  7 22:07:42 2015
+

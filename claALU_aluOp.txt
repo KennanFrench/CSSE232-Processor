@@ -1,0 +1,17 @@
+000	0	a & b
+001	1	a | b
+010	2	a + b
+011	3	(useless)
+100	4 	a & ~b (not sure if used)
+101	5	a | ~b (not sure if used)
+110	6	a + ~b (sub)
+111	7	a - b = {-1, 0, 1}
+
+Note: beware of useless alu signal.
+11   11 
+ 1100001101010000
+ 0110000110101000
+10010010011111000
+
+
+
