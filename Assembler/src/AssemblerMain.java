@@ -145,7 +145,7 @@ public class AssemblerMain {
 					immediate = immediate.substring(28);
 				}
 				// System.out.println("norm fix: " + immediate + "\n");
-			} else if (op.equals("addi") || op.equals("andi")
+			} else if (op.equals("warp") || op.equals("andi")
 					|| op.equals("ori") || op.equals("lui")) {
 				// System.out.println("i branch: " + immediate);
 				if (immediate.length() < 8) {
@@ -218,7 +218,7 @@ public class AssemblerMain {
 		operations.put("sub", "0001");
 		operations.put("and", "0010");
 		operations.put("or", "0011");
-		operations.put("addi", "0100");
+		operations.put("warp", "0100");
 		operations.put("andi", "0101");
 		operations.put("ori", "0110");
 		operations.put("slt", "0111");
