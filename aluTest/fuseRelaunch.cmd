@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/testALU_testALU_sch_tb_isim_beh.exe" -prj "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/testALU_testALU_sch_tb_beh.prj" "work.testALU_testALU_sch_tb" "work.glbl" 

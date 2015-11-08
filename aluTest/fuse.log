@@ -1,0 +1,55 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/testALU_testALU_sch_tb_isim_beh.exe -prj /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/testALU_testALU_sch_tb_beh.prj work.testALU_testALU_sch_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/add1b.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/alu1b.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdder4b.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/alu16b.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/testALU.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/testALU_tb.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95568 KB
+Fuse CPU Usage: 980 ms
+Compiling module AND2
+Compiling module OR2
+Compiling module OR3
+Compiling module AND3
+Compiling module OR4
+Compiling module INV
+Compiling module add1b_MUSER_testALU
+Compiling module AND3B1
+Compiling module M2_1E_MXILINX_testALU
+Compiling module MUXF5
+Compiling module M4_1E_MXILINX_testALU
+Compiling module VCC
+Compiling module AND2B1
+Compiling module M2_1_MXILINX_testALU
+Compiling module alu1b_MUSER_testALU
+Compiling module GND
+Compiling module XOR2
+Compiling module MUXCY_L
+Compiling module FMAP
+Compiling module NOR4
+Compiling module MUXCY
+Compiling module NOR16_MXILINX_testALU
+Compiling module alu16b_MUSER_testALU
+Compiling module AND4
+Compiling module OR5
+Compiling module INV4_MXILINX_testALU
+Compiling module claAdder4b_MUSER_testALU
+Compiling module claAdde16b_MUSER_testALU
+Compiling module testALU
+Compiling module testALU_testALU_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 16 sub-compilation(s) to finish...
+Compiled 31 Verilog Units
+Built simulation executable /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/testALU_testALU_sch_tb_isim_beh.exe
+Fuse Memory Usage: 1179828 KB
+Fuse CPU Usage: 1030 ms
+GCC CPU Usage: 1320 ms
