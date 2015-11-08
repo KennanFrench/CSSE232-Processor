@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/home/knightcm/CSSE 232/Interrupt_CONTROL/STATE_CONTROL_UNIT_2.v} -lang verilog -prj Interrupt_CONTROL -o STATE_CONTROL_UNIT_2.spl -module STATE_CONTROL_UNIT_2 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w STATE_CONTROL_UNIT_2.spl {/home/knightcm/CSSE 232/Interrupt_CONTROL/STATE_CONTROL_UNIT_2.sym} 

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="interrupt_control">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2015-11-8T3:31:16</timestamp>
+    <pin polarity="Input" x="0" y="-1248" name="CLK" />
+    <pin polarity="Input" x="0" y="-1008" name="HARDWARE(7:0)" />
+    <pin polarity="Input" x="0" y="-768" name="IR_CLR_SELECT(3:0)" />
+    <pin polarity="Input" x="0" y="-528" name="RESET" />
+    <pin polarity="Input" x="0" y="32" name="Opcode(3:0)" />
+    <pin polarity="Input" x="0" y="-288" name="FCODE(3:0)" />
+    <pin polarity="Input" x="0" y="-48" name="PC(3:0)" />
+    <pin polarity="Output" x="608" y="-1248" name="Interrupt_Register(15:0)" />
+    <pin polarity="Output" x="608" y="-1184" name="PCWriteBeq" />
+    <pin polarity="Output" x="608" y="-1120" name="PCWriteBne" />
+    <pin polarity="Output" x="608" y="-1056" name="PCWrite" />
+    <pin polarity="Output" x="608" y="-992" name="IRegWrite" />
+    <pin polarity="Output" x="608" y="-928" name="SignExt" />
+    <pin polarity="Output" x="608" y="-864" name="GRegWrite" />
+    <pin polarity="Output" x="608" y="-800" name="ALUSrcA" />
+    <pin polarity="Output" x="608" y="-736" name="MemRead" />
+    <pin polarity="Output" x="608" y="-672" name="MemWrite" />
+    <pin polarity="Output" x="608" y="-608" name="ALUOp(3:0)" />
+    <pin polarity="Output" x="608" y="-544" name="WriteAddr(1:0)" />
+    <pin polarity="Output" x="608" y="-480" name="WriteData(1:0)" />
+    <pin polarity="Output" x="608" y="-416" name="ALUSrcB(1:0)" />
+    <pin polarity="Output" x="608" y="-352" name="PCData(2:0)" />
+    <pin polarity="Output" x="608" y="-288" name="current_state(4:0)" />
+    <pin polarity="Output" x="608" y="-224" name="EPCWrite" />
+    <pin polarity="Output" x="608" y="-160" name="IorD(2:0)" />
+    <pin polarity="Output" x="608" y="-96" name="MemWriteData(1:0)" />
+    <pin polarity="Output" x="608" y="-32" name="next_state(4:0)" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="304" y="-1288" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1248" type="pin CLK" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1008" type="pin HARDWARE(7:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-768" type="pin IR_CLR_SELECT(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-528" type="pin RESET" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="32" type="pin Opcode(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin FCODE(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-48" type="pin PC(3:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-1248" type="pin Interrupt_Register(15:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-1184" type="pin PCWriteBeq" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-1120" type="pin PCWriteBne" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-1056" type="pin PCWrite" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-992" type="pin IRegWrite" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-928" type="pin SignExt" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-864" type="pin GRegWrite" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-800" type="pin ALUSrcA" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-736" type="pin MemRead" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-672" type="pin MemWrite" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-608" type="pin ALUOp(3:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-544" type="pin WriteAddr(1:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-480" type="pin WriteData(1:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-416" type="pin ALUSrcB(1:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-352" type="pin PCData(2:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-288" type="pin current_state(4:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-224" type="pin EPCWrite" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-160" type="pin IorD(2:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-96" type="pin MemWriteData(1:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-32" type="pin next_state(4:0)" />
+        <rect width="64" x="0" y="20" height="24" />
+        <line x2="0" y1="32" y2="32" x1="64" />
+        <line x2="0" y1="-1248" y2="-1248" x1="64" />
+        <rect width="64" x="0" y="-1020" height="24" />
+        <line x2="0" y1="-1008" y2="-1008" x1="64" />
+        <rect width="64" x="0" y="-780" height="24" />
+        <line x2="0" y1="-768" y2="-768" x1="64" />
+        <line x2="0" y1="-528" y2="-528" x1="64" />
+        <rect width="64" x="0" y="-300" height="24" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <rect width="64" x="0" y="-60" height="24" />
+        <line x2="0" y1="-48" y2="-48" x1="64" />
+        <rect width="64" x="544" y="-1260" height="24" />
+        <line x2="608" y1="-1248" y2="-1248" x1="544" />
+        <line x2="608" y1="-1184" y2="-1184" x1="544" />
+        <line x2="608" y1="-1120" y2="-1120" x1="544" />
+        <line x2="608" y1="-1056" y2="-1056" x1="544" />
+        <line x2="608" y1="-992" y2="-992" x1="544" />
+        <line x2="608" y1="-928" y2="-928" x1="544" />
+        <line x2="608" y1="-864" y2="-864" x1="544" />
+        <line x2="608" y1="-800" y2="-800" x1="544" />
+        <line x2="608" y1="-736" y2="-736" x1="544" />
+        <line x2="608" y1="-672" y2="-672" x1="544" />
+        <rect width="64" x="544" y="-620" height="24" />
+        <line x2="608" y1="-608" y2="-608" x1="544" />
+        <rect width="64" x="544" y="-556" height="24" />
+        <line x2="608" y1="-544" y2="-544" x1="544" />
+        <rect width="64" x="544" y="-492" height="24" />
+        <line x2="608" y1="-480" y2="-480" x1="544" />
+        <rect width="64" x="544" y="-428" height="24" />
+        <line x2="608" y1="-416" y2="-416" x1="544" />
+        <rect width="64" x="544" y="-364" height="24" />
+        <line x2="608" y1="-352" y2="-352" x1="544" />
+        <rect width="64" x="544" y="-300" height="24" />
+        <line x2="608" y1="-288" y2="-288" x1="544" />
+        <line x2="608" y1="-224" y2="-224" x1="544" />
+        <rect width="64" x="544" y="-172" height="24" />
+        <line x2="608" y1="-160" y2="-160" x1="544" />
+        <rect width="64" x="544" y="-108" height="24" />
+        <line x2="608" y1="-96" y2="-96" x1="544" />
+        <rect width="64" x="544" y="-44" height="24" />
+        <line x2="608" y1="-32" y2="-32" x1="544" />
+        <rect width="480" x="64" y="-1280" height="1344" />
+    </graph>
+</symbol>

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym mux8b16 {/home/knightcm/CSSE 232/Interrupt_CONTROL/mux8b16.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/mux8b16.sym} 

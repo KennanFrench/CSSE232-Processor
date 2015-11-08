@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/home/knightcm/CSSE 232/Interrupt_CONTROL/Control_Tests_State_Machine_tb.v} -lang verilog -prj Interrupt_CONTROL -o MIPS_control_unit.spl -module MIPS_control_unit -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl {/home/knightcm/CSSE 232/Interrupt_CONTROL/MIPS_control_unit.sym} 

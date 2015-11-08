@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym loadupper8b {/home/knightcm/CSSE 232/Interrupt_CONTROL/loadupper8b.sch} {/home/knightcm/CSSE 232/Interrupt_CONTROL/loadupper8b.sym} 
