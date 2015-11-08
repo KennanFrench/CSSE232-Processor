@@ -1,1 +1,0 @@
-sch2sym -intstyle ise -family spartan3e -w -refsym Or16b2 {/home/knightcm/CSSE 232/Old_and_New_Interrupt/Or16b2.sch} {/home/knightcm/CSSE 232/Old_and_New_Interrupt/Or16b2.sym} 

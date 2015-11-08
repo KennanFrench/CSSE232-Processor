@@ -1,5 +1,0 @@
-verilog isim_temp "Or16b2.vf"
-verilog isim_temp "Interrupt_Register.vf"
-verilog isim_temp "Old_and_New_Interrupt.vf"
-verilog isim_temp "UM.v"
-verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

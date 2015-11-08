@@ -1,5 +1,0 @@
-verilog work "Or16b2.vf"
-verilog work "Interrupt_Register.vf"
-verilog work "Old_and_New_Interrupt.vf"
-verilog work "UM.v"
-verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
