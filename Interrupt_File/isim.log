@@ -1,5 +1,6 @@
 ISim log file
-Running: /home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register_Interrupt_Register_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/knightcm/CSSE 232/Interrupt_File/testIntwithCLK_isim_beh.wdb 
+Running: /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Interrupt_File/Interrupt_Register_Interrupt_Register_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Interrupt_File/Interrupt_Register_Interrupt_Register_sch_tb_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@clive.csse.rose-hulman.edu'.
@@ -20,3 +21,11 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+Test 1 Pass
+Test 2 Pass
+Test 3 Pass
+Test 4 Pass
+Test 5 Pass
+Test 6 Pass
+# exit 0
+# exit 0

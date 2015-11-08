@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Interrupt_Register.vf
-// /___/   /\     Timestamp : 11/04/2015 20:57:22
+// /___/   /\     Timestamp : 11/07/2015 20:56:48
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan3e -verilog "/home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register.vf" -w "/home/knightcm/CSSE 232/Interrupt_File/Interrupt_Register.sch"
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Interrupt_File/Interrupt_Register.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Interrupt_File/Interrupt_Register.sch
 //Design Name: Interrupt_Register
 //Device: spartan3e
 //Purpose:
@@ -134,7 +134,7 @@ module Interrupt_Register(CLK,
                  .CE(G), 
                  .D(G), 
                  .R(CLR0), 
-                 .S(North_Button), 
+                 .S(West_Button), 
                  .Q(State[0]));
    GND  XLXI_15 (.G(G));
    FDRSE #( .INIT(1'b0) ) XLXI_16 (.C(CLK), 
@@ -153,31 +153,31 @@ module Interrupt_Register(CLK,
                   .CE(G), 
                   .D(G), 
                   .R(CLR3), 
-                  .S(West_Button), 
+                  .S(North_Button), 
                   .Q(State[3]));
    FDRSE #( .INIT(1'b0) ) XLXI_20 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR4), 
-                  .S(Sw0), 
+                  .S(Sw3), 
                   .Q(State[4]));
    FDRSE #( .INIT(1'b0) ) XLXI_21 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR5), 
-                  .S(Sw1), 
+                  .S(Sw2), 
                   .Q(State[5]));
    FDRSE #( .INIT(1'b0) ) XLXI_22 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR6), 
-                  .S(Sw2), 
+                  .S(Sw1), 
                   .Q(State[6]));
    FDRSE #( .INIT(1'b0) ) XLXI_23 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR7), 
-                  .S(Sw3), 
+                  .S(Sw0), 
                   .Q(State[7]));
    Decoder3b8_MUSER_Interrupt_Register  XLXI_25 (.Address(CLR[3:0]), 
                                                 .CLR0(CLR0), 
