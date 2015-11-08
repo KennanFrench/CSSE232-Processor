@@ -27,11 +27,11 @@
             <line x2="544" y1="80" y2="80" style="linewidth:W" x1="576" />
         </blockdef>
         <block symbolname="memoryFile" name="XLXI_3">
-            <blockpin signalname="Address(13:0)" name="addra(13:0)" />
-            <blockpin signalname="DataIn(15:0)" name="dina(15:0)" />
-            <blockpin signalname="WriteEnabled(0:0)" name="wea(0:0)" />
-            <blockpin signalname="CLK" name="clka" />
-            <blockpin signalname="DataOut(15:0)" name="douta(15:0)" />
+            <blockpin name="addra(13:0)" />
+            <blockpin name="dina(15:0)" />
+            <blockpin name="wea(0:0)" />
+            <blockpin name="clka" />
+            <blockpin name="douta(15:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="7040">
@@ -60,7 +60,6 @@
             <wire x2="2128" y1="1008" y2="1008" x1="2080" />
         </branch>
         <iomarker fontsize="28" x="640" y="960" name="Address(15:0)" orien="R180" />
-        <instance x="2128" y="928" name="XLXI_3" orien="R0">
-        </instance>
+        <instance x="2128" y="928" name="XLXI_3" orien="R0" />
     </sheet>
 </drawing>

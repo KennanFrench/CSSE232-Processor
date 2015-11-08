@@ -5,7 +5,74 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="sim" num="172" delta="old" >Generating IP...
+<msg type="info" file="sim" num="172" delta="new" >Generating IP...
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   taPath1/testMemory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   taPath1/testMemory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   taPath1/testMemory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   taPath1/testMemory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">IP initializer could not set IP core parameters on IP model</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   taPath1/testMemory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Da</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   taPath1/testMemory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Failed to initialize IP model.</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed executing Tcl generator.
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;memoryFile&apos;.  Failed executing Tcl generator.
+
 </msg>
 
 </messages>
