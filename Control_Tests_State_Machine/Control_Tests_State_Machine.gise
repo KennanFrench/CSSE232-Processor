@@ -54,7 +54,9 @@
     <transform xil_pn:end_ts="1446956403" xil_pn:in_ck="77684011459019645" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6674369991533282917" xil_pn:start_ts="1446956402">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Schematic_Control.vf"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446956403" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1109634409675148368" xil_pn:start_ts="1446956403">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -63,24 +65,31 @@
     <transform xil_pn:end_ts="1446956403" xil_pn:in_ck="7661582079055806883" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1446956403">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="OHMYWORDPLZ.v"/>
-      <outfile xil_pn:name="STATE_CONTROL_UNIT_2.v"/>
-      <outfile xil_pn:name="Schematic_Control.vf"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446956404" xil_pn:in_ck="7661582079055806883" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3794595066871864718" xil_pn:start_ts="1446956403">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Schematic_Control_Schematic_Control_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="Schematic_Control_Schematic_Control_sch_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446956404" xil_pn:in_ck="1890525452204476258" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6551050767236728977" xil_pn:start_ts="1446956404">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Schematic_Control_Schematic_Control_sch_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : signext12b16.vf
+// /___/   /\     Timestamp : 11/09/2015 09:44:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/signext12b16.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/signext12b16.sch
+//Design Name: signext12b16
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module buf16b_MUSER_signext12b16(Input, 
+                                 Output);
+
+    input [15:0] Input;
+   output [15:0] Output;
+   
+   
+   BUF  XLXI_1 (.I(Input[0]), 
+               .O(Output[0]));
+   BUF  XLXI_2 (.I(Input[1]), 
+               .O(Output[1]));
+   BUF  XLXI_3 (.I(Input[2]), 
+               .O(Output[2]));
+   BUF  XLXI_4 (.I(Input[3]), 
+               .O(Output[3]));
+   BUF  XLXI_5 (.I(Input[4]), 
+               .O(Output[4]));
+   BUF  XLXI_6 (.I(Input[5]), 
+               .O(Output[5]));
+   BUF  XLXI_7 (.I(Input[6]), 
+               .O(Output[6]));
+   BUF  XLXI_8 (.I(Input[7]), 
+               .O(Output[7]));
+   BUF  XLXI_9 (.I(Input[8]), 
+               .O(Output[8]));
+   BUF  XLXI_10 (.I(Input[9]), 
+                .O(Output[9]));
+   BUF  XLXI_11 (.I(Input[10]), 
+                .O(Output[10]));
+   BUF  XLXI_12 (.I(Input[11]), 
+                .O(Output[11]));
+   BUF  XLXI_13 (.I(Input[12]), 
+                .O(Output[12]));
+   BUF  XLXI_14 (.I(Input[13]), 
+                .O(Output[13]));
+   BUF  XLXI_17 (.I(Input[14]), 
+                .O(Output[14]));
+   BUF  XLXI_18 (.I(Input[15]), 
+                .O(Output[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module signext12b16(Input, 
+                    O);
+
+    input [11:0] Input;
+   output [15:0] O;
+   
+   
+   buf16b_MUSER_signext12b16  XLXI_19 (.Input({Input[11], Input[11], Input[11], 
+         Input[11], Input[11], Input[10], Input[9], Input[8], Input[7], 
+         Input[6], Input[5], Input[4], Input[3], Input[2], Input[1], 
+         Input[0]}), 
+                                      .Output(O[15:0]));
+endmodule

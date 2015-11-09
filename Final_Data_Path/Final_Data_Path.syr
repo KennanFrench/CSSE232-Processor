@@ -1,0 +1,2731 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Final_Data_Path.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Final_Data_Path.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Final_Data_Path"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Final_Data_Path
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "add1b.vf" in library work
+Compiling verilog file "alu1b.vf" in library work
+Module <add1b> compiled
+Module <M2_1_MXILINX_alu1b> compiled
+Module <M2_1E_MXILINX_alu1b> compiled
+Module <M4_1E_MXILINX_alu1b> compiled
+Module <add1b_MUSER_alu1b> compiled
+Compiling verilog file "STATE_CONTROL_UNIT_2.v" in library work
+Module <alu1b> compiled
+Compiling verilog file "mux5b1.vf" in library work
+Module <STATE_CONTROL_UNIT_2> compiled
+Module <M2_1_MXILINX_mux5b1> compiled
+Module <M2_1E_MXILINX_mux5b1> compiled
+Module <M4_1E_MXILINX_mux5b1> compiled
+Compiling verilog file "mux3b1.vf" in library work
+Module <mux5b1> compiled
+Compiling verilog file "mux16b16.vf" in library work
+Module <mux3b1> compiled
+Module <M2_1_MXILINX_mux16b16> compiled
+Module <M2_1E_MXILINX_mux16b16> compiled
+Module <M16_1E_MXILINX_mux16b16> compiled
+Compiling verilog file "Memory_Data_Register.vf" in library work
+Module <mux16b16> compiled
+Module <FD16CE_MXILINX_Memory_Data_Register> compiled
+Compiling verilog file "Instruction_Register.vf" in library work
+Module <Memory_Data_Register> compiled
+Module <FD16CE_MXILINX_Instruction_Register> compiled
+Compiling verilog file "decode4b16.vf" in library work
+Module <Instruction_Register> compiled
+Compiling verilog file "claAdder4b.vf" in library work
+Module <decode4b16> compiled
+Module <M2_1_MXILINX_claAdder4b> compiled
+Module <INV4_MXILINX_claAdder4b> compiled
+Module <M2_1E_MXILINX_claAdder4b> compiled
+Module <M4_1E_MXILINX_claAdder4b> compiled
+Module <add1b_MUSER_claAdder4b> compiled
+Module <alu1b_MUSER_claAdder4b> compiled
+Compiling verilog file "buf16b.vf" in library work
+Module <claAdder4b> compiled
+Compiling verilog file "signext8b16.vf" in library work
+Module <buf16b> compiled
+Module <buf16b_MUSER_signext8b16> compiled
+Compiling verilog file "signext4b16.vf" in library work
+Module <signext8b16> compiled
+Module <buf16b_MUSER_signext4b16> compiled
+Compiling verilog file "signext12b16.vf" in library work
+Module <signext4b16> compiled
+Module <buf16b_MUSER_signext12b16> compiled
+Compiling verilog file "Schematic_Control.vf" in library work
+Module <signext12b16> compiled
+Compiling verilog file "regFile16b16.vf" in library work
+Module <Schematic_Control> compiled
+Module <M2_1_MXILINX_regFile16b16> compiled
+Module <M2_1E_MXILINX_regFile16b16> compiled
+Module <M16_1E_MXILINX_regFile16b16> compiled
+Module <mux16b16_MUSER_regFile16b16> compiled
+Module <FD16CE_MXILINX_regFile16b16> compiled
+Module <decode4b16_MUSER_regFile16b16> compiled
+Compiling verilog file "reg16b.vf" in library work
+Module <regFile16b16> compiled
+Module <FD16CE_MXILINX_reg16b> compiled
+Module <Memory_Data_Register_MUSER_reg16b> compiled
+Compiling verilog file "PC_Register.vf" in library work
+Module <reg16b> compiled
+Module <FD16CE_MXILINX_PC_Register> compiled
+Compiling verilog file "mux5b16.vf" in library work
+Module <PC_Register> compiled
+Module <M2_1_MXILINX_mux5b16> compiled
+Module <M2_1E_MXILINX_mux5b16> compiled
+Module <M4_1E_MXILINX_mux5b16> compiled
+Module <mux5b1_MUSER_mux5b16> compiled
+Compiling verilog file "mux4b4.vf" in library work
+Module <mux5b16> compiled
+Module <M2_1E_MXILINX_mux4b4> compiled
+Module <M4_1E_MXILINX_mux4b4> compiled
+Compiling verilog file "mux4b16.vf" in library work
+Module <mux4b4> compiled
+Module <M2_1E_MXILINX_mux4b16> compiled
+Module <M4_1E_MXILINX_mux4b16> compiled
+Compiling verilog file "mux3b16.vf" in library work
+Module <mux4b16> compiled
+Module <mux3b1_MUSER_mux3b16> compiled
+Compiling verilog file "mux2b16.vf" in library work
+Module <mux3b16> compiled
+Module <M2_1_MXILINX_mux2b16> compiled
+Compiling verilog file "MemoryMapDecoder.vf" in library work
+Module <mux2b16> compiled
+Module <M2_1_MXILINX_MemoryMapDecoder> compiled
+Module <M2_1E_MXILINX_MemoryMapDecoder> compiled
+Module <M16_1E_MXILINX_MemoryMapDecoder> compiled
+Module <mux16b16_MUSER_MemoryMapDecoder> compiled
+Compiling verilog file "loadupper8b.vf" in library work
+Module <MemoryMapDecoder> compiled
+Module <buf16b_MUSER_loadupper8b> compiled
+Compiling verilog file "ipcore_dir/memory.v" in library work
+Module <loadupper8b> compiled
+Compiling verilog file "EPC.vf" in library work
+Module <memory> compiled
+Module <FD16CE_MXILINX_EPC> compiled
+Module <Instruction_Register_MUSER_EPC> compiled
+Compiling verilog file "claAdde16b.vf" in library work
+Module <EPC> compiled
+Module <M2_1_MXILINX_claAdde16b> compiled
+Module <INV4_MXILINX_claAdde16b> compiled
+Module <M2_1E_MXILINX_claAdde16b> compiled
+Module <M4_1E_MXILINX_claAdde16b> compiled
+Module <add1b_MUSER_claAdde16b> compiled
+Module <alu1b_MUSER_claAdde16b> compiled
+Module <claAdder4b_MUSER_claAdde16b> compiled
+Compiling verilog file "Final_Data_Path.vf" in library work
+Module <claAdde16b> compiled
+Module <M2_1_MXILINX_Final_Data_Path> compiled
+Module <M2_1E_MXILINX_Final_Data_Path> compiled
+Module <M4_1E_MXILINX_Final_Data_Path> compiled
+Module <mux5b1_MUSER_Final_Data_Path> compiled
+Module <mux5b16_MUSER_Final_Data_Path> compiled
+Module <FD16CE_MXILINX_Final_Data_Path> compiled
+Module <Instruction_Register_MUSER_Final_Data_Path> compiled
+Module <EPC_MUSER_Final_Data_Path> compiled
+Module <Schematic_Control_MUSER_Final_Data_Path> compiled
+Module <Memory_Data_Register_MUSER_Final_Data_Path> compiled
+Module <reg16b_MUSER_Final_Data_Path> compiled
+Module <mux3b1_MUSER_Final_Data_Path> compiled
+Module <mux3b16_MUSER_Final_Data_Path> compiled
+Module <M16_1E_MXILINX_Final_Data_Path> compiled
+Module <mux16b16_MUSER_Final_Data_Path> compiled
+Module <MemoryMapDecoder_MUSER_Final_Data_Path> compiled
+Module <PC_Register_MUSER_Final_Data_Path> compiled
+Module <INV4_MXILINX_Final_Data_Path> compiled
+Module <add1b_MUSER_Final_Data_Path> compiled
+Module <alu1b_MUSER_Final_Data_Path> compiled
+Module <claAdder4b_MUSER_Final_Data_Path> compiled
+Module <claAdde16b_MUSER_Final_Data_Path> compiled
+Module <buf16b_MUSER_Final_Data_Path> compiled
+Module <loadupper8b_MUSER_Final_Data_Path> compiled
+Module <mux4b16_MUSER_Final_Data_Path> compiled
+Module <mux2b16_MUSER_Final_Data_Path> compiled
+Module <signext4b16_MUSER_Final_Data_Path> compiled
+Module <signext8b16_MUSER_Final_Data_Path> compiled
+Module <decode4b16_MUSER_Final_Data_Path> compiled
+Module <regFile16b16_MUSER_Final_Data_Path> compiled
+Module <mux4b4_MUSER_Final_Data_Path> compiled
+Module <signext12b16_MUSER_Final_Data_Path> compiled
+Module <Final_Data_Path> compiled
+No errors in compilation
+Analysis of file <"Final_Data_Path.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <PC_Register_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <Instruction_Register_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <Memory_Data_Register_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <signext12b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <regFile16b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <mux4b4_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <mux3b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <reg16b_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <mux2b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <mux4b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <signext8b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <signext4b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <loadupper8b_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <claAdde16b_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <MemoryMapDecoder_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <Schematic_Control_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <EPC_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <mux5b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <buf16b_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <decode4b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <mux16b16_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <mux3b1_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <Memory_Data_Register_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <claAdder4b_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <STATE_CONTROL_UNIT_2> in library <work> with parameters.
+	A_3 = "00000000000000000000000000000010"
+	A_4 = "00000000000000000000000000001011"
+	Beq_3 = "00000000000000000000000000000101"
+	Bne_3 = "00000000000000000000000000000110"
+	C_3 = "00000000000000000000000000000011"
+	C_4 = "00000000000000000000000000001100"
+	Clear = "00000000000000000000000000010010"
+	Decode = "00000000000000000000000000000001"
+	Display = "00000000000000000000000000010100"
+	Fetch = "00000000000000000000000000000000"
+	JR_3 = "00000000000000000000000000001000"
+	Jal_3 = "00000000000000000000000000001001"
+	Jal_4 = "00000000000000000000000000001111"
+	Jump_3 = "00000000000000000000000000000111"
+	LW_4 = "00000000000000000000000000001101"
+	LW_5 = "00000000000000000000000000010000"
+	LW_SW_3 = "00000000000000000000000000000100"
+	Lui_3 = "00000000000000000000000000001010"
+	Mv = "00000000000000000000000000010001"
+	Read = "00000000000000000000000000010011"
+	SW_4 = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <Instruction_Register_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <mux5b1_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <alu1b_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <INV4_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <add1b_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Final_Data_Path>.
+WARNING:Xst:2211 - "ipcore_dir/memory.v" line 2671: Instantiating black box module <memory>.
+Module <Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <PC_Register_MUSER_Final_Data_Path> in library <work>.
+Module <PC_Register_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_31" for instance <XLXI_1> in unit <PC_Register_MUSER_Final_Data_Path>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.1> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.1>.
+Analyzing module <Instruction_Register_MUSER_Final_Data_Path> in library <work>.
+Module <Instruction_Register_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_2_4" for instance <XLXI_2> in unit <Instruction_Register_MUSER_Final_Data_Path>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.2> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.2>.
+Analyzing module <Memory_Data_Register_MUSER_Final_Data_Path> in library <work>.
+Module <Memory_Data_Register_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_5" for instance <XLXI_1> in unit <Memory_Data_Register_MUSER_Final_Data_Path>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.3> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.3>.
+Analyzing module <signext12b16_MUSER_Final_Data_Path> in library <work>.
+Module <signext12b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <buf16b_MUSER_Final_Data_Path> in library <work>.
+Module <buf16b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <regFile16b16_MUSER_Final_Data_Path> in library <work>.
+Module <regFile16b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_10_79" for instance <XLXI_10> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_11_80" for instance <XLXI_11> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_12_81" for instance <XLXI_12> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_13_82" for instance <XLXI_13> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_14_83" for instance <XLXI_14> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_15_84" for instance <XLXI_15> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_16_85" for instance <XLXI_16> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_2_71" for instance <XLXI_2> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_3_72" for instance <XLXI_3> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_4_73" for instance <XLXI_4> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_5_74" for instance <XLXI_5> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_6_75" for instance <XLXI_6> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_7_76" for instance <XLXI_7> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_8_77" for instance <XLXI_8> in unit <regFile16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_9_78" for instance <XLXI_9> in unit <regFile16b16_MUSER_Final_Data_Path>.
+Analyzing module <decode4b16_MUSER_Final_Data_Path> in library <work>.
+Module <decode4b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.4> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.4>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.5> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.5>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.6> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.6>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.7> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.7>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.8> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.8>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.9> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.9>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.10> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.10>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.11> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.11> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.11>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.12> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.12> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.12>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.13> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.13> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.13>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.14> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.14> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.14>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.15> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.15> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.15>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.16> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.16> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.16>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.17> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.17> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.17>.
+Analyzing module <FD16CE_MXILINX_Final_Data_Path.18> in library <work>.
+Module <FD16CE_MXILINX_Final_Data_Path.18> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_Final_Data_Path.18>.
+Analyzing module <mux16b16_MUSER_Final_Data_Path> in library <work>.
+Module <mux16b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_17_15" for instance <XLXI_17> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_21_16" for instance <XLXI_21> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_44_17" for instance <XLXI_44> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_45_18" for instance <XLXI_45> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_46_22" for instance <XLXI_46> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_47_21" for instance <XLXI_47> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_48_20" for instance <XLXI_48> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_49_19" for instance <XLXI_49> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_54_23" for instance <XLXI_54> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_55_24" for instance <XLXI_55> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_56_25" for instance <XLXI_56> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_57_26" for instance <XLXI_57> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_58_27" for instance <XLXI_58> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_59_28" for instance <XLXI_59> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_60_29" for instance <XLXI_60> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_61_30" for instance <XLXI_61> in unit <mux16b16_MUSER_Final_Data_Path>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.1> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+Analyzing module <M2_1_MXILINX_Final_Data_Path.22> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.22> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.23> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.23> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.24> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.24> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.25> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.25> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.26> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.26> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.27> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.27> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.28> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.28> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.29> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.29> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_Final_Data_Path.3> in library <work>.
+Module <M2_1E_MXILINX_Final_Data_Path.3> is correct for synthesis.
+ 
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.2> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.3> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.4> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.5> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.5> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.6> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.6> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.7> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.7> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.8> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.8> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.9> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.9> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.10> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.10> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.11> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.11> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.12> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.12> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.13> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.13> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.14> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.14> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.15> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.15> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.16> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.16> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_14" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M23_13" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M45_12" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M67_11" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M89_10" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_MAB_9" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_MCD_8" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_MEF_7" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_O_6" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+Analyzing module <mux4b4_MUSER_Final_Data_Path> in library <work>.
+Module <mux4b4_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_86" for instance <XLXI_1> in unit <mux4b4_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_5_87" for instance <XLXI_5> in unit <mux4b4_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_7_88" for instance <XLXI_7> in unit <mux4b4_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_9_89" for instance <XLXI_9> in unit <mux4b4_MUSER_Final_Data_Path>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.1> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.1>.
+Analyzing module <M2_1E_MXILINX_Final_Data_Path.1> in library <work>.
+Module <M2_1E_MXILINX_Final_Data_Path.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_Final_Data_Path.2> in library <work>.
+Module <M2_1E_MXILINX_Final_Data_Path.2> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.2> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.2>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.3> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.3>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.4> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.4>.
+Analyzing module <mux3b16_MUSER_Final_Data_Path> in library <work>.
+Module <mux3b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <mux3b1_MUSER_Final_Data_Path> in library <work>.
+Module <mux3b1_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <reg16b_MUSER_Final_Data_Path> in library <work>.
+Module <reg16b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <mux2b16_MUSER_Final_Data_Path> in library <work>.
+Module <mux2b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_56" for instance <XLXI_1> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_10_55" for instance <XLXI_10> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_11_68" for instance <XLXI_11> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_13_69" for instance <XLXI_13> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_14_67" for instance <XLXI_14> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_15_66" for instance <XLXI_15> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_16_65" for instance <XLXI_16> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_17_70" for instance <XLXI_17> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_2_57" for instance <XLXI_2> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_3_58" for instance <XLXI_3> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_4_59" for instance <XLXI_4> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_5_60" for instance <XLXI_5> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_6_61" for instance <XLXI_6> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_7_62" for instance <XLXI_7> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_8_63" for instance <XLXI_8> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_9_64" for instance <XLXI_9> in unit <mux2b16_MUSER_Final_Data_Path>.
+Analyzing module <M2_1_MXILINX_Final_Data_Path.1> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.1> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.2> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.3> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.3> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.4> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.4> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.5> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.5> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.6> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.6> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.7> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.7> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.8> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.8> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.9> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.9> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.10> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.10> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.11> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.11> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.12> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.12> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.13> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.13> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.14> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.14> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.15> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.15> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.16> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.16> is correct for synthesis.
+ 
+Analyzing module <mux4b16_MUSER_Final_Data_Path> in library <work>.
+Module <mux4b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_39" for instance <XLXI_1> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_20_43" for instance <XLXI_20> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_21_44" for instance <XLXI_21> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_22_45" for instance <XLXI_22> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_23_46" for instance <XLXI_23> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_28_47" for instance <XLXI_28> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_29_48" for instance <XLXI_29> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_30_49" for instance <XLXI_30> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_31_50" for instance <XLXI_31> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_32_51" for instance <XLXI_32> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_33_52" for instance <XLXI_33> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_34_53" for instance <XLXI_34> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_35_54" for instance <XLXI_35> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_5_40" for instance <XLXI_5> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_6_41" for instance <XLXI_6> in unit <mux4b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_7_42" for instance <XLXI_7> in unit <mux4b16_MUSER_Final_Data_Path>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.5> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.5> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.5>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.6> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.6> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.6>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.7> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.7> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.7>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.8> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.8> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.8>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.9> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.9> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.9>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.10> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.10> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.10>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.11> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.11> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.11>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.12> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.12> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.12>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.13> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.13> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.13>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.14> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.14> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.14>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.15> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.15> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.15>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.16> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.16> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.16>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.17> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.17> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.17>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.18> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.18> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.18>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.19> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.19> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.19>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.19>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.20> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.20> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.20>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.20>.
+Analyzing module <signext8b16_MUSER_Final_Data_Path> in library <work>.
+Module <signext8b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <signext4b16_MUSER_Final_Data_Path> in library <work>.
+Module <signext4b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <loadupper8b_MUSER_Final_Data_Path> in library <work>.
+Module <loadupper8b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <claAdde16b_MUSER_Final_Data_Path> in library <work>.
+Module <claAdde16b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <claAdder4b_MUSER_Final_Data_Path> in library <work>.
+Module <claAdder4b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_87_34" for instance <XLXI_87> in unit <claAdder4b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_92_35" for instance <XLXI_92> in unit <claAdder4b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_93_36" for instance <XLXI_93> in unit <claAdder4b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_94_37" for instance <XLXI_94> in unit <claAdder4b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_95_38" for instance <XLXI_95> in unit <claAdder4b_MUSER_Final_Data_Path>.
+Analyzing module <alu1b_MUSER_Final_Data_Path> in library <work>.
+Module <alu1b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_15_33" for instance <XLXI_15> in unit <alu1b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_8_32" for instance <XLXI_8> in unit <alu1b_MUSER_Final_Data_Path>.
+Analyzing module <add1b_MUSER_Final_Data_Path> in library <work>.
+Module <add1b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.22> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.22> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.22>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.22>.
+Analyzing module <M2_1_MXILINX_Final_Data_Path.30> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.30> is correct for synthesis.
+ 
+Analyzing module <INV4_MXILINX_Final_Data_Path> in library <work>.
+Module <INV4_MXILINX_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.17> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.17> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.18> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.18> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.19> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.19> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.20> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.20> is correct for synthesis.
+ 
+Analyzing module <MemoryMapDecoder_MUSER_Final_Data_Path> in library <work>.
+Module <MemoryMapDecoder_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <Schematic_Control_MUSER_Final_Data_Path> in library <work>.
+Module <Schematic_Control_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <STATE_CONTROL_UNIT_2> in library <work>.
+	A_3 = 32'sb00000000000000000000000000000010
+	A_4 = 32'sb00000000000000000000000000001011
+	Beq_3 = 32'sb00000000000000000000000000000101
+	Bne_3 = 32'sb00000000000000000000000000000110
+	C_3 = 32'sb00000000000000000000000000000011
+	C_4 = 32'sb00000000000000000000000000001100
+	Clear = 32'sb00000000000000000000000000010010
+	Decode = 32'sb00000000000000000000000000000001
+	Display = 32'sb00000000000000000000000000010100
+	Fetch = 32'sb00000000000000000000000000000000
+	JR_3 = 32'sb00000000000000000000000000001000
+	Jal_3 = 32'sb00000000000000000000000000001001
+	Jal_4 = 32'sb00000000000000000000000000001111
+	Jump_3 = 32'sb00000000000000000000000000000111
+	LW_4 = 32'sb00000000000000000000000000001101
+	LW_5 = 32'sb00000000000000000000000000010000
+	LW_SW_3 = 32'sb00000000000000000000000000000100
+	Lui_3 = 32'sb00000000000000000000000000001010
+	Mv = 32'sb00000000000000000000000000010001
+	Read = 32'sb00000000000000000000000000010011
+	SW_4 = 32'sb00000000000000000000000000001110
+"STATE_CONTROL_UNIT_2.v" line 128: $display : Fetch
+"STATE_CONTROL_UNIT_2.v" line 172: $display : Decode
+"STATE_CONTROL_UNIT_2.v" line 205: $display : Lw/Sw Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 238: $display : Lw/Sw Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 271: $display : Lw/Sw Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 304: $display : Lw/Sw Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 338: $display : A Type Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 394: $display : C Type Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 442: $display : Lw/Sw Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 476: $display : Branch Equal Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 509: $display : Branch Not Equal Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 542: $display : Jump Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 575: $display : Jump Register Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 608: $display : Jump And Link Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 641: $display : Load Upper Immidiate Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 674: $display : A Type Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 707: $display : C Type Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 740: $display : LW Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 773: $display : SW Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 806: $display : Jump and Link Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 839: $display : LW Cycle 5
+"STATE_CONTROL_UNIT_2.v" line 872: $display : not implemented
+WARNING:Xst:905 - "STATE_CONTROL_UNIT_2.v" line 123: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <InterruptIn>, <InterruptHandler>, <Opcode>
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 881: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 881: $display : The current state is %d
+"STATE_CONTROL_UNIT_2.v" line 888: $display : In Fetch, the next_state is 1
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 893: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 893: $display : The opcode is %d
+"STATE_CONTROL_UNIT_2.v" line 898: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 903: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 908: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 913: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 917: $display : The next state is C_3
+"STATE_CONTROL_UNIT_2.v" line 943: $display : The next state is C_3
+"STATE_CONTROL_UNIT_2.v" line 948: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 953: $display : The next state is LW_SW_3
+"STATE_CONTROL_UNIT_2.v" line 957: $display : The next state is LW_SW_3
+"STATE_CONTROL_UNIT_2.v" line 962: $display : The next state is Lui_3
+"STATE_CONTROL_UNIT_2.v" line 967: $display : The next state is Beq_3
+"STATE_CONTROL_UNIT_2.v" line 972: $display : The next state is Bne_3
+"STATE_CONTROL_UNIT_2.v" line 977: $display : The next state is Jal_3
+"STATE_CONTROL_UNIT_2.v" line 981: $display : The next state is Jump_3
+"STATE_CONTROL_UNIT_2.v" line 986: $display : The next state is JR_3
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 991: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 991: $display :  Wrong Opcode %d 
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 996: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 996: $display : In Decode, the next_state is %d
+"STATE_CONTROL_UNIT_2.v" line 1002: $display : In R_Exec, the next_state is 11
+"STATE_CONTROL_UNIT_2.v" line 1008: $display : In R_Write, the next_state is 12
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 1013: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 1013: $display : The opcode is %d
+"STATE_CONTROL_UNIT_2.v" line 1018: $display : The next state is LW_4
+"STATE_CONTROL_UNIT_2.v" line 1023: $display : The next state is SW_4
+"STATE_CONTROL_UNIT_2.v" line 1032: $display : In Mem1, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1038: $display : In Jump, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1044: $display : In R_Exec, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1050: $display : In R_Write, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1056: $display : In Branch, the next_state is 15
+"STATE_CONTROL_UNIT_2.v" line 1063: $display : In Mem1, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1069: $display : In Jump, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1075: $display : In Jump, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1081: $display : In R_Exec, the next_state is 16
+"STATE_CONTROL_UNIT_2.v" line 1087: $display : In R_Write, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1093: $display : In Branch, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1100: $display : In Mem1, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 1105: $display :  Not implemented!
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 1111: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 1111: $display : After the tests, the next_state is %d
+WARNING:Xst:905 - "STATE_CONTROL_UNIT_2.v" line 879: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Functioncode>
+Module <STATE_CONTROL_UNIT_2> is correct for synthesis.
+ 
+Analyzing module <EPC_MUSER_Final_Data_Path> in library <work>.
+Module <EPC_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <mux5b16_MUSER_Final_Data_Path> in library <work>.
+Module <mux5b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <mux5b1_MUSER_Final_Data_Path> in library <work>.
+Module <mux5b1_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_2" for instance <XLXI_1> in unit <mux5b1_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_2_3" for instance <XLXI_2> in unit <mux5b1_MUSER_Final_Data_Path>.
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.21> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.21> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.21>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.21>.
+Analyzing module <M2_1_MXILINX_Final_Data_Path.21> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.21> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <IRegWrite> in unit <STATE_CONTROL_UNIT_2> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <STATE_CONTROL_UNIT_2>.
+    Related source file is "STATE_CONTROL_UNIT_2.v".
+    Found 4x5-bit ROM for signal <old_next_state_17$mux0000> created at line 921.
+WARNING:Xst:737 - Found 1-bit latch for signal <EPCWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <PCData>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <ALUOp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCWriteBeq>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCWriteBne>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <IorD>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <WriteAddr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <WriteData>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <SignExt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <GRegWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUSrcA>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <ALUSrcB>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemRead>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <MemWriteData>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LCDWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <CLR>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 5-bit latch for signal <$old_next_state_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 1-bit latch for signal <EPCWrite$mux0000> created at line 206. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 5-bit register for signal <current_state>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <STATE_CONTROL_UNIT_2> synthesized.
+
+
+Synthesizing Unit <Schematic_Control_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <Schematic_Control_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_1>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_1> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_2>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_2> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_3>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_3> synthesized.
+
+
+Synthesizing Unit <buf16b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <buf16b_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <decode4b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <decode4b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_4>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_4> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_5>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_5> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_6>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_6> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_7>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_7> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_8>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_8> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_9>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_9> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_10>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_10> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_11>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_11> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_12>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_12> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_13>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_13> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_14>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_14> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_15>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_15> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_16>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_16> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_17>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_17> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_Final_Data_Path_18>.
+    Related source file is "Final_Data_Path.vf".
+Unit <FD16CE_MXILINX_Final_Data_Path_18> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_22>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_22> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_23>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_23> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_24>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_24> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_25>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_25> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_26>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_26> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_27>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_27> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_28>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_28> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_29>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_29> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_Final_Data_Path_3>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1E_MXILINX_Final_Data_Path_3> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_Final_Data_Path_1>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1E_MXILINX_Final_Data_Path_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_Final_Data_Path_2>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1E_MXILINX_Final_Data_Path_2> synthesized.
+
+
+Synthesizing Unit <mux3b1_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <mux3b1_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_1>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_1> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_2>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_3>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_4>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_4> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_5>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_5> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_6>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_6> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_7>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_7> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_8>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_8> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_9>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_9> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_10>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_10> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_11>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_11> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_12>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_12> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_13>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_13> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_14>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_14> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_15>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_15> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_16>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_16> synthesized.
+
+
+Synthesizing Unit <INV4_MXILINX_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <INV4_MXILINX_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_17>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_17> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_18>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_18> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_19>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_19> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_20>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_20> synthesized.
+
+
+Synthesizing Unit <add1b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <add1b_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_30>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_30> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_21>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_21> synthesized.
+
+
+Synthesizing Unit <PC_Register_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+WARNING:Xst:646 - Signal <XLXN_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <G> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <PC_Register_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <Instruction_Register_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <Instruction_Register_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <Memory_Data_Register_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <Memory_Data_Register_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <signext12b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <signext12b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <mux3b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <mux3b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <mux2b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <mux2b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <signext8b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <signext8b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <signext4b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <signext4b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <loadupper8b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <loadupper8b_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_1>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_1> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_2>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_2> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_3>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_3> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_4>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_4> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_5>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_5> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_6>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_6> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_7>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_7> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_8>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_8> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_9>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_9> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_10>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_10> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_11>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_11> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_12>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_12> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_13>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_13> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_14>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_14> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_15>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_15> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_16>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M16_1E_MXILINX_Final_Data_Path_16> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_1>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_1> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_2>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_2> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_3>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_3> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_4>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_4> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_5>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_5> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_6>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_6> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_7>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_7> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_8>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_8> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_9>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_9> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_10>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_10> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_11>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_11> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_12>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_12> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_13>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_13> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_14>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_14> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_15>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_15> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_16>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_16> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_17>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_17> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_18>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_18> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_19>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_19> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_20>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_20> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_22>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_22> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_21>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_21> synthesized.
+
+
+Synthesizing Unit <mux4b4_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <mux4b4_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <reg16b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <reg16b_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <mux4b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <mux4b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <EPC_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <EPC_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <mux16b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <mux16b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <alu1b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <alu1b_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <mux5b1_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <mux5b1_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <regFile16b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <regFile16b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <MemoryMapDecoder_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <MemoryMapDecoder_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <mux5b16_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <mux5b16_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <claAdder4b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <claAdder4b_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <claAdde16b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <claAdde16b_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+WARNING:Xst:646 - Signal <XLXN_246> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <MemAddr<15:14>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <LCDWrite> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <LCDData> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:646 - Signal <CLR> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Final_Data_Path> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x5-bit ROM                                           : 1
+# Registers                                            : 1
+ 5-bit register                                        : 1
+# Latches                                              : 20
+ 1-bit latch                                           : 12
+ 2-bit latch                                           : 5
+ 3-bit latch                                           : 2
+ 5-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 5-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/memory.ngc>.
+Loading core <memory> for timing and area information for instance <XLXI_4>.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <EPCWrite_mux0000>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x5-bit ROM                                           : 1
+# Registers                                            : 357
+ Flip-Flops                                            : 357
+# Latches                                              : 20
+ 1-bit latch                                           : 12
+ 2-bit latch                                           : 5
+ 3-bit latch                                           : 2
+ 5-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 5-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <CLR> in Unit <STATE_CONTROL_UNIT_2> is equivalent to the following FF/Latch, which will be removed : <PCData_2> 
+WARNING:Xst:1710 - FF/Latch <MemWriteData_1> (without init value) has a constant value of 0 in block <STATE_CONTROL_UNIT_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EPCWrite_mux0000> (without init value) has a constant value of 0 in block <STATE_CONTROL_UNIT_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EPCWrite> (without init value) has a constant value of 0 in block <STATE_CONTROL_UNIT_2>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Final_Data_Path> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_1> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_2> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_3> ...
+
+Optimizing unit <buf16b_MUSER_Final_Data_Path> ...
+
+Optimizing unit <decode4b16_MUSER_Final_Data_Path> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_4> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_5> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_6> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_7> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_8> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_9> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_10> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_11> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_12> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_13> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_14> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_15> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_16> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_17> ...
+
+Optimizing unit <FD16CE_MXILINX_Final_Data_Path_18> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_22> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_23> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_24> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_25> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_26> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_27> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_28> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_29> ...
+
+Optimizing unit <M2_1E_MXILINX_Final_Data_Path_3> ...
+
+Optimizing unit <M2_1E_MXILINX_Final_Data_Path_1> ...
+
+Optimizing unit <M2_1E_MXILINX_Final_Data_Path_2> ...
+
+Optimizing unit <mux3b1_MUSER_Final_Data_Path> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_1> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_2> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_3> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_4> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_5> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_6> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_7> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_8> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_9> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_10> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_11> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_12> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_13> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_14> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_15> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_16> ...
+
+Optimizing unit <INV4_MXILINX_Final_Data_Path> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_17> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_18> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_19> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_20> ...
+
+Optimizing unit <add1b_MUSER_Final_Data_Path> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_30> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_21> ...
+
+Optimizing unit <STATE_CONTROL_UNIT_2> ...
+
+Optimizing unit <mux3b16_MUSER_Final_Data_Path> ...
+
+Optimizing unit <mux2b16_MUSER_Final_Data_Path> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_1> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_2> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_3> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_4> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_5> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_6> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_7> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_8> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_9> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_10> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_11> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_12> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_13> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_14> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_15> ...
+
+Optimizing unit <M16_1E_MXILINX_Final_Data_Path_16> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_1> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_2> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_3> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_4> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_5> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_6> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_7> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_8> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_9> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_10> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_11> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_12> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_13> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_14> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_15> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_16> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_17> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_18> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_19> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_20> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_22> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_21> ...
+
+Optimizing unit <mux4b16_MUSER_Final_Data_Path> ...
+
+Optimizing unit <mux16b16_MUSER_Final_Data_Path> ...
+
+Optimizing unit <regFile16b16_MUSER_Final_Data_Path> ...
+
+Optimizing unit <mux5b16_MUSER_Final_Data_Path> ...
+
+Optimizing unit <claAdder4b_MUSER_Final_Data_Path> ...
+
+Optimizing unit <claAdde16b_MUSER_Final_Data_Path> ...
+WARNING:Xst:2677 - Node <XLXI_160/XLXI_4/MemRead> of sequential type is unconnected in block <Final_Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_160/XLXI_4/LCDWrite> of sequential type is unconnected in block <Final_Data_Path>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Final_Data_Path, actual ratio is 11.
+FlipFlop XLXI_160/XLXI_4/current_state_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop XLXI_160/XLXI_4/current_state_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop XLXI_160/XLXI_4/current_state_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop XLXI_160/XLXI_4/current_state_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop XLXI_160/XLXI_4/current_state_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch XLXI_160/XLXI_4/_old_next_state_18_4 has been replicated 1 time(s) to handle iob=true attribute.
+Latch XLXI_160/XLXI_4/_old_next_state_18_3 has been replicated 1 time(s) to handle iob=true attribute.
+Latch XLXI_160/XLXI_4/_old_next_state_18_2 has been replicated 1 time(s) to handle iob=true attribute.
+Latch XLXI_160/XLXI_4/_old_next_state_18_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch XLXI_160/XLXI_4/_old_next_state_18_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 362
+ Flip-Flops                                            : 362
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Final_Data_Path.ngr
+Top Level Output File Name         : Final_Data_Path
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 3044
+#      AND2                        : 660
+#      AND2B1                      : 464
+#      AND3                        : 248
+#      AND3B1                      : 184
+#      AND4                        : 5
+#      AND5                        : 16
+#      BUF                         : 64
+#      GND                         : 2
+#      INV                         : 117
+#      LUT2                        : 3
+#      LUT3                        : 65
+#      LUT4                        : 38
+#      MUXF5                       : 89
+#      MUXF5_L                     : 192
+#      MUXF6                       : 105
+#      OR2                         : 685
+#      OR3                         : 22
+#      OR4                         : 25
+#      OR5                         : 5
+#      VCC                         : 22
+#      XOR2                        : 33
+# FlipFlops/Latches                : 397
+#      FDC                         : 10
+#      FDCE                        : 352
+#      FDE                         : 3
+#      LD                          : 32
+# RAMS                             : 15
+#      RAMB16_S1_S1                : 7
+#      RAMB16_S9_S9                : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      OBUF                        : 10
+# Logical                          : 132
+#      NAND2                       : 96
+#      NAND3                       : 32
+#      NOR4                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      194  out of   4656     4%  
+ Number of Slice Flip Flops:            387  out of   9312     4%  
+ Number of 4 input LUTs:                223  out of   9312     2%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+    IOB Flip Flops:                      10
+ Number of BRAMs:                        15  out of     20    75%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                           | Clock buffer(FF name)                                                                                                      | Load  |
+---------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+CLK                                                                                    | BUFGP                                                                                                                      | 380   |
+XLXI_4/N0                                                                              | NONE(XLXI_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram)| 15    |
+XLXI_160/XLXI_4/EPCWrite_or0000(XLXI_160/XLXI_4/EPCWrite_or00001:O)                    | NONE(*)(XLXI_160/XLXI_4/PCData_1)                                                                                          | 19    |
+XLXI_160/XLXI_4/ALUOp_not0001(XLXI_160/XLXI_4/ALUOp_not0001115:O)                      | NONE(*)(XLXI_160/XLXI_4/ALUOp_2)                                                                                           | 3     |
+XLXI_160/XLXI_4/old_next_state_18_not0001(XLXI_160/XLXI_4/old_next_state_18_not00011:O)| NONE(*)(XLXI_160/XLXI_4/_old_next_state_18_4)                                                                              | 10    |
+---------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-------------------------+-------+
+Control Signal                     | Buffer(FF name)         | Load  |
+-----------------------------------+-------------------------+-------+
+XLXI_48/G(XLXI_48/XLXI_5:G)        | NONE(XLXI_1/XLXI_1/I_Q0)| 362   |
+-----------------------------------+-------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 37.993ns (Maximum Frequency: 26.321MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 37.993ns (frequency: 26.321MHz)
+  Total number of paths / destination ports: 1765684 / 884
+-------------------------------------------------------------------------
+Delay:               37.993ns (Levels of Logic = 40)
+  Source:            XLXI_8/XLXI_2/I_Q1 (FF)
+  Destination:       XLXI_1/XLXI_1/I_Q0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_8/XLXI_2/I_Q1 to XLXI_1/XLXI_1/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.591   0.633  I_Q1 (Q<1>)
+     end scope: 'XLXI_8/XLXI_2'
+     BUF:I->O              1   0.704   0.420  XLXI_39/XLXI_19/XLXI_2 (XLXN_64<1>)
+     begin scope: 'XLXI_33/XLXI_1'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_33/XLXI_1'
+     begin scope: 'XLXI_31/XLXI_5'
+     begin scope: 'I_M23'
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M23'
+     MUXF5:I1->O           4   0.321   0.587  I_O (O)
+     end scope: 'XLXI_31/XLXI_5'
+     begin scope: 'XLXI_45/XLXI_2/XLXI_87'
+     INV:I->O              1   0.704   0.420  I_36_38 (O2)
+     end scope: 'XLXI_45/XLXI_2/XLXI_87'
+     begin scope: 'XLXI_45/XLXI_2/XLXI_93'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             2   0.704   0.447  I_36_8 (O)
+     end scope: 'XLXI_45/XLXI_2/XLXI_93'
+     OR2:I0->O             3   0.704   0.531  XLXI_45/XLXI_2/XLXI_48 (XLXI_45/XLXI_2/p1)
+     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_51 (XLXI_45/XLXI_2/p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_65 (XLXI_45/XLXI_2/p2p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_70 (XLXI_45/XLXI_2/p3p2p1g0)
+     OR4:I0->O             2   0.704   0.447  XLXI_45/XLXI_2/XLXI_74 (XLXI_45/G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_8 (XLXI_45/P1G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_12 (XLXI_45/P2P1G0)
+     OR4:I1->O             6   0.704   0.669  XLXI_45/XLXI_18 (XLXI_45/C3)
+     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_41 (XLXI_45/XLXI_5/p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_57 (XLXI_45/XLXI_5/p1p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_66 (XLXI_45/XLXI_5/p2p1p0c0)
+     OR4:I0->O             6   0.704   0.669  XLXI_45/XLXI_5/XLXI_67 (XLXI_45/XLXN_29)
+     INV:I->O              2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/cinot)
+     AND3:I2->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
+     OR4:I1->O             2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_45/XLXI_5/XLXN_39)
+     begin scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
+     begin scope: 'I_M23'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M23'
+     MUXF5:I1->O           3   0.321   0.531  I_O (O)
+     end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
+     NOR4:I3->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_85 (XLXI_45/Z3)
+     AND4:I0->O            2   0.704   0.447  XLXI_45/XLXI_28 (Is_Zero)
+     INV:I->O              1   0.704   0.420  XLXI_1/XLXI_18 (XLXI_1/XLXN_25)
+     AND2:I0->O            1   0.704   0.420  XLXI_1/XLXI_15 (XLXI_1/XLXN_12)
+     OR3:I0->O            16   0.704   1.034  XLXI_1/XLXI_12 (XLXI_1/XLXN_1)
+     begin scope: 'XLXI_1/XLXI_1'
+     FDCE:CE                   0.555          I_Q0
+    ----------------------------------------
+    Total                     37.993ns (22.908ns logic, 15.085ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            XLXI_160/XLXI_4/current_state_4_1 (FF)
+  Destination:       current_state<4> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_160/XLXI_4/current_state_4_1 to current_state<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.420  XLXI_160/XLXI_4/current_state_4_1 (XLXI_160/XLXI_4/current_state_4_1)
+     OBUF:I->O                 3.272          current_state_4_OBUF (current_state<4>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_160/XLXI_4/old_next_state_18_not0001'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            XLXI_160/XLXI_4/_old_next_state_18_4_1 (LATCH)
+  Destination:       next_state<4> (PAD)
+  Source Clock:      XLXI_160/XLXI_4/old_next_state_18_not0001 falling
+
+  Data Path: XLXI_160/XLXI_4/_old_next_state_18_4_1 to next_state<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  XLXI_160/XLXI_4/_old_next_state_18_4_1 (XLXI_160/XLXI_4/_old_next_state_18_4_1)
+     OBUF:I->O                 3.272          next_state_4_OBUF (next_state<4>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.39 secs
+ 
+--> 
+
+
+Total memory usage is 600088 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
+

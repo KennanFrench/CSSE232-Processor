@@ -1,0 +1,163 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux3b16.vf
+// /___/   /\     Timestamp : 11/09/2015 09:44:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/mux3b16.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/mux3b16.sch
+//Design Name: mux3b16
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mux3b1_MUSER_mux3b16(A, 
+                            B, 
+                            C, 
+                            S, 
+                            Result);
+
+    input A;
+    input B;
+    input C;
+    input [1:0] S;
+   output Result;
+   
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_37;
+   wire XLXN_38;
+   
+   INV  XLXI_3 (.I(XLXN_38), 
+               .O(XLXN_20));
+   NAND2  XLXI_5 (.I0(C), 
+                 .I1(XLXN_19), 
+                 .O(XLXN_35));
+   NAND2  XLXI_6 (.I0(XLXN_20), 
+                 .I1(A), 
+                 .O(XLXN_34));
+   NAND2  XLXI_7 (.I0(XLXN_37), 
+                 .I1(B), 
+                 .O(XLXN_33));
+   NAND3  XLXI_8 (.I0(XLXN_35), 
+                 .I1(XLXN_33), 
+                 .I2(XLXN_34), 
+                 .O(Result));
+   XOR2  XLXI_9 (.I0(S[1]), 
+                .I1(S[0]), 
+                .O(XLXN_38));
+   AND2  XLXI_11 (.I0(S[1]), 
+                 .I1(XLXN_38), 
+                 .O(XLXN_19));
+   AND2  XLXI_14 (.I0(S[0]), 
+                 .I1(XLXN_38), 
+                 .O(XLXN_37));
+endmodule
+`timescale 1ns / 1ps
+
+module mux3b16(A, 
+               B, 
+               C, 
+               S, 
+               Result);
+
+    input [15:0] A;
+    input [15:0] B;
+    input [15:0] C;
+    input [1:0] S;
+   output [15:0] Result;
+   
+   
+   mux3b1_MUSER_mux3b16  XLXI_1 (.A(A[0]), 
+                                .B(B[0]), 
+                                .C(C[0]), 
+                                .S(S[1:0]), 
+                                .Result(Result[0]));
+   mux3b1_MUSER_mux3b16  XLXI_2 (.A(A[1]), 
+                                .B(B[1]), 
+                                .C(C[1]), 
+                                .S(S[1:0]), 
+                                .Result(Result[1]));
+   mux3b1_MUSER_mux3b16  XLXI_3 (.A(A[2]), 
+                                .B(B[2]), 
+                                .C(C[2]), 
+                                .S(S[1:0]), 
+                                .Result(Result[2]));
+   mux3b1_MUSER_mux3b16  XLXI_4 (.A(A[3]), 
+                                .B(B[3]), 
+                                .C(C[3]), 
+                                .S(S[1:0]), 
+                                .Result(Result[3]));
+   mux3b1_MUSER_mux3b16  XLXI_5 (.A(A[4]), 
+                                .B(B[4]), 
+                                .C(C[4]), 
+                                .S(S[1:0]), 
+                                .Result(Result[4]));
+   mux3b1_MUSER_mux3b16  XLXI_6 (.A(A[5]), 
+                                .B(B[5]), 
+                                .C(C[5]), 
+                                .S(S[1:0]), 
+                                .Result(Result[5]));
+   mux3b1_MUSER_mux3b16  XLXI_7 (.A(A[6]), 
+                                .B(B[6]), 
+                                .C(C[6]), 
+                                .S(S[1:0]), 
+                                .Result(Result[6]));
+   mux3b1_MUSER_mux3b16  XLXI_8 (.A(A[7]), 
+                                .B(B[7]), 
+                                .C(C[7]), 
+                                .S(S[1:0]), 
+                                .Result(Result[7]));
+   mux3b1_MUSER_mux3b16  XLXI_9 (.A(A[11]), 
+                                .B(B[11]), 
+                                .C(C[11]), 
+                                .S(S[1:0]), 
+                                .Result(Result[11]));
+   mux3b1_MUSER_mux3b16  XLXI_10 (.A(A[9]), 
+                                 .B(B[9]), 
+                                 .C(C[9]), 
+                                 .S(S[1:0]), 
+                                 .Result(Result[9]));
+   mux3b1_MUSER_mux3b16  XLXI_11 (.A(A[8]), 
+                                 .B(B[8]), 
+                                 .C(C[8]), 
+                                 .S(S[1:0]), 
+                                 .Result(Result[8]));
+   mux3b1_MUSER_mux3b16  XLXI_12 (.A(A[12]), 
+                                 .B(B[12]), 
+                                 .C(C[12]), 
+                                 .S(S[1:0]), 
+                                 .Result(Result[12]));
+   mux3b1_MUSER_mux3b16  XLXI_13 (.A(A[10]), 
+                                 .B(B[10]), 
+                                 .C(C[10]), 
+                                 .S(S[1:0]), 
+                                 .Result(Result[10]));
+   mux3b1_MUSER_mux3b16  XLXI_14 (.A(A[13]), 
+                                 .B(B[13]), 
+                                 .C(C[13]), 
+                                 .S(S[1:0]), 
+                                 .Result(Result[13]));
+   mux3b1_MUSER_mux3b16  XLXI_15 (.A(A[14]), 
+                                 .B(B[14]), 
+                                 .C(C[14]), 
+                                 .S(S[1:0]), 
+                                 .Result(Result[14]));
+   mux3b1_MUSER_mux3b16  XLXI_16 (.A(A[15]), 
+                                 .B(B[15]), 
+                                 .C(C[15]), 
+                                 .S(S[1:0]), 
+                                 .Result(Result[15]));
+endmodule

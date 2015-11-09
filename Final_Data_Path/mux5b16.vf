@@ -1,0 +1,283 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux5b16.vf
+// /___/   /\     Timestamp : 11/09/2015 09:44:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/mux5b16.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/mux5b16.sch
+//Design Name: mux5b16
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_mux5b16(D0, 
+                            D1, 
+                            S0, 
+                            O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_mux5b16(D0, 
+                             D1, 
+                             E, 
+                             S0, 
+                             O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_mux5b16(D0, 
+                             D1, 
+                             D2, 
+                             D3, 
+                             E, 
+                             S0, 
+                             S1, 
+                             O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_157" *) 
+   M2_1E_MXILINX_mux5b16  I_M01 (.D0(D0), 
+                                .D1(D1), 
+                                .E(E), 
+                                .S0(S0), 
+                                .O(M01));
+   (* HU_SET = "I_M23_156" *) 
+   M2_1E_MXILINX_mux5b16  I_M23 (.D0(D2), 
+                                .D1(D3), 
+                                .E(E), 
+                                .S0(S0), 
+                                .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module mux5b1_MUSER_mux5b16(A, 
+                            B, 
+                            C, 
+                            D, 
+                            E, 
+                            S, 
+                            O);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input E;
+    input [2:0] S;
+   output O;
+   
+   wire XLXN_13;
+   wire XLXN_20;
+   
+   assign XLXN_20 = 1;
+   (* HU_SET = "XLXI_1_158" *) 
+   M4_1E_MXILINX_mux5b16  XLXI_1 (.D0(A), 
+                                 .D1(B), 
+                                 .D2(C), 
+                                 .D3(D), 
+                                 .E(XLXN_20), 
+                                 .S0(S[0]), 
+                                 .S1(S[1]), 
+                                 .O(XLXN_13));
+   (* HU_SET = "XLXI_2_159" *) 
+   M2_1_MXILINX_mux5b16  XLXI_2 (.D0(XLXN_13), 
+                                .D1(E), 
+                                .S0(S[2]), 
+                                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module mux5b16(A, 
+               B, 
+               C, 
+               D, 
+               E, 
+               S, 
+               O);
+
+    input [15:0] A;
+    input [15:0] B;
+    input [15:0] C;
+    input [15:0] D;
+    input [15:0] E;
+    input [2:0] S;
+   output [15:0] O;
+   
+   
+   mux5b1_MUSER_mux5b16  XLXI_1 (.A(A[0]), 
+                                .B(B[0]), 
+                                .C(C[0]), 
+                                .D(D[0]), 
+                                .E(E[0]), 
+                                .S(S[2:0]), 
+                                .O(O[0]));
+   mux5b1_MUSER_mux5b16  XLXI_3 (.A(A[1]), 
+                                .B(B[1]), 
+                                .C(C[1]), 
+                                .D(D[1]), 
+                                .E(E[1]), 
+                                .S(S[2:0]), 
+                                .O(O[1]));
+   mux5b1_MUSER_mux5b16  XLXI_4 (.A(A[2]), 
+                                .B(B[2]), 
+                                .C(C[2]), 
+                                .D(D[2]), 
+                                .E(E[2]), 
+                                .S(S[2:0]), 
+                                .O(O[2]));
+   mux5b1_MUSER_mux5b16  XLXI_5 (.A(A[3]), 
+                                .B(B[3]), 
+                                .C(C[3]), 
+                                .D(D[3]), 
+                                .E(E[3]), 
+                                .S(S[2:0]), 
+                                .O(O[3]));
+   mux5b1_MUSER_mux5b16  XLXI_13 (.A(A[4]), 
+                                 .B(B[4]), 
+                                 .C(C[4]), 
+                                 .D(D[4]), 
+                                 .E(E[4]), 
+                                 .S(S[2:0]), 
+                                 .O(O[4]));
+   mux5b1_MUSER_mux5b16  XLXI_14 (.A(A[5]), 
+                                 .B(B[5]), 
+                                 .C(C[5]), 
+                                 .D(D[5]), 
+                                 .E(E[5]), 
+                                 .S(S[2:0]), 
+                                 .O(O[5]));
+   mux5b1_MUSER_mux5b16  XLXI_15 (.A(A[6]), 
+                                 .B(B[6]), 
+                                 .C(C[6]), 
+                                 .D(D[6]), 
+                                 .E(E[6]), 
+                                 .S(S[2:0]), 
+                                 .O(O[6]));
+   mux5b1_MUSER_mux5b16  XLXI_16 (.A(A[7]), 
+                                 .B(B[7]), 
+                                 .C(C[7]), 
+                                 .D(D[7]), 
+                                 .E(E[7]), 
+                                 .S(S[2:0]), 
+                                 .O(O[7]));
+   mux5b1_MUSER_mux5b16  XLXI_17 (.A(A[11]), 
+                                 .B(B[11]), 
+                                 .C(C[11]), 
+                                 .D(D[11]), 
+                                 .E(E[11]), 
+                                 .S(S[2:0]), 
+                                 .O(O[11]));
+   mux5b1_MUSER_mux5b16  XLXI_18 (.A(A[10]), 
+                                 .B(B[10]), 
+                                 .C(C[10]), 
+                                 .D(D[10]), 
+                                 .E(E[10]), 
+                                 .S(S[2:0]), 
+                                 .O(O[10]));
+   mux5b1_MUSER_mux5b16  XLXI_19 (.A(A[9]), 
+                                 .B(B[9]), 
+                                 .C(C[9]), 
+                                 .D(D[9]), 
+                                 .E(E[9]), 
+                                 .S(S[2:0]), 
+                                 .O(O[9]));
+   mux5b1_MUSER_mux5b16  XLXI_20 (.A(A[8]), 
+                                 .B(B[8]), 
+                                 .C(C[8]), 
+                                 .D(D[8]), 
+                                 .E(E[8]), 
+                                 .S(S[2:0]), 
+                                 .O(O[8]));
+   mux5b1_MUSER_mux5b16  XLXI_21 (.A(A[12]), 
+                                 .B(B[12]), 
+                                 .C(C[12]), 
+                                 .D(D[12]), 
+                                 .E(E[12]), 
+                                 .S(S[2:0]), 
+                                 .O(O[12]));
+   mux5b1_MUSER_mux5b16  XLXI_22 (.A(A[13]), 
+                                 .B(B[13]), 
+                                 .C(C[13]), 
+                                 .D(D[13]), 
+                                 .E(E[13]), 
+                                 .S(S[2:0]), 
+                                 .O(O[13]));
+   mux5b1_MUSER_mux5b16  XLXI_23 (.A(A[14]), 
+                                 .B(B[14]), 
+                                 .C(C[14]), 
+                                 .D(D[14]), 
+                                 .E(E[14]), 
+                                 .S(S[2:0]), 
+                                 .O(O[14]));
+   mux5b1_MUSER_mux5b16  XLXI_24 (.A(A[15]), 
+                                 .B(B[15]), 
+                                 .C(C[15]), 
+                                 .D(D[15]), 
+                                 .E(E[15]), 
+                                 .S(S[2:0]), 
+                                 .O(O[15]));
+endmodule

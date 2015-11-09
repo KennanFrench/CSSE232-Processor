@@ -22,72 +22,63 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="mux5b16.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="integrationTest.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="integrationTest.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="integrationTest.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="integrationTest.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="integrationTest.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="integrationTest_xst.xrpt"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mux5b1.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux5b1.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux5b1.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mux5b16.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux5b16.vf"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux5b16_mux5b16_sch_tb_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux5b16_mux5b16_sch_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="mux5b16_mux5b16_sch_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux5b16_mux5b16_sch_tb_stx_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux5b16.vf"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1446423267" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1446423267">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1446423375" xil_pn:in_ck="2586495905085843355" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1446423375">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="mux5b16_test.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1446423269" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7604568294771119345" xil_pn:start_ts="1446423269">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1446423988" xil_pn:in_ck="-27071738538890386" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6480924992493370547" xil_pn:start_ts="1446423987">
+    <transform xil_pn:end_ts="1447019432" xil_pn:in_ck="-27071738538890386" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5411813521694447338" xil_pn:start_ts="1447019430">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="mux5b1.vf"/>
       <outfile xil_pn:name="mux5b16.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1446423270" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5301384954288412105" xil_pn:start_ts="1446423270">
+    <transform xil_pn:end_ts="1447019432" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-655147257778183325" xil_pn:start_ts="1447019432">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1446423988" xil_pn:in_ck="4339322509987168873" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1446423988">
+    <transform xil_pn:end_ts="1447019432" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1447019432">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="mux5b1.vf"/>
-      <outfile xil_pn:name="mux5b16.vf"/>
-      <outfile xil_pn:name="mux5b16_test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1446423989" xil_pn:in_ck="4339322509987168873" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8187042480409412950" xil_pn:start_ts="1446423988">
+    <transform xil_pn:end_ts="1447019432" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1639861222259168916" xil_pn:start_ts="1447019432">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="mux5b16_mux5b16_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="mux5b16_mux5b16_sch_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1446423990" xil_pn:in_ck="-2930152739749464464" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-890819440471508755" xil_pn:start_ts="1446423989">
+    <transform xil_pn:end_ts="1447019432" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1447019432">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="mux5b16_mux5b16_sch_tb_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1447019432" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8569055985434439981" xil_pn:start_ts="1447019432">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1447019435" xil_pn:in_ck="1804768462770956878" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1989689034126470127" xil_pn:start_ts="1447019432">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="integrationTest.lso"/>
+      <outfile xil_pn:name="integrationTest.prj"/>
+      <outfile xil_pn:name="integrationTest.syr"/>
+      <outfile xil_pn:name="integrationTest.xst"/>
+      <outfile xil_pn:name="integrationTest_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1447019435" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1691621370563628378" xil_pn:start_ts="1447019435">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 
