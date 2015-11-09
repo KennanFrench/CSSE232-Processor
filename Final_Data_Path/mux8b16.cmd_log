@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym mux8b16 /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/mux8b16.sch /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/mux8b16.sym 

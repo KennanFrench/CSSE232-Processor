@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : mux5b16.vf
-// /___/   /\     Timestamp : 11/01/2015 19:26:28
+// /___/   /\     Timestamp : 11/08/2015 16:50:31
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux5b16/mux5b16.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/mux5b16/mux5b16.sch
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/mux5b16/mux5b16.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/mux5b16/mux5b16.sch
 //Design Name: mux5b16
 //Device: spartan3e
 //Purpose:

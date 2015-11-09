@@ -1,0 +1,107 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Schematic_Control.vf
+// /___/   /\     Timestamp : 11/09/2015 09:44:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Schematic_Control.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Schematic_Control.sch
+//Design Name: Schematic_Control
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Schematic_Control(CLK, 
+                         Functioncode, 
+                         InterruptHandler, 
+                         InterruptIn, 
+                         Opcode, 
+                         ALUOp, 
+                         ALUSrcA, 
+                         ALUSrcB, 
+                         CLR, 
+                         current_state, 
+                         EPCWrite, 
+                         GRegWrite, 
+                         IorD, 
+                         IRegWrite, 
+                         LCDWrite, 
+                         MemRead, 
+                         MemWrite, 
+                         MemWriteData, 
+                         next_state, 
+                         PCData, 
+                         PCWrite, 
+                         PCWriteBeq, 
+                         PCWriteBne, 
+                         SignExt, 
+                         WriteAddr, 
+                         WriteData);
+
+    input CLK;
+    input [3:0] Functioncode;
+    input InterruptHandler;
+    input InterruptIn;
+    input [3:0] Opcode;
+   output [2:0] ALUOp;
+   output ALUSrcA;
+   output [1:0] ALUSrcB;
+   output CLR;
+   output [4:0] current_state;
+   output EPCWrite;
+   output GRegWrite;
+   output [1:0] IorD;
+   output IRegWrite;
+   output LCDWrite;
+   output MemRead;
+   output MemWrite;
+   output [1:0] MemWriteData;
+   output [4:0] next_state;
+   output [2:0] PCData;
+   output PCWrite;
+   output PCWriteBeq;
+   output PCWriteBne;
+   output SignExt;
+   output [1:0] WriteAddr;
+   output [1:0] WriteData;
+   
+   wire G;
+   
+   GND  XLXI_2 (.G(G));
+   STATE_CONTROL_UNIT_2  XLXI_4 (.CLK(CLK), 
+                                .Functioncode(Functioncode[3:0]), 
+                                .InterruptHandler(InterruptHandler), 
+                                .InterruptIn(InterruptIn), 
+                                .Opcode(Opcode[3:0]), 
+                                .Reset(G), 
+                                .ALUOp(ALUOp[2:0]), 
+                                .ALUSrcA(ALUSrcA), 
+                                .ALUSrcB(ALUSrcB[1:0]), 
+                                .CLR(CLR), 
+                                .current_state(current_state[4:0]), 
+                                .EPCWrite(EPCWrite), 
+                                .GRegWrite(GRegWrite), 
+                                .IorD(IorD[1:0]), 
+                                .IRegWrite(IRegWrite), 
+                                .LCDWrite(LCDWrite), 
+                                .MemRead(MemRead), 
+                                .MemWrite(MemWrite), 
+                                .MemWriteData(MemWriteData[1:0]), 
+                                .next_state(next_state[4:0]), 
+                                .PCData(PCData[2:0]), 
+                                .PCWrite(PCWrite), 
+                                .PCWriteBeq(PCWriteBeq), 
+                                .PCWriteBne(PCWriteBne), 
+                                .SignExt(SignExt), 
+                                .WriteAddr(WriteAddr[1:0]), 
+                                .WriteData(WriteData[1:0]));
+endmodule

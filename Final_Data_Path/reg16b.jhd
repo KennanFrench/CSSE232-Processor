@@ -1,0 +1,3 @@
+MODULE reg16b
+	SUBMODULE Memory_Data_Register
+		INSTANCE XLXI_1

@@ -1,0 +1,170 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : decode4b16.vf
+// /___/   /\     Timestamp : 11/09/2015 09:44:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/decode4b16.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/decode4b16.sch
+//Design Name: decode4b16
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module decode4b16(Address, 
+                  enable, 
+                  output0, 
+                  output1, 
+                  output2, 
+                  output3, 
+                  output4, 
+                  output5, 
+                  output6, 
+                  output7, 
+                  output8, 
+                  output9, 
+                  output10, 
+                  output11, 
+                  output12, 
+                  output13, 
+                  output14, 
+                  output15);
+
+    input [3:0] Address;
+    input enable;
+   output output0;
+   output output1;
+   output output2;
+   output output3;
+   output output4;
+   output output5;
+   output output6;
+   output output7;
+   output output8;
+   output output9;
+   output output10;
+   output output11;
+   output output12;
+   output output13;
+   output output14;
+   output output15;
+   
+   wire nA0;
+   wire nA1;
+   wire nA2;
+   wire nA3;
+   
+   INV  XLXI_1 (.I(Address[0]), 
+               .O(nA0));
+   INV  XLXI_2 (.I(Address[1]), 
+               .O(nA1));
+   INV  XLXI_3 (.I(Address[2]), 
+               .O(nA2));
+   INV  XLXI_15 (.I(Address[3]), 
+                .O(nA3));
+   AND5  XLXI_30 (.I0(enable), 
+                 .I1(nA3), 
+                 .I2(nA2), 
+                 .I3(nA1), 
+                 .I4(nA0), 
+                 .O(output0));
+   AND5  XLXI_36 (.I0(enable), 
+                 .I1(nA3), 
+                 .I2(nA2), 
+                 .I3(nA1), 
+                 .I4(Address[0]), 
+                 .O(output1));
+   AND5  XLXI_37 (.I0(enable), 
+                 .I1(nA3), 
+                 .I2(nA2), 
+                 .I3(Address[1]), 
+                 .I4(nA0), 
+                 .O(output2));
+   AND5  XLXI_38 (.I0(enable), 
+                 .I1(nA3), 
+                 .I2(nA2), 
+                 .I3(Address[1]), 
+                 .I4(Address[0]), 
+                 .O(output3));
+   AND5  XLXI_39 (.I0(enable), 
+                 .I1(nA3), 
+                 .I2(Address[2]), 
+                 .I3(nA1), 
+                 .I4(nA0), 
+                 .O(output4));
+   AND5  XLXI_40 (.I0(enable), 
+                 .I1(nA3), 
+                 .I2(Address[2]), 
+                 .I3(nA1), 
+                 .I4(Address[0]), 
+                 .O(output5));
+   AND5  XLXI_41 (.I0(enable), 
+                 .I1(nA3), 
+                 .I2(Address[2]), 
+                 .I3(Address[1]), 
+                 .I4(nA0), 
+                 .O(output6));
+   AND5  XLXI_42 (.I0(enable), 
+                 .I1(nA3), 
+                 .I2(Address[2]), 
+                 .I3(Address[1]), 
+                 .I4(Address[0]), 
+                 .O(output7));
+   AND5  XLXI_43 (.I0(enable), 
+                 .I1(Address[3]), 
+                 .I2(nA2), 
+                 .I3(nA1), 
+                 .I4(nA0), 
+                 .O(output8));
+   AND5  XLXI_44 (.I0(enable), 
+                 .I1(Address[3]), 
+                 .I2(nA2), 
+                 .I3(nA1), 
+                 .I4(Address[0]), 
+                 .O(output9));
+   AND5  XLXI_45 (.I0(enable), 
+                 .I1(Address[3]), 
+                 .I2(nA2), 
+                 .I3(Address[1]), 
+                 .I4(nA0), 
+                 .O(output10));
+   AND5  XLXI_46 (.I0(enable), 
+                 .I1(Address[3]), 
+                 .I2(nA2), 
+                 .I3(Address[1]), 
+                 .I4(Address[0]), 
+                 .O(output11));
+   AND5  XLXI_47 (.I0(enable), 
+                 .I1(Address[3]), 
+                 .I2(Address[2]), 
+                 .I3(nA1), 
+                 .I4(nA0), 
+                 .O(output12));
+   AND5  XLXI_60 (.I0(enable), 
+                 .I1(Address[3]), 
+                 .I2(Address[2]), 
+                 .I3(nA1), 
+                 .I4(Address[0]), 
+                 .O(output13));
+   AND5  XLXI_61 (.I0(enable), 
+                 .I1(Address[3]), 
+                 .I2(Address[2]), 
+                 .I3(Address[1]), 
+                 .I4(nA0), 
+                 .O(output14));
+   AND5  XLXI_62 (.I0(enable), 
+                 .I1(Address[3]), 
+                 .I2(Address[2]), 
+                 .I3(Address[1]), 
+                 .I4(Address[0]), 
+                 .O(output15));
+endmodule
