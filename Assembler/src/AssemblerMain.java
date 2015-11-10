@@ -35,10 +35,10 @@ public class AssemblerMain {
 			// FileInputStream fStream = new FileInputStream(
 			// 		System.getProperty("user.dir") + "\\input.txt");
 			// For Ubuntu.
-//			FileInputStream fStream = new FileInputStream(
-//					System.getProperty("user.dir") + "/input.txt");
+			FileInputStream fStream = new FileInputStream(
+					System.getProperty("user.dir") + "/input.txt");
 			// Uncomment if in Eclipse.
-			 FileInputStream fStream = new FileInputStream("src/input.txt");
+//			 FileInputStream fStream = new FileInputStream("src/input.txt");
 			DataInputStream in = new DataInputStream(fStream);
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
 			String line;
@@ -67,13 +67,13 @@ public class AssemblerMain {
 	private static void writeMachineCodeToFile(ArrayList<String> machineCodeList) {
 		try {
 			// Uncomment if in Eclipse.
-			 PrintWriter writer = new PrintWriter("src/output.coe", "UTF-8");
+//			 PrintWriter writer = new PrintWriter("src/output.coe", "UTF-8");
 			// For Windows.
-			// PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
-			// 		+ "\\output.txt", "UTF-8");
+//			 PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
+//			 		+ "\\output.coe", "UTF-8");
 			// For Ubuntu.
-//			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
-//					+ "/output.txt", "UTF-8");
+			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
+					+ "/output.coe", "UTF-8");
 			for (int i = 0; i < machineCodeList.size(); i++) {
 				if (i == machineCodeList.size() - 1) {
 					writer.println(machineCodeList.get(i).substring(0, machineCodeList.get(i).length() - 1) + ";");
