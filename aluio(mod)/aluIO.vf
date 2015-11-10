@@ -1,0 +1,417 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : aluIO.vf
+// /___/   /\     Timestamp : 11/09/2015 14:25:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/lamd/Documents/csse232/aluio/remote_sources/_/debounce/ipcore_dir -sympath /home/lamd/Documents/csse232/aluio/remote_sources/_/lcdDisplayControl/ipcore_dir -sympath /home/lamd/Documents/csse232/aluio/remote_sources/_/rotaryInputHexOpHex/ipcore_dir -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/aluio/aluIO.vf -w /home/lamd/Documents/csse232/aluio/aluIO.sch
+//Design Name: aluIO
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FD16CE_MXILINX_aluIO(C, 
+                            CE, 
+                            CLR, 
+                            D, 
+                            Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input [15:0] D;
+   output [15:0] Q;
+   
+   
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[0]), 
+              .Q(Q[0]));
+   FDCE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[1]), 
+              .Q(Q[1]));
+   FDCE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[2]), 
+              .Q(Q[2]));
+   FDCE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[3]), 
+              .Q(Q[3]));
+   FDCE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[4]), 
+              .Q(Q[4]));
+   FDCE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[5]), 
+              .Q(Q[5]));
+   FDCE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[6]), 
+              .Q(Q[6]));
+   FDCE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[7]), 
+              .Q(Q[7]));
+   FDCE #( .INIT(1'b0) ) I_Q8 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[8]), 
+              .Q(Q[8]));
+   FDCE #( .INIT(1'b0) ) I_Q9 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[9]), 
+              .Q(Q[9]));
+   FDCE #( .INIT(1'b0) ) I_Q10 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[10]), 
+               .Q(Q[10]));
+   FDCE #( .INIT(1'b0) ) I_Q11 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[11]), 
+               .Q(Q[11]));
+   FDCE #( .INIT(1'b0) ) I_Q12 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[12]), 
+               .Q(Q[12]));
+   FDCE #( .INIT(1'b0) ) I_Q13 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[13]), 
+               .Q(Q[13]));
+   FDCE #( .INIT(1'b0) ) I_Q14 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[14]), 
+               .Q(Q[14]));
+   FDCE #( .INIT(1'b0) ) I_Q15 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[15]), 
+               .Q(Q[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_aluIO(D0, 
+                          D1, 
+                          S0, 
+                          O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module mux2b16_MUSER_aluIO(A, 
+                           B, 
+                           S, 
+                           O);
+
+    input [15:0] A;
+    input [15:0] B;
+    input S;
+   output [15:0] O;
+   
+   
+   (* HU_SET = "XLXI_1_40" *) 
+   M2_1_MXILINX_aluIO  XLXI_1 (.D0(A[1]), 
+                              .D1(B[1]), 
+                              .S0(S), 
+                              .O(O[1]));
+   (* HU_SET = "XLXI_2_41" *) 
+   M2_1_MXILINX_aluIO  XLXI_2 (.D0(A[2]), 
+                              .D1(B[2]), 
+                              .S0(S), 
+                              .O(O[2]));
+   (* HU_SET = "XLXI_3_42" *) 
+   M2_1_MXILINX_aluIO  XLXI_3 (.D0(A[3]), 
+                              .D1(B[3]), 
+                              .S0(S), 
+                              .O(O[3]));
+   (* HU_SET = "XLXI_4_43" *) 
+   M2_1_MXILINX_aluIO  XLXI_4 (.D0(A[4]), 
+                              .D1(B[4]), 
+                              .S0(S), 
+                              .O(O[4]));
+   (* HU_SET = "XLXI_5_44" *) 
+   M2_1_MXILINX_aluIO  XLXI_5 (.D0(A[5]), 
+                              .D1(B[5]), 
+                              .S0(S), 
+                              .O(O[5]));
+   (* HU_SET = "XLXI_6_45" *) 
+   M2_1_MXILINX_aluIO  XLXI_6 (.D0(A[6]), 
+                              .D1(B[6]), 
+                              .S0(S), 
+                              .O(O[6]));
+   (* HU_SET = "XLXI_7_46" *) 
+   M2_1_MXILINX_aluIO  XLXI_7 (.D0(A[7]), 
+                              .D1(B[7]), 
+                              .S0(S), 
+                              .O(O[7]));
+   (* HU_SET = "XLXI_8_47" *) 
+   M2_1_MXILINX_aluIO  XLXI_8 (.D0(A[8]), 
+                              .D1(B[8]), 
+                              .S0(S), 
+                              .O(O[8]));
+   (* HU_SET = "XLXI_9_48" *) 
+   M2_1_MXILINX_aluIO  XLXI_9 (.D0(A[9]), 
+                              .D1(B[9]), 
+                              .S0(S), 
+                              .O(O[9]));
+   (* HU_SET = "XLXI_10_39" *) 
+   M2_1_MXILINX_aluIO  XLXI_10 (.D0(A[0]), 
+                               .D1(B[0]), 
+                               .S0(S), 
+                               .O(O[0]));
+   (* HU_SET = "XLXI_11_52" *) 
+   M2_1_MXILINX_aluIO  XLXI_11 (.D0(A[13]), 
+                               .D1(B[13]), 
+                               .S0(S), 
+                               .O(O[13]));
+   (* HU_SET = "XLXI_13_53" *) 
+   M2_1_MXILINX_aluIO  XLXI_13 (.D0(A[14]), 
+                               .D1(B[14]), 
+                               .S0(S), 
+                               .O(O[14]));
+   (* HU_SET = "XLXI_14_51" *) 
+   M2_1_MXILINX_aluIO  XLXI_14 (.D0(A[12]), 
+                               .D1(B[12]), 
+                               .S0(S), 
+                               .O(O[12]));
+   (* HU_SET = "XLXI_15_50" *) 
+   M2_1_MXILINX_aluIO  XLXI_15 (.D0(A[11]), 
+                               .D1(B[11]), 
+                               .S0(S), 
+                               .O(O[11]));
+   (* HU_SET = "XLXI_16_49" *) 
+   M2_1_MXILINX_aluIO  XLXI_16 (.D0(A[10]), 
+                               .D1(B[10]), 
+                               .S0(S), 
+                               .O(O[10]));
+   (* HU_SET = "XLXI_17_54" *) 
+   M2_1_MXILINX_aluIO  XLXI_17 (.D0(A[15]), 
+                               .D1(B[15]), 
+                               .S0(S), 
+                               .O(O[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module aluIO(a_button, 
+             b_button, 
+             CLK, 
+             e_button, 
+             n_button, 
+             r_button, 
+             switch, 
+             s_button, 
+             w_button, 
+             lcdReady, 
+             lcd_D, 
+             lcd_E, 
+             lcd_rs, 
+             lcd_rw, 
+             led0, 
+             led1, 
+             led2, 
+             led3, 
+             n_button_high, 
+             sf_ce, 
+             sf_oe, 
+             sf_we, 
+             s_button_high, 
+             w_button_high);
+
+    input a_button;
+    input b_button;
+    input CLK;
+    input e_button;
+    input n_button;
+    input r_button;
+    input [3:0] switch;
+    input s_button;
+    input w_button;
+   output lcdReady;
+   output [3:0] lcd_D;
+   output lcd_E;
+   output lcd_rs;
+   output lcd_rw;
+   output led0;
+   output led1;
+   output led2;
+   output led3;
+   output n_button_high;
+   output sf_ce;
+   output sf_oe;
+   output sf_we;
+   output s_button_high;
+   output w_button_high;
+   
+   wire G;
+   wire reset;
+   wire [15:0] Result;
+   wire V;
+   wire XLXN_116;
+   wire XLXN_135;
+   wire XLXN_136;
+   wire XLXN_386;
+   wire [15:0] XLXN_387;
+   wire [15:0] XLXN_388;
+   wire XLXN_401;
+   wire [15:0] XLXN_402;
+   wire XLXN_408;
+   wire [7:0] XLXN_477;
+   wire XLXN_478;
+   wire [15:0] XLXN_479;
+   wire [15:0] XLXN_480;
+   wire [3:0] XLXN_487;
+   wire led1_DUMMY;
+   wire n_button_high_DUMMY;
+   wire w_button_high_DUMMY;
+   wire s_button_high_DUMMY;
+   
+   assign XLXN_479 = 16'h0000;
+   assign led1 = led1_DUMMY;
+   assign n_button_high = n_button_high_DUMMY;
+   assign s_button_high = s_button_high_DUMMY;
+   assign w_button_high = w_button_high_DUMMY;
+   lcd_control  XLXI_1 (.CLEAR(G), 
+                       .CLK(CLK), 
+                       .Count({V, V, V, V}), 
+                       .dataIn(XLXN_477[7:0]), 
+                       .RESET(reset), 
+                       .row(led1_DUMMY), 
+                       .startAddress({G, G, G, G}), 
+                       .Write(XLXN_478), 
+                       .currentAddress(XLXN_487[3:0]), 
+                       .lcdData(lcd_D[3:0]), 
+                       .lcdEnable(lcd_E), 
+                       .lcdReady(lcdReady), 
+                       .lcdRegSel(lcd_rs));
+   BUF  XLXI_3 (.I(switch[0]), 
+               .O(led0));
+   BUF  XLXI_4 (.I(switch[1]), 
+               .O(led1_DUMMY));
+   BUF  XLXI_5 (.I(switch[2]), 
+               .O(led2));
+   BUF  XLXI_6 (.I(switch[3]), 
+               .O(led3));
+   debouncer  XLXI_7 (.button(n_button), 
+                     .clk(CLK), 
+                     .reset(G), 
+                     .button_hi(n_button_high_DUMMY), 
+                     .button_lo(), 
+                     .debutton());
+   VCC  XLXI_8 (.P(V));
+   GND  XLXI_9 (.G(G));
+   debouncer  XLXI_10 (.button(s_button), 
+                      .clk(CLK), 
+                      .reset(G), 
+                      .button_hi(s_button_high_DUMMY), 
+                      .button_lo(), 
+                      .debutton());
+   BUF  XLXI_13 (.I(V), 
+                .O(sf_ce));
+   BUF  XLXI_14 (.I(G), 
+                .O(lcd_rw));
+   BUF  XLXI_17 (.I(V), 
+                .O(sf_we));
+   BUF  XLXI_18 (.I(V), 
+                .O(sf_oe));
+   debounceRotary  XLXI_56 (.A(a_button), 
+                           .B(b_button), 
+                           .CLK(CLK), 
+                           .RESET(G), 
+                           .rot_event(XLXN_136), 
+                           .rot_event_delay(XLXN_116), 
+                           .rot_left(XLXN_135));
+   debouncer  XLXI_60 (.button(r_button), 
+                      .clk(CLK), 
+                      .reset(G), 
+                      .button_hi(XLXN_386), 
+                      .button_lo(), 
+                      .debutton());
+   input_2_hex_op  XLXI_64 (.CLK(CLK), 
+                           .count(XLXN_136), 
+                           .count_up(XLXN_135), 
+                           .inputData(XLXN_480[15:0]), 
+                           .posSel(XLXN_487[3:0]), 
+                           .RESET(reset), 
+                           .shift(XLXN_386), 
+                           .arg1(XLXN_387[15:0]), 
+                           .arg2(XLXN_388[15:0]), 
+                           .lcdData(XLXN_477[7:0]));
+   debouncer  XLXI_124 (.button(w_button), 
+                       .clk(CLK), 
+                       .reset(G), 
+                       .button_hi(w_button_high_DUMMY), 
+                       .button_lo(), 
+                       .debutton());
+   OR2  XLXI_129 (.I0(XLXN_116), 
+                 .I1(w_button_high_DUMMY), 
+                 .O(XLXN_478));
+   mux2b16_MUSER_aluIO  XLXI_130 (.A(XLXN_479[15:0]), 
+                                 .B(Result[15:0]), 
+                                 .S(switch[0]), 
+                                 .O(XLXN_480[15:0]));
+   mux2b16_MUSER_aluIO  XLXI_135 (.A(XLXN_387[15:0]), 
+                                 .B(XLXN_388[15:0]), 
+                                 .S(XLXN_401), 
+                                 .O(XLXN_402[15:0]));
+   AND2B1  XLXI_138 (.I0(n_button_high_DUMMY), 
+                    .I1(s_button_high_DUMMY), 
+                    .O(XLXN_401));
+   (* HU_SET = "XLXI_139_55" *) 
+   FD16CE_MXILINX_aluIO  XLXI_139 (.C(CLK), 
+                                  .CE(XLXN_408), 
+                                  .CLR(G), 
+                                  .D(XLXN_402[15:0]), 
+                                  .Q(Result[15:0]));
+   OR2  XLXI_140 (.I0(n_button_high_DUMMY), 
+                 .I1(s_button_high_DUMMY), 
+                 .O(XLXN_408));
+   debouncer  XLXI_142 (.button(e_button), 
+                       .clk(CLK), 
+                       .reset(G), 
+                       .button_hi(reset), 
+                       .button_lo(), 
+                       .debutton());
+endmodule

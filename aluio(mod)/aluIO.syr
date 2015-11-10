@@ -1,0 +1,1858 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: aluIO.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "aluIO.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "aluIO"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : aluIO
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"remote_sources/_/debounce/ipcore_dir" "remote_sources/_/lcdDisplayControl/ipcore_dir" "remote_sources/_/rotaryInputHexOpHex/ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "remote_sources/_/lcdDisplayControl/ipcore_dir/lcdCounter.v" in library work
+Compiling verilog file "shift9.vf" in library work
+Module <lcdCounter> compiled
+Module <M2_1_MXILINX_shift9> compiled
+Compiling verilog file "mux4b16.vf" in library work
+Module <shift9> compiled
+Module <M2_1_MXILINX_mux4b16> compiled
+Module <M2_1E_MXILINX_mux4b16> compiled
+Module <M16_1E_MXILINX_mux4b16> compiled
+Compiling verilog file "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/opROM.v" in library work
+Module <mux4b16> compiled
+Compiling verilog file "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" in library work
+Module <opROM> compiled
+Compiling verilog file "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/hexROM.v" in library work
+Module <IOcounter4> compiled
+Compiling verilog file "timing.vf" in library work
+Module <hexROM> compiled
+Compiling verilog file "mux8b4.vf" in library work
+Module <timing> compiled
+Module <M2_1E_MXILINX_mux8b4> compiled
+Module <M4_1E_MXILINX_mux8b4> compiled
+Compiling verilog file "mux4b2.vf" in library work
+Module <mux8b4> compiled
+Module <M2_1_MXILINX_mux4b2> compiled
+Compiling verilog file "remote_sources/_/lcdDisplayControl/lcd_write_byte.v" in library work
+Module <mux4b2> compiled
+Compiling verilog file "remote_sources/_/lcdDisplayControl/lcd_pwr_on_init.v" in library work
+Module <lcd_write_byte> compiled
+Compiling verilog file "remote_sources/_/lcdDisplayControl/lcd_control_master.v" in library work
+Module <lcd_pwr_on_init> compiled
+Compiling verilog file "remote_sources/_/lcdDisplayControl/lcd_cfg_display.v" in library work
+Module <lcd_control_master> compiled
+Compiling verilog file "remote_sources/_/debounce/ipcore_dir/debounce_counter.v" in library work
+Module <lcd_cfg_display> compiled
+Compiling verilog file "input_2_hex_op.vf" in library work
+Module <debounce_counter> compiled
+Module <M2_1_MXILINX_input_2_hex_op> compiled
+Module <shift9_MUSER_input_2_hex_op> compiled
+Module <M2_1E_MXILINX_input_2_hex_op> compiled
+Module <M16_1E_MXILINX_input_2_hex_op> compiled
+Module <mux4b16_MUSER_input_2_hex_op> compiled
+Compiling verilog file "lcd_control.vf" in library work
+Module <input_2_hex_op> compiled
+Module <M2_1_MXILINX_lcd_control> compiled
+Module <mux4b2_MUSER_lcd_control> compiled
+Module <M2_1E_MXILINX_lcd_control> compiled
+Module <M4_1E_MXILINX_lcd_control> compiled
+Module <mux8b4_MUSER_lcd_control> compiled
+Module <timing_MUSER_lcd_control> compiled
+Compiling verilog file "debounceRotary.vf" in library work
+Module <lcd_control> compiled
+Compiling verilog file "debouncer.vf" in library work
+Module <debounceRotary> compiled
+Compiling verilog file "mux2b16.vf" in library work
+Module <debouncer> compiled
+Module <M2_1_MXILINX_mux2b16> compiled
+Compiling verilog file "aluIO.vf" in library work
+Module <mux2b16> compiled
+Module <FD16CE_MXILINX_aluIO> compiled
+Module <M2_1_MXILINX_aluIO> compiled
+Module <mux2b16_MUSER_aluIO> compiled
+Module <aluIO> compiled
+No errors in compilation
+Analysis of file <"aluIO.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <aluIO> in library <work>.
+
+Analyzing hierarchy for module <lcd_control> in library <work>.
+
+Analyzing hierarchy for module <debouncer> in library <work>.
+
+Analyzing hierarchy for module <debounceRotary> in library <work>.
+
+Analyzing hierarchy for module <input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <mux2b16_MUSER_aluIO> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <lcd_cfg_display> in library <work> with parameters.
+	CLEAR_DISPLAY = "00000000000000000000000000000100"
+	DONE = "00000000000000000000000000000111"
+	ENTRY_SET = "00000000000000000000000000000010"
+	FUNCTION_SET = "00000000000000000000000000000001"
+	READY = "00000000000000000000000000000000"
+	SET_DISPLAY = "00000000000000000000000000000011"
+	TWO_MS_START = "00000000000000000000000000000101"
+	TWO_MS_WAIT = "00000000000000000000000000000110"
+
+Analyzing hierarchy for module <lcd_pwr_on_init> in library <work> with parameters.
+	DONE = "00000000000000000000000000010011"
+	EIGHT_START = "00000000000000000000000000010001"
+	EIGHT_WAIT = "00000000000000000000000000010010"
+	FIFTEEN_MS_START = "00000000000000000000000000000001"
+	FIFTEEN_MS_WAIT = "00000000000000000000000000000010"
+	FIVE_START = "00000000000000000000000000001011"
+	FIVE_WAIT = "00000000000000000000000000001100"
+	FOUR_START = "00000000000000000000000000001001"
+	FOUR_WAIT = "00000000000000000000000000001010"
+	ONE_START = "00000000000000000000000000000011"
+	ONE_WAIT = "00000000000000000000000000000100"
+	READY = "00000000000000000000000000000000"
+	SEVEN_START = "00000000000000000000000000001111"
+	SEVEN_WAIT = "00000000000000000000000000010000"
+	SIX_START = "00000000000000000000000000001101"
+	SIX_WAIT = "00000000000000000000000000001110"
+	THREE_START = "00000000000000000000000000000111"
+	THREE_WAIT = "00000000000000000000000000001000"
+	TWO_START = "00000000000000000000000000000101"
+	TWO_WAIT = "00000000000000000000000000000110"
+
+Analyzing hierarchy for module <lcd_write_byte> in library <work> with parameters.
+	DONE = "00000000000000000000000000001101"
+	FORTY_US_START = "00000000000000000000000000001011"
+	FORTY_US_WAIT = "00000000000000000000000000001100"
+	HIGH_HOLD_START = "00000000000000000000000000000011"
+	HIGH_HOLD_WAIT = "00000000000000000000000000000100"
+	HIGH_SETUP_DONE = "00000000000000000000000000000010"
+	HIGH_SETUP_START = "00000000000000000000000000000001"
+	LOW_HOLD_START = "00000000000000000000000000001001"
+	LOW_HOLD_WAIT = "00000000000000000000000000001010"
+	LOW_SETUP_DONE = "00000000000000000000000000001000"
+	LOW_SETUP_START = "00000000000000000000000000000111"
+	ONE_US_START = "00000000000000000000000000000101"
+	ONE_US_WAIT = "00000000000000000000000000000110"
+	READY = "00000000000000000000000000000000"
+
+Analyzing hierarchy for module <timing_MUSER_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <mux8b4_MUSER_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <mux4b2_MUSER_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <lcd_control_master> in library <work> with parameters.
+	CFG_DISPLAY = "00000000000000000000000000000010"
+	DISPATCH = "00000000000000000000000000000011"
+	NEXT_BYTE = "00000000000000000000000000000110"
+	PWR_ON_INIT = "00000000000000000000000000000001"
+	SET_ADDR = "00000000000000000000000000000100"
+	WAIT = "00000000000000000000000000000000"
+	WRITE_BYTE = "00000000000000000000000000000101"
+
+Analyzing hierarchy for module <mux4b16_MUSER_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <mux8b4> in library <work>.
+
+Analyzing hierarchy for module <shift9_MUSER_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_aluIO> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M16_1E_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_lcd_control> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_input_2_hex_op> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_mux8b4> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_mux8b4> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <aluIO>.
+Module <aluIO> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_139_55" for instance <XLXI_139> in unit <aluIO>.
+Analyzing module <lcd_control> in library <work>.
+Module <lcd_control> is correct for synthesis.
+ 
+Analyzing module <lcd_cfg_display> in library <work>.
+	CLEAR_DISPLAY = 32'sb00000000000000000000000000000100
+	DONE = 32'sb00000000000000000000000000000111
+	ENTRY_SET = 32'sb00000000000000000000000000000010
+	FUNCTION_SET = 32'sb00000000000000000000000000000001
+	READY = 32'sb00000000000000000000000000000000
+	SET_DISPLAY = 32'sb00000000000000000000000000000011
+	TWO_MS_START = 32'sb00000000000000000000000000000101
+	TWO_MS_WAIT = 32'sb00000000000000000000000000000110
+Module <lcd_cfg_display> is correct for synthesis.
+ 
+Analyzing module <lcd_pwr_on_init> in library <work>.
+	DONE = 32'sb00000000000000000000000000010011
+	EIGHT_START = 32'sb00000000000000000000000000010001
+	EIGHT_WAIT = 32'sb00000000000000000000000000010010
+	FIFTEEN_MS_START = 32'sb00000000000000000000000000000001
+	FIFTEEN_MS_WAIT = 32'sb00000000000000000000000000000010
+	FIVE_START = 32'sb00000000000000000000000000001011
+	FIVE_WAIT = 32'sb00000000000000000000000000001100
+	FOUR_START = 32'sb00000000000000000000000000001001
+	FOUR_WAIT = 32'sb00000000000000000000000000001010
+	ONE_START = 32'sb00000000000000000000000000000011
+	ONE_WAIT = 32'sb00000000000000000000000000000100
+	READY = 32'sb00000000000000000000000000000000
+	SEVEN_START = 32'sb00000000000000000000000000001111
+	SEVEN_WAIT = 32'sb00000000000000000000000000010000
+	SIX_START = 32'sb00000000000000000000000000001101
+	SIX_WAIT = 32'sb00000000000000000000000000001110
+	THREE_START = 32'sb00000000000000000000000000000111
+	THREE_WAIT = 32'sb00000000000000000000000000001000
+	TWO_START = 32'sb00000000000000000000000000000101
+	TWO_WAIT = 32'sb00000000000000000000000000000110
+Module <lcd_pwr_on_init> is correct for synthesis.
+ 
+Analyzing module <lcd_write_byte> in library <work>.
+	DONE = 32'sb00000000000000000000000000001101
+	FORTY_US_START = 32'sb00000000000000000000000000001011
+	FORTY_US_WAIT = 32'sb00000000000000000000000000001100
+	HIGH_HOLD_START = 32'sb00000000000000000000000000000011
+	HIGH_HOLD_WAIT = 32'sb00000000000000000000000000000100
+	HIGH_SETUP_DONE = 32'sb00000000000000000000000000000010
+	HIGH_SETUP_START = 32'sb00000000000000000000000000000001
+	LOW_HOLD_START = 32'sb00000000000000000000000000001001
+	LOW_HOLD_WAIT = 32'sb00000000000000000000000000001010
+	LOW_SETUP_DONE = 32'sb00000000000000000000000000001000
+	LOW_SETUP_START = 32'sb00000000000000000000000000000111
+	ONE_US_START = 32'sb00000000000000000000000000000101
+	ONE_US_WAIT = 32'sb00000000000000000000000000000110
+	READY = 32'sb00000000000000000000000000000000
+Module <lcd_write_byte> is correct for synthesis.
+ 
+Analyzing module <timing_MUSER_lcd_control> in library <work>.
+WARNING:Xst:2211 - "remote_sources/_/lcdDisplayControl/ipcore_dir/lcdCounter.v" line 299: Instantiating black box module <lcdCounter>.
+Module <timing_MUSER_lcd_control> is correct for synthesis.
+ 
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_25> in unit <timing_MUSER_lcd_control>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_25> in unit <timing_MUSER_lcd_control>.
+    Set property "SYN_NOPRUNE = 1" for unit <lcdCounter>.
+Analyzing module <mux8b4_MUSER_lcd_control> in library <work>.
+Module <mux8b4_MUSER_lcd_control> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_44" for instance <XLXI_1> in unit <mux8b4_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_2_45" for instance <XLXI_2> in unit <mux8b4_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_3_46" for instance <XLXI_3> in unit <mux8b4_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_38_48" for instance <XLXI_38> in unit <mux8b4_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_39_49" for instance <XLXI_39> in unit <mux8b4_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_4_47" for instance <XLXI_4> in unit <mux8b4_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_40_50" for instance <XLXI_40> in unit <mux8b4_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_41_51" for instance <XLXI_41> in unit <mux8b4_MUSER_lcd_control>.
+Analyzing module <M4_1E_MXILINX_lcd_control.1> in library <work>.
+Module <M4_1E_MXILINX_lcd_control.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_43" for instance <I_M01> in unit <M4_1E_MXILINX_lcd_control.1>.
+    Set user-defined property "HU_SET =  I_M23_42" for instance <I_M23> in unit <M4_1E_MXILINX_lcd_control.1>.
+Analyzing module <M2_1E_MXILINX_lcd_control.1> in library <work>.
+Module <M2_1E_MXILINX_lcd_control.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_lcd_control.2> in library <work>.
+Module <M2_1E_MXILINX_lcd_control.2> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_lcd_control.2> in library <work>.
+Module <M4_1E_MXILINX_lcd_control.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_43" for instance <I_M01> in unit <M4_1E_MXILINX_lcd_control.2>.
+    Set user-defined property "HU_SET =  I_M23_42" for instance <I_M23> in unit <M4_1E_MXILINX_lcd_control.2>.
+Analyzing module <M4_1E_MXILINX_lcd_control.3> in library <work>.
+Module <M4_1E_MXILINX_lcd_control.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_43" for instance <I_M01> in unit <M4_1E_MXILINX_lcd_control.3>.
+    Set user-defined property "HU_SET =  I_M23_42" for instance <I_M23> in unit <M4_1E_MXILINX_lcd_control.3>.
+Analyzing module <M4_1E_MXILINX_lcd_control.4> in library <work>.
+Module <M4_1E_MXILINX_lcd_control.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_43" for instance <I_M01> in unit <M4_1E_MXILINX_lcd_control.4>.
+    Set user-defined property "HU_SET =  I_M23_42" for instance <I_M23> in unit <M4_1E_MXILINX_lcd_control.4>.
+Analyzing module <M4_1E_MXILINX_lcd_control.5> in library <work>.
+Module <M4_1E_MXILINX_lcd_control.5> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_43" for instance <I_M01> in unit <M4_1E_MXILINX_lcd_control.5>.
+    Set user-defined property "HU_SET =  I_M23_42" for instance <I_M23> in unit <M4_1E_MXILINX_lcd_control.5>.
+Analyzing module <M4_1E_MXILINX_lcd_control.6> in library <work>.
+Module <M4_1E_MXILINX_lcd_control.6> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_43" for instance <I_M01> in unit <M4_1E_MXILINX_lcd_control.6>.
+    Set user-defined property "HU_SET =  I_M23_42" for instance <I_M23> in unit <M4_1E_MXILINX_lcd_control.6>.
+Analyzing module <M4_1E_MXILINX_lcd_control.7> in library <work>.
+Module <M4_1E_MXILINX_lcd_control.7> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_43" for instance <I_M01> in unit <M4_1E_MXILINX_lcd_control.7>.
+    Set user-defined property "HU_SET =  I_M23_42" for instance <I_M23> in unit <M4_1E_MXILINX_lcd_control.7>.
+Analyzing module <M4_1E_MXILINX_lcd_control.8> in library <work>.
+Module <M4_1E_MXILINX_lcd_control.8> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_43" for instance <I_M01> in unit <M4_1E_MXILINX_lcd_control.8>.
+    Set user-defined property "HU_SET =  I_M23_42" for instance <I_M23> in unit <M4_1E_MXILINX_lcd_control.8>.
+Analyzing module <mux4b2_MUSER_lcd_control> in library <work>.
+Module <mux4b2_MUSER_lcd_control> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_38" for instance <XLXI_1> in unit <mux4b2_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_2_39" for instance <XLXI_2> in unit <mux4b2_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_3_40" for instance <XLXI_3> in unit <mux4b2_MUSER_lcd_control>.
+    Set user-defined property "HU_SET =  XLXI_4_41" for instance <XLXI_4> in unit <mux4b2_MUSER_lcd_control>.
+Analyzing module <M2_1_MXILINX_lcd_control.1> in library <work>.
+Module <M2_1_MXILINX_lcd_control.1> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_lcd_control.2> in library <work>.
+Module <M2_1_MXILINX_lcd_control.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_lcd_control.3> in library <work>.
+Module <M2_1_MXILINX_lcd_control.3> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_lcd_control.4> in library <work>.
+Module <M2_1_MXILINX_lcd_control.4> is correct for synthesis.
+ 
+Analyzing module <lcd_control_master> in library <work>.
+	CFG_DISPLAY = 32'sb00000000000000000000000000000010
+	DISPATCH = 32'sb00000000000000000000000000000011
+	NEXT_BYTE = 32'sb00000000000000000000000000000110
+	PWR_ON_INIT = 32'sb00000000000000000000000000000001
+	SET_ADDR = 32'sb00000000000000000000000000000100
+	WAIT = 32'sb00000000000000000000000000000000
+	WRITE_BYTE = 32'sb00000000000000000000000000000101
+Module <lcd_control_master> is correct for synthesis.
+ 
+Analyzing module <debouncer> in library <work>.
+WARNING:Xst:2211 - "remote_sources/_/debounce/ipcore_dir/debounce_counter.v" line 91: Instantiating black box module <debounce_counter>.
+Module <debouncer> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_22> in unit <debouncer>.
+    Set user-defined property "INIT =  0" for instance <XLXI_50> in unit <debouncer>.
+    Set user-defined property "INIT =  0" for instance <XLXI_80> in unit <debouncer>.
+    Set user-defined property "INIT =  0" for instance <XLXI_81> in unit <debouncer>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_85> in unit <debouncer>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_85> in unit <debouncer>.
+    Set property "SYN_NOPRUNE = 1" for unit <debounce_counter>.
+Analyzing module <debounceRotary> in library <work>.
+Module <debounceRotary> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_21> in unit <debounceRotary>.
+    Set user-defined property "INIT =  0" for instance <XLXI_22> in unit <debounceRotary>.
+    Set user-defined property "INIT =  0" for instance <XLXI_23> in unit <debounceRotary>.
+    Set user-defined property "INIT =  0" for instance <XLXI_25> in unit <debounceRotary>.
+    Set user-defined property "INIT =  0" for instance <XLXI_49> in unit <debounceRotary>.
+    Set user-defined property "INIT =  0" for instance <XLXI_70> in unit <debounceRotary>.
+Analyzing module <input_2_hex_op> in library <work>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/hexROM.v" line 590: Instantiating black box module <hexROM>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/opROM.v" line 592: Instantiating black box module <opROM>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" line 634: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" line 639: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" line 644: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" line 649: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" line 654: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" line 659: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" line 664: Instantiating black box module <IOcounter4>.
+WARNING:Xst:2211 - "remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v" line 669: Instantiating black box module <IOcounter4>.
+Module <input_2_hex_op> is correct for synthesis.
+ 
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_77> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_77> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_78> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_78> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_79> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_79> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_80> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_80> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_81> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_81> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_82> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_82> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_83> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_83> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_BLACK_BOX =  1" for instance <XLXI_84> in unit <input_2_hex_op>.
+    Set user-defined property "SYN_NOPRUNE =  1" for instance <XLXI_84> in unit <input_2_hex_op>.
+Analyzing module <mux4b16_MUSER_input_2_hex_op> in library <work>.
+Module <mux4b16_MUSER_input_2_hex_op> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_35" for instance <XLXI_1> in unit <mux4b16_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_17_36" for instance <XLXI_17> in unit <mux4b16_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_19_37" for instance <XLXI_19> in unit <mux4b16_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_20_38" for instance <XLXI_20> in unit <mux4b16_MUSER_input_2_hex_op>.
+Analyzing module <M16_1E_MXILINX_input_2_hex_op.1> in library <work>.
+Module <M16_1E_MXILINX_input_2_hex_op.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_34" for instance <I_M01> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+    Set user-defined property "HU_SET =  I_M23_33" for instance <I_M23> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+    Set user-defined property "HU_SET =  I_M45_32" for instance <I_M45> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+    Set user-defined property "HU_SET =  I_M67_31" for instance <I_M67> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+    Set user-defined property "HU_SET =  I_M89_30" for instance <I_M89> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+    Set user-defined property "HU_SET =  I_MAB_29" for instance <I_MAB> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+    Set user-defined property "HU_SET =  I_MCD_28" for instance <I_MCD> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+    Set user-defined property "HU_SET =  I_MEF_27" for instance <I_MEF> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+    Set user-defined property "HU_SET =  I_O_26" for instance <I_O> in unit <M16_1E_MXILINX_input_2_hex_op.1>.
+Analyzing module <M2_1_MXILINX_input_2_hex_op.10> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.10> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.11> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.11> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.12> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.12> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.13> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.13> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.14> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.14> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.15> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.15> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.16> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.16> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.17> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.17> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_input_2_hex_op> in library <work>.
+Module <M2_1E_MXILINX_input_2_hex_op> is correct for synthesis.
+ 
+Analyzing module <M16_1E_MXILINX_input_2_hex_op.2> in library <work>.
+Module <M16_1E_MXILINX_input_2_hex_op.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_34" for instance <I_M01> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+    Set user-defined property "HU_SET =  I_M23_33" for instance <I_M23> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+    Set user-defined property "HU_SET =  I_M45_32" for instance <I_M45> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+    Set user-defined property "HU_SET =  I_M67_31" for instance <I_M67> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+    Set user-defined property "HU_SET =  I_M89_30" for instance <I_M89> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+    Set user-defined property "HU_SET =  I_MAB_29" for instance <I_MAB> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+    Set user-defined property "HU_SET =  I_MCD_28" for instance <I_MCD> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+    Set user-defined property "HU_SET =  I_MEF_27" for instance <I_MEF> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+    Set user-defined property "HU_SET =  I_O_26" for instance <I_O> in unit <M16_1E_MXILINX_input_2_hex_op.2>.
+Analyzing module <M16_1E_MXILINX_input_2_hex_op.3> in library <work>.
+Module <M16_1E_MXILINX_input_2_hex_op.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_34" for instance <I_M01> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+    Set user-defined property "HU_SET =  I_M23_33" for instance <I_M23> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+    Set user-defined property "HU_SET =  I_M45_32" for instance <I_M45> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+    Set user-defined property "HU_SET =  I_M67_31" for instance <I_M67> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+    Set user-defined property "HU_SET =  I_M89_30" for instance <I_M89> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+    Set user-defined property "HU_SET =  I_MAB_29" for instance <I_MAB> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+    Set user-defined property "HU_SET =  I_MCD_28" for instance <I_MCD> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+    Set user-defined property "HU_SET =  I_MEF_27" for instance <I_MEF> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+    Set user-defined property "HU_SET =  I_O_26" for instance <I_O> in unit <M16_1E_MXILINX_input_2_hex_op.3>.
+Analyzing module <M16_1E_MXILINX_input_2_hex_op.4> in library <work>.
+Module <M16_1E_MXILINX_input_2_hex_op.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_34" for instance <I_M01> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+    Set user-defined property "HU_SET =  I_M23_33" for instance <I_M23> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+    Set user-defined property "HU_SET =  I_M45_32" for instance <I_M45> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+    Set user-defined property "HU_SET =  I_M67_31" for instance <I_M67> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+    Set user-defined property "HU_SET =  I_M89_30" for instance <I_M89> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+    Set user-defined property "HU_SET =  I_MAB_29" for instance <I_MAB> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+    Set user-defined property "HU_SET =  I_MCD_28" for instance <I_MCD> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+    Set user-defined property "HU_SET =  I_MEF_27" for instance <I_MEF> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+    Set user-defined property "HU_SET =  I_O_26" for instance <I_O> in unit <M16_1E_MXILINX_input_2_hex_op.4>.
+Analyzing module <mux8b4> in library <work>.
+Module <mux8b4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_97" for instance <XLXI_1> in unit <mux8b4>.
+    Set user-defined property "HU_SET =  XLXI_2_98" for instance <XLXI_2> in unit <mux8b4>.
+    Set user-defined property "HU_SET =  XLXI_3_99" for instance <XLXI_3> in unit <mux8b4>.
+    Set user-defined property "HU_SET =  XLXI_38_101" for instance <XLXI_38> in unit <mux8b4>.
+    Set user-defined property "HU_SET =  XLXI_39_102" for instance <XLXI_39> in unit <mux8b4>.
+    Set user-defined property "HU_SET =  XLXI_4_100" for instance <XLXI_4> in unit <mux8b4>.
+    Set user-defined property "HU_SET =  XLXI_40_103" for instance <XLXI_40> in unit <mux8b4>.
+    Set user-defined property "HU_SET =  XLXI_41_104" for instance <XLXI_41> in unit <mux8b4>.
+Analyzing module <M4_1E_MXILINX_mux8b4.1> in library <work>.
+Module <M4_1E_MXILINX_mux8b4.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_96" for instance <I_M01> in unit <M4_1E_MXILINX_mux8b4.1>.
+    Set user-defined property "HU_SET =  I_M23_95" for instance <I_M23> in unit <M4_1E_MXILINX_mux8b4.1>.
+Analyzing module <M2_1E_MXILINX_mux8b4.1> in library <work>.
+Module <M2_1E_MXILINX_mux8b4.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_mux8b4.2> in library <work>.
+Module <M2_1E_MXILINX_mux8b4.2> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_mux8b4.2> in library <work>.
+Module <M4_1E_MXILINX_mux8b4.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_96" for instance <I_M01> in unit <M4_1E_MXILINX_mux8b4.2>.
+    Set user-defined property "HU_SET =  I_M23_95" for instance <I_M23> in unit <M4_1E_MXILINX_mux8b4.2>.
+Analyzing module <M4_1E_MXILINX_mux8b4.3> in library <work>.
+Module <M4_1E_MXILINX_mux8b4.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_96" for instance <I_M01> in unit <M4_1E_MXILINX_mux8b4.3>.
+    Set user-defined property "HU_SET =  I_M23_95" for instance <I_M23> in unit <M4_1E_MXILINX_mux8b4.3>.
+Analyzing module <M4_1E_MXILINX_mux8b4.4> in library <work>.
+Module <M4_1E_MXILINX_mux8b4.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_96" for instance <I_M01> in unit <M4_1E_MXILINX_mux8b4.4>.
+    Set user-defined property "HU_SET =  I_M23_95" for instance <I_M23> in unit <M4_1E_MXILINX_mux8b4.4>.
+Analyzing module <M4_1E_MXILINX_mux8b4.5> in library <work>.
+Module <M4_1E_MXILINX_mux8b4.5> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_96" for instance <I_M01> in unit <M4_1E_MXILINX_mux8b4.5>.
+    Set user-defined property "HU_SET =  I_M23_95" for instance <I_M23> in unit <M4_1E_MXILINX_mux8b4.5>.
+Analyzing module <M4_1E_MXILINX_mux8b4.6> in library <work>.
+Module <M4_1E_MXILINX_mux8b4.6> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_96" for instance <I_M01> in unit <M4_1E_MXILINX_mux8b4.6>.
+    Set user-defined property "HU_SET =  I_M23_95" for instance <I_M23> in unit <M4_1E_MXILINX_mux8b4.6>.
+Analyzing module <M4_1E_MXILINX_mux8b4.7> in library <work>.
+Module <M4_1E_MXILINX_mux8b4.7> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_96" for instance <I_M01> in unit <M4_1E_MXILINX_mux8b4.7>.
+    Set user-defined property "HU_SET =  I_M23_95" for instance <I_M23> in unit <M4_1E_MXILINX_mux8b4.7>.
+Analyzing module <M4_1E_MXILINX_mux8b4.8> in library <work>.
+Module <M4_1E_MXILINX_mux8b4.8> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_96" for instance <I_M01> in unit <M4_1E_MXILINX_mux8b4.8>.
+    Set user-defined property "HU_SET =  I_M23_95" for instance <I_M23> in unit <M4_1E_MXILINX_mux8b4.8>.
+Analyzing module <shift9_MUSER_input_2_hex_op> in library <work>.
+Module <shift9_MUSER_input_2_hex_op> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_6> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "INIT =  0" for instance <XLXI_13> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "INIT =  0" for instance <XLXI_14> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "INIT =  0" for instance <XLXI_15> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "INIT =  0" for instance <XLXI_16> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "INIT =  0" for instance <XLXI_17> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "INIT =  0" for instance <XLXI_18> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "INIT =  0" for instance <XLXI_19> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "INIT =  0" for instance <XLXI_20> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_21_25" for instance <XLXI_21> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_56_17" for instance <XLXI_56> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_57_18" for instance <XLXI_57> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_58_24" for instance <XLXI_58> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_59_23" for instance <XLXI_59> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_60_19" for instance <XLXI_60> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_61_22" for instance <XLXI_61> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_62_20" for instance <XLXI_62> in unit <shift9_MUSER_input_2_hex_op>.
+    Set user-defined property "HU_SET =  XLXI_63_21" for instance <XLXI_63> in unit <shift9_MUSER_input_2_hex_op>.
+Analyzing module <M2_1_MXILINX_input_2_hex_op.1> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.1> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.2> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.3> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.3> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.4> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.4> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.5> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.5> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.6> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.6> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.7> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.7> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.8> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.8> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_input_2_hex_op.9> in library <work>.
+Module <M2_1_MXILINX_input_2_hex_op.9> is correct for synthesis.
+ 
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+    Set property "SYN_NOPRUNE = 1" for unit <IOcounter4>.
+Analyzing module <mux2b16_MUSER_aluIO> in library <work>.
+Module <mux2b16_MUSER_aluIO> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_40" for instance <XLXI_1> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_10_39" for instance <XLXI_10> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_11_52" for instance <XLXI_11> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_13_53" for instance <XLXI_13> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_14_51" for instance <XLXI_14> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_15_50" for instance <XLXI_15> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_16_49" for instance <XLXI_16> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_17_54" for instance <XLXI_17> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_2_41" for instance <XLXI_2> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_3_42" for instance <XLXI_3> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_4_43" for instance <XLXI_4> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_5_44" for instance <XLXI_5> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_6_45" for instance <XLXI_6> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_7_46" for instance <XLXI_7> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_8_47" for instance <XLXI_8> in unit <mux2b16_MUSER_aluIO>.
+    Set user-defined property "HU_SET =  XLXI_9_48" for instance <XLXI_9> in unit <mux2b16_MUSER_aluIO>.
+Analyzing module <M2_1_MXILINX_aluIO.1> in library <work>.
+Module <M2_1_MXILINX_aluIO.1> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.2> in library <work>.
+Module <M2_1_MXILINX_aluIO.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.3> in library <work>.
+Module <M2_1_MXILINX_aluIO.3> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.4> in library <work>.
+Module <M2_1_MXILINX_aluIO.4> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.5> in library <work>.
+Module <M2_1_MXILINX_aluIO.5> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.6> in library <work>.
+Module <M2_1_MXILINX_aluIO.6> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.7> in library <work>.
+Module <M2_1_MXILINX_aluIO.7> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.8> in library <work>.
+Module <M2_1_MXILINX_aluIO.8> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.9> in library <work>.
+Module <M2_1_MXILINX_aluIO.9> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.10> in library <work>.
+Module <M2_1_MXILINX_aluIO.10> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.11> in library <work>.
+Module <M2_1_MXILINX_aluIO.11> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.12> in library <work>.
+Module <M2_1_MXILINX_aluIO.12> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.13> in library <work>.
+Module <M2_1_MXILINX_aluIO.13> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.14> in library <work>.
+Module <M2_1_MXILINX_aluIO.14> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.15> in library <work>.
+Module <M2_1_MXILINX_aluIO.15> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_aluIO.16> in library <work>.
+Module <M2_1_MXILINX_aluIO.16> is correct for synthesis.
+ 
+Analyzing module <FD16CE_MXILINX_aluIO> in library <work>.
+Module <FD16CE_MXILINX_aluIO> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_aluIO>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_aluIO>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <lcd_cfg_display>.
+    Related source file is "remote_sources/_/lcdDisplayControl/lcd_cfg_display.v".
+    Found 3-bit register for signal <current_state>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <lcd_cfg_display> synthesized.
+
+
+Synthesizing Unit <lcd_pwr_on_init>.
+    Related source file is "remote_sources/_/lcdDisplayControl/lcd_pwr_on_init.v".
+    Found 5-bit register for signal <current_state>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <lcd_pwr_on_init> synthesized.
+
+
+Synthesizing Unit <lcd_write_byte>.
+    Related source file is "remote_sources/_/lcdDisplayControl/lcd_write_byte.v".
+    Found 4-bit register for signal <current_state>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <lcd_write_byte> synthesized.
+
+
+Synthesizing Unit <lcd_control_master>.
+    Related source file is "remote_sources/_/lcdDisplayControl/lcd_control_master.v".
+    Found 4-bit register for signal <currentAddress>.
+    Found 3-bit register for signal <current_state>.
+    Found 4-bit register for signal <n>.
+    Found 4-bit adder for signal <next_address$addsub0000> created at line 166.
+    Found 4-bit adder for signal <next_n$addsub0000> created at line 167.
+    Found 4-bit comparator greatequal for signal <next_state$cmp_ge0000> created at line 229.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <lcd_control_master> synthesized.
+
+
+Synthesizing Unit <debouncer>.
+    Related source file is "debouncer.vf".
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <debounceRotary>.
+    Related source file is "debounceRotary.vf".
+Unit <debounceRotary> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_aluIO>.
+    Related source file is "aluIO.vf".
+Unit <FD16CE_MXILINX_aluIO> synthesized.
+
+
+Synthesizing Unit <timing_MUSER_lcd_control>.
+    Related source file is "lcd_control.vf".
+Unit <timing_MUSER_lcd_control> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_lcd_control_1>.
+    Related source file is "lcd_control.vf".
+Unit <M2_1E_MXILINX_lcd_control_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_lcd_control_2>.
+    Related source file is "lcd_control.vf".
+Unit <M2_1E_MXILINX_lcd_control_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_lcd_control_1>.
+    Related source file is "lcd_control.vf".
+Unit <M2_1_MXILINX_lcd_control_1> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_lcd_control_2>.
+    Related source file is "lcd_control.vf".
+Unit <M2_1_MXILINX_lcd_control_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_lcd_control_3>.
+    Related source file is "lcd_control.vf".
+Unit <M2_1_MXILINX_lcd_control_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_lcd_control_4>.
+    Related source file is "lcd_control.vf".
+Unit <M2_1_MXILINX_lcd_control_4> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_10>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_10> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_11>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_11> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_12>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_12> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_13>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_13> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_14>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_14> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_15>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_15> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_16>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_16> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_17>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_17> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_input_2_hex_op>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1E_MXILINX_input_2_hex_op> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_mux8b4_1>.
+    Related source file is "mux8b4.vf".
+Unit <M2_1E_MXILINX_mux8b4_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_mux8b4_2>.
+    Related source file is "mux8b4.vf".
+Unit <M2_1E_MXILINX_mux8b4_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_1>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_1> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_2>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_3>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_4>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_4> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_5>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_5> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_6>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_6> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_7>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_7> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_8>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_8> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_input_2_hex_op_9>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M2_1_MXILINX_input_2_hex_op_9> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_1>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_1> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_2>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_3>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_4>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_4> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_5>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_5> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_6>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_6> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_7>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_7> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_8>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_8> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_9>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_9> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_10>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_10> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_11>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_11> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_12>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_12> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_13>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_13> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_14>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_14> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_15>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_15> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_aluIO_16>.
+    Related source file is "aluIO.vf".
+Unit <M2_1_MXILINX_aluIO_16> synthesized.
+
+
+Synthesizing Unit <mux2b16_MUSER_aluIO>.
+    Related source file is "aluIO.vf".
+Unit <mux2b16_MUSER_aluIO> synthesized.
+
+
+Synthesizing Unit <mux4b2_MUSER_lcd_control>.
+    Related source file is "lcd_control.vf".
+Unit <mux4b2_MUSER_lcd_control> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_lcd_control_1>.
+    Related source file is "lcd_control.vf".
+Unit <M4_1E_MXILINX_lcd_control_1> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_lcd_control_2>.
+    Related source file is "lcd_control.vf".
+Unit <M4_1E_MXILINX_lcd_control_2> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_lcd_control_3>.
+    Related source file is "lcd_control.vf".
+Unit <M4_1E_MXILINX_lcd_control_3> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_lcd_control_4>.
+    Related source file is "lcd_control.vf".
+Unit <M4_1E_MXILINX_lcd_control_4> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_lcd_control_5>.
+    Related source file is "lcd_control.vf".
+Unit <M4_1E_MXILINX_lcd_control_5> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_lcd_control_6>.
+    Related source file is "lcd_control.vf".
+Unit <M4_1E_MXILINX_lcd_control_6> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_lcd_control_7>.
+    Related source file is "lcd_control.vf".
+Unit <M4_1E_MXILINX_lcd_control_7> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_lcd_control_8>.
+    Related source file is "lcd_control.vf".
+Unit <M4_1E_MXILINX_lcd_control_8> synthesized.
+
+
+Synthesizing Unit <shift9_MUSER_input_2_hex_op>.
+    Related source file is "input_2_hex_op.vf".
+Unit <shift9_MUSER_input_2_hex_op> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_input_2_hex_op_1>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M16_1E_MXILINX_input_2_hex_op_1> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_input_2_hex_op_2>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M16_1E_MXILINX_input_2_hex_op_2> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_input_2_hex_op_3>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M16_1E_MXILINX_input_2_hex_op_3> synthesized.
+
+
+Synthesizing Unit <M16_1E_MXILINX_input_2_hex_op_4>.
+    Related source file is "input_2_hex_op.vf".
+Unit <M16_1E_MXILINX_input_2_hex_op_4> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_mux8b4_1>.
+    Related source file is "mux8b4.vf".
+Unit <M4_1E_MXILINX_mux8b4_1> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_mux8b4_2>.
+    Related source file is "mux8b4.vf".
+Unit <M4_1E_MXILINX_mux8b4_2> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_mux8b4_3>.
+    Related source file is "mux8b4.vf".
+Unit <M4_1E_MXILINX_mux8b4_3> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_mux8b4_4>.
+    Related source file is "mux8b4.vf".
+Unit <M4_1E_MXILINX_mux8b4_4> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_mux8b4_5>.
+    Related source file is "mux8b4.vf".
+Unit <M4_1E_MXILINX_mux8b4_5> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_mux8b4_6>.
+    Related source file is "mux8b4.vf".
+Unit <M4_1E_MXILINX_mux8b4_6> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_mux8b4_7>.
+    Related source file is "mux8b4.vf".
+Unit <M4_1E_MXILINX_mux8b4_7> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_mux8b4_8>.
+    Related source file is "mux8b4.vf".
+Unit <M4_1E_MXILINX_mux8b4_8> synthesized.
+
+
+Synthesizing Unit <mux8b4_MUSER_lcd_control>.
+    Related source file is "lcd_control.vf".
+Unit <mux8b4_MUSER_lcd_control> synthesized.
+
+
+Synthesizing Unit <mux4b16_MUSER_input_2_hex_op>.
+    Related source file is "input_2_hex_op.vf".
+Unit <mux4b16_MUSER_input_2_hex_op> synthesized.
+
+
+Synthesizing Unit <mux8b4>.
+    Related source file is "mux8b4.vf".
+Unit <mux8b4> synthesized.
+
+
+Synthesizing Unit <lcd_control>.
+    Related source file is "lcd_control.vf".
+Unit <lcd_control> synthesized.
+
+
+Synthesizing Unit <input_2_hex_op>.
+    Related source file is "input_2_hex_op.vf".
+Unit <input_2_hex_op> synthesized.
+
+
+Synthesizing Unit <aluIO>.
+    Related source file is "aluIO.vf".
+Unit <aluIO> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 2
+# Registers                                            : 6
+ 3-bit register                                        : 2
+ 4-bit register                                        : 3
+ 5-bit register                                        : 1
+# Comparators                                          : 1
+ 4-bit comparator greatequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <remote_sources/_/debounce/ipcore_dir/debounce_counter.ngc>.
+Reading core <remote_sources/_/lcdDisplayControl/ipcore_dir/lcdCounter.ngc>.
+Reading core <remote_sources/_/rotaryInputHexOpHex/ipcore_dir/hexROM.ngc>.
+Reading core <remote_sources/_/rotaryInputHexOpHex/ipcore_dir/opROM.ngc>.
+Reading core <remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.ngc>.
+Loading core <debounce_counter> for timing and area information for instance <XLXI_85>.
+Loading core <lcdCounter> for timing and area information for instance <XLXI_25>.
+Loading core <hexROM> for timing and area information for instance <XLXI_33>.
+Loading core <opROM> for timing and area information for instance <XLXI_34>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_77>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_78>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_79>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_80>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_81>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_82>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_83>.
+Loading core <IOcounter4> for timing and area information for instance <XLXI_84>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 2
+# Registers                                            : 71
+ Flip-Flops                                            : 71
+# Comparators                                          : 1
+ 4-bit comparator greatequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <aluIO> ...
+
+Optimizing unit <lcd_cfg_display> ...
+
+Optimizing unit <lcd_pwr_on_init> ...
+
+Optimizing unit <lcd_write_byte> ...
+
+Optimizing unit <debouncer> ...
+
+Optimizing unit <debounceRotary> ...
+
+Optimizing unit <FD16CE_MXILINX_aluIO> ...
+
+Optimizing unit <timing_MUSER_lcd_control> ...
+
+Optimizing unit <M2_1E_MXILINX_lcd_control_1> ...
+
+Optimizing unit <M2_1E_MXILINX_lcd_control_2> ...
+
+Optimizing unit <M2_1_MXILINX_lcd_control_1> ...
+
+Optimizing unit <M2_1_MXILINX_lcd_control_2> ...
+
+Optimizing unit <M2_1_MXILINX_lcd_control_3> ...
+
+Optimizing unit <M2_1_MXILINX_lcd_control_4> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_10> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_11> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_12> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_13> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_14> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_15> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_16> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_17> ...
+
+Optimizing unit <M2_1E_MXILINX_input_2_hex_op> ...
+
+Optimizing unit <M2_1E_MXILINX_mux8b4_1> ...
+
+Optimizing unit <M2_1E_MXILINX_mux8b4_2> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_1> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_2> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_3> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_4> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_5> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_6> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_7> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_8> ...
+
+Optimizing unit <M2_1_MXILINX_input_2_hex_op_9> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_1> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_2> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_3> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_4> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_5> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_6> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_7> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_8> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_9> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_10> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_11> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_12> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_13> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_14> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_15> ...
+
+Optimizing unit <M2_1_MXILINX_aluIO_16> ...
+
+Optimizing unit <lcd_control_master> ...
+
+Optimizing unit <mux2b16_MUSER_aluIO> ...
+
+Optimizing unit <M4_1E_MXILINX_lcd_control_1> ...
+
+Optimizing unit <M4_1E_MXILINX_lcd_control_2> ...
+
+Optimizing unit <M4_1E_MXILINX_lcd_control_3> ...
+
+Optimizing unit <M4_1E_MXILINX_lcd_control_4> ...
+
+Optimizing unit <M4_1E_MXILINX_lcd_control_5> ...
+
+Optimizing unit <M4_1E_MXILINX_lcd_control_6> ...
+
+Optimizing unit <M4_1E_MXILINX_lcd_control_7> ...
+
+Optimizing unit <M4_1E_MXILINX_lcd_control_8> ...
+
+Optimizing unit <shift9_MUSER_input_2_hex_op> ...
+
+Optimizing unit <M16_1E_MXILINX_input_2_hex_op_1> ...
+
+Optimizing unit <M16_1E_MXILINX_input_2_hex_op_2> ...
+
+Optimizing unit <M16_1E_MXILINX_input_2_hex_op_3> ...
+
+Optimizing unit <M16_1E_MXILINX_input_2_hex_op_4> ...
+
+Optimizing unit <M4_1E_MXILINX_mux8b4_1> ...
+
+Optimizing unit <M4_1E_MXILINX_mux8b4_2> ...
+
+Optimizing unit <M4_1E_MXILINX_mux8b4_3> ...
+
+Optimizing unit <M4_1E_MXILINX_mux8b4_4> ...
+
+Optimizing unit <M4_1E_MXILINX_mux8b4_5> ...
+
+Optimizing unit <M4_1E_MXILINX_mux8b4_6> ...
+
+Optimizing unit <M4_1E_MXILINX_mux8b4_7> ...
+
+Optimizing unit <M4_1E_MXILINX_mux8b4_8> ...
+
+Optimizing unit <mux8b4_MUSER_lcd_control> ...
+
+Optimizing unit <mux8b4> ...
+
+Optimizing unit <lcd_control> ...
+
+Optimizing unit <input_2_hex_op> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block aluIO, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : aluIO.ngr
+Top Level Output File Name         : aluIO
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 991
+#      AND2                        : 93
+#      AND2B1                      : 89
+#      AND3                        : 38
+#      AND3B1                      : 36
+#      AND3B2                      : 1
+#      AND4                        : 3
+#      BUF                         : 10
+#      GND                         : 9
+#      INV                         : 15
+#      LUT1                        : 88
+#      LUT2                        : 42
+#      LUT2_D                      : 2
+#      LUT2_L                      : 5
+#      LUT3                        : 32
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 62
+#      LUT4_D                      : 2
+#      LUT4_L                      : 9
+#      MUXCY                       : 118
+#      MUXF5                       : 25
+#      MUXF5_L                     : 16
+#      MUXF6                       : 8
+#      OR2                         : 132
+#      OR3                         : 2
+#      VCC                         : 8
+#      XNOR2                       : 1
+#      XOR2                        : 10
+#      XORCY                       : 132
+# FlipFlops/Latches                : 211
+#      FDC                         : 30
+#      FDCE                        : 32
+#      FDCP                        : 3
+#      FDCPE                       : 9
+#      FDRE                        : 137
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 11
+#      OBUF                        : 18
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      130  out of   4656     2%  
+ Number of Slice Flip Flops:            211  out of   9312     2%  
+ Number of 4 input LUTs:                260  out of   9312     2%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    232    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 211   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------+-------------------------------------+-------+
+Control Signal                                          | Buffer(FF name)                     | Load  |
+--------------------------------------------------------+-------------------------------------+-------+
+G(XLXI_9:G)                                             | NONE(XLXI_1/XLXI_30/current_state_0)| 54    |
+XLXI_1/XLXI_30/currentAddress_or0000(XLXI_142/XLXI_80:Q)| NONE(XLXI_1/XLXI_2/current_state_0) | 32    |
+--------------------------------------------------------+-------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.740ns (Maximum Frequency: 148.368MHz)
+   Minimum input arrival time before clock: 6.580ns
+   Maximum output required time after clock: 21.095ns
+   Maximum combinational path delay: 22.565ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.740ns (frequency: 148.368MHz)
+  Total number of paths / destination ports: 3117 / 521
+-------------------------------------------------------------------------
+Delay:               6.740ns (Levels of Logic = 16)
+  Source:            XLXI_142/XLXI_85/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_q.i_simple.qreg/fd/output_2 (FF)
+  Destination:       XLXI_142/XLXI_85/U0/i_synth/i_baseblox.i_baseblox_counter/q_thresh0_i (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_142/XLXI_85/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_q.i_simple.qreg/fd/output_2 to XLXI_142/XLXI_85/U0/i_synth/i_baseblox.i_baseblox_counter/q_thresh0_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.591   0.595  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_q.i_simple.qreg/fd/output_2 (q<1>)
+     LUT1:I0->O            1   0.704   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[1].carrymux_rt (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[1].carrymux_rt)
+     MUXCY:S->O            1   0.464   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[1].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<1>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[2].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<2>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[3].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<3>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[4].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<4>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[5].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<5>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[6].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<6>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[7].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<7>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[8].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<8>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[9].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<9>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[10].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<10>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[11].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<11>)
+     MUXCY:CI->O           1   0.059   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[12].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/carry_simple<12>)
+     XORCY:CI->O           2   0.804   0.622  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut4.i_lut4_addsub/i_simple_model.i_gt_1.carrychaingen[13].carryxor (U0/i_synth/i_baseblox.i_baseblox_counter/q_next<13>)
+     LUT2:I0->O            1   0.704   0.595  U0/i_synth/i_baseblox.i_baseblox_counter/thresh0_i_cmp_eq00000 (U0/i_synth/i_baseblox.i_baseblox_counter/thresh0_i_cmp_eq00000)
+     LUT4:I0->O            1   0.704   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/thresh0_i_cmp_eq000042 (U0/i_synth/i_baseblox.i_baseblox_counter/thresh0_i)
+     FDRE:D                    0.308          U0/i_synth/i_baseblox.i_baseblox_counter/q_thresh0_i
+    ----------------------------------------
+    Total                      6.740ns (4.928ns logic, 1.812ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 98 / 92
+-------------------------------------------------------------------------
+Offset:              6.580ns (Levels of Logic = 5)
+  Source:            a_button (PAD)
+  Destination:       XLXI_56/XLXI_49 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: a_button to XLXI_56/XLXI_49
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.531  a_button_IBUF (a_button_IBUF)
+     INV:I->O              2   0.704   0.447  XLXI_56/XLXI_69 (XLXI_56/XLXN_29)
+     AND2:I1->O            1   0.704   0.420  XLXI_56/XLXI_45 (XLXI_56/XLXN_23)
+     OR2:I0->O             1   0.704   0.420  XLXI_56/XLXI_46 (XLXI_56/XLXN_24)
+     AND2:I1->O            1   0.704   0.420  XLXI_56/XLXI_48 (XLXI_56/XLXN_26)
+     FDC:D                     0.308          XLXI_56/XLXI_49
+    ----------------------------------------
+    Total                      6.580ns (4.342ns logic, 2.238ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 2041 / 10
+-------------------------------------------------------------------------
+Offset:              21.095ns (Levels of Logic = 29)
+  Source:            XLXI_139/I_Q15 (FF)
+  Destination:       lcd_D<3> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_139/I_Q15 to lcd_D<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.591   0.420  I_Q15 (Q<15>)
+     end scope: 'XLXI_139'
+     begin scope: 'XLXI_130/XLXI_17'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_130/XLXI_17'
+     begin scope: 'XLXI_64/XLXI_30/XLXI_20'
+     begin scope: 'I_MAB'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_8 (O)
+     end scope: 'I_MAB'
+     MUXF5_L:I1->LO        1   0.321   0.000  I_M8B (M8B)
+     MUXF6:I0->O           1   0.521   0.420  I_M8F (MBF)
+     begin scope: 'I_O'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O            12   0.704   1.136  I_36_38 (O)
+     end scope: 'I_O'
+     end scope: 'XLXI_64/XLXI_30/XLXI_20'
+     begin scope: 'XLXI_64/XLXI_34'
+     LUT3:I0->O            1   0.704   0.420  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mrom_spo_int_rom000061 (spo<6>)
+     end scope: 'XLXI_64/XLXI_34'
+     begin scope: 'XLXI_64/XLXI_35/XLXI_40'
+     begin scope: 'I_M01'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M01'
+     MUXF5:I0->O           1   0.321   0.420  I_O (O)
+     end scope: 'XLXI_64/XLXI_35/XLXI_40'
+     begin scope: 'XLXI_1/XLXI_23/XLXI_40'
+     begin scope: 'I_M23'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M23'
+     MUXF5:I1->O           1   0.321   0.420  I_O (O)
+     end scope: 'XLXI_1/XLXI_23/XLXI_40'
+     begin scope: 'XLXI_1/XLXI_29/XLXI_3'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_1/XLXI_29/XLXI_3'
+     OBUF:I->O                 3.272          lcd_D_2_OBUF (lcd_D<2>)
+    ----------------------------------------
+    Total                     21.095ns (14.499ns logic, 6.596ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 357 / 8
+-------------------------------------------------------------------------
+Delay:               22.565ns (Levels of Logic = 29)
+  Source:            switch<0> (PAD)
+  Destination:       lcd_D<3> (PAD)
+
+  Data Path: switch<0> to lcd_D<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.218   1.263  switch_0_IBUF (switch_0_IBUF)
+     begin scope: 'XLXI_130/XLXI_3'
+     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_130/XLXI_3'
+     begin scope: 'XLXI_64/XLXI_30/XLXI_20'
+     begin scope: 'I_MEF'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.000  I_36_8 (O)
+     end scope: 'I_MEF'
+     MUXF5_L:I1->LO        1   0.321   0.000  I_MCF (MCF)
+     MUXF6:I1->O           1   0.521   0.420  I_M8F (MBF)
+     begin scope: 'I_O'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O            12   0.704   1.136  I_36_38 (O)
+     end scope: 'I_O'
+     end scope: 'XLXI_64/XLXI_30/XLXI_20'
+     begin scope: 'XLXI_64/XLXI_34'
+     LUT3:I0->O            1   0.704   0.420  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mrom_spo_int_rom000061 (spo<6>)
+     end scope: 'XLXI_64/XLXI_34'
+     begin scope: 'XLXI_64/XLXI_35/XLXI_40'
+     begin scope: 'I_M01'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M01'
+     MUXF5:I0->O           1   0.321   0.420  I_O (O)
+     end scope: 'XLXI_64/XLXI_35/XLXI_40'
+     begin scope: 'XLXI_1/XLXI_23/XLXI_40'
+     begin scope: 'I_M23'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M23'
+     MUXF5:I1->O           1   0.321   0.420  I_O (O)
+     end scope: 'XLXI_1/XLXI_23/XLXI_40'
+     begin scope: 'XLXI_1/XLXI_29/XLXI_3'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_1/XLXI_29/XLXI_3'
+     OBUF:I->O                 3.272          lcd_D_2_OBUF (lcd_D<2>)
+    ----------------------------------------
+    Total                     22.565ns (15.126ns logic, 7.439ns route)
+                                       (67.0% logic, 33.0% route)
+
+=========================================================================
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_142/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_142/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_124/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_124/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_60/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_60/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_10/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_10/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_7/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_7/XLXI_85.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_1/XLXI_5/XLXI_25.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_1/XLXI_5/XLXI_25.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_64/XLXI_84.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_64/XLXI_84.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_64/XLXI_83.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_64/XLXI_83.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_64/XLXI_82.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_64/XLXI_82.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_64/XLXI_81.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_64/XLXI_81.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_64/XLXI_80.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_64/XLXI_80.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_64/XLXI_79.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_64/XLXI_79.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_64/XLXI_78.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_64/XLXI_78.
+WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to XLXI_64/XLXI_77.
+WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to XLXI_64/XLXI_77.
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.13 secs
+ 
+--> 
+
+
+Total memory usage is 540896 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   40 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

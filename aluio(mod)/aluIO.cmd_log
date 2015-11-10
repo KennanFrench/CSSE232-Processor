@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "/home/lamd/Documents/csse232/aluio/aluIO.xst" -ofn "/home/lamd/Documents/csse232/aluio/aluIO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd remote_sources/_/debounce/ipcore_dir -sd remote_sources/_/lcdDisplayControl/ipcore_dir -sd remote_sources/_/rotaryInputHexOpHex/ipcore_dir -nt timestamp -uc aluIO.ucf -p xc3s500e-fg320-4 aluIO.ngc aluIO.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aluIO_map.ncd aluIO.ngd aluIO.pcf 
+par -w -intstyle ise -ol high -t 1 aluIO_map.ncd aluIO.ncd aluIO.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aluIO.twx aluIO.ncd -o aluIO.twr aluIO.pcf -ucf aluIO.ucf 
+bitgen -intstyle ise -f aluIO.ut aluIO.ncd 
+xst -intstyle ise -ifn "/home/lamd/Documents/csse232/aluio/aluIO.xst" -ofn "/home/lamd/Documents/csse232/aluio/aluIO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd remote_sources/_/debounce/ipcore_dir -sd remote_sources/_/lcdDisplayControl/ipcore_dir -sd remote_sources/_/rotaryInputHexOpHex/ipcore_dir -nt timestamp -uc aluIO.ucf -p xc3s500e-fg320-4 aluIO.ngc aluIO.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aluIO_map.ncd aluIO.ngd aluIO.pcf 
+par -w -intstyle ise -ol high -t 1 aluIO_map.ncd aluIO.ncd aluIO.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aluIO.twx aluIO.ncd -o aluIO.twr aluIO.pcf -ucf aluIO.ucf 
+bitgen -intstyle ise -f aluIO.ut aluIO.ncd 
+xst -intstyle ise -ifn "/home/lamd/Documents/csse232/aluio/aluIO.xst" -ofn "/home/lamd/Documents/csse232/aluio/aluIO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd remote_sources/_/debounce/ipcore_dir -sd remote_sources/_/lcdDisplayControl/ipcore_dir -sd remote_sources/_/rotaryInputHexOpHex/ipcore_dir -nt timestamp -uc aluIO.ucf -p xc3s500e-fg320-4 aluIO.ngc aluIO.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aluIO_map.ncd aluIO.ngd aluIO.pcf 
+par -w -intstyle ise -ol high -t 1 aluIO_map.ncd aluIO.ncd aluIO.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aluIO.twx aluIO.ncd -o aluIO.twr aluIO.pcf -ucf aluIO.ucf 
+bitgen -intstyle ise -f aluIO.ut aluIO.ncd 
+xst -intstyle ise -ifn "/home/lamd/Documents/csse232/aluio/aluIO.xst" -ofn "/home/lamd/Documents/csse232/aluio/aluIO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd remote_sources/_/debounce/ipcore_dir -sd remote_sources/_/lcdDisplayControl/ipcore_dir -sd remote_sources/_/rotaryInputHexOpHex/ipcore_dir -nt timestamp -uc aluIO.ucf -p xc3s500e-fg320-4 aluIO.ngc aluIO.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aluIO_map.ncd aluIO.ngd aluIO.pcf 
+par -w -intstyle ise -ol high -t 1 aluIO_map.ncd aluIO.ncd aluIO.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aluIO.twx aluIO.ncd -o aluIO.twr aluIO.pcf -ucf aluIO.ucf 
+bitgen -intstyle ise -f aluIO.ut aluIO.ncd 
+xst -intstyle ise -ifn "/home/lamd/Documents/csse232/aluio/aluIO.xst" -ofn "/home/lamd/Documents/csse232/aluio/aluIO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd remote_sources/_/debounce/ipcore_dir -sd remote_sources/_/lcdDisplayControl/ipcore_dir -sd remote_sources/_/rotaryInputHexOpHex/ipcore_dir -nt timestamp -uc aluIO.ucf -p xc3s500e-fg320-4 aluIO.ngc aluIO.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aluIO_map.ncd aluIO.ngd aluIO.pcf 
+par -w -intstyle ise -ol high -t 1 aluIO_map.ncd aluIO.ncd aluIO.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aluIO.twx aluIO.ncd -o aluIO.twr aluIO.pcf -ucf aluIO.ucf 
+bitgen -intstyle ise -f aluIO.ut aluIO.ncd 
+xst -intstyle ise -ifn "/home/lamd/Documents/csse232/aluio/aluIO.xst" -ofn "/home/lamd/Documents/csse232/aluio/aluIO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd remote_sources/_/debounce/ipcore_dir -sd remote_sources/_/lcdDisplayControl/ipcore_dir -sd remote_sources/_/rotaryInputHexOpHex/ipcore_dir -nt timestamp -uc aluIO.ucf -p xc3s500e-fg320-4 aluIO.ngc aluIO.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aluIO_map.ncd aluIO.ngd aluIO.pcf 
+par -w -intstyle ise -ol high -t 1 aluIO_map.ncd aluIO.ncd aluIO.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aluIO.twx aluIO.ncd -o aluIO.twr aluIO.pcf -ucf aluIO.ucf 
+bitgen -intstyle ise -f aluIO.ut aluIO.ncd 
+xst -intstyle ise -ifn "/home/lamd/Documents/csse232/aluio/aluIO.xst" -ofn "/home/lamd/Documents/csse232/aluio/aluIO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd remote_sources/_/debounce/ipcore_dir -sd remote_sources/_/lcdDisplayControl/ipcore_dir -sd remote_sources/_/rotaryInputHexOpHex/ipcore_dir -nt timestamp -uc aluIO.ucf -p xc3s500e-fg320-4 aluIO.ngc aluIO.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aluIO_map.ncd aluIO.ngd aluIO.pcf 
+par -w -intstyle ise -ol high -t 1 aluIO_map.ncd aluIO.ncd aluIO.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aluIO.twx aluIO.ncd -o aluIO.twr aluIO.pcf -ucf aluIO.ucf 
+bitgen -intstyle ise -f aluIO.ut aluIO.ncd 

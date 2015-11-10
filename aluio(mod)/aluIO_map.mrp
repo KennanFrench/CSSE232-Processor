@@ -1,0 +1,346 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'aluIO'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o aluIO_map.ncd aluIO.ngd aluIO.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon Nov  9 14:25:30 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    4
+Logic Utilization:
+  Number of Slice Flip Flops:           206 out of   9,312    2%
+  Number of 4 input LUTs:               289 out of   9,312    3%
+Logic Distribution:
+  Number of occupied Slices:            228 out of   4,656    4%
+    Number of Slices containing only related logic:     228 out of     228 100%
+    Number of Slices containing unrelated logic:          0 out of     228   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         387 out of   9,312    4%
+    Number used as logic:               289
+    Number used as a route-thru:         98
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 30 out of     232   12%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                2.75
+
+Peak Memory Usage:  627 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:Pack:266 - The function generator XLXI_64/XLXI_47 failed to merge with
+   F5 multiplexer XLXI_64/XLXI_35/XLXI_38/I_O.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_64/XLXI_47 failed to merge with
+   F5 multiplexer XLXI_64/XLXI_35/XLXI_1/I_O.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_64/XLXI_47 failed to merge with
+   F5 multiplexer XLXI_64/XLXI_35/XLXI_3/I_O.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_64/XLXI_47 failed to merge with
+   F5 multiplexer XLXI_64/XLXI_35/XLXI_4/I_O.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@clive.csse.rose-hulman.edu'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc3s500e' is a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal CLK are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  17 block(s) removed
+  92 block(s) optimized away
+  15 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_1/XLXI_5/XLXI_16" (BUF) removed.
+Loadless block "XLXI_64/XLXI_43/XLXI_68" (AND) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "XLXI_10/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_10/XLXI_65" (AND) removed.
+The signal "XLXI_10/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_10/XLXI_83" (OR) removed.
+  The signal "XLXI_10/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_10/XLXI_81" (FF) removed.
+The signal "XLXI_124/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_124/XLXI_65" (AND) removed.
+The signal "XLXI_124/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_124/XLXI_83" (OR) removed.
+  The signal "XLXI_124/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_124/XLXI_81" (FF) removed.
+The signal "XLXI_142/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_142/XLXI_65" (AND) removed.
+The signal "XLXI_142/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_142/XLXI_83" (OR) removed.
+  The signal "XLXI_142/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_142/XLXI_81" (FF) removed.
+The signal "XLXI_60/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_60/XLXI_65" (AND) removed.
+The signal "XLXI_60/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_60/XLXI_83" (OR) removed.
+  The signal "XLXI_60/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_60/XLXI_81" (FF) removed.
+The signal "XLXI_7/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_7/XLXI_65" (AND) removed.
+The signal "XLXI_7/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_7/XLXI_83" (OR) removed.
+  The signal "XLXI_7/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_7/XLXI_81" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+AND3B1 		XLXI_1/XLXI_23/XLXI_1/I_M23/I_36_31
+AND3B1 		XLXI_1/XLXI_23/XLXI_2/I_M23/I_36_31
+AND3B1 		XLXI_1/XLXI_23/XLXI_3/I_M01/I_36_31
+AND3B1 		XLXI_1/XLXI_23/XLXI_3/I_M23/I_36_31
+AND3 		XLXI_1/XLXI_23/XLXI_38/I_M01/I_36_30
+AND3B1 		XLXI_1/XLXI_23/XLXI_38/I_M23/I_36_31
+AND3B1 		XLXI_1/XLXI_23/XLXI_39/I_M23/I_36_31
+AND3B1 		XLXI_1/XLXI_23/XLXI_4/I_M01/I_36_31
+AND3B1 		XLXI_1/XLXI_23/XLXI_4/I_M23/I_36_31
+AND3 		XLXI_1/XLXI_23/XLXI_40/I_M01/I_36_30
+AND3B1 		XLXI_1/XLXI_23/XLXI_40/I_M01/I_36_31
+OR2 		XLXI_1/XLXI_23/XLXI_40/I_M01/I_36_38
+AND3 		XLXI_1/XLXI_23/XLXI_41/I_M01/I_36_30
+AND3B1 		XLXI_1/XLXI_23/XLXI_41/I_M01/I_36_31
+OR2 		XLXI_1/XLXI_23/XLXI_41/I_M01/I_36_38
+GND 		XLXI_1/XLXI_5/XLXI_25/XST_GND
+VCC 		XLXI_1/XLXI_5/XLXI_25/XST_VCC
+GND 		XLXI_10/XLXI_85/XST_GND
+VCC 		XLXI_10/XLXI_85/XST_VCC
+GND 		XLXI_124/XLXI_85/XST_GND
+VCC 		XLXI_124/XLXI_85/XST_VCC
+BUF 		XLXI_13
+AND2B1 		XLXI_130/XLXI_1/I_36_7
+AND2B1 		XLXI_130/XLXI_10/I_36_7
+AND2B1 		XLXI_130/XLXI_11/I_36_7
+AND2B1 		XLXI_130/XLXI_13/I_36_7
+AND2B1 		XLXI_130/XLXI_14/I_36_7
+AND2B1 		XLXI_130/XLXI_15/I_36_7
+AND2B1 		XLXI_130/XLXI_16/I_36_7
+AND2B1 		XLXI_130/XLXI_17/I_36_7
+AND2B1 		XLXI_130/XLXI_2/I_36_7
+AND2B1 		XLXI_130/XLXI_3/I_36_7
+AND2B1 		XLXI_130/XLXI_4/I_36_7
+AND2B1 		XLXI_130/XLXI_5/I_36_7
+AND2B1 		XLXI_130/XLXI_6/I_36_7
+AND2B1 		XLXI_130/XLXI_7/I_36_7
+AND2B1 		XLXI_130/XLXI_8/I_36_7
+AND2B1 		XLXI_130/XLXI_9/I_36_7
+BUF 		XLXI_14
+GND 		XLXI_142/XLXI_85/XST_GND
+VCC 		XLXI_142/XLXI_85/XST_VCC
+BUF 		XLXI_17
+BUF 		XLXI_18
+GND 		XLXI_60/XLXI_85/XST_GND
+VCC 		XLXI_60/XLXI_85/XST_VCC
+AND2B1 		XLXI_64/XLXI_30/XLXI_1/I_M45/I_36_7
+OR2 		XLXI_64/XLXI_30/XLXI_1/I_M45/I_36_8
+AND2 		XLXI_64/XLXI_30/XLXI_1/I_M45/I_36_9
+AND2B1 		XLXI_64/XLXI_30/XLXI_1/I_MAB/I_36_7
+AND2 		XLXI_64/XLXI_30/XLXI_1/I_MEF/I_36_9
+AND2B1 		XLXI_64/XLXI_30/XLXI_17/I_MAB/I_36_7
+AND2B1 		XLXI_64/XLXI_30/XLXI_19/I_M45/I_36_7
+OR2 		XLXI_64/XLXI_30/XLXI_19/I_M45/I_36_8
+AND2 		XLXI_64/XLXI_30/XLXI_19/I_M45/I_36_9
+AND2B1 		XLXI_64/XLXI_30/XLXI_19/I_MAB/I_36_7
+AND2 		XLXI_64/XLXI_30/XLXI_19/I_MEF/I_36_9
+AND2B1 		XLXI_64/XLXI_30/XLXI_20/I_MAB/I_36_7
+GND 		XLXI_64/XLXI_33/XST_GND
+GND 		XLXI_64/XLXI_34/XST_GND
+VCC 		XLXI_64/XLXI_34/XST_VCC
+AND3 		XLXI_64/XLXI_35/XLXI_1/I_M23/I_36_30
+AND3 		XLXI_64/XLXI_35/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_64/XLXI_35/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_64/XLXI_35/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_64/XLXI_35/XLXI_3/I_M23/I_36_30
+AND3 		XLXI_64/XLXI_35/XLXI_38/I_M23/I_36_30
+AND3 		XLXI_64/XLXI_35/XLXI_4/I_M23/I_36_30
+AND3 		XLXI_64/XLXI_35/XLXI_40/I_M23/I_36_30
+AND3B1 		XLXI_64/XLXI_35/XLXI_40/I_M23/I_36_31
+OR2 		XLXI_64/XLXI_35/XLXI_40/I_M23/I_36_38
+AND3 		XLXI_64/XLXI_35/XLXI_41/I_M01/I_36_30
+AND3B1 		XLXI_64/XLXI_35/XLXI_41/I_M01/I_36_31
+OR2 		XLXI_64/XLXI_35/XLXI_41/I_M01/I_36_38
+AND3 		XLXI_64/XLXI_35/XLXI_41/I_M23/I_36_30
+AND3B1 		XLXI_64/XLXI_35/XLXI_41/I_M23/I_36_31
+OR2 		XLXI_64/XLXI_35/XLXI_41/I_M23/I_36_38
+AND2B1 		XLXI_64/XLXI_43/XLXI_21/I_36_7
+AND2B1 		XLXI_64/XLXI_43/XLXI_56/I_36_7
+AND2B1 		XLXI_64/XLXI_43/XLXI_57/I_36_7
+AND2B1 		XLXI_64/XLXI_43/XLXI_58/I_36_7
+AND2B1 		XLXI_64/XLXI_43/XLXI_59/I_36_7
+AND2B1 		XLXI_64/XLXI_43/XLXI_60/I_36_7
+AND2B1 		XLXI_64/XLXI_43/XLXI_61/I_36_7
+AND2B1 		XLXI_64/XLXI_43/XLXI_62/I_36_7
+AND2B1 		XLXI_64/XLXI_43/XLXI_63/I_36_7
+GND 		XLXI_7/XLXI_85/XST_GND
+VCC 		XLXI_7/XLXI_85/XST_VCC
+VCC 		XLXI_8
+GND 		XLXI_9
+OR2 		XLXI_64/XLXI_30/XLXI_17/I_M45/I_36_8
+OR2 		XLXI_64/XLXI_30/XLXI_20/I_M45/I_36_8
+OR2 		XLXI_64/XLXI_35/XLXI_39/I_M23/I_36_38
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK                                | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| a_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| b_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| e_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| lcdReady                           | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| lcd_D<0>                           | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_D<1>                           | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_D<2>                           | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_D<3>                           | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_E                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_rs                             | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_rw                             | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| led0                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led1                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led2                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led3                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| n_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| n_button_high                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| r_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| s_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| s_button_high                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sf_ce                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| sf_oe                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| sf_we                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| switch<0>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch<1>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch<2>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch<3>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| w_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| w_button_high                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

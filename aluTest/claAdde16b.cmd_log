@@ -1,3 +1,8 @@
 sch2sym -intstyle ise -family spartan3e -refsym claAdde16b /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.sym 
 sch2sym -intstyle ise -family spartan3e -refsym claAdde16b /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym claAdde16b /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.sym 
+xst -intstyle ise -ifn "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.xst" -ofn "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluTest/claAdde16b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 claAdde16b.ngc claAdde16b.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o claAdde16b_map.ncd claAdde16b.ngd claAdde16b.pcf 
+par -w -intstyle ise -ol high -t 1 claAdde16b_map.ncd claAdde16b.ncd claAdde16b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml claAdde16b.twx claAdde16b.ncd -o claAdde16b.twr claAdde16b.pcf 
