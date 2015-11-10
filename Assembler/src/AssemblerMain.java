@@ -27,6 +27,8 @@ public class AssemblerMain {
 		HashMap<String, String> registerMap = new HashMap<>();
 		initializeRegistersMap(registerMap);
 		ArrayList<String> machineCodeList = new ArrayList<String>();
+		machineCodeList.add("MEMORY_INITIALIZATION_RADIX=2;");
+		machineCodeList.add("MEMORY_INITIALIZATION_VECTOR=");
 
 		try {
 			// For Windows.
@@ -65,7 +67,7 @@ public class AssemblerMain {
 	private static void writeMachineCodeToFile(ArrayList<String> machineCodeList) {
 		try {
 			// Uncomment if in Eclipse.
-			 PrintWriter writer = new PrintWriter("src/output.txt", "UTF-8");
+			 PrintWriter writer = new PrintWriter("src/output.coe", "UTF-8");
 			// For Windows.
 			// PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
 			// 		+ "\\output.txt", "UTF-8");
@@ -73,7 +75,11 @@ public class AssemblerMain {
 //			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
 //					+ "/output.txt", "UTF-8");
 			for (int i = 0; i < machineCodeList.size(); i++) {
-				writer.println(machineCodeList.get(i));
+				if (i == machineCodeList.size() - 1) {
+					writer.println(machineCodeList.get(i).substring(0, machineCodeList.get(i).length() - 1) + ";");
+				} else {
+					writer.println(machineCodeList.get(i));
+				}
 			}
 			writer.close();
 		} catch (Exception e) {
@@ -205,7 +211,7 @@ public class AssemblerMain {
 		// Print machine code without ending spaces. Append the assembly code
 		// after.
 //		machineCodeList.add(sb.append("\t# " + line).toString().trim()); // For comments.
-		machineCodeList.add(sb.toString().trim()); // For machine.
+		machineCodeList.add(sb.append(",").toString().trim()); // For machine.
 	}
 
 	/**
