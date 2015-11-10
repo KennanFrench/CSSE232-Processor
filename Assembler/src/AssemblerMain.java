@@ -33,10 +33,10 @@ public class AssemblerMain {
 			// FileInputStream fStream = new FileInputStream(
 			// 		System.getProperty("user.dir") + "\\input.txt");
 			// For Ubuntu.
-			FileInputStream fStream = new FileInputStream(
-					System.getProperty("user.dir") + "/input.txt");
+//			FileInputStream fStream = new FileInputStream(
+//					System.getProperty("user.dir") + "/input.txt");
 			// Uncomment if in Eclipse.
-			// FileInputStream fStream = new FileInputStream("src/input.txt");
+			 FileInputStream fStream = new FileInputStream("src/input.txt");
 			DataInputStream in = new DataInputStream(fStream);
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
 			String line;
@@ -53,6 +53,7 @@ public class AssemblerMain {
 
 		} catch (Exception e) {
 			System.out.println("Error: " + e.getMessage());
+			e.printStackTrace();
 		}
 	}
 
@@ -64,13 +65,13 @@ public class AssemblerMain {
 	private static void writeMachineCodeToFile(ArrayList<String> machineCodeList) {
 		try {
 			// Uncomment if in Eclipse.
-			// PrintWriter writer = new PrintWriter("src/output.txt", "UTF-8");
+			 PrintWriter writer = new PrintWriter("src/output.txt", "UTF-8");
 			// For Windows.
 			// PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
 			// 		+ "\\output.txt", "UTF-8");
 			// For Ubuntu.
-			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
-					+ "/output.txt", "UTF-8");
+//			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
+//					+ "/output.txt", "UTF-8");
 			for (int i = 0; i < machineCodeList.size(); i++) {
 				writer.println(machineCodeList.get(i));
 			}
@@ -124,7 +125,8 @@ public class AssemblerMain {
 		String[] lineArray = line.split(" ");
 		String op = lineArray[0];
 		StringBuilder sb = new StringBuilder();
-		sb.append(operations.get(op) + " ");
+//		sb.append(operations.get(op) + " ");
+		sb.append(operations.get(op));
 		String current;
 		String immediate;
 		int extension;
@@ -134,7 +136,8 @@ public class AssemblerMain {
 
 			// Append register code and continue loop.
 			if (current.charAt(0) == '$') {
-				sb.append(registers.get(current.substring(1)) + " ");
+//				sb.append(registers.get(current.substring(1)) + " ");
+				sb.append(registers.get(current.substring(1)));
 				continue;
 			}
 
@@ -163,7 +166,9 @@ public class AssemblerMain {
 					immediate = immediate.substring(24);
 				}
 				// System.out.println("i fix: " + immediate + "\n");
-				immediate = immediate.substring(0, 4) + " "
+//				immediate = immediate.substring(0, 4) + " "
+//						+ immediate.substring(4);
+				immediate = immediate.substring(0, 4)
 						+ immediate.substring(4);
 			} else if (op.equals("j") || op.equals("jal")) {
 				// System.out.println("j branch: " + immediate);
@@ -171,18 +176,23 @@ public class AssemblerMain {
 					extension = 12 - immediate.length();
 					immediate = appendZeros(immediate, extension);
 				}
-				immediate = immediate.substring(0, 4) + " "
-						+ immediate.substring(4, 8) + " "
+//				immediate = immediate.substring(0, 4) + " "
+//						+ immediate.substring(4, 8) + " "
+//						+ immediate.substring(8);
+				immediate = immediate.substring(0, 4)
+						+ immediate.substring(4, 8)
 						+ immediate.substring(8);
 			} else if (op.equals("warp") && (i >= 2)) {
 				immediate = current;
 			}
-			sb.append(immediate + " ");
+//			sb.append(immediate + " ");
+			sb.append(immediate);
 		}
 
 		// Jump Return special case.
 		if (op.equals("jr")) {
-			sb.append("xxxx xxxx");
+//			sb.append("xxxx xxxx");
+			sb.append("00000000");
 			// Uncomment if running in Eclipse.
 			// sb.append("xxxx xxxx\t");
 		}
@@ -194,7 +204,8 @@ public class AssemblerMain {
 
 		// Print machine code without ending spaces. Append the assembly code
 		// after.
-		machineCodeList.add(sb.append("\t# " + line).toString().trim());
+//		machineCodeList.add(sb.append("\t# " + line).toString().trim()); // For comments.
+		machineCodeList.add(sb.toString().trim()); // For machine.
 	}
 
 	/**
