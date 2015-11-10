@@ -144,11 +144,11 @@ module claAdde16b_claAdde16b_sch_tb();
 			end
 		end
 		#99;
-		a <= 20000;
-		b <= 13000;
+		a <= 16'b0000000000010101;
+		b <= 16'b0000000000000011;
 		op <= 110;
 		#1;
-		if (r == 7000) begin
+		if (r == 16'b0000000000010010) begin
 			$display("Sub Test Passed 02");
 		end else begin
 			$display("Sub Test Failed 02: r = %d", r);

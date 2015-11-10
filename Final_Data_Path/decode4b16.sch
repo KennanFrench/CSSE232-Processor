@@ -31,10 +31,6 @@
         <signal name="output13" />
         <signal name="output14" />
         <signal name="output15" />
-        <signal name="XLXN_313" />
-        <signal name="XLXN_322" />
-        <signal name="XLXN_333" />
-        <signal name="XLXN_338" />
         <signal name="Address(1)" />
         <port polarity="Input" name="enable" />
         <port polarity="Input" name="Address(3:0)" />

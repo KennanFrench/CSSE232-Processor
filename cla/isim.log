@@ -32,8 +32,4 @@ Zero Test Passed 01
 Sub Test Passed 01
 Zero Test Passed 02
 Sub Test Passed 02
-# run all
-Or Test Passed 01
-Or Test Passed 02
-Stopped at time : 1200 ns :  in File "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdder16b_tb_01.v" Line 179 
 # exit 0

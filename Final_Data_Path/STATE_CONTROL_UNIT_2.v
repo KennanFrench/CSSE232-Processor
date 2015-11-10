@@ -107,7 +107,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	parameter    Read = 19;
 	parameter    Display = 20;
 	
-
    //register calculation
    always @ (posedge CLK, posedge Reset)
      begin
@@ -153,7 +152,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                PCWriteBne <= 0;
                PCWrite <= 1;
                IorD <= 0;
-               IRegWrite <= 0;
+               IRegWrite <= 1;
                WriteAddr <= 0;
                WriteData <= 0;
 	            SignExt <= 0;
@@ -170,17 +169,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           Decode:
             begin
 	       $display("Decode");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 2; //addition
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -203,18 +193,9 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			Mv:
 				begin
 				$display("Lw/Sw Cycle 3");
-				case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					//ALUOp depends on op code
 					ALUOp <= 0;
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -236,18 +217,9 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			Clear:
 					begin
 				$display("Lw/Sw Cycle 3");
-				case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					//ALUOp depends on op code
 					ALUOp <= 0;
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 1;
@@ -268,19 +240,10 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				end
 			Display:
 					begin
-				$display("Lw/Sw Cycle 3");
-				case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
+					$display("Display");
 					//ALUOp depends on op code
 					ALUOp <= 0;
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -302,18 +265,9 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			Read:
 					begin
 				$display("Lw/Sw Cycle 3");
-				case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					//ALUOp depends on op code
 					ALUOp <= 0;
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -337,16 +291,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
             begin
                $display("A Type Cycle 3");
 					//ALUOp depends on op code
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-							end
-					endcase
 					case (Opcode)
                  0:
                    begin
@@ -369,7 +313,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                       ALUOp <= 7;
                    end
 					endcase
-					
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -393,16 +337,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
             begin
                $display("C Type Cycle 3");
 					//ALUOp depends on op code
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					case (Opcode)
                  4:
                    begin
@@ -417,7 +351,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                       ALUOp <= 1;
                    end
 					endcase
-				
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -440,18 +374,9 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           LW_SW_3:
             begin
 				$display("Lw/Sw Cycle 3");
-				case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					//ALUOp depends on op code
 					ALUOp <= 2;
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -474,17 +399,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           Beq_3:
             begin
                $display("Branch Equal Cycle 3");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
                ALUOp <= 6; //subtraction
+					EPCWrite <= 0;
 					PCWriteBeq <= 1; 
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -507,17 +423,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           Bne_3:
             begin
                $display("Branch Not Equal Cycle 3");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 6; //subtraction
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 1;
                PCWrite <= 0;
@@ -540,20 +447,11 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	  Jump_3:
             begin
                $display("Jump Cycle 3");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
-					ALUOp <= 1; //or
+					ALUOp <= 0; //or
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
-               PCWrite <= 0;
+               PCWrite <= 1;
                IorD <= 0;
                IRegWrite <= 0;
                WriteAddr <= 0;
@@ -561,8 +459,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					SignExt <= 0;
 					GRegWrite <= 0;
 					ALUSrcA <= 0;
-					ALUSrcB <= 3;
-					PCData <= 1;
+					ALUSrcB <= 0;
+					PCData <= 5;
 					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
@@ -573,17 +471,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           JR_3:
             begin
                $display("Jump Register Cycle 3");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 1;
@@ -606,17 +495,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           Jal_3:
             begin
                $display("Jump And Link Cycle 3");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
-					ALUOp <= 2; //addition
+					ALUOp <= 0; //addition
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -627,7 +507,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					SignExt <= 0;
 					GRegWrite <= 0;
 					ALUSrcA <= 0;
-					ALUSrcB <= 1;
+					ALUSrcB <= 3;
 					PCData <= 0;
 					MemRead <= 0;
 					MemWrite <= 0;
@@ -639,17 +519,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           Lui_3:
             begin
                $display("Load Upper Immidiate Cycle 3");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -672,17 +543,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           A_4:
             begin
                $display("A Type Cycle 4");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -705,17 +567,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           C_4:
             begin
                $display("C Type Cycle 4");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -738,17 +591,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	  LW_4:
             begin
                $display("LW Cycle 4");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -771,17 +615,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           SW_4:
             begin
                $display("SW Cycle 4");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
@@ -804,20 +639,11 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			Jal_4:
             begin
                $display("Jump and Link Cycle 4");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
-               PCWrite <= 0;
+               PCWrite <= 1;
                IorD <= 0;
                IRegWrite <= 0;
                WriteAddr <= 3;
@@ -825,8 +651,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					SignExt <= 0;
 					GRegWrite <= 1;
 					ALUSrcA <= 0;
-					ALUSrcB <= 3;
-					PCData <= 1;
+					ALUSrcB <= 0;
+					PCData <= 5;
 					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
@@ -837,17 +663,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           LW_5:
             begin
                $display("LW Cycle 5");
-					case (InterruptIn)
-                 0:
-                   begin
-							 EPCWrite <= 0;
-                   end
-					  1:
-					    begin
-							
-						end
-					endcase
 					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
                PCWrite <= 0;
