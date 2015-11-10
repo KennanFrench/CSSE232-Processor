@@ -103,8 +103,8 @@ public class AssemblerMain {
 		registerMap.put("ra", "1011");
 		registerMap.put("rv", "1100");
 		registerMap.put("at", "1101");
-		registerMap.put("ce", "1110");
-		registerMap.put("se", "1111");
+		registerMap.put("k0", "1110");
+		registerMap.put("k1", "1111");
 	}
 
 	/**
