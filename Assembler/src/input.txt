@@ -1,3 +1,5 @@
+add $sp $0 $0
+addi $sp 255
 add $a0 $0 $0
 add $a1 $0 $0
 add $t0 $0 $0
@@ -7,7 +9,6 @@ add $t3 $0 $0
 add $s0 $0 $0
 add $s1 $0 $0
 add $s2 $0 $0
-addi $sp 255
 add $ra $0 $0
 add $rv $0 $0
 add $at $0 $0
