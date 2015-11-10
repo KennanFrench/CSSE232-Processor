@@ -2,12 +2,12 @@ Command line:
    claAdde16b_claAdde16b_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  54976
+     -socket  53207
 
-Fri Nov  6 17:33:18 2015
+Tue Nov 10 03:00:34 2015
 
 
- Elaboration Time: 0.04 sec
+ Elaboration Time: 0.05 sec
 
  Current Memory Usage: 244.802 Meg
 
@@ -20,9 +20,9 @@ Fri Nov  6 17:33:18 2015
  Total Traceable Variables  : 37
  Total Scalar Nets and Variables : 879
 
- Total Simulation Time: 0.06 sec
+ Total Simulation Time: 0.07 sec
 
  Current Memory Usage: 320.303 Meg
 
-Fri Nov  6 17:33:49 2015
+Tue Nov 10 03:01:16 2015
 

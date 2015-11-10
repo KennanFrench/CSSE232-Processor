@@ -65,7 +65,7 @@
     </file>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="claAdde16b.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="claAdde16b.xst"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="claAdde16b_claAdde16b_sch_tb_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="claAdde16b_claAdde16b_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="claAdde16b_claAdde16b_sch_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="claAdde16b_claAdde16b_sch_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="claAdde16b_claAdde16b_sch_tb_stx_beh.prj"/>
@@ -96,7 +96,6 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="input_2_hex_op.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lcd_control.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
@@ -105,7 +104,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1446849195" xil_pn:in_ck="-3919694556384320207" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1446849195">
+    <transform xil_pn:end_ts="1447142415" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1447142415">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1447142430" xil_pn:in_ck="-3919694556384320207" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1447142430">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="claAdder16b_tb_01.v"/>
@@ -127,7 +130,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1446849195" xil_pn:in_ck="6555534082108150615" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1446849195">
+    <transform xil_pn:end_ts="1447142430" xil_pn:in_ck="6555534082108150615" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1447142430">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="add1b.vf"/>
@@ -137,7 +140,7 @@
       <outfile xil_pn:name="claAdder4b.vf"/>
       <outfile xil_pn:name="claAdder4b_tb_01.v"/>
     </transform>
-    <transform xil_pn:end_ts="1446849196" xil_pn:in_ck="6555534082108150615" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7266209677895297882" xil_pn:start_ts="1446849195">
+    <transform xil_pn:end_ts="1447142432" xil_pn:in_ck="6555534082108150615" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7266209677895297882" xil_pn:start_ts="1447142430">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -146,17 +149,15 @@
       <outfile xil_pn:name="claAdde16b_claAdde16b_sch_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1446849197" xil_pn:in_ck="-5457206232545540402" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3424294848056509673" xil_pn:start_ts="1446849196">
+    <transform xil_pn:end_ts="1447142432" xil_pn:in_ck="-5457206232545540402" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3424294848056509673" xil_pn:start_ts="1447142432">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="claAdde16b_claAdde16b_sch_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1446849260" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1446849260">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -195,6 +196,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="claAdde16b.jhd"/>
       <outfile xil_pn:name="claAdde16b.lso"/>
@@ -204,7 +206,6 @@
       <outfile xil_pn:name="claAdde16b.stx"/>
       <outfile xil_pn:name="claAdde16b.syr"/>
       <outfile xil_pn:name="claAdde16b.xst"/>
-      <outfile xil_pn:name="claAdde16b_claAdde16b_sch_tb_beh.prj"/>
       <outfile xil_pn:name="claAdde16b_claAdde16b_sch_tb_stx_beh.prj"/>
       <outfile xil_pn:name="claAdde16b_xst.xrpt"/>
       <outfile xil_pn:name="claAdder4b.ngr"/>
@@ -219,48 +220,36 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="claAdde16b.bld"/>
-      <outfile xil_pn:name="claAdde16b.ngd"/>
-      <outfile xil_pn:name="claAdde16b_ngdbuild.xrpt"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446924148" xil_pn:in_ck="7877093610062689358" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1446924144">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="claAdde16b.pcf"/>
-      <outfile xil_pn:name="claAdde16b_map.map"/>
-      <outfile xil_pn:name="claAdde16b_map.mrp"/>
-      <outfile xil_pn:name="claAdde16b_map.ncd"/>
-      <outfile xil_pn:name="claAdde16b_map.ngm"/>
-      <outfile xil_pn:name="claAdde16b_map.xrpt"/>
-      <outfile xil_pn:name="claAdde16b_summary.xml"/>
-      <outfile xil_pn:name="claAdde16b_usage.xml"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446924157" xil_pn:in_ck="-4935226012614296985" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-3872219738485705569" xil_pn:start_ts="1446924148">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="claAdde16b.ncd"/>
-      <outfile xil_pn:name="claAdde16b.pad"/>
-      <outfile xil_pn:name="claAdde16b.par"/>
-      <outfile xil_pn:name="claAdde16b.ptwx"/>
-      <outfile xil_pn:name="claAdde16b.unroutes"/>
-      <outfile xil_pn:name="claAdde16b.xpi"/>
-      <outfile xil_pn:name="claAdde16b_pad.csv"/>
-      <outfile xil_pn:name="claAdde16b_pad.txt"/>
-      <outfile xil_pn:name="claAdde16b_par.xrpt"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1446924157" xil_pn:in_ck="7877093610062689226" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1446924155">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="claAdde16b.twr"/>
-      <outfile xil_pn:name="claAdde16b.twx"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

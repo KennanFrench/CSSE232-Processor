@@ -5,11 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/memoryFile_tb_01.v" Line 91: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">4</arg>&gt; bits.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/memoryFile_tb_01.v" Line 103: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">4</arg>&gt; bits.
-</msg>
-
 </messages>
 

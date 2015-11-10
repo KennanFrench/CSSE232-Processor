@@ -12,7 +12,7 @@ Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into li
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 95208 KB
-Fuse CPU Usage: 930 ms
+Fuse CPU Usage: 1000 ms
 Compiling module AND2
 Compiling module OR2
 Compiling module OR3
@@ -39,9 +39,9 @@ Compiling module claAdde16b
 Compiling module claAdde16b_claAdde16b_sch_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
+Waiting for 9 sub-compilation(s) to finish...
 Compiled 25 Verilog Units
 Built simulation executable /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/claAdde16b_claAdde16b_sch_tb_isim_beh.exe
 Fuse Memory Usage: 1179628 KB
-Fuse CPU Usage: 990 ms
-GCC CPU Usage: 1360 ms
+Fuse CPU Usage: 1080 ms
+GCC CPU Usage: 1170 ms

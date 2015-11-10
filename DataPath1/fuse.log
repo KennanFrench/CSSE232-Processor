@@ -1,29 +1,42 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/Memory_Memory_sch_tb_isim_beh.exe -prj /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/Memory_Memory_sch_tb_beh.prj work.Memory_Memory_sch_tb work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/regFile16b16_regFile16b16_sch_tb_isim_beh.exe -prj /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/regFile16b16_regFile16b16_sch_tb_beh.prj work.regFile16b16_regFile16b16_sch_tb work.glbl 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/memoryFile_tb_01.v" into library work
-WARNING:HDLCompiler:568 - "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/memoryFile_tb_01.v" Line 91: Constant value is truncated to fit in <4> bits.
-WARNING:HDLCompiler:568 - "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/memoryFile_tb_01.v" Line 103: Constant value is truncated to fit in <4> bits.
-Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/ipcore_dir/memoryFile.v" into library work
-Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/Memory.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/mux16b16.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/decode4b16.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/regFile16b16.vf" into library work
+Analyzing Verilog file "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/regFileTest_00.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 95900 KB
-Fuse CPU Usage: 930 ms
-Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
-Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
-Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
-Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
-Compiling module memoryFile
-Compiling module Memory
-Compiling module Memory_Memory_sch_tb
+Fuse Memory Usage: 95348 KB
+Fuse CPU Usage: 920 ms
+Compiling module INV
+Compiling module AND5
+Compiling module decode4b16_MUSER_regFile16b16
+Compiling module FDCE
+Compiling module FD16CE_MXILINX_regFile16b16
+Compiling module GND
+Compiling module AND2B1
+Compiling module OR2
+Compiling module AND2
+Compiling module M2_1_MXILINX_regFile16b16
+Compiling module MUXF5_L
+Compiling module MUXF6
+Compiling module AND3
+Compiling module AND3B1
+Compiling module M2_1E_MXILINX_regFile16b16
+Compiling module M16_1E_MXILINX_regFile16b16
+Compiling module VCC
+Compiling module mux16b16_MUSER_regFile16b16
+Compiling module regFile16b16
+Compiling module regFile16b16_regFile16b16_sch_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 8 Verilog Units
-Built simulation executable /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/Memory_Memory_sch_tb_isim_beh.exe
-Fuse Memory Usage: 1183716 KB
-Fuse CPU Usage: 1010 ms
-GCC CPU Usage: 1010 ms
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/DataPath1/regFile16b16_regFile16b16_sch_tb_isim_beh.exe
+Fuse Memory Usage: 1179708 KB
+Fuse CPU Usage: 1000 ms
+GCC CPU Usage: 1120 ms

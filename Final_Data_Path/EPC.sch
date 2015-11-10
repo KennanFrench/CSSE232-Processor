@@ -10,7 +10,6 @@
         <signal name="CLK" />
         <signal name="DataIn(15:0)" />
         <signal name="DataOut(15:0)" />
-        <signal name="XLXN_6" />
         <port polarity="Input" name="RegWrite" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="DataIn(15:0)" />

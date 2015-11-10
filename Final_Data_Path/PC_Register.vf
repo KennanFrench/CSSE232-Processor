@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : PC_Register.vf
-// /___/   /\     Timestamp : 11/09/2015 09:44:45
+// /___/   /\     Timestamp : 11/10/2015 12:46:13
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/PC_Register.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/PC_Register.sch
+//Command: sch2hdl -sympath /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/PC_Register.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/PC_Register.sch
 //Design Name: PC_Register
 //Device: spartan3e
 //Purpose:
@@ -139,7 +139,7 @@ module PC_Register(CLK,
    wire XLXN_12;
    wire XLXN_25;
    
-   (* HU_SET = "XLXI_1_67" *) 
+   (* HU_SET = "XLXI_1_244" *) 
    FD16CE_MXILINX_PC_Register  XLXI_1 (.C(CLK), 
                                       .CE(XLXN_1), 
                                       .CLR(G), 
