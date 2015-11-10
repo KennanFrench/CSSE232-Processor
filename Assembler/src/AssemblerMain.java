@@ -35,10 +35,10 @@ public class AssemblerMain {
 			// FileInputStream fStream = new FileInputStream(
 			// 		System.getProperty("user.dir") + "\\input.txt");
 			// For Ubuntu.
-			FileInputStream fStream = new FileInputStream(
-					System.getProperty("user.dir") + "/input.txt");
+//			FileInputStream fStream = new FileInputStream(
+//					System.getProperty("user.dir") + "/input.txt");
 			// Uncomment if in Eclipse.
-//			 FileInputStream fStream = new FileInputStream("src/input.txt");
+			 FileInputStream fStream = new FileInputStream("src/input.txt");
 			DataInputStream in = new DataInputStream(fStream);
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
 			String line;
@@ -67,13 +67,13 @@ public class AssemblerMain {
 	private static void writeMachineCodeToFile(ArrayList<String> machineCodeList) {
 		try {
 			// Uncomment if in Eclipse.
-//			 PrintWriter writer = new PrintWriter("src/output.coe", "UTF-8");
+			 PrintWriter writer = new PrintWriter("src/output.coe", "UTF-8");
 			// For Windows.
 //			 PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
 //			 		+ "\\output.coe", "UTF-8");
 			// For Ubuntu.
-			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
-					+ "/output.coe", "UTF-8");
+//			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
+//					+ "/output.coe", "UTF-8");
 			for (int i = 0; i < machineCodeList.size(); i++) {
 				if (i == machineCodeList.size() - 1) {
 					writer.println(machineCodeList.get(i).substring(0, machineCodeList.get(i).length() - 1) + ";");
@@ -136,9 +136,23 @@ public class AssemblerMain {
 		String current;
 		String immediate;
 		int extension;
+		String[] aTypeOrdering = new String[3];
 
 		for (int i = 1; i < lineArray.length; i++) {
 			current = lineArray[i];
+			
+			// A-type ordering.
+			if (op.equals("add") || op.equals("sub") || op.equals("and") || op.equals("or") || op.equals("slt")) {
+				current = registers.get(current.substring(1));
+				if (i == 1) {
+					aTypeOrdering[2] = current;
+				} else if (i == 2) {
+					aTypeOrdering[0] = current;
+				} else if (i == 3) {
+					aTypeOrdering[1] = current;
+				}
+				continue;
+			}
 
 			// Append register code and continue loop.
 			if (current.charAt(0) == '$') {
@@ -149,7 +163,8 @@ public class AssemblerMain {
 
 			// Get immediate value. Converts current to binary.
 			immediate = Integer.toBinaryString(Integer.decode(current));
-
+			
+			
 			// Fix immediate value accordingly.
 			// System.out.println(op);
 			if (op.equals("lw") || op.equals("sw") || op.equals("beq")
@@ -206,6 +221,13 @@ public class AssemblerMain {
 		// Debug helper.
 		if (debug) {
 			System.out.println(op);
+		}
+		
+		// Generate String with A-type.
+		if (op.equals("add") || op.equals("sub") || op.equals("and") || op.equals("or") || op.equals("slt")) {
+			for (String element : aTypeOrdering) {
+				sb.append(element);
+			}
 		}
 
 		// Print machine code without ending spaces. Append the assembly code
