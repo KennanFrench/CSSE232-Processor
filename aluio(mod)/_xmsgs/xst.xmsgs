@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">remote_sources/_/lcdDisplayControl/ipcore_dir/lcdCounter.v</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">lcdCounter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">remote_sources/_/debounce/ipcore_dir/debounce_counter.v</arg>&quot; line <arg fmt="%d" index="2">91</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">debounce_counter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/hexROM.v</arg>&quot; line <arg fmt="%d" index="2">590</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">hexROM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/opROM.v</arg>&quot; line <arg fmt="%d" index="2">592</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">opROM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v</arg>&quot; line <arg fmt="%d" index="2">634</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOcounter4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v</arg>&quot; line <arg fmt="%d" index="2">639</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOcounter4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v</arg>&quot; line <arg fmt="%d" index="2">644</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOcounter4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v</arg>&quot; line <arg fmt="%d" index="2">649</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOcounter4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v</arg>&quot; line <arg fmt="%d" index="2">654</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOcounter4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v</arg>&quot; line <arg fmt="%d" index="2">659</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOcounter4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v</arg>&quot; line <arg fmt="%d" index="2">664</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOcounter4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">remote_sources/_/rotaryInputHexOpHex/ipcore_dir/IOcounter4.v</arg>&quot; line <arg fmt="%d" index="2">669</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOcounter4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_142/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_142/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_124/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_124/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_60/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_60/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_10/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_10/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_7/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_7/XLXI_85</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_1/XLXI_5/XLXI_25</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_1/XLXI_5/XLXI_25</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_84</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_84</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_83</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_83</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_82</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_82</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_81</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_81</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_80</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_80</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_79</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_79</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_78</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_78</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_77</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="old" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">XLXI_64/XLXI_77</arg>.
+</msg>
+
+</messages>
+

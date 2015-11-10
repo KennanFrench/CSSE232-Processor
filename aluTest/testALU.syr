@@ -12,7 +12,7 @@ Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: testALU.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -112,25 +112,8 @@ Module <M2_1_MXILINX_alu1b> compiled
 Module <M2_1E_MXILINX_alu1b> compiled
 Module <M4_1E_MXILINX_alu1b> compiled
 Module <add1b_MUSER_alu1b> compiled
-Compiling verilog file "claAdder4b.vf" in library work
-Module <alu1b> compiled
-Module <M2_1_MXILINX_claAdder4b> compiled
-Module <INV4_MXILINX_claAdder4b> compiled
-Module <M2_1E_MXILINX_claAdder4b> compiled
-Module <M4_1E_MXILINX_claAdder4b> compiled
-Module <add1b_MUSER_claAdder4b> compiled
-Module <alu1b_MUSER_claAdder4b> compiled
-Compiling verilog file "claAdde16b.vf" in library work
-Module <claAdder4b> compiled
-Module <M2_1_MXILINX_claAdde16b> compiled
-Module <INV4_MXILINX_claAdde16b> compiled
-Module <M2_1E_MXILINX_claAdde16b> compiled
-Module <M4_1E_MXILINX_claAdde16b> compiled
-Module <add1b_MUSER_claAdde16b> compiled
-Module <alu1b_MUSER_claAdde16b> compiled
-Module <claAdder4b_MUSER_claAdde16b> compiled
 Compiling verilog file "alu16b.vf" in library work
-Module <claAdde16b> compiled
+Module <alu1b> compiled
 Module <NOR16_MXILINX_alu16b> compiled
 Module <M2_1_MXILINX_alu16b> compiled
 Module <M2_1E_MXILINX_alu16b> compiled
@@ -139,15 +122,12 @@ Module <add1b_MUSER_alu16b> compiled
 Module <alu1b_MUSER_alu16b> compiled
 Compiling verilog file "testALU.vf" in library work
 Module <alu16b> compiled
+Module <NOR16_MXILINX_testALU> compiled
 Module <M2_1_MXILINX_testALU> compiled
-Module <INV4_MXILINX_testALU> compiled
 Module <M2_1E_MXILINX_testALU> compiled
 Module <M4_1E_MXILINX_testALU> compiled
 Module <add1b_MUSER_testALU> compiled
 Module <alu1b_MUSER_testALU> compiled
-Module <claAdder4b_MUSER_testALU> compiled
-Module <claAdde16b_MUSER_testALU> compiled
-Module <NOR16_MXILINX_testALU> compiled
 Module <alu16b_MUSER_testALU> compiled
 Module <testALU> compiled
 No errors in compilation
@@ -161,41 +141,9 @@ Analyzing hierarchy for module <testALU> in library <work>.
 
 Analyzing hierarchy for module <alu16b_MUSER_testALU> in library <work>.
 
-Analyzing hierarchy for module <claAdde16b_MUSER_testALU> in library <work>.
-
 Analyzing hierarchy for module <alu1b_MUSER_testALU> in library <work>.
 
 Analyzing hierarchy for module <NOR16_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <claAdder4b_MUSER_testALU> in library <work>.
-
-Analyzing hierarchy for module <add1b_MUSER_testALU> in library <work>.
-
-Analyzing hierarchy for module <M4_1E_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <alu1b_MUSER_testALU> in library <work>.
-
-Analyzing hierarchy for module <alu1b_MUSER_testALU> in library <work>.
-
-Analyzing hierarchy for module <alu1b_MUSER_testALU> in library <work>.
-
-Analyzing hierarchy for module <alu1b_MUSER_testALU> in library <work>.
-
-Analyzing hierarchy for module <INV4_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <M2_1E_MXILINX_testALU> in library <work>.
-
-Analyzing hierarchy for module <M2_1E_MXILINX_testALU> in library <work>.
 
 Analyzing hierarchy for module <add1b_MUSER_testALU> in library <work>.
 
@@ -217,28 +165,28 @@ Module <testALU> is correct for synthesis.
 Analyzing module <alu16b_MUSER_testALU> in library <work>.
 Module <alu16b_MUSER_testALU> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_36_27" for instance <XLXI_36> in unit <alu16b_MUSER_testALU>.
+    Set user-defined property "HU_SET =  XLXI_36_4" for instance <XLXI_36> in unit <alu16b_MUSER_testALU>.
 Analyzing module <alu1b_MUSER_testALU> in library <work>.
 Module <alu1b_MUSER_testALU> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_15_21" for instance <XLXI_15> in unit <alu1b_MUSER_testALU>.
-    Set user-defined property "HU_SET =  XLXI_8_20" for instance <XLXI_8> in unit <alu1b_MUSER_testALU>.
+    Set user-defined property "HU_SET =  XLXI_15_3" for instance <XLXI_15> in unit <alu1b_MUSER_testALU>.
+    Set user-defined property "HU_SET =  XLXI_8_2" for instance <XLXI_8> in unit <alu1b_MUSER_testALU>.
 Analyzing module <add1b_MUSER_testALU> in library <work>.
 Module <add1b_MUSER_testALU> is correct for synthesis.
  
 Analyzing module <M4_1E_MXILINX_testALU> in library <work>.
 Module <M4_1E_MXILINX_testALU> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_19" for instance <I_M01> in unit <M4_1E_MXILINX_testALU>.
-    Set user-defined property "HU_SET =  I_M23_18" for instance <I_M23> in unit <M4_1E_MXILINX_testALU>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_testALU>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_testALU>.
 Analyzing module <M2_1E_MXILINX_testALU.1> in library <work>.
 Module <M2_1E_MXILINX_testALU.1> is correct for synthesis.
  
 Analyzing module <M2_1E_MXILINX_testALU.2> in library <work>.
 Module <M2_1E_MXILINX_testALU.2> is correct for synthesis.
  
-Analyzing module <M2_1_MXILINX_testALU.1> in library <work>.
-Module <M2_1_MXILINX_testALU.1> is correct for synthesis.
+Analyzing module <M2_1_MXILINX_testALU> in library <work>.
+Module <M2_1_MXILINX_testALU> is correct for synthesis.
  
 Analyzing module <NOR16_MXILINX_testALU> in library <work>.
 Module <NOR16_MXILINX_testALU> is correct for synthesis.
@@ -251,32 +199,6 @@ Module <NOR16_MXILINX_testALU> is correct for synthesis.
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_147> in unit <NOR16_MXILINX_testALU>.
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_165> in unit <NOR16_MXILINX_testALU>.
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_170> in unit <NOR16_MXILINX_testALU>.
-Analyzing module <claAdde16b_MUSER_testALU> in library <work>.
-Module <claAdde16b_MUSER_testALU> is correct for synthesis.
- 
-Analyzing module <claAdder4b_MUSER_testALU> in library <work>.
-Module <claAdder4b_MUSER_testALU> is correct for synthesis.
- 
-    Set user-defined property "HU_SET =  XLXI_87_22" for instance <XLXI_87> in unit <claAdder4b_MUSER_testALU>.
-    Set user-defined property "HU_SET =  XLXI_92_23" for instance <XLXI_92> in unit <claAdder4b_MUSER_testALU>.
-    Set user-defined property "HU_SET =  XLXI_93_24" for instance <XLXI_93> in unit <claAdder4b_MUSER_testALU>.
-    Set user-defined property "HU_SET =  XLXI_94_25" for instance <XLXI_94> in unit <claAdder4b_MUSER_testALU>.
-    Set user-defined property "HU_SET =  XLXI_95_26" for instance <XLXI_95> in unit <claAdder4b_MUSER_testALU>.
-Analyzing module <INV4_MXILINX_testALU> in library <work>.
-Module <INV4_MXILINX_testALU> is correct for synthesis.
- 
-Analyzing module <M2_1_MXILINX_testALU.2> in library <work>.
-Module <M2_1_MXILINX_testALU.2> is correct for synthesis.
- 
-Analyzing module <M2_1_MXILINX_testALU.3> in library <work>.
-Module <M2_1_MXILINX_testALU.3> is correct for synthesis.
- 
-Analyzing module <M2_1_MXILINX_testALU.4> in library <work>.
-Module <M2_1_MXILINX_testALU.4> is correct for synthesis.
- 
-Analyzing module <M2_1_MXILINX_testALU.5> in library <work>.
-Module <M2_1_MXILINX_testALU.5> is correct for synthesis.
- 
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -294,9 +216,9 @@ Synthesizing Unit <add1b_MUSER_testALU>.
 Unit <add1b_MUSER_testALU> synthesized.
 
 
-Synthesizing Unit <M2_1_MXILINX_testALU_1>.
+Synthesizing Unit <M2_1_MXILINX_testALU>.
     Related source file is "testALU.vf".
-Unit <M2_1_MXILINX_testALU_1> synthesized.
+Unit <M2_1_MXILINX_testALU> synthesized.
 
 
 Synthesizing Unit <M2_1E_MXILINX_testALU_1>.
@@ -307,31 +229,6 @@ Unit <M2_1E_MXILINX_testALU_1> synthesized.
 Synthesizing Unit <M2_1E_MXILINX_testALU_2>.
     Related source file is "testALU.vf".
 Unit <M2_1E_MXILINX_testALU_2> synthesized.
-
-
-Synthesizing Unit <INV4_MXILINX_testALU>.
-    Related source file is "testALU.vf".
-Unit <INV4_MXILINX_testALU> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_testALU_2>.
-    Related source file is "testALU.vf".
-Unit <M2_1_MXILINX_testALU_2> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_testALU_3>.
-    Related source file is "testALU.vf".
-Unit <M2_1_MXILINX_testALU_3> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_testALU_4>.
-    Related source file is "testALU.vf".
-Unit <M2_1_MXILINX_testALU_4> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_testALU_5>.
-    Related source file is "testALU.vf".
-Unit <M2_1_MXILINX_testALU_5> synthesized.
 
 
 Synthesizing Unit <M4_1E_MXILINX_testALU>.
@@ -347,16 +244,6 @@ Unit <alu1b_MUSER_testALU> synthesized.
 Synthesizing Unit <alu16b_MUSER_testALU>.
     Related source file is "testALU.vf".
 Unit <alu16b_MUSER_testALU> synthesized.
-
-
-Synthesizing Unit <claAdder4b_MUSER_testALU>.
-    Related source file is "testALU.vf".
-Unit <claAdder4b_MUSER_testALU> synthesized.
-
-
-Synthesizing Unit <claAdde16b_MUSER_testALU>.
-    Related source file is "testALU.vf".
-Unit <claAdde16b_MUSER_testALU> synthesized.
 
 
 Synthesizing Unit <testALU>.
@@ -391,25 +278,15 @@ Optimizing unit <NOR16_MXILINX_testALU> ...
 
 Optimizing unit <add1b_MUSER_testALU> ...
 
-Optimizing unit <M2_1_MXILINX_testALU_1> ...
+Optimizing unit <M2_1_MXILINX_testALU> ...
 
 Optimizing unit <M2_1E_MXILINX_testALU_1> ...
 
 Optimizing unit <M2_1E_MXILINX_testALU_2> ...
 
-Optimizing unit <INV4_MXILINX_testALU> ...
-
-Optimizing unit <M2_1_MXILINX_testALU_2> ...
-
-Optimizing unit <M2_1_MXILINX_testALU_3> ...
-
-Optimizing unit <M2_1_MXILINX_testALU_4> ...
-
-Optimizing unit <M2_1_MXILINX_testALU_5> ...
-
 Optimizing unit <M4_1E_MXILINX_testALU> ...
 
-Optimizing unit <claAdder4b_MUSER_testALU> ...
+Optimizing unit <alu16b_MUSER_testALU> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -445,31 +322,29 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 72
+# IOs                              : 53
 
 Cell Usage :
-# BELS                             : 985
-#      AND2                        : 242
-#      AND2B1                      : 48
-#      AND3                        : 192
-#      AND3B1                      : 64
-#      AND4                        : 5
+# BELS                             : 409
+#      AND2                        : 80
+#      AND2B1                      : 16
+#      AND3                        : 96
+#      AND3B1                      : 32
 #      GND                         : 2
-#      INV                         : 144
+#      INV                         : 64
 #      MUXCY                       : 1
 #      MUXCY_L                     : 3
-#      MUXF5                       : 32
-#      OR2                         : 165
-#      OR3                         : 37
-#      OR4                         : 41
-#      OR5                         : 5
+#      MUXF5                       : 16
+#      OR2                         : 64
+#      OR3                         : 16
+#      OR4                         : 16
 #      VCC                         : 2
-#      XOR2                        : 2
-# IO Buffers                       : 72
+#      XOR2                        : 1
+# IO Buffers                       : 53
 #      IBUF                        : 35
-#      OBUF                        : 37
-# Logical                          : 8
-#      NOR4                        : 8
+#      OBUF                        : 18
+# Logical                          : 4
+#      NOR4                        : 4
 # Others                           : 4
 #      FMAP                        : 4
 =========================================================================
@@ -479,10 +354,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                       72  out of   4656     1%  
- Number of 4 input LUTs:                144  out of   9312     1%  
- Number of IOs:                          72
- Number of bonded IOBs:                  72  out of    232    31%  
+ Number of Slices:                       32  out of   4656     0%  
+ Number of 4 input LUTs:                 64  out of   9312     0%  
+ Number of IOs:                          53
+ Number of bonded IOBs:                  53  out of    232    22%  
 
 ---------------------------
 Partition Resource Summary:
@@ -515,7 +390,7 @@ Speed Grade: -4
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 53.957ns
+   Maximum combinational path delay: 53.735ns
 
 Timing Detail:
 --------------
@@ -523,9 +398,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 9758286 / 37
+  Total number of paths / destination ports: 9731788 / 18
 -------------------------------------------------------------------------
-Delay:               53.957ns (Levels of Logic = 50)
+Delay:               53.735ns (Levels of Logic = 50)
   Source:            B<0> (PAD)
   Destination:       zeroZ (PAD)
 
@@ -533,7 +408,7 @@ Delay:               53.957ns (Levels of Logic = 50)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             6   1.218   0.669  B_0_IBUF (B_0_IBUF)
+     IBUF:I->O             2   1.218   0.447  B_0_IBUF (B_0_IBUF)
      INV:I->O              1   0.704   0.420  XLXI_1/XLXI_1/XLXI_16 (XLXI_1/XLXI_1/XLXN_38)
      begin scope: 'XLXI_1/XLXI_1/XLXI_15'
      AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
@@ -588,19 +463,19 @@ Delay:               53.957ns (Levels of Logic = 50)
      end scope: 'XLXI_1/XLXI_36'
      OBUF:I->O                 3.272          zeroZ_OBUF (zeroZ)
     ----------------------------------------
-    Total                     53.957ns (33.308ns logic, 20.649ns route)
-                                       (61.7% logic, 38.3% route)
+    Total                     53.735ns (33.308ns logic, 20.427ns route)
+                                       (62.0% logic, 38.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.84 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.46 secs
  
 --> 
 
 
-Total memory usage is 532040 kilobytes
+Total memory usage is 524144 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

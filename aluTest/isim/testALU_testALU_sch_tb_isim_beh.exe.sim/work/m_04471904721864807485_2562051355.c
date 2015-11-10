@@ -25,7 +25,7 @@ static const char *ng0 = "/home/lamd/Documents/csse232/1516a-csse232-frenchkt-kn
 
 
 
-static void Cont_238_0(char *t0)
+static void Cont_323_0(char *t0)
 {
     char *t1;
     char *t2;
@@ -51,7 +51,7 @@ LAB0:    t1 = (t0 + 4280U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(238, ng0);
+LAB2:    xsi_set_current_line(323, ng0);
     t2 = (t0 + 3128U);
     t3 = *((char **)t2);
     t2 = (t0 + 4680);
@@ -82,7 +82,7 @@ LAB1:    return;
 
 extern void work_m_04471904721864807485_2562051355_init()
 {
-	static char *pe[] = {(void *)Cont_238_0};
+	static char *pe[] = {(void *)Cont_323_0};
 	xsi_register_didat("work_m_04471904721864807485_2562051355", "isim/testALU_testALU_sch_tb_isim_beh.exe.sim/work/m_04471904721864807485_2562051355.didat");
 	xsi_register_executes(pe);
 }

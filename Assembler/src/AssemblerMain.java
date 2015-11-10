@@ -29,8 +29,12 @@ public class AssemblerMain {
 		ArrayList<String> machineCodeList = new ArrayList<String>();
 
 		try {
+			// For Windows.
+			// FileInputStream fStream = new FileInputStream(
+			// 		System.getProperty("user.dir") + "\\input.txt");
+			// For Ubuntu.
 			FileInputStream fStream = new FileInputStream(
-					System.getProperty("user.dir") + "\\input.txt");
+					System.getProperty("user.dir") + "/input.txt");
 			// Uncomment if in Eclipse.
 			// FileInputStream fStream = new FileInputStream("src/input.txt");
 			DataInputStream in = new DataInputStream(fStream);
@@ -61,8 +65,12 @@ public class AssemblerMain {
 		try {
 			// Uncomment if in Eclipse.
 			// PrintWriter writer = new PrintWriter("src/output.txt", "UTF-8");
+			// For Windows.
+			// PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
+			// 		+ "\\output.txt", "UTF-8");
+			// For Ubuntu.
 			PrintWriter writer = new PrintWriter(System.getProperty("user.dir")
-					+ "\\output.txt", "UTF-8");
+					+ "/output.txt", "UTF-8");
 			for (int i = 0; i < machineCodeList.size(); i++) {
 				writer.println(machineCodeList.get(i));
 			}
