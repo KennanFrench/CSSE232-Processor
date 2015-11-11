@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : regFile16b16.vf
-// /___/   /\     Timestamp : 11/10/2015 12:46:14
+// /___/   /\     Timestamp : 11/10/2015 16:56:06
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -135,12 +135,12 @@ module M16_1E_MXILINX_regFile16b16(D0,
    wire M67;
    wire M89;
    
-   (* HU_SET = "I_MAB_248" *) 
+   (* HU_SET = "I_MAB_3" *) 
    M2_1_MXILINX_regFile16b16  I_MAB (.D0(D10), 
                                     .D1(D11), 
                                     .S0(S0), 
                                     .O(MAB));
-   (* HU_SET = "I_MCD_247" *) 
+   (* HU_SET = "I_MCD_2" *) 
    M2_1_MXILINX_regFile16b16  I_MCD (.D0(D12), 
                                     .D1(D13), 
                                     .S0(S0), 
@@ -149,7 +149,7 @@ module M16_1E_MXILINX_regFile16b16(D0,
                   .I1(MEF), 
                   .S(S1), 
                   .LO(MCF));
-   (* HU_SET = "I_MEF_246" *) 
+   (* HU_SET = "I_MEF_1" *) 
    M2_1_MXILINX_regFile16b16  I_MEF (.D0(D14), 
                                     .D1(D15), 
                                     .S0(S0), 
@@ -162,7 +162,7 @@ module M16_1E_MXILINX_regFile16b16(D0,
                 .I1(MCF), 
                 .S(S2), 
                 .O(MBF));
-   (* HU_SET = "I_M01_253" *) 
+   (* HU_SET = "I_M01_8" *) 
    M2_1_MXILINX_regFile16b16  I_M01 (.D0(D0), 
                                     .D1(D1), 
                                     .S0(S0), 
@@ -175,12 +175,12 @@ module M16_1E_MXILINX_regFile16b16(D0,
                 .I1(M47), 
                 .S(S2), 
                 .O(MO7));
-   (* HU_SET = "I_M23_252" *) 
+   (* HU_SET = "I_M23_7" *) 
    M2_1_MXILINX_regFile16b16  I_M23 (.D0(D2), 
                                     .D1(D3), 
                                     .S0(S0), 
                                     .O(M23));
-   (* HU_SET = "I_M45_251" *) 
+   (* HU_SET = "I_M45_6" *) 
    M2_1_MXILINX_regFile16b16  I_M45 (.D0(D4), 
                                     .D1(D5), 
                                     .S0(S0), 
@@ -189,17 +189,17 @@ module M16_1E_MXILINX_regFile16b16(D0,
                   .I1(M67), 
                   .S(S1), 
                   .LO(M47));
-   (* HU_SET = "I_M67_250" *) 
+   (* HU_SET = "I_M67_5" *) 
    M2_1_MXILINX_regFile16b16  I_M67 (.D0(D6), 
                                     .D1(D7), 
                                     .S0(S0), 
                                     .O(M67));
-   (* HU_SET = "I_M89_249" *) 
+   (* HU_SET = "I_M89_4" *) 
    M2_1_MXILINX_regFile16b16  I_M89 (.D0(D8), 
                                     .D1(D9), 
                                     .S0(S0), 
                                     .O(M89));
-   (* HU_SET = "I_O_245" *) 
+   (* HU_SET = "I_O_0" *) 
    M2_1E_MXILINX_regFile16b16  I_O (.D0(MO7), 
                                    .D1(MBF), 
                                    .E(E), 
@@ -248,7 +248,7 @@ module mux16b16_MUSER_regFile16b16(A,
    
    wire V;
    
-   (* HU_SET = "XLXI_17_254" *) 
+   (* HU_SET = "XLXI_17_9" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_17 (.D0(A[0]), 
                                         .D1(B[0]), 
                                         .D2(C[0]), 
@@ -271,7 +271,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[0]));
-   (* HU_SET = "XLXI_21_255" *) 
+   (* HU_SET = "XLXI_21_10" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_21 (.D0(A[4]), 
                                         .D1(B[4]), 
                                         .D2(C[4]), 
@@ -294,7 +294,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[4]));
-   (* HU_SET = "XLXI_44_256" *) 
+   (* HU_SET = "XLXI_44_11" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_44 (.D0(A[8]), 
                                         .D1(B[8]), 
                                         .D2(C[8]), 
@@ -317,7 +317,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[8]));
-   (* HU_SET = "XLXI_45_257" *) 
+   (* HU_SET = "XLXI_45_12" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_45 (.D0(A[12]), 
                                         .D1(B[12]), 
                                         .D2(C[12]), 
@@ -340,7 +340,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[12]));
-   (* HU_SET = "XLXI_46_261" *) 
+   (* HU_SET = "XLXI_46_16" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_46 (.D0(A[1]), 
                                         .D1(B[1]), 
                                         .D2(C[1]), 
@@ -363,7 +363,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[1]));
-   (* HU_SET = "XLXI_47_260" *) 
+   (* HU_SET = "XLXI_47_15" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_47 (.D0(A[5]), 
                                         .D1(B[5]), 
                                         .D2(C[5]), 
@@ -386,7 +386,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[5]));
-   (* HU_SET = "XLXI_48_259" *) 
+   (* HU_SET = "XLXI_48_14" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_48 (.D0(A[9]), 
                                         .D1(B[9]), 
                                         .D2(C[9]), 
@@ -409,7 +409,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[9]));
-   (* HU_SET = "XLXI_49_258" *) 
+   (* HU_SET = "XLXI_49_13" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_49 (.D0(A[13]), 
                                         .D1(B[13]), 
                                         .D2(C[13]), 
@@ -432,7 +432,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[13]));
-   (* HU_SET = "XLXI_54_262" *) 
+   (* HU_SET = "XLXI_54_17" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_54 (.D0(A[2]), 
                                         .D1(B[2]), 
                                         .D2(C[2]), 
@@ -455,7 +455,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[2]));
-   (* HU_SET = "XLXI_55_263" *) 
+   (* HU_SET = "XLXI_55_18" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_55 (.D0(A[6]), 
                                         .D1(B[6]), 
                                         .D2(C[6]), 
@@ -478,7 +478,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[6]));
-   (* HU_SET = "XLXI_56_264" *) 
+   (* HU_SET = "XLXI_56_19" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_56 (.D0(A[10]), 
                                         .D1(B[10]), 
                                         .D2(C[10]), 
@@ -501,7 +501,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[10]));
-   (* HU_SET = "XLXI_57_265" *) 
+   (* HU_SET = "XLXI_57_20" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_57 (.D0(A[14]), 
                                         .D1(B[14]), 
                                         .D2(C[14]), 
@@ -524,7 +524,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[14]));
-   (* HU_SET = "XLXI_58_266" *) 
+   (* HU_SET = "XLXI_58_21" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_58 (.D0(A[15]), 
                                         .D1(B[15]), 
                                         .D2(C[15]), 
@@ -547,7 +547,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[15]));
-   (* HU_SET = "XLXI_59_267" *) 
+   (* HU_SET = "XLXI_59_22" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_59 (.D0(A[11]), 
                                         .D1(B[11]), 
                                         .D2(C[11]), 
@@ -570,7 +570,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[11]));
-   (* HU_SET = "XLXI_60_268" *) 
+   (* HU_SET = "XLXI_60_23" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_60 (.D0(A[7]), 
                                         .D1(B[7]), 
                                         .D2(C[7]), 
@@ -593,7 +593,7 @@ module mux16b16_MUSER_regFile16b16(A,
                                         .S2(S[2]), 
                                         .S3(S[3]), 
                                         .O(Result[7]));
-   (* HU_SET = "XLXI_61_269" *) 
+   (* HU_SET = "XLXI_61_24" *) 
    M16_1E_MXILINX_regFile16b16  XLXI_61 (.D0(A[3]), 
                                         .D1(B[3]), 
                                         .D2(C[3]), 
@@ -936,91 +936,91 @@ module regFile16b16(CLK,
                                          .output13(XLXN_70), 
                                          .output14(XLXN_72), 
                                          .output15(XLXN_74));
-   (* HU_SET = "XLXI_2_270" *) 
+   (* HU_SET = "XLXI_2_25" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_2 (.C(CLK), 
                                        .CE(XLXN_42), 
                                        .CLR(low), 
                                        .D(dataIn[15:0]), 
                                        .Q(B[15:0]));
-   (* HU_SET = "XLXI_3_271" *) 
+   (* HU_SET = "XLXI_3_26" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_3 (.C(CLK), 
                                        .CE(XLXN_44), 
                                        .CLR(low), 
                                        .D(dataIn[15:0]), 
                                        .Q(C[15:0]));
-   (* HU_SET = "XLXI_4_272" *) 
+   (* HU_SET = "XLXI_4_27" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_4 (.C(CLK), 
                                        .CE(XLXN_48), 
                                        .CLR(low), 
                                        .D(dataIn[15:0]), 
                                        .Q(D[15:0]));
-   (* HU_SET = "XLXI_5_273" *) 
+   (* HU_SET = "XLXI_5_28" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_5 (.C(CLK), 
                                        .CE(XLXN_50), 
                                        .CLR(low), 
                                        .D(dataIn[15:0]), 
                                        .Q(E[15:0]));
-   (* HU_SET = "XLXI_6_274" *) 
+   (* HU_SET = "XLXI_6_29" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_6 (.C(CLK), 
                                        .CE(XLXN_52), 
                                        .CLR(low), 
                                        .D(dataIn[15:0]), 
                                        .Q(F[15:0]));
-   (* HU_SET = "XLXI_7_275" *) 
+   (* HU_SET = "XLXI_7_30" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_7 (.C(CLK), 
                                        .CE(XLXN_54), 
                                        .CLR(low), 
                                        .D(dataIn[15:0]), 
                                        .Q(G[15:0]));
-   (* HU_SET = "XLXI_8_276" *) 
+   (* HU_SET = "XLXI_8_31" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_8 (.C(CLK), 
                                        .CE(XLXN_56), 
                                        .CLR(low), 
                                        .D(dataIn[15:0]), 
                                        .Q(H[15:0]));
-   (* HU_SET = "XLXI_9_277" *) 
+   (* HU_SET = "XLXI_9_32" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_9 (.C(CLK), 
                                        .CE(XLXN_58), 
                                        .CLR(low), 
                                        .D(dataIn[15:0]), 
                                        .Q(I[15:0]));
-   (* HU_SET = "XLXI_10_278" *) 
+   (* HU_SET = "XLXI_10_33" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_10 (.C(CLK), 
                                         .CE(XLXN_60), 
                                         .CLR(low), 
                                         .D(dataIn[15:0]), 
                                         .Q(J[15:0]));
-   (* HU_SET = "XLXI_11_279" *) 
+   (* HU_SET = "XLXI_11_34" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_11 (.C(CLK), 
                                         .CE(XLXN_62), 
                                         .CLR(low), 
                                         .D(dataIn[15:0]), 
                                         .Q(K[15:0]));
-   (* HU_SET = "XLXI_12_280" *) 
+   (* HU_SET = "XLXI_12_35" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_12 (.C(CLK), 
                                         .CE(XLXN_64), 
                                         .CLR(low), 
                                         .D(dataIn[15:0]), 
                                         .Q(L[15:0]));
-   (* HU_SET = "XLXI_13_281" *) 
+   (* HU_SET = "XLXI_13_36" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_13 (.C(CLK), 
                                         .CE(XLXN_67), 
                                         .CLR(low), 
                                         .D(dataIn[15:0]), 
                                         .Q(M[15:0]));
-   (* HU_SET = "XLXI_14_282" *) 
+   (* HU_SET = "XLXI_14_37" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_14 (.C(CLK), 
                                         .CE(XLXN_70), 
                                         .CLR(low), 
                                         .D(dataIn[15:0]), 
                                         .Q(N[15:0]));
-   (* HU_SET = "XLXI_15_283" *) 
+   (* HU_SET = "XLXI_15_38" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_15 (.C(CLK), 
                                         .CE(XLXN_72), 
                                         .CLR(low), 
                                         .D(dataIn[15:0]), 
                                         .Q(O[15:0]));
-   (* HU_SET = "XLXI_16_284" *) 
+   (* HU_SET = "XLXI_16_39" *) 
    FD16CE_MXILINX_regFile16b16  XLXI_16 (.C(CLK), 
                                         .CE(XLXN_74), 
                                         .CLR(low), 

@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : EPC.vf
-// /___/   /\     Timestamp : 11/10/2015 12:46:15
+// /___/   /\     Timestamp : 11/10/2015 16:56:07
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -128,7 +128,7 @@ module Instruction_Register_MUSER_EPC(CLK,
    
    wire G;
    
-   (* HU_SET = "XLXI_2_294" *) 
+   (* HU_SET = "XLXI_2_68" *) 
    FD16CE_MXILINX_EPC  XLXI_2 (.C(CLK), 
                               .CE(RegWrite), 
                               .CLR(G), 
