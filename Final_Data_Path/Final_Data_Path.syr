@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: Final_Data_Path.prj
@@ -525,6 +525,22 @@ Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
 
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
 Analyzing hierarchy for module <add1b_MUSER_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
@@ -540,7 +556,8 @@ Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <Final_Data_Path>.
-WARNING:Xst:2211 - "ipcore_dir/memory.v" line 2542: Instantiating black box module <memory>.
+WARNING:Xst:2211 - "ipcore_dir/memory.v" line 2557: Instantiating black box module <memory>.
+WARNING:Xst:852 - "Final_Data_Path.vf" line 2617: Unconnected input port 'D' of instance 'XLXI_40' is tied to GND.
 Module <Final_Data_Path> is correct for synthesis.
  
 Analyzing module <PC_Register_MUSER_Final_Data_Path> in library <work>.
@@ -2140,7 +2157,7 @@ Unit <claAdde16b_MUSER_Final_Data_Path> synthesized.
 Synthesizing Unit <Final_Data_Path>.
     Related source file is "Final_Data_Path.vf".
 WARNING:Xst:646 - Signal <XLXN_246> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <MemAddr<15:14>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <MemReadAddr<15:14>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <LCDWrite> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <LCDData> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
 WARNING:Xst:646 - Signal <CLR> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -2450,28 +2467,28 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 144
+# IOs                              : 192
 
 Cell Usage :
-# BELS                             : 3442
-#      AND2                        : 788
-#      AND2B1                      : 592
-#      AND3                        : 232
-#      AND3B1                      : 168
+# BELS                             : 3494
+#      AND2                        : 805
+#      AND2B1                      : 609
+#      AND3                        : 233
+#      AND3B1                      : 169
 #      AND4                        : 6
 #      AND5                        : 16
 #      BUF                         : 48
 #      GND                         : 2
 #      INV                         : 120
-#      LUT2                        : 2
+#      LUT2                        : 1
 #      LUT3                        : 60
 #      LUT4                        : 47
 #      MUXF5                       : 80
 #      MUXF5_L                     : 256
 #      MUXF6                       : 137
-#      OR2                         : 797
+#      OR2                         : 813
 #      OR3                         : 22
-#      OR4                         : 25
+#      OR4                         : 26
 #      OR5                         : 5
 #      VCC                         : 6
 #      XOR2                        : 33
@@ -2486,8 +2503,8 @@ Cell Usage :
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 143
-#      OBUF                        : 143
+# IO Buffers                       : 191
+#      OBUF                        : 191
 # Logical                          : 132
 #      NAND2                       : 96
 #      NAND3                       : 32
@@ -2501,9 +2518,9 @@ Selected Device : 3s500efg320-4
 
  Number of Slices:                      194  out of   4656     4%  
  Number of Slice Flip Flops:            388  out of   9312     4%  
- Number of 4 input LUTs:                229  out of   9312     2%  
- Number of IOs:                         144
- Number of bonded IOBs:                 144  out of    232    62%  
+ Number of 4 input LUTs:                228  out of   9312     2%  
+ Number of IOs:                         192
+ Number of bonded IOBs:                 192  out of    232    82%  
     IOB Flip Flops:                      11
  Number of BRAMs:                        15  out of     20    75%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -2552,9 +2569,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 40.445ns (Maximum Frequency: 24.725MHz)
+   Minimum period: 44.082ns (Maximum Frequency: 22.685MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 36.901ns
+   Maximum output required time after clock: 42.367ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -2563,23 +2580,23 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 40.445ns (frequency: 24.725MHz)
-  Total number of paths / destination ports: 2184378 / 884
+  Clock period: 44.082ns (frequency: 22.685MHz)
+  Total number of paths / destination ports: 57440532 / 884
 -------------------------------------------------------------------------
-Delay:               40.445ns (Levels of Logic = 41)
-  Source:            XLXI_8/XLXI_2/I_Q12 (FF)
-  Destination:       XLXI_1/XLXI_1/I_Q0 (FF)
+Delay:               44.082ns (Levels of Logic = 44)
+  Source:            XLXI_8/XLXI_2/I_Q15 (FF)
+  Destination:       XLXI_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s3_init.ram/dpram.dp9x9.ram (RAM)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: XLXI_8/XLXI_2/I_Q12 to XLXI_1/XLXI_1/I_Q0
+  Data Path: XLXI_8/XLXI_2/I_Q15 to XLXI_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s3_init.ram/dpram.dp9x9.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            15   0.591   1.017  I_Q12 (Q<12>)
+     FDCE:C->Q            16   0.591   1.034  I_Q15 (Q<15>)
      end scope: 'XLXI_8/XLXI_2'
-     INV:I->O              1   0.704   0.420  XLXI_192 (XLXN_301)
-     AND4:I0->O           32   0.704   1.262  XLXI_183 (XLXN_281)
+     INV:I->O              1   0.704   0.420  XLXI_191 (XLXN_298)
+     AND4:I3->O           32   0.704   1.262  XLXI_183 (XLXN_281)
      begin scope: 'XLXI_182/XLXI_1'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
@@ -2621,26 +2638,30 @@ Delay:               40.445ns (Levels of Logic = 41)
      MUXF5:I1->O           4   0.321   0.587  I_O (O)
      end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
      NOR4:I3->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_85 (XLXI_45/Z3)
-     AND4:I0->O            2   0.704   0.447  XLXI_45/XLXI_28 (Is_Zero)
-     INV:I->O              1   0.704   0.420  XLXI_1/XLXI_18 (XLXI_1/XLXN_25)
-     AND2:I0->O            1   0.704   0.420  XLXI_1/XLXI_15 (XLXI_1/XLXN_12)
-     OR3:I0->O            16   0.704   1.034  XLXI_1/XLXI_12 (XLXI_1/XLXN_1)
-     begin scope: 'XLXI_1/XLXI_1'
-     FDCE:CE                   0.555          I_Q0
+     AND4:I0->O            4   0.704   0.587  XLXI_45/XLXI_28 (Is_Zero)
+     AND2:I0->O            1   0.704   0.420  XLXI_198 (Direct1)
+     OR4:I0->O            32   0.704   1.262  XLXI_197 (XLXN_303)
+     begin scope: 'XLXI_193/XLXI_11'
+     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O            16   0.704   1.209  I_36_8 (O)
+     end scope: 'XLXI_193/XLXI_11'
+     begin scope: 'XLXI_4'
+     LUT3:I0->O            1   0.704   0.420  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT_7_cmp_eq00001 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT_7_cmp_eq0000)
+     RAMB16_S9_S9:ENA          0.770          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s3_init.ram/dpram.dp9x9.ram
     ----------------------------------------
-    Total                     40.445ns (23.612ns logic, 16.833ns route)
-                                       (58.4% logic, 41.6% route)
+    Total                     44.082ns (25.235ns logic, 18.847ns route)
+                                       (57.2% logic, 42.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_160/XLXI_4/EPCWrite_or00001'
-  Total number of paths / destination ports: 40437 / 69
+  Total number of paths / destination ports: 80981 / 85
 -------------------------------------------------------------------------
-Offset:              36.389ns (Levels of Logic = 37)
+Offset:              41.838ns (Levels of Logic = 46)
   Source:            XLXI_160/XLXI_4/SignExt (LATCH)
-  Destination:       ALU_Out<15> (PAD)
+  Destination:       PC_Input<15> (PAD)
   Source Clock:      XLXI_160/XLXI_4/EPCWrite_or00001 falling
 
-  Data Path: XLXI_160/XLXI_4/SignExt to ALU_Out<15>
+  Data Path: XLXI_160/XLXI_4/SignExt to PC_Input<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -2689,28 +2710,40 @@ Offset:              36.389ns (Levels of Logic = 37)
      end scope: 'I_M23'
      MUXF5:I1->O           4   0.321   0.587  I_O (O)
      end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
-     OBUF:I->O                 3.272          ALU_Out_12_OBUF (ALU_Out<12>)
+     begin scope: 'XLXI_170/XLXI_45'
+     begin scope: 'I_M01'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_8 (O)
+     end scope: 'I_M01'
+     MUXF5_L:I0->LO        1   0.321   0.000  I_M03 (M03)
+     MUXF6:I0->O           1   0.521   0.420  I_M07 (MO7)
+     begin scope: 'I_O'
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             3   0.704   0.531  I_36_38 (O)
+     end scope: 'I_O'
+     end scope: 'XLXI_170/XLXI_45'
+     OBUF:I->O                 3.272          PC_Input_12_OBUF (PC_Input<12>)
     ----------------------------------------
-    Total                     36.389ns (22.894ns logic, 13.495ns route)
-                                       (62.9% logic, 37.1% route)
+    Total                     41.838ns (26.552ns logic, 15.286ns route)
+                                       (63.5% logic, 36.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 65007 / 137
+  Total number of paths / destination ports: 129007 / 185
 -------------------------------------------------------------------------
-Offset:              36.901ns (Levels of Logic = 37)
-  Source:            XLXI_8/XLXI_2/I_Q12 (FF)
-  Destination:       ALU_Out<15> (PAD)
+Offset:              42.367ns (Levels of Logic = 46)
+  Source:            XLXI_8/XLXI_2/I_Q15 (FF)
+  Destination:       PC_Input<15> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: XLXI_8/XLXI_2/I_Q12 to ALU_Out<15>
+  Data Path: XLXI_8/XLXI_2/I_Q15 to PC_Input<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            15   0.591   1.017  I_Q12 (Q<12>)
+     FDCE:C->Q            16   0.591   1.034  I_Q15 (Q<15>)
      end scope: 'XLXI_8/XLXI_2'
-     INV:I->O              1   0.704   0.420  XLXI_192 (XLXN_301)
-     AND4:I0->O           32   0.704   1.262  XLXI_183 (XLXN_281)
+     INV:I->O              1   0.704   0.420  XLXI_191 (XLXN_298)
+     AND4:I3->O           32   0.704   1.262  XLXI_183 (XLXN_281)
      begin scope: 'XLXI_182/XLXI_1'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
@@ -2751,21 +2784,33 @@ Offset:              36.901ns (Levels of Logic = 37)
      end scope: 'I_M23'
      MUXF5:I1->O           4   0.321   0.587  I_O (O)
      end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
-     OBUF:I->O                 3.272          ALU_Out_12_OBUF (ALU_Out<12>)
+     begin scope: 'XLXI_170/XLXI_45'
+     begin scope: 'I_M01'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_8 (O)
+     end scope: 'I_M01'
+     MUXF5_L:I0->LO        1   0.321   0.000  I_M03 (M03)
+     MUXF6:I0->O           1   0.521   0.420  I_M07 (MO7)
+     begin scope: 'I_O'
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             3   0.704   0.531  I_36_38 (O)
+     end scope: 'I_O'
+     end scope: 'XLXI_170/XLXI_45'
+     OBUF:I->O                 3.272          PC_Input_12_OBUF (PC_Input<12>)
     ----------------------------------------
-    Total                     36.901ns (22.809ns logic, 14.092ns route)
-                                       (61.8% logic, 38.2% route)
+    Total                     42.367ns (26.467ns logic, 15.900ns route)
+                                       (62.5% logic, 37.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_160/XLXI_4/ALUOp_not0001'
-  Total number of paths / destination ports: 5184 / 16
+  Total number of paths / destination ports: 10368 / 32
 -------------------------------------------------------------------------
-Offset:              28.000ns (Levels of Logic = 24)
+Offset:              33.449ns (Levels of Logic = 33)
   Source:            XLXI_160/XLXI_4/ALUOp_2 (LATCH)
-  Destination:       ALU_Out<15> (PAD)
+  Destination:       PC_Input<15> (PAD)
   Source Clock:      XLXI_160/XLXI_4/ALUOp_not0001 falling
 
-  Data Path: XLXI_160/XLXI_4/ALUOp_2 to ALU_Out<15>
+  Data Path: XLXI_160/XLXI_4/ALUOp_2 to PC_Input<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -2796,10 +2841,22 @@ Offset:              28.000ns (Levels of Logic = 24)
      end scope: 'I_M23'
      MUXF5:I1->O           4   0.321   0.587  I_O (O)
      end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
-     OBUF:I->O                 3.272          ALU_Out_12_OBUF (ALU_Out<12>)
+     begin scope: 'XLXI_170/XLXI_45'
+     begin scope: 'I_M01'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_8 (O)
+     end scope: 'I_M01'
+     MUXF5_L:I0->LO        1   0.321   0.000  I_M03 (M03)
+     MUXF6:I0->O           1   0.521   0.420  I_M07 (MO7)
+     begin scope: 'I_O'
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             3   0.704   0.531  I_36_38 (O)
+     end scope: 'I_O'
+     end scope: 'XLXI_170/XLXI_45'
+     OBUF:I->O                 3.272          PC_Input_12_OBUF (PC_Input<12>)
     ----------------------------------------
-    Total                     28.000ns (17.645ns logic, 10.355ns route)
-                                       (63.0% logic, 37.0% route)
+    Total                     33.449ns (21.303ns logic, 12.146ns route)
+                                       (63.7% logic, 36.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_160/XLXI_4/old_next_state_18_not0001'
@@ -2824,14 +2881,14 @@ Offset:              4.368ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.95 secs
+Total CPU time to Xst completion: 12.36 secs
  
 --> 
 
 
-Total memory usage is 602300 kilobytes
+Total memory usage is 603196 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   42 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
 Number of infos    :   21 (   0 filtered)
 

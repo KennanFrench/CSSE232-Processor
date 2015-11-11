@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Final_Data_Path.vf
-// /___/   /\     Timestamp : 11/10/2015 19:22:24
+// /___/   /\     Timestamp : 11/11/2015 01:08:18
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -2424,8 +2424,11 @@ module Final_Data_Path(CLK,
                        current_state, 
                        GRegWrite, 
                        IROut, 
+                       MDR_Out, 
                        MemOut, 
                        next_state, 
+                       PC, 
+                       PC_Input, 
                        readDataA, 
                        WriteAddress, 
                        writeDataIn);
@@ -2438,8 +2441,11 @@ module Final_Data_Path(CLK,
    output [4:0] current_state;
    output GRegWrite;
    output [15:0] IROut;
+   output [15:0] MDR_Out;
    output [15:0] MemOut;
    output [4:0] next_state;
+   output [15:0] PC;
+   output [15:0] PC_Input;
    output [15:0] readDataA;
    output [3:0] WriteAddress;
    output [15:0] writeDataIn;
@@ -2448,6 +2454,10 @@ module Final_Data_Path(CLK,
    wire ALUSrcA;
    wire [1:0] ALUSrcB;
    wire CLR;
+   wire Direct1;
+   wire Direct2;
+   wire Direct3;
+   wire Direct4;
    wire EPCWrite;
    wire G;
    wire [1:0] IorD;
@@ -2456,10 +2466,10 @@ module Final_Data_Path(CLK,
    wire [15:0] LCDData;
    wire LCDWrite;
    wire [15:0] MemAddr;
+   wire [15:0] MemReadAddr;
    wire MemWrite;
    wire [1:0] MemWriteData;
    wire [15:0] Or_Sign;
-   wire [15:0] PC;
    wire [2:0] PCData;
    wire PCWrite;
    wire PCWriteBeq;
@@ -2476,14 +2486,12 @@ module Final_Data_Path(CLK,
    wire [15:0] XLXN_57;
    wire [15:0] XLXN_64;
    wire [15:0] XLXN_71;
-   wire [15:0] XLXN_72;
    wire [15:0] XLXN_110;
    wire [15:0] XLXN_229;
    wire XLXN_246;
    wire [15:0] XLXN_254;
    wire [3:0] XLXN_261;
    wire [15:0] XLXN_262;
-   wire [15:0] XLXN_266;
    wire [15:0] XLXN_268;
    wire [15:0] XLXN_269;
    wire [15:0] XLXN_270;
@@ -2497,15 +2505,19 @@ module Final_Data_Path(CLK,
    wire XLXN_281;
    wire XLXN_298;
    wire XLXN_301;
+   wire XLXN_303;
    wire GRegWrite_DUMMY;
    wire [15:0] ALU_Out_DUMMY;
+   wire [15:0] PC_DUMMY;
    wire [15:0] B_Input_DUMMY;
    wire [15:0] writeDataIn_DUMMY;
    wire [15:0] A_Input_DUMMY;
    wire [15:0] ALU_outAfter_DUMMY;
+   wire [15:0] MDR_Out_DUMMY;
    wire [15:0] MemOut_DUMMY;
    wire [15:0] readDataA_DUMMY;
    wire [3:0] WriteAddress_DUMMY;
+   wire [15:0] PC_Input_DUMMY;
    wire [15:0] IROut_DUMMY;
    
    assign XLXN_50 = 16'h0001;
@@ -2528,18 +2540,21 @@ module Final_Data_Path(CLK,
    assign B_Input[15:0] = B_Input_DUMMY[15:0];
    assign GRegWrite = GRegWrite_DUMMY;
    assign IROut[15:0] = IROut_DUMMY[15:0];
+   assign MDR_Out[15:0] = MDR_Out_DUMMY[15:0];
    assign MemOut[15:0] = MemOut_DUMMY[15:0];
+   assign PC[15:0] = PC_DUMMY[15:0];
+   assign PC_Input[15:0] = PC_Input_DUMMY[15:0];
    assign readDataA[15:0] = readDataA_DUMMY[15:0];
    assign WriteAddress[3:0] = WriteAddress_DUMMY[3:0];
    assign writeDataIn[15:0] = writeDataIn_DUMMY[15:0];
    PC_Register_MUSER_Final_Data_Path  XLXI_1 (.CLK(CLK), 
-                                             .DataIn(XLXN_266[15:0]), 
+                                             .DataIn(PC_Input_DUMMY[15:0]), 
                                              .Is_Zero(Is_Zero), 
                                              .PCWrite(PCWrite), 
                                              .PCWriteBeq(PCWriteBeq), 
                                              .PCWriteBne(PCWriteBne), 
-                                             .DataOut(PC[15:0]));
-   memory  XLXI_4 (.addra(MemAddr[13:0]), 
+                                             .DataOut(PC_DUMMY[15:0]));
+   memory  XLXI_4 (.addra(MemReadAddr[13:0]), 
                   .clka(CLK), 
                   .dina(XLXN_12[15:0]), 
                   .wea(MemWrite), 
@@ -2553,7 +2568,8 @@ module Final_Data_Path(CLK,
    Memory_Data_Register_MUSER_Final_Data_Path  XLXI_12 (.CLK(CLK), 
                                                        
          .DataIn(MemOut_DUMMY[15:0]), 
-                                                       .DataOut(XLXN_72[15:0]));
+                                                       
+         .DataOut(MDR_Out_DUMMY[15:0]));
    regFile16b16_MUSER_Final_Data_Path  XLXI_14 (.CLK(CLK), 
                                                
          .dataIn(writeDataIn_DUMMY[15:0]), 
@@ -2572,7 +2588,7 @@ module Final_Data_Path(CLK,
                                          .D(XLXN_261[3:0]), 
                                          .S(WriteAddr[1:0]), 
                                          .O(WriteAddress_DUMMY[3:0]));
-   mux3b16_MUSER_Final_Data_Path  XLXI_27 (.A(PC[15:0]), 
+   mux3b16_MUSER_Final_Data_Path  XLXI_27 (.A(PC_DUMMY[15:0]), 
                                           .B(ALU_outAfter_DUMMY[15:0]), 
                                           .C(XLXN_110[15:0]), 
                                           .S(IorD[1:0]), 
@@ -2580,7 +2596,7 @@ module Final_Data_Path(CLK,
    reg16b_MUSER_Final_Data_Path  XLXI_29 (.CLK(CLK), 
                                          .DataIn(XLXN_46[15:0]), 
                                          .DataOut(XLXN_49[15:0]));
-   mux2b16_MUSER_Final_Data_Path  XLXI_30 (.A(PC[15:0]), 
+   mux2b16_MUSER_Final_Data_Path  XLXI_30 (.A(PC_DUMMY[15:0]), 
                                           .B(XLXN_47[15:0]), 
                                           .S(ALUSrcA), 
                                           .O(A_Input_DUMMY[15:0]));
@@ -2599,9 +2615,9 @@ module Final_Data_Path(CLK,
    signext4b16_MUSER_Final_Data_Path  XLXI_39 (.Input(IROut_DUMMY[3:0]), 
                                               .O(XLXN_64[15:0]));
    mux4b16_MUSER_Final_Data_Path  XLXI_40 (.A(XLXN_71[15:0]), 
-                                          .B(XLXN_72[15:0]), 
+                                          .B(MDR_Out_DUMMY[15:0]), 
                                           .C(ALU_outAfter_DUMMY[15:0]), 
-                                          .D(IROut_DUMMY[15:0]), 
+                                          .D(), 
                                           .S(WriteData[1:0]), 
                                           .O(writeDataIn_DUMMY[15:0]));
    loadupper8b_MUSER_Final_Data_Path  XLXI_41 (.I(IROut_DUMMY[7:0]), 
@@ -2662,7 +2678,7 @@ module Final_Data_Path(CLK,
                                                      
          .WriteData(WriteData[1:0]));
    EPC_MUSER_Final_Data_Path  XLXI_163 (.CLK(CLK), 
-                                       .DataIn(PC[15:0]), 
+                                       .DataIn(PC_DUMMY[15:0]), 
                                        .RegWrite(EPCWrite), 
                                        .DataOut(XLXN_229[15:0]));
    mux16b16_MUSER_Final_Data_Path  XLXI_170 (.A(XLXN_47[15:0]), 
@@ -2670,8 +2686,8 @@ module Final_Data_Path(CLK,
                                             .C(ALU_outAfter_DUMMY[15:0]), 
                                             .D(XLXN_254[15:0]), 
                                             .E(XLXN_229[15:0]), 
-                                            .F({PC[15:12], 
-         MemOut_DUMMY[11:0]}), 
+                                            .F({PC_DUMMY[15:12], 
+         IROut_DUMMY[11:0]}), 
                                             .G(XLXN_268[15:0]), 
                                             .H(XLXN_269[15:0]), 
                                             .I(XLXN_270[15:0]), 
@@ -2683,7 +2699,7 @@ module Final_Data_Path(CLK,
                                             .O(XLXN_275[15:0]), 
                                             .P(XLXN_276[15:0]), 
                                             .S({G, PCData[2:0]}), 
-                                            .Result(XLXN_266[15:0]));
+                                            .Result(PC_Input_DUMMY[15:0]));
    mux2b16_MUSER_Final_Data_Path  XLXI_182 (.A(SignOut[15:0]), 
                                            .B({G, G, G, G, G, G, G, G, 
          IROut_DUMMY[7:0]}), 
@@ -2698,4 +2714,27 @@ module Final_Data_Path(CLK,
                  .O(XLXN_298));
    INV  XLXI_192 (.I(IROut_DUMMY[12]), 
                  .O(XLXN_301));
+   mux2b16_MUSER_Final_Data_Path  XLXI_193 (.A(MemAddr[15:0]), 
+                                           .B(PC_Input_DUMMY[15:0]), 
+                                           .S(XLXN_303), 
+                                           .O(MemReadAddr[15:0]));
+   OR4  XLXI_197 (.I0(Direct1), 
+                 .I1(Direct2), 
+                 .I2(Direct3), 
+                 .I3(Direct4), 
+                 .O(XLXN_303));
+   AND2  XLXI_198 (.I0(Is_Zero), 
+                  .I1(PCWriteBeq), 
+                  .O(Direct1));
+   AND2B1  XLXI_199 (.I0(Is_Zero), 
+                    .I1(PCWriteBne), 
+                    .O(Direct2));
+   AND3  XLXI_200 (.I0(IROut_DUMMY[13]), 
+                  .I1(IROut_DUMMY[14]), 
+                  .I2(IROut_DUMMY[15]), 
+                  .O(Direct3));
+   AND3B1  XLXI_201 (.I0(IROut_DUMMY[13]), 
+                    .I1(IROut_DUMMY[14]), 
+                    .I2(IROut_DUMMY[15]), 
+                    .O(Direct4));
 endmodule

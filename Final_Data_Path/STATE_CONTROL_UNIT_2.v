@@ -410,7 +410,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                WriteData <= 0;
 					SignExt <= 0;
 					GRegWrite <= 0;
-					ALUSrcA <= 0;
+					ALUSrcA <= 1;
 					ALUSrcB <= 0;
 					PCData <= 2;
 					MemRead <= 0;
@@ -434,7 +434,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                WriteData <= 0;
 					SignExt <= 0;
 					GRegWrite <= 0;
-					ALUSrcA <= 0;
+					ALUSrcA <= 1;
 					ALUSrcB <= 0;
 					PCData <= 2;
 					MemRead <= 0;
@@ -495,7 +495,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           Jal_3:
             begin
                $display("Jump And Link Cycle 3");
-					ALUOp <= 0; //addition
+					ALUOp <= 2; //addition
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
                PCWriteBne <= 0;
