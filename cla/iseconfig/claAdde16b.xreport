@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-11-10T02:58:24</DateModified>
+  <DateModified>2015-11-11T11:43:46</DateModified>
   <ModuleName>claAdde16b</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/iseconfig/claAdde16b.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/iseconfig/claAdde16b.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/cla/</ImplementationReportsDirectory>
   <DateInitialized>2015-11-05T19:52:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

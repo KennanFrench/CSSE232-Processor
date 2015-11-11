@@ -1,29 +1,9 @@
-add $sp $0 $0
-lui $t0 0
-ori $t0 255
-add $sp $sp $t0 
-and $t0 $sp $t0
-add $a0 $0 $0
-add $a1 $0 $0
 add $t0 $0 $0
+addi $t0 14
 add $t1 $0 $0
-add $t2 $0 $0
-add $t3 $0 $0
-add $s0 $0 $0
-add $s1 $0 $0
-add $s2 $0 $0
-add $ra $0 $0
-add $rv $0 $0
-add $at $0 $0
-add $k0 $0 $0
-add $k1 $0 $0
-addi $t0 8
-sub $sp $sp $t0
-lui $t0 18
-ori $t0 52
-add $t2 $0 $0
-addi $t2 52
-lui $t1 18
-ori $t1 $t1 $t2
-and $t1 $t1 $0
-addi $t2 0
+addi $t1 13
+or $t2 $t0 $t1
+and $t3 $t0 $t1
+sub $s0 $t0 $t1
+slt $s1 $t0 $t1
+slt $s2 $t1 $t0

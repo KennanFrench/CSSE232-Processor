@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : MemoryMapDecoder.vf
-// /___/   /\     Timestamp : 11/10/2015 16:56:11
+// /___/   /\     Timestamp : 11/11/2015 11:14:05
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/MemoryMapDecoder.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/MemoryMapDecoder.sch
+//Command: sch2hdl -sympath /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/MemoryMapDecoder.vf -w /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/MemoryMapDecoder.sch
 //Design Name: MemoryMapDecoder
 //Device: spartan3e
 //Purpose:
@@ -135,12 +135,12 @@ module M16_1E_MXILINX_MemoryMapDecoder(D0,
    wire M67;
    wire M89;
    
-   (* HU_SET = "I_MAB_221" *) 
+   (* HU_SET = "I_MAB_399" *) 
    M2_1_MXILINX_MemoryMapDecoder  I_MAB (.D0(D10), 
                                         .D1(D11), 
                                         .S0(S0), 
                                         .O(MAB));
-   (* HU_SET = "I_MCD_220" *) 
+   (* HU_SET = "I_MCD_398" *) 
    M2_1_MXILINX_MemoryMapDecoder  I_MCD (.D0(D12), 
                                         .D1(D13), 
                                         .S0(S0), 
@@ -149,7 +149,7 @@ module M16_1E_MXILINX_MemoryMapDecoder(D0,
                   .I1(MEF), 
                   .S(S1), 
                   .LO(MCF));
-   (* HU_SET = "I_MEF_219" *) 
+   (* HU_SET = "I_MEF_397" *) 
    M2_1_MXILINX_MemoryMapDecoder  I_MEF (.D0(D14), 
                                         .D1(D15), 
                                         .S0(S0), 
@@ -162,7 +162,7 @@ module M16_1E_MXILINX_MemoryMapDecoder(D0,
                 .I1(MCF), 
                 .S(S2), 
                 .O(MBF));
-   (* HU_SET = "I_M01_226" *) 
+   (* HU_SET = "I_M01_404" *) 
    M2_1_MXILINX_MemoryMapDecoder  I_M01 (.D0(D0), 
                                         .D1(D1), 
                                         .S0(S0), 
@@ -175,12 +175,12 @@ module M16_1E_MXILINX_MemoryMapDecoder(D0,
                 .I1(M47), 
                 .S(S2), 
                 .O(MO7));
-   (* HU_SET = "I_M23_225" *) 
+   (* HU_SET = "I_M23_403" *) 
    M2_1_MXILINX_MemoryMapDecoder  I_M23 (.D0(D2), 
                                         .D1(D3), 
                                         .S0(S0), 
                                         .O(M23));
-   (* HU_SET = "I_M45_224" *) 
+   (* HU_SET = "I_M45_402" *) 
    M2_1_MXILINX_MemoryMapDecoder  I_M45 (.D0(D4), 
                                         .D1(D5), 
                                         .S0(S0), 
@@ -189,17 +189,17 @@ module M16_1E_MXILINX_MemoryMapDecoder(D0,
                   .I1(M67), 
                   .S(S1), 
                   .LO(M47));
-   (* HU_SET = "I_M67_223" *) 
+   (* HU_SET = "I_M67_401" *) 
    M2_1_MXILINX_MemoryMapDecoder  I_M67 (.D0(D6), 
                                         .D1(D7), 
                                         .S0(S0), 
                                         .O(M67));
-   (* HU_SET = "I_M89_222" *) 
+   (* HU_SET = "I_M89_400" *) 
    M2_1_MXILINX_MemoryMapDecoder  I_M89 (.D0(D8), 
                                         .D1(D9), 
                                         .S0(S0), 
                                         .O(M89));
-   (* HU_SET = "I_O_218" *) 
+   (* HU_SET = "I_O_396" *) 
    M2_1E_MXILINX_MemoryMapDecoder  I_O (.D0(MO7), 
                                        .D1(MBF), 
                                        .E(E), 
@@ -248,7 +248,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
    
    wire V;
    
-   (* HU_SET = "XLXI_17_227" *) 
+   (* HU_SET = "XLXI_17_405" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_17 (.D0(A[0]), 
                                             .D1(B[0]), 
                                             .D2(C[0]), 
@@ -271,7 +271,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[0]));
-   (* HU_SET = "XLXI_21_228" *) 
+   (* HU_SET = "XLXI_21_406" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_21 (.D0(A[4]), 
                                             .D1(B[4]), 
                                             .D2(C[4]), 
@@ -294,7 +294,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[4]));
-   (* HU_SET = "XLXI_44_229" *) 
+   (* HU_SET = "XLXI_44_407" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_44 (.D0(A[8]), 
                                             .D1(B[8]), 
                                             .D2(C[8]), 
@@ -317,7 +317,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[8]));
-   (* HU_SET = "XLXI_45_230" *) 
+   (* HU_SET = "XLXI_45_408" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_45 (.D0(A[12]), 
                                             .D1(B[12]), 
                                             .D2(C[12]), 
@@ -340,7 +340,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[12]));
-   (* HU_SET = "XLXI_46_234" *) 
+   (* HU_SET = "XLXI_46_412" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_46 (.D0(A[1]), 
                                             .D1(B[1]), 
                                             .D2(C[1]), 
@@ -363,7 +363,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[1]));
-   (* HU_SET = "XLXI_47_233" *) 
+   (* HU_SET = "XLXI_47_411" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_47 (.D0(A[5]), 
                                             .D1(B[5]), 
                                             .D2(C[5]), 
@@ -386,7 +386,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[5]));
-   (* HU_SET = "XLXI_48_232" *) 
+   (* HU_SET = "XLXI_48_410" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_48 (.D0(A[9]), 
                                             .D1(B[9]), 
                                             .D2(C[9]), 
@@ -409,7 +409,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[9]));
-   (* HU_SET = "XLXI_49_231" *) 
+   (* HU_SET = "XLXI_49_409" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_49 (.D0(A[13]), 
                                             .D1(B[13]), 
                                             .D2(C[13]), 
@@ -432,7 +432,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[13]));
-   (* HU_SET = "XLXI_54_235" *) 
+   (* HU_SET = "XLXI_54_413" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_54 (.D0(A[2]), 
                                             .D1(B[2]), 
                                             .D2(C[2]), 
@@ -455,7 +455,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[2]));
-   (* HU_SET = "XLXI_55_236" *) 
+   (* HU_SET = "XLXI_55_414" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_55 (.D0(A[6]), 
                                             .D1(B[6]), 
                                             .D2(C[6]), 
@@ -478,7 +478,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[6]));
-   (* HU_SET = "XLXI_56_237" *) 
+   (* HU_SET = "XLXI_56_415" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_56 (.D0(A[10]), 
                                             .D1(B[10]), 
                                             .D2(C[10]), 
@@ -501,7 +501,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[10]));
-   (* HU_SET = "XLXI_57_238" *) 
+   (* HU_SET = "XLXI_57_416" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_57 (.D0(A[14]), 
                                             .D1(B[14]), 
                                             .D2(C[14]), 
@@ -524,7 +524,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[14]));
-   (* HU_SET = "XLXI_58_239" *) 
+   (* HU_SET = "XLXI_58_417" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_58 (.D0(A[15]), 
                                             .D1(B[15]), 
                                             .D2(C[15]), 
@@ -547,7 +547,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[15]));
-   (* HU_SET = "XLXI_59_240" *) 
+   (* HU_SET = "XLXI_59_418" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_59 (.D0(A[11]), 
                                             .D1(B[11]), 
                                             .D2(C[11]), 
@@ -570,7 +570,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[11]));
-   (* HU_SET = "XLXI_60_241" *) 
+   (* HU_SET = "XLXI_60_419" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_60 (.D0(A[7]), 
                                             .D1(B[7]), 
                                             .D2(C[7]), 
@@ -593,7 +593,7 @@ module mux16b16_MUSER_MemoryMapDecoder(A,
                                             .S2(S[2]), 
                                             .S3(S[3]), 
                                             .O(Result[7]));
-   (* HU_SET = "XLXI_61_242" *) 
+   (* HU_SET = "XLXI_61_420" *) 
    M16_1E_MXILINX_MemoryMapDecoder  XLXI_61 (.D0(A[3]), 
                                             .D1(B[3]), 
                                             .D2(C[3]), 
