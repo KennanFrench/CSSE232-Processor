@@ -58,9 +58,7 @@
          <ClosedNode>/signext4b16 |home|frenchkt|Documents|School|Sophomore|Q1|CSSE232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|signext4b16.sch</ClosedNode>
          <ClosedNode>/signext8b16 |home|frenchkt|Documents|School|Sophomore|Q1|CSSE232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|signext8b16.sch</ClosedNode>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>Final_Data_Path (/home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Final_Data_Path.sch)</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000273000000020000000000000000000000000200000064ffffffff000000810000000300000002000002730000000100000003000000000000000100000003</ViewHeaderState>
@@ -73,13 +71,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000002fc0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
