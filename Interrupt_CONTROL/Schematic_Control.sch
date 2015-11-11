@@ -58,7 +58,8 @@
         <port polarity="Input" name="InterruptHandler" />
         <port polarity="Output" name="CLR" />
         <blockdef name="STATE_CONTROL_UNIT_2">
-            <timestamp>2015-11-7T1:22:56</timestamp>
+            <timestamp>2015-11-8T3:31:21</timestamp>
+            <line x2="464" y1="800" y2="800" x1="400" />
             <line x2="464" y1="736" y2="736" x1="400" />
             <line x2="0" y1="672" y2="672" x1="64" />
             <rect width="64" x="0" y="532" height="24" />
@@ -96,7 +97,7 @@
             <line x2="464" y1="-96" y2="-96" x1="400" />
             <rect width="64" x="400" y="-44" height="24" />
             <line x2="464" y1="-32" y2="-32" x1="400" />
-            <rect width="336" x="64" y="-1088" height="1856" />
+            <rect width="336" x="64" y="-1088" height="1920" />
         </blockdef>
         <blockdef name="gnd">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -134,6 +135,7 @@
             <blockpin signalname="current_state(4:0)" name="current_state(4:0)" />
             <blockpin signalname="next_state(4:0)" name="next_state(4:0)" />
             <blockpin signalname="MemWriteData(1:0)" name="MemWriteData(1:0)" />
+            <blockpin name="LCDWrite" />
         </block>
         <block symbolname="gnd" name="XLXI_2">
             <blockpin signalname="G" name="G" />
