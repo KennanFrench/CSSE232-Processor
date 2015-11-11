@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Instruction_Register.vf
-// /___/   /\     Timestamp : 11/11/2015 14:13:15
+// /___/   /\     Timestamp : 11/11/2015 15:15:52
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -128,7 +128,7 @@ module Instruction_Register(CLK,
    
    wire G;
    
-   (* HU_SET = "XLXI_2_0" *) 
+   (* HU_SET = "XLXI_2_93" *) 
    FD16CE_MXILINX_Instruction_Register  XLXI_2 (.C(CLK), 
                                                .CE(RegWrite), 
                                                .CLR(G), 

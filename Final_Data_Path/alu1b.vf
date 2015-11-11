@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : alu1b.vf
-// /___/   /\     Timestamp : 11/11/2015 14:13:18
+// /___/   /\     Timestamp : 11/11/2015 15:15:55
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -95,13 +95,13 @@ module M4_1E_MXILINX_alu1b(D0,
    wire M01;
    wire M23;
    
-   (* HU_SET = "I_M01_128" *) 
+   (* HU_SET = "I_M01_247" *) 
    M2_1E_MXILINX_alu1b  I_M01 (.D0(D0), 
                               .D1(D1), 
                               .E(E), 
                               .S0(S0), 
                               .O(M01));
-   (* HU_SET = "I_M23_127" *) 
+   (* HU_SET = "I_M23_246" *) 
    M2_1E_MXILINX_alu1b  I_M23 (.D0(D2), 
                               .D1(D3), 
                               .E(E), 
@@ -217,7 +217,7 @@ module alu1b(a,
                              .ci(ci), 
                              .co(co), 
                              .r(s_DUMMY));
-   (* HU_SET = "XLXI_8_129" *) 
+   (* HU_SET = "XLXI_8_248" *) 
    M4_1E_MXILINX_alu1b  XLXI_8 (.D0(XLXN_8), 
                                .D1(XLXN_9), 
                                .D2(s_DUMMY), 
@@ -227,7 +227,7 @@ module alu1b(a,
                                .S1(op[1]), 
                                .O(r));
    VCC  XLXI_9 (.P(XLXN_13));
-   (* HU_SET = "XLXI_15_130" *) 
+   (* HU_SET = "XLXI_15_249" *) 
    M2_1_MXILINX_alu1b  XLXI_15 (.D0(b), 
                                .D1(XLXN_38), 
                                .S0(op[2]), 

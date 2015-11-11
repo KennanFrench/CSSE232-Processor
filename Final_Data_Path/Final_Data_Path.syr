@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: Final_Data_Path.prj
@@ -237,11 +237,18 @@ Module <alu1b_MUSER_claAdde16b> compiled
 Module <claAdder4b_MUSER_claAdde16b> compiled
 Compiling verilog file "Final_Data_Path.vf" in library work
 Module <claAdde16b> compiled
+Module <M2_1_MXILINX_Final_Data_Path> compiled
+Module <INV4_MXILINX_Final_Data_Path> compiled
+Module <M2_1E_MXILINX_Final_Data_Path> compiled
+Module <M4_1E_MXILINX_Final_Data_Path> compiled
+Module <add1b_MUSER_Final_Data_Path> compiled
+Module <alu1b_MUSER_Final_Data_Path> compiled
+Module <claAdder4b_MUSER_Final_Data_Path> compiled
+Module <claAdde16b_MUSER_Final_Data_Path> compiled
 Module <buf16b_MUSER_Final_Data_Path> compiled
 Module <extend8b16_MUSER_Final_Data_Path> compiled
 Module <OR8_MXILINX_Final_Data_Path> compiled
 Module <xor4b2_MUSER_Final_Data_Path> compiled
-Module <M2_1_MXILINX_Final_Data_Path> compiled
 Module <mux4b2_MUSER_Final_Data_Path> compiled
 Module <Or16b2_MUSER_Final_Data_Path> compiled
 Module <Decoder3b8_MUSER_Final_Data_Path> compiled
@@ -249,7 +256,6 @@ Module <Interrupt_Register_MUSER_Final_Data_Path> compiled
 Module <Old_and_New_Interrupt_MUSER_Final_Data_Path> compiled
 Module <interrupt_control_MUSER_Final_Data_Path> compiled
 Module <mux2b16_MUSER_Final_Data_Path> compiled
-Module <M2_1E_MXILINX_Final_Data_Path> compiled
 Module <M16_1E_MXILINX_Final_Data_Path> compiled
 Module <mux16b16_MUSER_Final_Data_Path> compiled
 Module <FD16CE_MXILINX_Final_Data_Path> compiled
@@ -261,12 +267,6 @@ Module <mux3b1_MUSER_Final_Data_Path> compiled
 Module <mux3b16_MUSER_Final_Data_Path> compiled
 Module <MemoryMapDecoder_MUSER_Final_Data_Path> compiled
 Module <PC_Register_MUSER_Final_Data_Path> compiled
-Module <INV4_MXILINX_Final_Data_Path> compiled
-Module <M4_1E_MXILINX_Final_Data_Path> compiled
-Module <add1b_MUSER_Final_Data_Path> compiled
-Module <alu1b_MUSER_Final_Data_Path> compiled
-Module <claAdder4b_MUSER_Final_Data_Path> compiled
-Module <claAdde16b_MUSER_Final_Data_Path> compiled
 Module <loadupper8b_MUSER_Final_Data_Path> compiled
 Module <mux4b16_MUSER_Final_Data_Path> compiled
 Module <signext4b16_MUSER_Final_Data_Path> compiled
@@ -308,8 +308,6 @@ Analyzing hierarchy for module <signext4b16_MUSER_Final_Data_Path> in library <w
 
 Analyzing hierarchy for module <loadupper8b_MUSER_Final_Data_Path> in library <work>.
 
-Analyzing hierarchy for module <claAdde16b_MUSER_Final_Data_Path> in library <work>.
-
 Analyzing hierarchy for module <MemoryMapDecoder_MUSER_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <EPC_MUSER_Final_Data_Path> in library <work>.
@@ -317,6 +315,8 @@ Analyzing hierarchy for module <EPC_MUSER_Final_Data_Path> in library <work>.
 Analyzing hierarchy for module <mux16b16_MUSER_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <interrupt_control_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <claAdde16b_MUSER_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
 
@@ -434,8 +434,6 @@ Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>
 
 Analyzing hierarchy for module <buf16b_MUSER_Final_Data_Path> in library <work>.
 
-Analyzing hierarchy for module <claAdder4b_MUSER_Final_Data_Path> in library <work>.
-
 Analyzing hierarchy for module <Instruction_Register_MUSER_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M16_1E_MXILINX_Final_Data_Path> in library <work>.
@@ -504,23 +502,13 @@ Analyzing hierarchy for module <mux4b2_MUSER_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <extend8b16_MUSER_Final_Data_Path> in library <work>.
 
+Analyzing hierarchy for module <claAdder4b_MUSER_Final_Data_Path> in library <work>.
+
 Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
-
-Analyzing hierarchy for module <alu1b_MUSER_Final_Data_Path> in library <work>.
-
-Analyzing hierarchy for module <INV4_MXILINX_Final_Data_Path> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
-
-Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <FD16CE_MXILINX_Final_Data_Path> in library <work>.
 
@@ -541,6 +529,22 @@ Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
 Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
 
@@ -620,13 +624,25 @@ Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <buf16b_MUSER_Final_Data_Path> in library <work>.
 
+Analyzing hierarchy for module <alu1b_MUSER_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <INV4_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
+
+Analyzing hierarchy for module <Decoder3b8_MUSER_Final_Data_Path> in library <work>.
+
 Analyzing hierarchy for module <add1b_MUSER_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M4_1E_MXILINX_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M2_1_MXILINX_Final_Data_Path> in library <work>.
-
-Analyzing hierarchy for module <Decoder3b8_MUSER_Final_Data_Path> in library <work>.
 
 Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>.
 
@@ -637,14 +653,14 @@ Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <Final_Data_Path>.
-WARNING:Xst:2211 - "ipcore_dir/memory.v" line 2971: Instantiating black box module <memory>.
-WARNING:Xst:852 - "Final_Data_Path.vf" line 3031: Unconnected input port 'D' of instance 'XLXI_40' is tied to GND.
+WARNING:Xst:2211 - "ipcore_dir/memory.v" line 2985: Instantiating black box module <memory>.
+WARNING:Xst:852 - "Final_Data_Path.vf" line 3045: Unconnected input port 'D' of instance 'XLXI_40' is tied to GND.
 Module <Final_Data_Path> is correct for synthesis.
  
 Analyzing module <PC_Register_MUSER_Final_Data_Path> in library <work>.
 Module <PC_Register_MUSER_Final_Data_Path> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_1_48" for instance <XLXI_1> in unit <PC_Register_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_1_57" for instance <XLXI_1> in unit <PC_Register_MUSER_Final_Data_Path>.
 Analyzing module <FD16CE_MXILINX_Final_Data_Path.1> in library <work>.
 Module <FD16CE_MXILINX_Final_Data_Path.1> is correct for synthesis.
  
@@ -667,7 +683,7 @@ Module <FD16CE_MXILINX_Final_Data_Path.1> is correct for synthesis.
 Analyzing module <Instruction_Register_MUSER_Final_Data_Path> in library <work>.
 Module <Instruction_Register_MUSER_Final_Data_Path> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_2_46" for instance <XLXI_2> in unit <Instruction_Register_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_2_55" for instance <XLXI_2> in unit <Instruction_Register_MUSER_Final_Data_Path>.
 Analyzing module <FD16CE_MXILINX_Final_Data_Path.2> in library <work>.
 Module <FD16CE_MXILINX_Final_Data_Path.2> is correct for synthesis.
  
@@ -690,7 +706,7 @@ Module <FD16CE_MXILINX_Final_Data_Path.2> is correct for synthesis.
 Analyzing module <Memory_Data_Register_MUSER_Final_Data_Path> in library <work>.
 Module <Memory_Data_Register_MUSER_Final_Data_Path> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_1_47" for instance <XLXI_1> in unit <Memory_Data_Register_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_1_56" for instance <XLXI_1> in unit <Memory_Data_Register_MUSER_Final_Data_Path>.
 Analyzing module <FD16CE_MXILINX_Final_Data_Path.3> in library <work>.
 Module <FD16CE_MXILINX_Final_Data_Path.3> is correct for synthesis.
  
@@ -1026,8 +1042,8 @@ Module <mux4b4_MUSER_Final_Data_Path> is correct for synthesis.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.1> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.1> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.1>.
 Analyzing module <M2_1E_MXILINX_Final_Data_Path.1> in library <work>.
 Module <M2_1E_MXILINX_Final_Data_Path.1> is correct for synthesis.
  
@@ -1037,18 +1053,18 @@ Module <M2_1E_MXILINX_Final_Data_Path.2> is correct for synthesis.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.2> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.2> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.2>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.3> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.3> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.3>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.4> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.4> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.4>.
 Analyzing module <mux3b16_MUSER_Final_Data_Path> in library <work>.
 Module <mux3b16_MUSER_Final_Data_Path> is correct for synthesis.
  
@@ -1061,22 +1077,22 @@ Module <reg16b_MUSER_Final_Data_Path> is correct for synthesis.
 Analyzing module <mux2b16_MUSER_Final_Data_Path> in library <work>.
 Module <mux2b16_MUSER_Final_Data_Path> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_1_6" for instance <XLXI_1> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_10_5" for instance <XLXI_10> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_11_18" for instance <XLXI_11> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_13_19" for instance <XLXI_13> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_14_17" for instance <XLXI_14> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_15_16" for instance <XLXI_15> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_16_15" for instance <XLXI_16> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_17_20" for instance <XLXI_17> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_2_7" for instance <XLXI_2> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_3_8" for instance <XLXI_3> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_4_9" for instance <XLXI_4> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_5_10" for instance <XLXI_5> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_6_11" for instance <XLXI_6> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_7_12" for instance <XLXI_7> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_8_13" for instance <XLXI_8> in unit <mux2b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_9_14" for instance <XLXI_9> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_1_15" for instance <XLXI_1> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_10_14" for instance <XLXI_10> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_11_27" for instance <XLXI_11> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_13_28" for instance <XLXI_13> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_14_26" for instance <XLXI_14> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_15_25" for instance <XLXI_15> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_16_24" for instance <XLXI_16> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_17_29" for instance <XLXI_17> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_2_16" for instance <XLXI_2> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_3_17" for instance <XLXI_3> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_4_18" for instance <XLXI_4> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_5_19" for instance <XLXI_5> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_6_20" for instance <XLXI_6> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_7_21" for instance <XLXI_7> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_8_22" for instance <XLXI_8> in unit <mux2b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_9_23" for instance <XLXI_9> in unit <mux2b16_MUSER_Final_Data_Path>.
 Analyzing module <M2_1_MXILINX_Final_Data_Path.1> in library <work>.
 Module <M2_1_MXILINX_Final_Data_Path.1> is correct for synthesis.
  
@@ -1147,83 +1163,83 @@ Module <mux4b16_MUSER_Final_Data_Path> is correct for synthesis.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.5> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.5> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.5>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.6> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.6> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.6>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.7> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.7> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.7>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.8> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.8> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.8>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.9> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.9> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.9>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.10> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.10> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.10>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.11> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.11> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.11>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.12> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.12> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.12>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.13> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.13> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.13>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.14> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.14> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.14>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.15> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.15> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.15>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.16> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.16> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.16>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.17> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.17> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.17>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.17>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.17>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.18> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.18> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.18>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.18>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.18>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.19> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.19> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.19>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.19>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.19>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.19>.
 Analyzing module <M4_1E_MXILINX_Final_Data_Path.20> in library <work>.
 Module <M4_1E_MXILINX_Final_Data_Path.20> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.20>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.20>.
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.20>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.20>.
 Analyzing module <signext8b16_MUSER_Final_Data_Path> in library <work>.
 Module <signext8b16_MUSER_Final_Data_Path> is correct for synthesis.
  
@@ -1236,36 +1252,43 @@ Module <signext4b16_MUSER_Final_Data_Path> is correct for synthesis.
 Analyzing module <loadupper8b_MUSER_Final_Data_Path> in library <work>.
 Module <loadupper8b_MUSER_Final_Data_Path> is correct for synthesis.
  
-Analyzing module <claAdde16b_MUSER_Final_Data_Path> in library <work>.
-Module <claAdde16b_MUSER_Final_Data_Path> is correct for synthesis.
+Analyzing module <MemoryMapDecoder_MUSER_Final_Data_Path> in library <work>.
+Module <MemoryMapDecoder_MUSER_Final_Data_Path> is correct for synthesis.
  
-Analyzing module <claAdder4b_MUSER_Final_Data_Path> in library <work>.
-Module <claAdder4b_MUSER_Final_Data_Path> is correct for synthesis.
+Analyzing module <EPC_MUSER_Final_Data_Path> in library <work>.
+Module <EPC_MUSER_Final_Data_Path> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_87_53" for instance <XLXI_87> in unit <claAdder4b_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_92_54" for instance <XLXI_92> in unit <claAdder4b_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_93_55" for instance <XLXI_93> in unit <claAdder4b_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_94_56" for instance <XLXI_94> in unit <claAdder4b_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_95_57" for instance <XLXI_95> in unit <claAdder4b_MUSER_Final_Data_Path>.
-Analyzing module <alu1b_MUSER_Final_Data_Path> in library <work>.
-Module <alu1b_MUSER_Final_Data_Path> is correct for synthesis.
+Analyzing module <mux16b16_MUSER_Final_Data_Path> in library <work>.
+Module <mux16b16_MUSER_Final_Data_Path> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_15_52" for instance <XLXI_15> in unit <alu1b_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_8_51" for instance <XLXI_8> in unit <alu1b_MUSER_Final_Data_Path>.
-Analyzing module <add1b_MUSER_Final_Data_Path> in library <work>.
-Module <add1b_MUSER_Final_Data_Path> is correct for synthesis.
+    Set user-defined property "HU_SET =  XLXI_17_39" for instance <XLXI_17> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_21_40" for instance <XLXI_21> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_44_41" for instance <XLXI_44> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_45_42" for instance <XLXI_45> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_46_46" for instance <XLXI_46> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_47_45" for instance <XLXI_47> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_48_44" for instance <XLXI_48> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_49_43" for instance <XLXI_49> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_54_47" for instance <XLXI_54> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_55_48" for instance <XLXI_55> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_56_49" for instance <XLXI_56> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_57_50" for instance <XLXI_57> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_58_51" for instance <XLXI_58> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_59_52" for instance <XLXI_59> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_60_53" for instance <XLXI_60> in unit <mux16b16_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_61_54" for instance <XLXI_61> in unit <mux16b16_MUSER_Final_Data_Path>.
+Analyzing module <M16_1E_MXILINX_Final_Data_Path.1> in library <work>.
+Module <M16_1E_MXILINX_Final_Data_Path.1> is correct for synthesis.
  
-Analyzing module <M4_1E_MXILINX_Final_Data_Path.21> in library <work>.
-Module <M4_1E_MXILINX_Final_Data_Path.21> is correct for synthesis.
- 
-    Set user-defined property "HU_SET =  I_M01_50" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.21>.
-    Set user-defined property "HU_SET =  I_M23_49" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.21>.
-Analyzing module <M2_1_MXILINX_Final_Data_Path.33> in library <work>.
-Module <M2_1_MXILINX_Final_Data_Path.33> is correct for synthesis.
- 
-Analyzing module <INV4_MXILINX_Final_Data_Path> in library <work>.
-Module <INV4_MXILINX_Final_Data_Path> is correct for synthesis.
- 
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
 Analyzing module <M2_1_MXILINX_Final_Data_Path.17> in library <work>.
 Module <M2_1_MXILINX_Final_Data_Path.17> is correct for synthesis.
  
@@ -1278,43 +1301,6 @@ Module <M2_1_MXILINX_Final_Data_Path.19> is correct for synthesis.
 Analyzing module <M2_1_MXILINX_Final_Data_Path.20> in library <work>.
 Module <M2_1_MXILINX_Final_Data_Path.20> is correct for synthesis.
  
-Analyzing module <MemoryMapDecoder_MUSER_Final_Data_Path> in library <work>.
-Module <MemoryMapDecoder_MUSER_Final_Data_Path> is correct for synthesis.
- 
-Analyzing module <EPC_MUSER_Final_Data_Path> in library <work>.
-Module <EPC_MUSER_Final_Data_Path> is correct for synthesis.
- 
-Analyzing module <mux16b16_MUSER_Final_Data_Path> in library <work>.
-Module <mux16b16_MUSER_Final_Data_Path> is correct for synthesis.
- 
-    Set user-defined property "HU_SET =  XLXI_17_30" for instance <XLXI_17> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_21_31" for instance <XLXI_21> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_44_32" for instance <XLXI_44> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_45_33" for instance <XLXI_45> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_46_37" for instance <XLXI_46> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_47_36" for instance <XLXI_47> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_48_35" for instance <XLXI_48> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_49_34" for instance <XLXI_49> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_54_38" for instance <XLXI_54> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_55_39" for instance <XLXI_55> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_56_40" for instance <XLXI_56> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_57_41" for instance <XLXI_57> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_58_42" for instance <XLXI_58> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_59_43" for instance <XLXI_59> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_60_44" for instance <XLXI_60> in unit <mux16b16_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_61_45" for instance <XLXI_61> in unit <mux16b16_MUSER_Final_Data_Path>.
-Analyzing module <M16_1E_MXILINX_Final_Data_Path.1> in library <work>.
-Module <M16_1E_MXILINX_Final_Data_Path.1> is correct for synthesis.
- 
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.1>.
 Analyzing module <M2_1_MXILINX_Final_Data_Path.21> in library <work>.
 Module <M2_1_MXILINX_Final_Data_Path.21> is correct for synthesis.
  
@@ -1327,205 +1313,193 @@ Module <M2_1_MXILINX_Final_Data_Path.23> is correct for synthesis.
 Analyzing module <M2_1_MXILINX_Final_Data_Path.24> in library <work>.
 Module <M2_1_MXILINX_Final_Data_Path.24> is correct for synthesis.
  
-Analyzing module <M2_1_MXILINX_Final_Data_Path.25> in library <work>.
-Module <M2_1_MXILINX_Final_Data_Path.25> is correct for synthesis.
- 
-Analyzing module <M2_1_MXILINX_Final_Data_Path.26> in library <work>.
-Module <M2_1_MXILINX_Final_Data_Path.26> is correct for synthesis.
- 
-Analyzing module <M2_1_MXILINX_Final_Data_Path.27> in library <work>.
-Module <M2_1_MXILINX_Final_Data_Path.27> is correct for synthesis.
- 
-Analyzing module <M2_1_MXILINX_Final_Data_Path.28> in library <work>.
-Module <M2_1_MXILINX_Final_Data_Path.28> is correct for synthesis.
- 
 Analyzing module <M2_1E_MXILINX_Final_Data_Path.3> in library <work>.
 Module <M2_1E_MXILINX_Final_Data_Path.3> is correct for synthesis.
  
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.2> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.2> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.2>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.3> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.3> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.3>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.4> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.4> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.4>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.5> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.5> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.5>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.6> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.6> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.6>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.7> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.7> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.7>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.8> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.8> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.8>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.9> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.9> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.9>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.10> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.10> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.10>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.11> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.11> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.11>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.12> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.12> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.12>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.13> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.13> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.13>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.14> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.14> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.14>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.15> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.15> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.15>.
 Analyzing module <M16_1E_MXILINX_Final_Data_Path.16> in library <work>.
 Module <M16_1E_MXILINX_Final_Data_Path.16> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  I_M01_29" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_M23_28" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_M45_27" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_M67_26" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_M89_25" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_MAB_24" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_MCD_23" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_MEF_22" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
-    Set user-defined property "HU_SET =  I_O_21" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_M89_34" for instance <I_M89> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_MAB_33" for instance <I_MAB> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_MCD_32" for instance <I_MCD> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_MEF_31" for instance <I_MEF> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
+    Set user-defined property "HU_SET =  I_O_30" for instance <I_O> in unit <M16_1E_MXILINX_Final_Data_Path.16>.
 Analyzing module <interrupt_control_MUSER_Final_Data_Path> in library <work>.
 Module <interrupt_control_MUSER_Final_Data_Path> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_11_4" for instance <XLXI_11> in unit <interrupt_control_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_11_13" for instance <XLXI_11> in unit <interrupt_control_MUSER_Final_Data_Path>.
 Analyzing module <STATE_CONTROL_UNIT_2> in library <work>.
 	A_3 = 32'sb00000000000000000000000000000010
 	A_4 = 32'sb00000000000000000000000000001011
@@ -1656,10 +1630,55 @@ Module <OR8_MXILINX_Final_Data_Path> is correct for synthesis.
 Analyzing module <mux4b2_MUSER_Final_Data_Path> in library <work>.
 Module <mux4b2_MUSER_Final_Data_Path> is correct for synthesis.
  
-    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <mux4b2_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <mux4b2_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_3_2" for instance <XLXI_3> in unit <mux4b2_MUSER_Final_Data_Path>.
-    Set user-defined property "HU_SET =  XLXI_4_3" for instance <XLXI_4> in unit <mux4b2_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_1_9" for instance <XLXI_1> in unit <mux4b2_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_2_10" for instance <XLXI_2> in unit <mux4b2_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_3_11" for instance <XLXI_3> in unit <mux4b2_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_4_12" for instance <XLXI_4> in unit <mux4b2_MUSER_Final_Data_Path>.
+Analyzing module <M2_1_MXILINX_Final_Data_Path.25> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.25> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.26> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.26> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.27> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.27> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Final_Data_Path.28> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.28> is correct for synthesis.
+ 
+Analyzing module <extend8b16_MUSER_Final_Data_Path> in library <work>.
+Module <extend8b16_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <claAdde16b_MUSER_Final_Data_Path> in library <work>.
+Module <claAdde16b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <claAdder4b_MUSER_Final_Data_Path> in library <work>.
+Module <claAdder4b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_87_4" for instance <XLXI_87> in unit <claAdder4b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_92_5" for instance <XLXI_92> in unit <claAdder4b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_93_6" for instance <XLXI_93> in unit <claAdder4b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_94_7" for instance <XLXI_94> in unit <claAdder4b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_95_8" for instance <XLXI_95> in unit <claAdder4b_MUSER_Final_Data_Path>.
+Analyzing module <alu1b_MUSER_Final_Data_Path> in library <work>.
+Module <alu1b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_15_3" for instance <XLXI_15> in unit <alu1b_MUSER_Final_Data_Path>.
+    Set user-defined property "HU_SET =  XLXI_8_2" for instance <XLXI_8> in unit <alu1b_MUSER_Final_Data_Path>.
+Analyzing module <add1b_MUSER_Final_Data_Path> in library <work>.
+Module <add1b_MUSER_Final_Data_Path> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_Final_Data_Path.21> in library <work>.
+Module <M4_1E_MXILINX_Final_Data_Path.21> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_Final_Data_Path.21>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_Final_Data_Path.21>.
+Analyzing module <M2_1_MXILINX_Final_Data_Path.33> in library <work>.
+Module <M2_1_MXILINX_Final_Data_Path.33> is correct for synthesis.
+ 
+Analyzing module <INV4_MXILINX_Final_Data_Path> in library <work>.
+Module <INV4_MXILINX_Final_Data_Path> is correct for synthesis.
+ 
 Analyzing module <M2_1_MXILINX_Final_Data_Path.29> in library <work>.
 Module <M2_1_MXILINX_Final_Data_Path.29> is correct for synthesis.
  
@@ -1672,9 +1691,6 @@ Module <M2_1_MXILINX_Final_Data_Path.31> is correct for synthesis.
 Analyzing module <M2_1_MXILINX_Final_Data_Path.32> in library <work>.
 Module <M2_1_MXILINX_Final_Data_Path.32> is correct for synthesis.
  
-Analyzing module <extend8b16_MUSER_Final_Data_Path> in library <work>.
-Module <extend8b16_MUSER_Final_Data_Path> is correct for synthesis.
- 
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -1684,7 +1700,7 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <STATE_CONTROL_UNIT_2>.
     Related source file is "STATE_CONTROL_UNIT_2.v".
-    Found 4x5-bit ROM for signal <old_next_state_19$mux0000> created at line 736.
+    Found 4x5-bit ROM for signal <old_next_state_6$mux0000> created at line 736.
 WARNING:Xst:737 - Found 1-bit latch for signal <EPCWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 3-bit latch for signal <PCData>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1721,7 +1737,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <LCDWrite>. Latches may be genera
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 1-bit latch for signal <CLR>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-WARNING:Xst:737 - Found 5-bit latch for signal <$old_next_state_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 5-bit latch for signal <$old_next_state_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
     Found 5-bit register for signal <current_state>.
     Summary:
@@ -1926,11 +1942,6 @@ Synthesizing Unit <buf16b_MUSER_Final_Data_Path>.
 Unit <buf16b_MUSER_Final_Data_Path> synthesized.
 
 
-Synthesizing Unit <INV4_MXILINX_Final_Data_Path>.
-    Related source file is "Final_Data_Path.vf".
-Unit <INV4_MXILINX_Final_Data_Path> synthesized.
-
-
 Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_17>.
     Related source file is "Final_Data_Path.vf".
 Unit <M2_1_MXILINX_Final_Data_Path_17> synthesized.
@@ -1951,16 +1962,6 @@ Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_20>.
 Unit <M2_1_MXILINX_Final_Data_Path_20> synthesized.
 
 
-Synthesizing Unit <add1b_MUSER_Final_Data_Path>.
-    Related source file is "Final_Data_Path.vf".
-Unit <add1b_MUSER_Final_Data_Path> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_33>.
-    Related source file is "Final_Data_Path.vf".
-Unit <M2_1_MXILINX_Final_Data_Path_33> synthesized.
-
-
 Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_21>.
     Related source file is "Final_Data_Path.vf".
 Unit <M2_1_MXILINX_Final_Data_Path_21> synthesized.
@@ -1979,26 +1980,6 @@ Unit <M2_1_MXILINX_Final_Data_Path_23> synthesized.
 Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_24>.
     Related source file is "Final_Data_Path.vf".
 Unit <M2_1_MXILINX_Final_Data_Path_24> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_25>.
-    Related source file is "Final_Data_Path.vf".
-Unit <M2_1_MXILINX_Final_Data_Path_25> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_26>.
-    Related source file is "Final_Data_Path.vf".
-Unit <M2_1_MXILINX_Final_Data_Path_26> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_27>.
-    Related source file is "Final_Data_Path.vf".
-Unit <M2_1_MXILINX_Final_Data_Path_27> synthesized.
-
-
-Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_28>.
-    Related source file is "Final_Data_Path.vf".
-Unit <M2_1_MXILINX_Final_Data_Path_28> synthesized.
 
 
 Synthesizing Unit <M2_1E_MXILINX_Final_Data_Path_3>.
@@ -2027,6 +2008,31 @@ Synthesizing Unit <Decoder3b8_MUSER_Final_Data_Path>.
 Unit <Decoder3b8_MUSER_Final_Data_Path> synthesized.
 
 
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_25>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_25> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_26>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_26> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_27>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_27> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_28>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_28> synthesized.
+
+
+Synthesizing Unit <INV4_MXILINX_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <INV4_MXILINX_Final_Data_Path> synthesized.
+
+
 Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_29>.
     Related source file is "Final_Data_Path.vf".
 Unit <M2_1_MXILINX_Final_Data_Path_29> synthesized.
@@ -2045,6 +2051,16 @@ Unit <M2_1_MXILINX_Final_Data_Path_31> synthesized.
 Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_32>.
     Related source file is "Final_Data_Path.vf".
 Unit <M2_1_MXILINX_Final_Data_Path_32> synthesized.
+
+
+Synthesizing Unit <add1b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <add1b_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Final_Data_Path_33>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M2_1_MXILINX_Final_Data_Path_33> synthesized.
 
 
 Synthesizing Unit <PC_Register_MUSER_Final_Data_Path>.
@@ -2189,11 +2205,6 @@ Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_20>.
 Unit <M4_1E_MXILINX_Final_Data_Path_20> synthesized.
 
 
-Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_21>.
-    Related source file is "Final_Data_Path.vf".
-Unit <M4_1E_MXILINX_Final_Data_Path_21> synthesized.
-
-
 Synthesizing Unit <M16_1E_MXILINX_Final_Data_Path_1>.
     Related source file is "Final_Data_Path.vf".
 Unit <M16_1E_MXILINX_Final_Data_Path_1> synthesized.
@@ -2289,6 +2300,11 @@ Synthesizing Unit <Interrupt_Register_MUSER_Final_Data_Path>.
 Unit <Interrupt_Register_MUSER_Final_Data_Path> synthesized.
 
 
+Synthesizing Unit <M4_1E_MXILINX_Final_Data_Path_21>.
+    Related source file is "Final_Data_Path.vf".
+Unit <M4_1E_MXILINX_Final_Data_Path_21> synthesized.
+
+
 Synthesizing Unit <mux4b4_MUSER_Final_Data_Path>.
     Related source file is "Final_Data_Path.vf".
 Unit <mux4b4_MUSER_Final_Data_Path> synthesized.
@@ -2314,14 +2330,14 @@ Synthesizing Unit <mux16b16_MUSER_Final_Data_Path>.
 Unit <mux16b16_MUSER_Final_Data_Path> synthesized.
 
 
-Synthesizing Unit <alu1b_MUSER_Final_Data_Path>.
-    Related source file is "Final_Data_Path.vf".
-Unit <alu1b_MUSER_Final_Data_Path> synthesized.
-
-
 Synthesizing Unit <Old_and_New_Interrupt_MUSER_Final_Data_Path>.
     Related source file is "Final_Data_Path.vf".
 Unit <Old_and_New_Interrupt_MUSER_Final_Data_Path> synthesized.
+
+
+Synthesizing Unit <alu1b_MUSER_Final_Data_Path>.
+    Related source file is "Final_Data_Path.vf".
+Unit <alu1b_MUSER_Final_Data_Path> synthesized.
 
 
 Synthesizing Unit <regFile16b16_MUSER_Final_Data_Path>.
@@ -2485,8 +2501,6 @@ Optimizing unit <M2_1_MXILINX_Final_Data_Path_16> ...
 
 Optimizing unit <buf16b_MUSER_Final_Data_Path> ...
 
-Optimizing unit <INV4_MXILINX_Final_Data_Path> ...
-
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_17> ...
 
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_18> ...
@@ -2494,10 +2508,6 @@ Optimizing unit <M2_1_MXILINX_Final_Data_Path_18> ...
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_19> ...
 
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_20> ...
-
-Optimizing unit <add1b_MUSER_Final_Data_Path> ...
-
-Optimizing unit <M2_1_MXILINX_Final_Data_Path_33> ...
 
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_21> ...
 
@@ -2507,14 +2517,6 @@ Optimizing unit <M2_1_MXILINX_Final_Data_Path_23> ...
 
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_24> ...
 
-Optimizing unit <M2_1_MXILINX_Final_Data_Path_25> ...
-
-Optimizing unit <M2_1_MXILINX_Final_Data_Path_26> ...
-
-Optimizing unit <M2_1_MXILINX_Final_Data_Path_27> ...
-
-Optimizing unit <M2_1_MXILINX_Final_Data_Path_28> ...
-
 Optimizing unit <M2_1E_MXILINX_Final_Data_Path_3> ...
 
 Optimizing unit <OR8_MXILINX_Final_Data_Path> ...
@@ -2523,6 +2525,16 @@ Optimizing unit <Or16b2_MUSER_Final_Data_Path> ...
 
 Optimizing unit <Decoder3b8_MUSER_Final_Data_Path> ...
 
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_25> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_26> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_27> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_28> ...
+
+Optimizing unit <INV4_MXILINX_Final_Data_Path> ...
+
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_29> ...
 
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_30> ...
@@ -2530,6 +2542,10 @@ Optimizing unit <M2_1_MXILINX_Final_Data_Path_30> ...
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_31> ...
 
 Optimizing unit <M2_1_MXILINX_Final_Data_Path_32> ...
+
+Optimizing unit <add1b_MUSER_Final_Data_Path> ...
+
+Optimizing unit <M2_1_MXILINX_Final_Data_Path_33> ...
 
 Optimizing unit <STATE_CONTROL_UNIT_2> ...
 
@@ -2577,8 +2593,6 @@ Optimizing unit <M4_1E_MXILINX_Final_Data_Path_19> ...
 
 Optimizing unit <M4_1E_MXILINX_Final_Data_Path_20> ...
 
-Optimizing unit <M4_1E_MXILINX_Final_Data_Path_21> ...
-
 Optimizing unit <M16_1E_MXILINX_Final_Data_Path_1> ...
 
 Optimizing unit <M16_1E_MXILINX_Final_Data_Path_2> ...
@@ -2612,6 +2626,8 @@ Optimizing unit <M16_1E_MXILINX_Final_Data_Path_15> ...
 Optimizing unit <M16_1E_MXILINX_Final_Data_Path_16> ...
 
 Optimizing unit <Interrupt_Register_MUSER_Final_Data_Path> ...
+
+Optimizing unit <M4_1E_MXILINX_Final_Data_Path_21> ...
 
 Optimizing unit <mux4b16_MUSER_Final_Data_Path> ...
 
@@ -2748,15 +2764,15 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                                                                           | Clock buffer(FF name)                                                                                                      | Load  |
----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
-CLK                                                                                    | BUFGP                                                                                                                      | 388   |
-XLXI_4/N0                                                                              | NONE(XLXI_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram)| 15    |
-XLXI_202/XLXI_3/EPCWrite_or00001(XLXI_202/XLXI_3/EPCWrite_or00001:O)                   | BUFG(*)(XLXI_202/XLXI_3/CLR)                                                                                               | 22    |
-XLXI_202/XLXI_3/old_next_state_20_not0001(XLXI_202/XLXI_3/old_next_state_20_not00011:O)| NONE(*)(XLXI_202/XLXI_3/_old_next_state_20_0)                                                                              | 5     |
-XLXI_202/XLXI_3/ALUOp_not0001(XLXI_202/XLXI_3/ALUOp_not0001109:O)                      | NONE(*)(XLXI_202/XLXI_3/ALUOp_0)                                                                                           | 3     |
----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+-------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                         | Clock buffer(FF name)                                                                                                      | Load  |
+-------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+CLK                                                                                  | BUFGP                                                                                                                      | 388   |
+XLXI_4/N0                                                                            | NONE(XLXI_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram)| 15    |
+XLXI_202/XLXI_3/EPCWrite_or00001(XLXI_202/XLXI_3/EPCWrite_or00001:O)                 | BUFG(*)(XLXI_202/XLXI_3/CLR)                                                                                               | 22    |
+XLXI_202/XLXI_3/old_next_state_7_not0001(XLXI_202/XLXI_3/old_next_state_7_not00011:O)| NONE(*)(XLXI_202/XLXI_3/_old_next_state_7_0)                                                                               | 5     |
+XLXI_202/XLXI_3/ALUOp_not0001(XLXI_202/XLXI_3/ALUOp_not0001109:O)                    | NONE(*)(XLXI_202/XLXI_3/ALUOp_0)                                                                                           | 3     |
+-------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
 (*) These 3 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -2786,7 +2802,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 44.167ns (frequency: 22.641MHz)
-  Total number of paths / destination ports: 57440540 / 892
+  Total number of paths / destination ports: 50384716 / 892
 -------------------------------------------------------------------------
 Delay:               44.167ns (Levels of Logic = 46)
   Source:            XLXI_8/XLXI_2/I_Q1 (FF)
@@ -2816,37 +2832,37 @@ Delay:               44.167ns (Levels of Logic = 46)
      end scope: 'I_M23'
      MUXF5:I1->O           5   0.321   0.633  I_O (O)
      end scope: 'XLXI_31/XLXI_5'
-     begin scope: 'XLXI_45/XLXI_2/XLXI_87'
+     begin scope: 'XLXI_203/XLXI_2/XLXI_87'
      INV:I->O              1   0.704   0.420  I_36_38 (O2)
-     end scope: 'XLXI_45/XLXI_2/XLXI_87'
-     begin scope: 'XLXI_45/XLXI_2/XLXI_93'
+     end scope: 'XLXI_203/XLXI_2/XLXI_87'
+     begin scope: 'XLXI_203/XLXI_2/XLXI_93'
      AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
      OR2:I0->O             2   0.704   0.447  I_36_8 (O)
-     end scope: 'XLXI_45/XLXI_2/XLXI_93'
-     OR2:I0->O             3   0.704   0.531  XLXI_45/XLXI_2/XLXI_48 (XLXI_45/XLXI_2/p1)
-     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_51 (XLXI_45/XLXI_2/p1g0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_65 (XLXI_45/XLXI_2/p2p1g0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_70 (XLXI_45/XLXI_2/p3p2p1g0)
-     OR4:I0->O             2   0.704   0.447  XLXI_45/XLXI_2/XLXI_74 (XLXI_45/G0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_8 (XLXI_45/P1G0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_12 (XLXI_45/P2P1G0)
-     OR4:I1->O             6   0.704   0.669  XLXI_45/XLXI_18 (XLXI_45/C3)
-     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_41 (XLXI_45/XLXI_5/p0c0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_57 (XLXI_45/XLXI_5/p1p0c0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_66 (XLXI_45/XLXI_5/p2p1p0c0)
-     OR4:I0->O             6   0.704   0.669  XLXI_45/XLXI_5/XLXI_67 (XLXI_45/XLXN_29)
-     INV:I->O              2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/cinot)
-     AND3:I2->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
-     OR4:I1->O             2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_45/XLXI_5/XLXN_39)
-     begin scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
+     end scope: 'XLXI_203/XLXI_2/XLXI_93'
+     OR2:I0->O             3   0.704   0.531  XLXI_203/XLXI_2/XLXI_48 (XLXI_203/XLXI_2/p1)
+     AND2:I1->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_51 (XLXI_203/XLXI_2/p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_65 (XLXI_203/XLXI_2/p2p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_70 (XLXI_203/XLXI_2/p3p2p1g0)
+     OR4:I0->O             2   0.704   0.447  XLXI_203/XLXI_2/XLXI_74 (XLXI_203/G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_8 (XLXI_203/P1G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_12 (XLXI_203/P2P1G0)
+     OR4:I1->O             6   0.704   0.669  XLXI_203/XLXI_18 (XLXI_203/C3)
+     AND2:I1->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_41 (XLXI_203/XLXI_5/p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_57 (XLXI_203/XLXI_5/p1p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_66 (XLXI_203/XLXI_5/p2p1p0c0)
+     OR4:I0->O             6   0.704   0.669  XLXI_203/XLXI_5/XLXI_67 (XLXI_203/XLXN_29)
+     INV:I->O              2   0.704   0.447  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_203/XLXI_5/XLXI_83/XLXI_3/cinot)
+     AND3:I2->O            1   0.704   0.420  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
+     OR4:I1->O             2   0.704   0.447  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_203/XLXN_81)
+     begin scope: 'XLXI_203/XLXI_5/XLXI_83/XLXI_8'
      begin scope: 'I_M23'
-     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
-     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             1   0.704   0.000  I_36_38 (O)
      end scope: 'I_M23'
      MUXF5:I1->O           4   0.321   0.587  I_O (O)
-     end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
-     NOR4:I3->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_85 (XLXI_45/Z3)
-     AND4:I0->O            4   0.704   0.587  XLXI_45/XLXI_28 (Is_Zero)
+     end scope: 'XLXI_203/XLXI_5/XLXI_83/XLXI_8'
+     NOR4:I0->O            1   0.704   0.420  XLXI_203/XLXI_5/XLXI_85 (XLXI_203/Z3)
+     AND4:I0->O            4   0.704   0.587  XLXI_203/XLXI_28 (Is_Zero)
      AND2:I0->O            1   0.704   0.420  XLXI_198 (Direct1)
      OR4:I0->O            32   0.704   1.262  XLXI_197 (XLXN_303)
      begin scope: 'XLXI_193/XLXI_11'
@@ -2861,33 +2877,33 @@ Delay:               44.167ns (Levels of Logic = 46)
                                        (58.7% logic, 41.3% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_202/XLXI_3/old_next_state_20_not0001'
+Timing constraint: Default period analysis for Clock 'XLXI_202/XLXI_3/old_next_state_7_not0001'
   Clock period: 5.738ns (frequency: 174.277MHz)
   Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
 Delay:               5.738ns (Levels of Logic = 4)
-  Source:            XLXI_202/XLXI_3/_old_next_state_20_0 (LATCH)
-  Destination:       XLXI_202/XLXI_3/_old_next_state_20_0 (LATCH)
-  Source Clock:      XLXI_202/XLXI_3/old_next_state_20_not0001 falling
-  Destination Clock: XLXI_202/XLXI_3/old_next_state_20_not0001 falling
+  Source:            XLXI_202/XLXI_3/_old_next_state_7_0 (LATCH)
+  Destination:       XLXI_202/XLXI_3/_old_next_state_7_0 (LATCH)
+  Source Clock:      XLXI_202/XLXI_3/old_next_state_7_not0001 falling
+  Destination Clock: XLXI_202/XLXI_3/old_next_state_7_not0001 falling
 
-  Data Path: XLXI_202/XLXI_3/_old_next_state_20_0 to XLXI_202/XLXI_3/_old_next_state_20_0
+  Data Path: XLXI_202/XLXI_3/_old_next_state_7_0 to XLXI_202/XLXI_3/_old_next_state_7_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               4   0.676   0.666  XLXI_202/XLXI_3/_old_next_state_20_0 (XLXI_202/XLXI_3/_old_next_state_20_0)
-     LUT4:I1->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_20_mux0000<0>64_SW0 (N21)
-     LUT4:I3->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_20_mux0000<0>64 (XLXI_202/XLXI_3/old_next_state_20_mux0000<0>64)
-     LUT4:I3->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_20_mux0000<0>120 (XLXI_202/XLXI_3/old_next_state_20_mux0000<0>120)
-     LUT4:I3->O            1   0.704   0.000  XLXI_202/XLXI_3/old_next_state_20_mux0000<0>134 (XLXI_202/XLXI_3/old_next_state_20_mux0000<0>)
-     LD:D                      0.308          XLXI_202/XLXI_3/_old_next_state_20_0
+     LD:G->Q               4   0.676   0.666  XLXI_202/XLXI_3/_old_next_state_7_0 (XLXI_202/XLXI_3/_old_next_state_7_0)
+     LUT4:I1->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_7_mux0000<0>64_SW0 (N21)
+     LUT4:I3->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_7_mux0000<0>64 (XLXI_202/XLXI_3/old_next_state_7_mux0000<0>64)
+     LUT4:I3->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_7_mux0000<0>120 (XLXI_202/XLXI_3/old_next_state_7_mux0000<0>120)
+     LUT4:I3->O            1   0.704   0.000  XLXI_202/XLXI_3/old_next_state_7_mux0000<0>134 (XLXI_202/XLXI_3/old_next_state_7_mux0000<0>)
+     LD:D                      0.308          XLXI_202/XLXI_3/_old_next_state_7_0
     ----------------------------------------
     Total                      5.738ns (3.800ns logic, 1.938ns route)
                                        (66.2% logic, 33.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_202/XLXI_3/EPCWrite_or00001'
-  Total number of paths / destination ports: 2694069 / 117
+  Total number of paths / destination ports: 2368181 / 117
 -------------------------------------------------------------------------
 Offset:              44.773ns (Levels of Logic = 44)
   Source:            XLXI_202/XLXI_3/SignExt (LATCH)
@@ -2914,37 +2930,37 @@ Offset:              44.773ns (Levels of Logic = 44)
      end scope: 'I_M23'
      MUXF5:I1->O           5   0.321   0.633  I_O (O)
      end scope: 'XLXI_31/XLXI_5'
-     begin scope: 'XLXI_45/XLXI_2/XLXI_87'
+     begin scope: 'XLXI_203/XLXI_2/XLXI_87'
      INV:I->O              1   0.704   0.420  I_36_38 (O2)
-     end scope: 'XLXI_45/XLXI_2/XLXI_87'
-     begin scope: 'XLXI_45/XLXI_2/XLXI_93'
+     end scope: 'XLXI_203/XLXI_2/XLXI_87'
+     begin scope: 'XLXI_203/XLXI_2/XLXI_93'
      AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
      OR2:I0->O             2   0.704   0.447  I_36_8 (O)
-     end scope: 'XLXI_45/XLXI_2/XLXI_93'
-     OR2:I0->O             3   0.704   0.531  XLXI_45/XLXI_2/XLXI_48 (XLXI_45/XLXI_2/p1)
-     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_51 (XLXI_45/XLXI_2/p1g0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_65 (XLXI_45/XLXI_2/p2p1g0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_70 (XLXI_45/XLXI_2/p3p2p1g0)
-     OR4:I0->O             2   0.704   0.447  XLXI_45/XLXI_2/XLXI_74 (XLXI_45/G0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_8 (XLXI_45/P1G0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_12 (XLXI_45/P2P1G0)
-     OR4:I1->O             6   0.704   0.669  XLXI_45/XLXI_18 (XLXI_45/C3)
-     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_41 (XLXI_45/XLXI_5/p0c0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_57 (XLXI_45/XLXI_5/p1p0c0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_66 (XLXI_45/XLXI_5/p2p1p0c0)
-     OR4:I0->O             6   0.704   0.669  XLXI_45/XLXI_5/XLXI_67 (XLXI_45/XLXN_29)
-     INV:I->O              2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/cinot)
-     AND3:I2->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
-     OR4:I1->O             2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_45/XLXI_5/XLXN_39)
-     begin scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
+     end scope: 'XLXI_203/XLXI_2/XLXI_93'
+     OR2:I0->O             3   0.704   0.531  XLXI_203/XLXI_2/XLXI_48 (XLXI_203/XLXI_2/p1)
+     AND2:I1->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_51 (XLXI_203/XLXI_2/p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_65 (XLXI_203/XLXI_2/p2p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_70 (XLXI_203/XLXI_2/p3p2p1g0)
+     OR4:I0->O             2   0.704   0.447  XLXI_203/XLXI_2/XLXI_74 (XLXI_203/G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_8 (XLXI_203/P1G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_12 (XLXI_203/P2P1G0)
+     OR4:I1->O             6   0.704   0.669  XLXI_203/XLXI_18 (XLXI_203/C3)
+     AND2:I1->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_41 (XLXI_203/XLXI_5/p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_57 (XLXI_203/XLXI_5/p1p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_66 (XLXI_203/XLXI_5/p2p1p0c0)
+     OR4:I0->O             6   0.704   0.669  XLXI_203/XLXI_5/XLXI_67 (XLXI_203/XLXN_29)
+     INV:I->O              2   0.704   0.447  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_203/XLXI_5/XLXI_83/XLXI_3/cinot)
+     AND3:I2->O            1   0.704   0.420  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
+     OR4:I1->O             2   0.704   0.447  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_203/XLXN_81)
+     begin scope: 'XLXI_203/XLXI_5/XLXI_83/XLXI_8'
      begin scope: 'I_M23'
-     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
-     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             1   0.704   0.000  I_36_38 (O)
      end scope: 'I_M23'
      MUXF5:I1->O           4   0.321   0.587  I_O (O)
-     end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
-     NOR4:I3->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_85 (XLXI_45/Z3)
-     AND4:I0->O            4   0.704   0.587  XLXI_45/XLXI_28 (Is_Zero)
+     end scope: 'XLXI_203/XLXI_5/XLXI_83/XLXI_8'
+     NOR4:I0->O            1   0.704   0.420  XLXI_203/XLXI_5/XLXI_85 (XLXI_203/Z3)
+     AND4:I0->O            4   0.704   0.587  XLXI_203/XLXI_28 (Is_Zero)
      AND2:I0->O            1   0.704   0.420  XLXI_198 (Direct1)
      OR4:I0->O            32   0.704   1.262  XLXI_197 (XLXN_303)
      begin scope: 'XLXI_193/XLXI_11'
@@ -2958,7 +2974,7 @@ Offset:              44.773ns (Levels of Logic = 44)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 4284511 / 217
+  Total number of paths / destination ports: 3760303 / 217
 -------------------------------------------------------------------------
 Offset:              45.370ns (Levels of Logic = 46)
   Source:            XLXI_8/XLXI_2/I_Q1 (FF)
@@ -2987,37 +3003,37 @@ Offset:              45.370ns (Levels of Logic = 46)
      end scope: 'I_M23'
      MUXF5:I1->O           5   0.321   0.633  I_O (O)
      end scope: 'XLXI_31/XLXI_5'
-     begin scope: 'XLXI_45/XLXI_2/XLXI_87'
+     begin scope: 'XLXI_203/XLXI_2/XLXI_87'
      INV:I->O              1   0.704   0.420  I_36_38 (O2)
-     end scope: 'XLXI_45/XLXI_2/XLXI_87'
-     begin scope: 'XLXI_45/XLXI_2/XLXI_93'
+     end scope: 'XLXI_203/XLXI_2/XLXI_87'
+     begin scope: 'XLXI_203/XLXI_2/XLXI_93'
      AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
      OR2:I0->O             2   0.704   0.447  I_36_8 (O)
-     end scope: 'XLXI_45/XLXI_2/XLXI_93'
-     OR2:I0->O             3   0.704   0.531  XLXI_45/XLXI_2/XLXI_48 (XLXI_45/XLXI_2/p1)
-     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_51 (XLXI_45/XLXI_2/p1g0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_65 (XLXI_45/XLXI_2/p2p1g0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_70 (XLXI_45/XLXI_2/p3p2p1g0)
-     OR4:I0->O             2   0.704   0.447  XLXI_45/XLXI_2/XLXI_74 (XLXI_45/G0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_8 (XLXI_45/P1G0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_12 (XLXI_45/P2P1G0)
-     OR4:I1->O             6   0.704   0.669  XLXI_45/XLXI_18 (XLXI_45/C3)
-     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_41 (XLXI_45/XLXI_5/p0c0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_57 (XLXI_45/XLXI_5/p1p0c0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_66 (XLXI_45/XLXI_5/p2p1p0c0)
-     OR4:I0->O             6   0.704   0.669  XLXI_45/XLXI_5/XLXI_67 (XLXI_45/XLXN_29)
-     INV:I->O              2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/cinot)
-     AND3:I2->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
-     OR4:I1->O             2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_45/XLXI_5/XLXN_39)
-     begin scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
+     end scope: 'XLXI_203/XLXI_2/XLXI_93'
+     OR2:I0->O             3   0.704   0.531  XLXI_203/XLXI_2/XLXI_48 (XLXI_203/XLXI_2/p1)
+     AND2:I1->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_51 (XLXI_203/XLXI_2/p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_65 (XLXI_203/XLXI_2/p2p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_70 (XLXI_203/XLXI_2/p3p2p1g0)
+     OR4:I0->O             2   0.704   0.447  XLXI_203/XLXI_2/XLXI_74 (XLXI_203/G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_8 (XLXI_203/P1G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_12 (XLXI_203/P2P1G0)
+     OR4:I1->O             6   0.704   0.669  XLXI_203/XLXI_18 (XLXI_203/C3)
+     AND2:I1->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_41 (XLXI_203/XLXI_5/p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_57 (XLXI_203/XLXI_5/p1p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_66 (XLXI_203/XLXI_5/p2p1p0c0)
+     OR4:I0->O             6   0.704   0.669  XLXI_203/XLXI_5/XLXI_67 (XLXI_203/XLXN_29)
+     INV:I->O              2   0.704   0.447  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_203/XLXI_5/XLXI_83/XLXI_3/cinot)
+     AND3:I2->O            1   0.704   0.420  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
+     OR4:I1->O             2   0.704   0.447  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_203/XLXN_81)
+     begin scope: 'XLXI_203/XLXI_5/XLXI_83/XLXI_8'
      begin scope: 'I_M23'
-     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
-     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             1   0.704   0.000  I_36_38 (O)
      end scope: 'I_M23'
      MUXF5:I1->O           4   0.321   0.587  I_O (O)
-     end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
-     NOR4:I3->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_85 (XLXI_45/Z3)
-     AND4:I0->O            4   0.704   0.587  XLXI_45/XLXI_28 (Is_Zero)
+     end scope: 'XLXI_203/XLXI_5/XLXI_83/XLXI_8'
+     NOR4:I0->O            1   0.704   0.420  XLXI_203/XLXI_5/XLXI_85 (XLXI_203/Z3)
+     AND4:I0->O            4   0.704   0.587  XLXI_203/XLXI_28 (Is_Zero)
      AND2:I0->O            1   0.704   0.420  XLXI_198 (Direct1)
      OR4:I0->O            32   0.704   1.262  XLXI_197 (XLXN_303)
      begin scope: 'XLXI_193/XLXI_11'
@@ -3031,7 +3047,7 @@ Offset:              45.370ns (Levels of Logic = 46)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_202/XLXI_3/ALUOp_not0001'
-  Total number of paths / destination ports: 347328 / 48
+  Total number of paths / destination ports: 305788 / 48
 -------------------------------------------------------------------------
 Offset:              36.384ns (Levels of Logic = 31)
   Source:            XLXI_202/XLXI_3/ALUOp_2 (LATCH)
@@ -3043,34 +3059,34 @@ Offset:              36.384ns (Levels of Logic = 31)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q              71   0.676   1.275  XLXI_202/XLXI_3/ALUOp_2 (XLXI_202/XLXI_3/ALUOp_2)
-     begin scope: 'XLXI_45/XLXI_2/XLXI_93'
+     begin scope: 'XLXI_203/XLXI_2/XLXI_93'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             2   0.704   0.447  I_36_8 (O)
-     end scope: 'XLXI_45/XLXI_2/XLXI_93'
-     OR2:I0->O             3   0.704   0.531  XLXI_45/XLXI_2/XLXI_48 (XLXI_45/XLXI_2/p1)
-     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_51 (XLXI_45/XLXI_2/p1g0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_65 (XLXI_45/XLXI_2/p2p1g0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_2/XLXI_70 (XLXI_45/XLXI_2/p3p2p1g0)
-     OR4:I0->O             2   0.704   0.447  XLXI_45/XLXI_2/XLXI_74 (XLXI_45/G0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_8 (XLXI_45/P1G0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_12 (XLXI_45/P2P1G0)
-     OR4:I1->O             6   0.704   0.669  XLXI_45/XLXI_18 (XLXI_45/C3)
-     AND2:I1->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_41 (XLXI_45/XLXI_5/p0c0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_57 (XLXI_45/XLXI_5/p1p0c0)
-     AND2:I0->O            2   0.704   0.447  XLXI_45/XLXI_5/XLXI_66 (XLXI_45/XLXI_5/p2p1p0c0)
-     OR4:I0->O             6   0.704   0.669  XLXI_45/XLXI_5/XLXI_67 (XLXI_45/XLXN_29)
-     INV:I->O              2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/cinot)
-     AND3:I2->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
-     OR4:I1->O             2   0.704   0.447  XLXI_45/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_45/XLXI_5/XLXN_39)
-     begin scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
+     end scope: 'XLXI_203/XLXI_2/XLXI_93'
+     OR2:I0->O             3   0.704   0.531  XLXI_203/XLXI_2/XLXI_48 (XLXI_203/XLXI_2/p1)
+     AND2:I1->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_51 (XLXI_203/XLXI_2/p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_65 (XLXI_203/XLXI_2/p2p1g0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_2/XLXI_70 (XLXI_203/XLXI_2/p3p2p1g0)
+     OR4:I0->O             2   0.704   0.447  XLXI_203/XLXI_2/XLXI_74 (XLXI_203/G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_8 (XLXI_203/P1G0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_12 (XLXI_203/P2P1G0)
+     OR4:I1->O             6   0.704   0.669  XLXI_203/XLXI_18 (XLXI_203/C3)
+     AND2:I1->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_41 (XLXI_203/XLXI_5/p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_57 (XLXI_203/XLXI_5/p1p0c0)
+     AND2:I0->O            2   0.704   0.447  XLXI_203/XLXI_5/XLXI_66 (XLXI_203/XLXI_5/p2p1p0c0)
+     OR4:I0->O             6   0.704   0.669  XLXI_203/XLXI_5/XLXI_67 (XLXI_203/XLXN_29)
+     INV:I->O              2   0.704   0.447  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_35 (XLXI_203/XLXI_5/XLXI_83/XLXI_3/cinot)
+     AND3:I2->O            1   0.704   0.420  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_7 (XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXN_13)
+     OR4:I1->O             2   0.704   0.447  XLXI_203/XLXI_5/XLXI_83/XLXI_3/XLXI_9 (XLXI_203/XLXN_81)
+     begin scope: 'XLXI_203/XLXI_5/XLXI_83/XLXI_8'
      begin scope: 'I_M23'
-     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
-     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             1   0.704   0.000  I_36_38 (O)
      end scope: 'I_M23'
      MUXF5:I1->O           4   0.321   0.587  I_O (O)
-     end scope: 'XLXI_45/XLXI_5/XLXI_78/XLXI_8'
-     NOR4:I3->O            1   0.704   0.420  XLXI_45/XLXI_5/XLXI_85 (XLXI_45/Z3)
-     AND4:I0->O            4   0.704   0.587  XLXI_45/XLXI_28 (Is_Zero)
+     end scope: 'XLXI_203/XLXI_5/XLXI_83/XLXI_8'
+     NOR4:I0->O            1   0.704   0.420  XLXI_203/XLXI_5/XLXI_85 (XLXI_203/Z3)
+     AND4:I0->O            4   0.704   0.587  XLXI_203/XLXI_28 (Is_Zero)
      AND2:I0->O            1   0.704   0.420  XLXI_198 (Direct1)
      OR4:I0->O            32   0.704   1.262  XLXI_197 (XLXN_303)
      begin scope: 'XLXI_193/XLXI_11'
@@ -3083,19 +3099,19 @@ Offset:              36.384ns (Levels of Logic = 31)
                                        (60.1% logic, 39.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_202/XLXI_3/old_next_state_20_not0001'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_202/XLXI_3/old_next_state_7_not0001'
   Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
 Offset:              4.535ns (Levels of Logic = 1)
-  Source:            XLXI_202/XLXI_3/_old_next_state_20_4 (LATCH)
+  Source:            XLXI_202/XLXI_3/_old_next_state_7_4 (LATCH)
   Destination:       next_state<4> (PAD)
-  Source Clock:      XLXI_202/XLXI_3/old_next_state_20_not0001 falling
+  Source Clock:      XLXI_202/XLXI_3/old_next_state_7_not0001 falling
 
-  Data Path: XLXI_202/XLXI_3/_old_next_state_20_4 to next_state<4>
+  Data Path: XLXI_202/XLXI_3/_old_next_state_7_4 to next_state<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               4   0.676   0.587  XLXI_202/XLXI_3/_old_next_state_20_4 (XLXI_202/XLXI_3/_old_next_state_20_4)
+     LD:G->Q               4   0.676   0.587  XLXI_202/XLXI_3/_old_next_state_7_4 (XLXI_202/XLXI_3/_old_next_state_7_4)
      OBUF:I->O                 3.272          next_state_4_OBUF (next_state<4>)
     ----------------------------------------
     Total                      4.535ns (3.948ns logic, 0.587ns route)
@@ -3104,13 +3120,13 @@ Offset:              4.535ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.02 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.56 secs
  
 --> 
 
 
-Total memory usage is 607092 kilobytes
+Total memory usage is 607160 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   36 (   0 filtered)

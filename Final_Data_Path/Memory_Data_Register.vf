@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Memory_Data_Register.vf
-// /___/   /\     Timestamp : 11/11/2015 14:13:15
+// /___/   /\     Timestamp : 11/11/2015 15:15:52
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -128,7 +128,7 @@ module Memory_Data_Register(CLK,
    wire XLXN_7;
    
    assign XLXN_7 = 1;
-   (* HU_SET = "XLXI_1_1" *) 
+   (* HU_SET = "XLXI_1_94" *) 
    FD16CE_MXILINX_Memory_Data_Register  XLXI_1 (.C(CLK), 
                                                .CE(XLXN_7), 
                                                .CLR(G), 
