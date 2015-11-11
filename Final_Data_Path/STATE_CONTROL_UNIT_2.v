@@ -623,7 +623,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                IorD <= 1;
                IRegWrite <= 0;
                WriteAddr <= 0;
-               WriteData <= 1;
+               WriteData <= 0;
 					SignExt <= 0;
 					GRegWrite <= 0;
 					ALUSrcA <= 0;
@@ -631,7 +631,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					PCData <= 0;
 					MemRead <= 0;
 					MemWrite <= 1; 
-					MemWriteData <= 0;
+					MemWriteData <= 1;
 					LCDWrite <= 0;
 					CLR <= 0;
             end
