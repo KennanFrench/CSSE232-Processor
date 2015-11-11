@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Or16b2.vf
+// /___/   /\     Timestamp : 11/11/2015 14:13:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Or16b2.vf -w /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Or16b2.sch
+//Design Name: Or16b2
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Or16b2(Int, 
+              Num, 
+              Ans);
+
+    input [7:0] Int;
+    input [7:0] Num;
+   output [7:0] Ans;
+   
+   
+   OR2  XLXI_1 (.I0(Num[0]), 
+               .I1(Int[0]), 
+               .O(Ans[0]));
+   OR2  XLXI_2 (.I0(Num[1]), 
+               .I1(Int[1]), 
+               .O(Ans[1]));
+   OR2  XLXI_3 (.I0(Num[2]), 
+               .I1(Int[2]), 
+               .O(Ans[2]));
+   OR2  XLXI_4 (.I0(Num[3]), 
+               .I1(Int[3]), 
+               .O(Ans[3]));
+   OR2  XLXI_5 (.I0(Num[4]), 
+               .I1(Int[4]), 
+               .O(Ans[4]));
+   OR2  XLXI_6 (.I0(Num[5]), 
+               .I1(Int[5]), 
+               .O(Ans[5]));
+   OR2  XLXI_7 (.I0(Num[6]), 
+               .I1(Int[6]), 
+               .O(Ans[6]));
+   OR2  XLXI_8 (.I0(Num[7]), 
+               .I1(Int[7]), 
+               .O(Ans[7]));
+endmodule
