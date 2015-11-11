@@ -243,10 +243,10 @@
             <wire x2="1120" y1="1120" y2="1360" x1="1120" />
         </branch>
         <branch name="cinot">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="960" y="1240" type="branch" />
+            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="960" y="1240" type="branch" />
             <wire x2="1392" y1="1232" y2="1232" x1="960" />
-            <wire x2="960" y1="1232" y2="1248" x1="960" />
-            <wire x2="960" y1="1248" y2="1472" x1="960" />
+            <wire x2="960" y1="1232" y2="1240" x1="960" />
+            <wire x2="960" y1="1240" y2="1472" x1="960" />
             <wire x2="1392" y1="1472" y2="1472" x1="960" />
         </branch>
         <instance x="656" y="1392" name="XLXI_34" orien="R0" />
