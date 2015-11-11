@@ -23,7 +23,6 @@
         <signal name="O(15:0)" />
         <signal name="P(15:0)" />
         <signal name="S(3:0)" />
-        <signal name="XLXN_11" />
         <signal name="A(0)" />
         <signal name="B(0)" />
         <signal name="C(0)" />
@@ -302,27 +301,6 @@
         <signal name="K(3)" />
         <signal name="N(7)" />
         <signal name="V" />
-        <signal name="XLXN_1557" />
-        <signal name="XLXN_1558" />
-        <signal name="XLXN_1559" />
-        <signal name="XLXN_1560" />
-        <signal name="XLXN_1561" />
-        <signal name="XLXN_1562" />
-        <signal name="XLXN_1563" />
-        <signal name="XLXN_1564" />
-        <signal name="XLXN_1565" />
-        <signal name="XLXN_1566" />
-        <signal name="XLXN_1567" />
-        <signal name="XLXN_1568" />
-        <signal name="XLXN_1569" />
-        <signal name="XLXN_1570" />
-        <signal name="XLXN_1571" />
-        <signal name="XLXN_1572" />
-        <signal name="XLXN_1573" />
-        <signal name="XLXN_1574" />
-        <signal name="XLXN_1575" />
-        <signal name="XLXN_1576" />
-        <signal name="XLXN_1577" />
         <port polarity="Input" name="M(15:0)" />
         <port polarity="Input" name="A(15:0)" />
         <port polarity="Input" name="B(15:0)" />

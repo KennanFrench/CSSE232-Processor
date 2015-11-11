@@ -17,7 +17,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                           current_state,
                           next_state,
                           CLK,
-								  MemRead,
 								  MemWrite,
 								  MemWriteData,
 								  EPCWrite,
@@ -34,7 +33,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	output 		 EPCWrite;	  
 	output [1:0] MemWriteData;
 	output [2:0] ALUOp;
-   output       MemRead;
 	output       MemWrite;
    output       PCWriteBeq;
    output       PCWriteBne;
@@ -62,7 +60,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	reg         CLR;
 	reg         EPCWrite;
 	reg  [1:0]	MemWriteData;
-   reg			MemRead;
 	reg 			MemWrite;
    reg         PCWriteBeq;
    reg         PCWriteBne;
@@ -106,6 +103,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	parameter    Clear = 18;
 	parameter    Read = 19;
 	parameter    Display = 20;
+	parameter    Blank = 21;
 	
    //register calculation
    always @ (posedge CLK, posedge Reset)
@@ -159,7 +157,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	            GRegWrite <= 0;
 					ALUSrcA <= 0;
 					ALUSrcB <= 1;
-					MemRead <= 1;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -183,7 +180,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 2;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -192,7 +188,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				
 			Mv:
 				begin
-				$display("Lw/Sw Cycle 3");
+				$display("Mv");
 					//ALUOp depends on op code
 					ALUOp <= 0;
 					EPCWrite <= 0;
@@ -208,7 +204,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -216,7 +211,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				end
 			Clear:
 					begin
-				$display("Lw/Sw Cycle 3");
+				$display("Clear");
 					//ALUOp depends on op code
 					ALUOp <= 0;
 					EPCWrite <= 0;
@@ -232,7 +227,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 4;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					CLR <= 1;
@@ -256,7 +250,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 1;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 1;
@@ -264,7 +257,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				end
 			Read:
 					begin
-				$display("Lw/Sw Cycle 3");
+				$display("Read");
 					//ALUOp depends on op code
 					ALUOp <= 0;
 					EPCWrite <= 0;
@@ -280,7 +273,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 1;
 					MemWriteData <= 1;
 					LCDWrite <= 0;
@@ -326,7 +318,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 1;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -364,7 +355,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 1;
 					ALUSrcB <= 2;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -389,7 +379,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 1;
 					ALUSrcB <= 2;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -413,7 +402,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 1;
 					ALUSrcB <= 0;
 					PCData <= 2;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -437,7 +425,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 1;
 					ALUSrcB <= 0;
 					PCData <= 2;
-					MemRead <= 0;
 					MemWrite <= 0; 
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -461,7 +448,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 5;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -485,7 +471,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -509,7 +494,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 3;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -533,7 +517,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -557,7 +540,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -581,7 +563,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -605,7 +586,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 1;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -629,7 +609,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 1; 
 					MemWriteData <= 1;
 					LCDWrite <= 0;
@@ -653,7 +632,6 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 5;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
@@ -677,13 +655,33 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcA <= 0;
 					ALUSrcB <= 0;
 					PCData <= 0;
-					MemRead <= 0;
 					MemWrite <= 0;
 					MemWriteData <= 0;
 					LCDWrite <= 0;
 					CLR <= 0;
             end
-			
+			Blank:
+            begin
+               $display("Blank Cycle 5");
+					ALUOp <= 0; //ALUOp doesn't matter
+					EPCWrite <= 0;
+               PCWriteBeq <= 0;
+               PCWriteBne <= 0;
+               PCWrite <= 0;
+               IorD <= 0;
+               IRegWrite <= 0;
+               WriteAddr <= 0;
+               WriteData <= 0;
+					SignExt <= 0;
+					GRegWrite <= 0;
+					ALUSrcA <= 0;
+					ALUSrcB <= 0;
+					PCData <= 0;
+					MemWrite <= 0;
+					MemWriteData <= 0;
+					LCDWrite <= 0;
+					CLR <= 0;
+            end
         
           default:
             begin $display ("not implemented"); end
@@ -816,13 +814,13 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           A_3:
             begin
                next_state = A_4;
-               $display("In R_Exec, the next_state is %d", next_state);
+               $display("In A_3, the next_state is %d", next_state);
             end
           
           C_3:
             begin
                next_state = C_4;
-               $display("In R_Write, the next_state is %d", next_state);
+               $display("In C_4, the next_state is %d", next_state);
             end
           
           LW_SW_3:
@@ -846,75 +844,81 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
             begin
                //not implemented - forcing return to cycle 1
                next_state = Fetch;
-               $display("In Mem1, the next_state is %d", next_state);
+               $display("In Beq_3, the next_state is %d", next_state);
             end
           
           Bne_3:
             begin
                next_state = Fetch;
-               $display("In Jump, the next_state is %d", next_state);
+               $display("In Bne_3, the next_state is %d", next_state);
             end
         
           Jump_3:
             begin
                next_state = Fetch;
-               $display("In R_Exec, the next_state is %d", next_state);
+               $display("In Jump_3, the next_state is %d", next_state);
             end
           
           JR_3:
             begin
                next_state = Fetch;
-               $display("In R_Write, the next_state is %d", next_state);
+               $display("In JR_3, the next_state is %d", next_state);
             end
           
           Jal_3:
             begin
                next_state = Jal_4;
-               $display("In Branch, the next_state is %d", next_state);
+               $display("In Jal_3, the next_state is %d", next_state);
             end
 
           Lui_3:
             begin
                //not implemented - forcing return to cycle 1
                next_state = Fetch;
-               $display("In Mem1, the next_state is %d", next_state);
+               $display("In Lui_3, the next_state is %d", next_state);
             end
           
           A_4:
             begin
                next_state = Fetch;
-               $display("In Jump, the next_state is %d", next_state);
+               $display("In A_4, the next_state is %d", next_state);
             end
 
 	  C_4:
             begin
                next_state = Fetch;
-               $display("In Jump, the next_state is %d", next_state);
+               $display("In C_4, the next_state is %d", next_state);
             end
         
           LW_4:
             begin
                next_state = LW_5;
-               $display("In R_Exec, the next_state is %d", next_state);
+               $display("In LW_4, the next_state is %d", next_state);
             end
           
           SW_4:
             begin
-               next_state = Fetch;
-               $display("In R_Write, the next_state is %d", next_state);
+               next_state = Blank;
+               $display("In SW_4, the next_state is %d", next_state);
             end
           
           Jal_4:
             begin
                next_state = Fetch;
-               $display("In Branch, the next_state is %d", next_state);
+               $display("In Jal_4, the next_state is %d", next_state);
             end
 
           LW_5:
             begin
                //not implemented - forcing return to cycle 1
                next_state = Fetch;
-               $display("In Mem1, the next_state is %d", next_state);
+               $display("In LW_5, the next_state is %d", next_state);
+            end
+			 Blank:
+            begin
+               //not implemented - forcing return to cycle 1
+               next_state = Fetch;
+               $display("In Blank, the next_state is %d", next_state);
             end
 
           default:

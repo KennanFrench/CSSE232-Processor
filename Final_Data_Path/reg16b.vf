@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : reg16b.vf
-// /___/   /\     Timestamp : 11/11/2015 11:14:04
+// /___/   /\     Timestamp : 11/11/2015 14:13:17
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -128,7 +128,7 @@ module Memory_Data_Register_MUSER_reg16b(CLK,
    wire XLXN_7;
    
    assign XLXN_7 = 1;
-   (* HU_SET = "XLXI_1_373" *) 
+   (* HU_SET = "XLXI_1_90" *) 
    FD16CE_MXILINX_reg16b  XLXI_1 (.C(CLK), 
                                  .CE(XLXN_7), 
                                  .CLR(G), 

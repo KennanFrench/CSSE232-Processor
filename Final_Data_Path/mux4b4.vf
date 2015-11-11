@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : mux4b4.vf
-// /___/   /\     Timestamp : 11/11/2015 11:13:59
+// /___/   /\     Timestamp : 11/11/2015 14:13:17
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -70,13 +70,13 @@ module M4_1E_MXILINX_mux4b4(D0,
    wire M01;
    wire M23;
    
-   (* HU_SET = "I_M01_173" *) 
+   (* HU_SET = "I_M01_85" *) 
    M2_1E_MXILINX_mux4b4  I_M01 (.D0(D0), 
                                .D1(D1), 
                                .E(E), 
                                .S0(S0), 
                                .O(M01));
-   (* HU_SET = "I_M23_172" *) 
+   (* HU_SET = "I_M23_84" *) 
    M2_1E_MXILINX_mux4b4  I_M23 (.D0(D2), 
                                .D1(D3), 
                                .E(E), 
@@ -112,7 +112,7 @@ module mux4b4(A,
    assign XLXN_24 = 1;
    assign XLXN_32 = 1;
    assign XLXN_40 = 1;
-   (* HU_SET = "XLXI_1_174" *) 
+   (* HU_SET = "XLXI_1_86" *) 
    M4_1E_MXILINX_mux4b4  XLXI_1 (.D0(A[0]), 
                                 .D1(B[0]), 
                                 .D2(C[0]), 
@@ -121,7 +121,7 @@ module mux4b4(A,
                                 .S0(S[0]), 
                                 .S1(S[1]), 
                                 .O(O[0]));
-   (* HU_SET = "XLXI_5_175" *) 
+   (* HU_SET = "XLXI_5_87" *) 
    M4_1E_MXILINX_mux4b4  XLXI_5 (.D0(A[1]), 
                                 .D1(B[1]), 
                                 .D2(C[1]), 
@@ -130,7 +130,7 @@ module mux4b4(A,
                                 .S0(S[0]), 
                                 .S1(S[1]), 
                                 .O(O[1]));
-   (* HU_SET = "XLXI_7_176" *) 
+   (* HU_SET = "XLXI_7_88" *) 
    M4_1E_MXILINX_mux4b4  XLXI_7 (.D0(A[2]), 
                                 .D1(B[2]), 
                                 .D2(C[2]), 
@@ -139,7 +139,7 @@ module mux4b4(A,
                                 .S0(S[0]), 
                                 .S1(S[1]), 
                                 .O(O[2]));
-   (* HU_SET = "XLXI_9_177" *) 
+   (* HU_SET = "XLXI_9_89" *) 
    M4_1E_MXILINX_mux4b4  XLXI_9 (.D0(A[3]), 
                                 .D1(B[3]), 
                                 .D2(C[3]), 

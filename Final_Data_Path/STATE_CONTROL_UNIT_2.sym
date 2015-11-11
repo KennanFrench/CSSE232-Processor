@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="STATE_CONTROL_UNIT_2">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2015-11-11T15:35:29</timestamp>
+    <timestamp>2015-11-11T19:10:1</timestamp>
     <attr value="STATE_CONTROL_UNIT_2" name="VeriModel" />
     <pin polarity="Input" x="0" y="-1056" name="CLK" />
     <pin polarity="Input" x="0" y="352" name="InterruptIn" />
@@ -16,7 +16,6 @@
     <pin polarity="Output" x="464" y="-736" name="SignExt" />
     <pin polarity="Output" x="464" y="-672" name="GRegWrite" />
     <pin polarity="Output" x="464" y="-608" name="ALUSrcA" />
-    <pin polarity="Output" x="464" y="-544" name="MemRead" />
     <pin polarity="Output" x="464" y="-480" name="MemWrite" />
     <pin polarity="Output" x="464" y="32" name="EPCWrite" />
     <pin polarity="Output" x="464" y="736" name="CLR" />
@@ -45,7 +44,6 @@
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-736" type="pin SignExt" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-672" type="pin GRegWrite" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-608" type="pin ALUSrcA" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-544" type="pin MemRead" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-480" type="pin MemWrite" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="32" type="pin EPCWrite" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="736" type="pin CLR" />
@@ -81,7 +79,6 @@
         <line x2="464" y1="-736" y2="-736" x1="400" />
         <line x2="464" y1="-672" y2="-672" x1="400" />
         <line x2="464" y1="-608" y2="-608" x1="400" />
-        <line x2="464" y1="-544" y2="-544" x1="400" />
         <line x2="464" y1="-480" y2="-480" x1="400" />
         <rect width="64" x="400" y="-428" height="24" />
         <line x2="464" y1="-416" y2="-416" x1="400" />
