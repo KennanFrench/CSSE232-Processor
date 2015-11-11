@@ -6,7 +6,7 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_12(15:0)" />
+        <signal name="MemInputData(15:0)" />
         <signal name="MemWrite" />
         <signal name="CLK" />
         <signal name="IRegWrite" />
@@ -92,6 +92,7 @@
         <signal name="Direct2" />
         <signal name="Direct1" />
         <signal name="IROut(15:0)" />
+        <port polarity="Output" name="MemInputData(15:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Output" name="WriteAddress(3:0)" />
         <port polarity="Output" name="writeDataIn(15:0)" />
@@ -107,6 +108,7 @@
         <port polarity="Output" name="MemOut(15:0)" />
         <port polarity="Output" name="PC_Input(15:0)" />
         <port polarity="Output" name="MDR_Out(15:0)" />
+        <port polarity="Output" name="MemReadAddr(15:0)" />
         <port polarity="Output" name="IROut(15:0)" />
         <blockdef name="PC_Register">
             <timestamp>2015-11-8T1:37:13</timestamp>
@@ -122,7 +124,7 @@
             <line x2="432" y1="-352" y2="-352" x1="368" />
         </blockdef>
         <blockdef name="memory">
-            <timestamp>2015-11-11T16:10:39</timestamp>
+            <timestamp>2015-11-11T15:20:30</timestamp>
             <rect width="512" x="32" y="32" height="1344" />
             <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
             <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
@@ -312,7 +314,7 @@
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="Schematic_Control">
-            <timestamp>2015-11-11T1:48:46</timestamp>
+            <timestamp>2015-11-11T15:35:42</timestamp>
             <line x2="464" y1="864" y2="864" x1="400" />
             <line x2="464" y1="800" y2="800" x1="400" />
             <rect width="64" x="0" y="660" height="24" />
@@ -484,7 +486,7 @@
         </blockdef>
         <block symbolname="memory" name="XLXI_4">
             <blockpin signalname="MemReadAddr(13:0)" name="addra(13:0)" />
-            <blockpin signalname="XLXN_12(15:0)" name="dina(15:0)" />
+            <blockpin signalname="MemInputData(15:0)" name="dina(15:0)" />
             <blockpin signalname="MemWrite" name="wea(0:0)" />
             <blockpin signalname="CLK" name="clka" />
             <blockpin signalname="MemOut(15:0)" name="douta(15:0)" />
@@ -593,7 +595,7 @@
             <blockpin signalname="ALU_outAfter(15:0)" name="A(15:0)" />
             <blockpin signalname="XLXN_49(15:0)" name="B(15:0)" />
             <blockpin signalname="LCDData(15:0)" name="C(15:0)" />
-            <blockpin signalname="XLXN_12(15:0)" name="Result(15:0)" />
+            <blockpin signalname="MemInputData(15:0)" name="Result(15:0)" />
             <blockpin signalname="MemWriteData(1:0)" name="S(1:0)" />
         </block>
         <block symbolname="reg16b" name="XLXI_43">
@@ -842,8 +844,10 @@
         </instance>
         <instance x="144" y="1168" name="XLXI_48" orien="R0">
         </instance>
-        <branch name="XLXN_12(15:0)">
-            <wire x2="1424" y1="1328" y2="1328" x1="1312" />
+        <branch name="MemInputData(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1376" y="1328" type="branch" />
+            <wire x2="1376" y1="1328" y2="1328" x1="1312" />
+            <wire x2="1424" y1="1328" y2="1328" x1="1376" />
             <wire x2="1424" y1="704" y2="1328" x1="1424" />
             <wire x2="1552" y1="704" y2="704" x1="1424" />
         </branch>
@@ -1605,5 +1609,13 @@
             <wire x2="1104" y1="2240" y2="2272" x1="1104" />
         </branch>
         <iomarker fontsize="28" x="2816" y="1072" name="MDR_Out(15:0)" orien="R0" />
+        <branch name="MemReadAddr(15:0)">
+            <wire x2="1408" y1="240" y2="240" x1="1280" />
+        </branch>
+        <iomarker fontsize="28" x="1408" y="240" name="MemReadAddr(15:0)" orien="R0" />
+        <branch name="MemInputData(15:0)">
+            <wire x2="1200" y1="1824" y2="1824" x1="1104" />
+        </branch>
+        <iomarker fontsize="28" x="1200" y="1824" name="MemInputData(15:0)" orien="R0" />
     </sheet>
 </drawing>
