@@ -158,7 +158,7 @@ module claAdde16b_claAdde16b_sch_tb();
 		// or
 		a <= 16'b1010101010101010;
 		b <= 16'b0101010101010101;
-		op <= 001;
+		op <= 3'b001;
 		#1;
 		if (r == 16'b1111111111111111) begin
 			$display("Or Test Passed 01");
@@ -174,6 +174,29 @@ module claAdde16b_claAdde16b_sch_tb();
 			$display("Or Test Passed 02");
 		end else begin
 			$display("Or Test Failed 02: r = %d", r);
+		end
+		#99;
+		
+		// slt
+		a <= 0;
+		b <= 8;
+		op <= 3'b111;
+		#1;
+		if (r == 1) begin
+			$display("Slt Test Passed 01");
+		end else begin
+			$display("Slt Test Failed 01: r = %b", r);
+		end
+		#99;
+		
+		a <= 8;
+		b <= 0;
+		op <= 3'b111;
+		#1;
+		if (r == 0) begin
+			$display("Slt Test Passed 02");
+		end else begin
+			$display("Slt Test Failed 02: r = %b", r);
 		end
 		#99;
 		$stop;
