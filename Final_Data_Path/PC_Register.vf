@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : PC_Register.vf
-// /___/   /\     Timestamp : 11/11/2015 14:13:17
+// /___/   /\     Timestamp : 11/11/2015 15:15:54
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -139,7 +139,7 @@ module PC_Register(CLK,
    wire XLXN_12;
    wire XLXN_25;
    
-   (* HU_SET = "XLXI_1_67" *) 
+   (* HU_SET = "XLXI_1_160" *) 
    FD16CE_MXILINX_PC_Register  XLXI_1 (.C(CLK), 
                                       .CE(XLXN_1), 
                                       .CLR(G), 

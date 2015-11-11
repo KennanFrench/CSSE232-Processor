@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : mux4b2.vf
-// /___/   /\     Timestamp : 11/11/2015 14:13:18
+// /___/   /\     Timestamp : 11/11/2015 15:15:55
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -56,22 +56,22 @@ module mux4b2(I0,
    output [3:0] O;
    
    
-   (* HU_SET = "XLXI_1_157" *) 
+   (* HU_SET = "XLXI_1_233" *) 
    M2_1_MXILINX_mux4b2  XLXI_1 (.D0(I0[0]), 
                                .D1(I1[0]), 
                                .S0(S), 
                                .O(O[0]));
-   (* HU_SET = "XLXI_2_158" *) 
+   (* HU_SET = "XLXI_2_234" *) 
    M2_1_MXILINX_mux4b2  XLXI_2 (.D0(I0[1]), 
                                .D1(I1[1]), 
                                .S0(S), 
                                .O(O[1]));
-   (* HU_SET = "XLXI_3_159" *) 
+   (* HU_SET = "XLXI_3_235" *) 
    M2_1_MXILINX_mux4b2  XLXI_3 (.D0(I0[2]), 
                                .D1(I1[2]), 
                                .S0(S), 
                                .O(O[2]));
-   (* HU_SET = "XLXI_4_160" *) 
+   (* HU_SET = "XLXI_4_236" *) 
    M2_1_MXILINX_mux4b2  XLXI_4 (.D0(I0[3]), 
                                .D1(I1[3]), 
                                .S0(S), 

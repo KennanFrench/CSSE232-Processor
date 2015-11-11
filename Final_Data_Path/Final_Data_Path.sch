@@ -274,27 +274,6 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
-        <blockdef name="claAdde16b">
-            <timestamp>2015-11-8T19:44:39</timestamp>
-            <line x2="72" y1="-228" y2="-92" x1="72" />
-            <line x2="148" y1="-228" y2="-312" x1="72" />
-            <line x2="200" y1="-92" y2="-220" x1="72" />
-            <line x2="76" y1="-312" y2="-388" x1="148" />
-            <line x2="76" y1="-524" y2="-388" x1="76" />
-            <line x2="200" y1="-524" y2="-400" x1="76" />
-            <line x2="200" y1="-400" y2="-220" x1="200" />
-            <rect width="64" x="12" y="-460" height="24" />
-            <line x2="12" y1="-448" y2="-448" x1="76" />
-            <rect width="60" x="12" y="-188" height="24" />
-            <line x2="12" y1="-176" y2="-176" x1="72" />
-            <rect width="64" x="192" y="-332" height="24" />
-            <line x2="256" y1="-320" y2="-320" x1="192" />
-            <line x2="256" y1="-272" y2="-272" x1="192" />
-            <line x2="256" y1="-384" y2="-384" x1="192" />
-            <line x2="256" y1="-240" y2="-240" x1="192" />
-            <line x2="96" y1="-504" y2="-576" x1="96" />
-            <rect width="16" x="88" y="-576" height="76" />
-        </blockdef>
         <blockdef name="MemoryMapDecoder">
             <timestamp>2015-11-9T3:36:14</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
@@ -487,6 +466,21 @@
             <line x2="608" y1="-32" y2="-32" x1="544" />
             <rect width="480" x="64" y="-1280" height="1344" />
         </blockdef>
+        <blockdef name="claAdde16b">
+            <timestamp>2015-11-11T19:20:5</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="memory" name="XLXI_4">
             <blockpin signalname="MemReadAddr(13:0)" name="addra(13:0)" />
             <blockpin signalname="MemInputData(15:0)" name="dina(15:0)" />
@@ -575,15 +569,6 @@
         <block symbolname="loadupper8b" name="XLXI_41">
             <blockpin signalname="IROut(7:0)" name="I(7:0)" />
             <blockpin signalname="XLXN_71(15:0)" name="O(15:0)" />
-        </block>
-        <block symbolname="claAdde16b" name="XLXI_45">
-            <blockpin signalname="A_Input(15:0)" name="a(15:0)" />
-            <blockpin signalname="B_Input(15:0)" name="b(15:0)" />
-            <blockpin signalname="ALU_Out(15:0)" name="r(15:0)" />
-            <blockpin name="c_out" />
-            <blockpin name="overflow" />
-            <blockpin signalname="Is_Zero" name="zero" />
-            <blockpin signalname="ALUOp(2:0)" name="op(2:0)" />
         </block>
         <block symbolname="PC_Register" name="XLXI_1">
             <blockpin signalname="CLK" name="CLK" />
@@ -674,78 +659,6 @@
             <blockpin signalname="XLXN_276(15:0)" name="P(15:0)" />
             <blockpin signalname="G,PCData(2:0)" name="S(3:0)" />
             <blockpin signalname="PC_Input(15:0)" name="Result(15:0)" />
-        </block>
-        <block symbolname="constant" name="XLXI_172">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_268(15:0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_173">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_269(15:0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_174">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_270(15:0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_175">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_271(15:0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_176">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_272(15:0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_177">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_273(15:0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_178">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_274(15:0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_179">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_275(15:0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_180">
-            <attr value="FFFF" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_276(15:0)" name="O" />
         </block>
         <block symbolname="constant" name="XLXI_181">
             <attr value="FFFF" name="CValue">
@@ -838,6 +751,87 @@
             <blockpin signalname="IorD(1:0)" name="IorD(1:0)" />
             <blockpin signalname="MemWriteData(1:0)" name="MemWriteData(1:0)" />
             <blockpin signalname="next_state(4:0)" name="next_state(4:0)" />
+        </block>
+        <block symbolname="constant" name="XLXI_174">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_270(15:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_175">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_271(15:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_176">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_272(15:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_177">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_273(15:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_178">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_274(15:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_179">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_275(15:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_180">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_276(15:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_173">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_269(15:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_172">
+            <attr value="FFFF" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_268(15:0)" name="O" />
+        </block>
+        <block symbolname="claAdde16b" name="XLXI_203">
+            <blockpin signalname="A_Input(15:0)" name="a(15:0)" />
+            <blockpin signalname="B_Input(15:0)" name="b(15:0)" />
+            <blockpin signalname="ALUOp(2:0)" name="op(2:0)" />
+            <blockpin name="c_out" />
+            <blockpin signalname="ALU_Out(15:0)" name="r(15:0)" />
+            <blockpin name="overflow" />
+            <blockpin signalname="Is_Zero" name="zero" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -951,23 +945,25 @@
             <wire x2="4064" y1="1808" y2="1824" x1="4064" />
         </branch>
         <branch name="XLXN_47(15:0)">
+            <wire x2="4832" y1="64" y2="576" x1="4832" />
+            <wire x2="4928" y1="576" y2="576" x1="4832" />
+            <wire x2="4928" y1="576" y2="672" x1="4928" />
+            <wire x2="6736" y1="64" y2="64" x1="4832" />
+            <wire x2="6736" y1="64" y2="624" x1="6736" />
+            <wire x2="6960" y1="624" y2="624" x1="6736" />
             <wire x2="4912" y1="672" y2="672" x1="4896" />
-            <wire x2="4912" y1="672" y2="784" x1="4912" />
-            <wire x2="5120" y1="784" y2="784" x1="4912" />
+            <wire x2="4928" y1="672" y2="672" x1="4912" />
             <wire x2="4944" y1="448" y2="448" x1="4912" />
             <wire x2="4912" y1="448" y2="672" x1="4912" />
-            <wire x2="5120" y1="416" y2="784" x1="5120" />
-            <wire x2="5904" y1="416" y2="416" x1="5120" />
-            <wire x2="5904" y1="416" y2="624" x1="5904" />
-            <wire x2="6528" y1="624" y2="624" x1="5904" />
         </branch>
         <branch name="XLXN_71(15:0)">
             <wire x2="3328" y1="1184" y2="1184" x1="3312" />
         </branch>
         <branch name="ALUOp(2:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5648" y="448" type="branch" />
-            <wire x2="5440" y1="448" y2="496" x1="5440" />
             <wire x2="5648" y1="448" y2="448" x1="5440" />
+            <wire x2="5440" y1="448" y2="832" x1="5440" />
+            <wire x2="5488" y1="832" y2="832" x1="5440" />
         </branch>
         <branch name="PCWrite">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="192" y="800" type="branch" />
@@ -985,13 +981,9 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="192" y="992" type="branch" />
             <wire x2="208" y1="992" y2="992" x1="192" />
         </branch>
-        <branch name="Is_Zero">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5632" y="832" type="branch" />
-            <wire x2="5632" y1="832" y2="832" x1="5600" />
-        </branch>
         <branch name="CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5792" y="816" type="branch" />
-            <wire x2="5808" y1="816" y2="816" x1="5792" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6064" y="816" type="branch" />
+            <wire x2="6080" y1="816" y2="816" x1="6064" />
         </branch>
         <branch name="IorD(1:0)">
             <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="464" type="branch" />
@@ -999,25 +991,6 @@
             <wire x2="1200" y1="448" y2="448" x1="720" />
             <wire x2="1200" y1="448" y2="464" x1="1200" />
         </branch>
-        <instance x="5808" y="848" name="XLXI_43" orien="R0">
-        </instance>
-        <branch name="B_Input(15:0)">
-            <wire x2="5344" y1="1232" y2="1232" x1="5328" />
-            <wire x2="5360" y1="896" y2="896" x1="5344" />
-            <wire x2="5344" y1="896" y2="1136" x1="5344" />
-            <wire x2="5344" y1="1136" y2="1232" x1="5344" />
-            <wire x2="5424" y1="1136" y2="1136" x1="5344" />
-        </branch>
-        <branch name="A_Input(15:0)">
-            <wire x2="5344" y1="384" y2="384" x1="5328" />
-            <wire x2="5344" y1="384" y2="464" x1="5344" />
-            <wire x2="5344" y1="464" y2="624" x1="5344" />
-            <wire x2="5360" y1="624" y2="624" x1="5344" />
-            <wire x2="5408" y1="464" y2="464" x1="5344" />
-            <wire x2="5408" y1="336" y2="464" x1="5408" />
-        </branch>
-        <instance x="5344" y="1072" name="XLXI_45" orien="R0">
-        </instance>
         <instance x="4944" y="1792" name="XLXI_31" orien="R0">
         </instance>
         <branch name="XLXN_49(15:0)">
@@ -1079,24 +1052,25 @@
         </branch>
         <branch name="XLXN_229(15:0)">
             <wire x2="496" y1="1536" y2="1536" x1="480" />
-            <wire x2="544" y1="1536" y2="1536" x1="496" />
-            <wire x2="544" y1="1536" y2="2064" x1="544" />
-            <wire x2="5680" y1="2064" y2="2064" x1="544" />
-            <wire x2="5680" y1="880" y2="2064" x1="5680" />
-            <wire x2="6528" y1="880" y2="880" x1="5680" />
+            <wire x2="496" y1="1536" y2="2064" x1="496" />
+            <wire x2="5712" y1="2064" y2="2064" x1="496" />
+            <wire x2="5712" y1="880" y2="2064" x1="5712" />
+            <wire x2="6960" y1="880" y2="880" x1="5712" />
         </branch>
         <branch name="CLK">
             <wire x2="144" y1="64" y2="64" x1="112" />
         </branch>
         <iomarker fontsize="28" x="112" y="64" name="CLK" orien="R180" />
         <branch name="ALU_Out(15:0)">
-            <wire x2="5664" y1="752" y2="752" x1="5600" />
-            <wire x2="5792" y1="752" y2="752" x1="5664" />
-            <wire x2="5808" y1="752" y2="752" x1="5792" />
-            <wire x2="5664" y1="624" y2="752" x1="5664" />
-            <wire x2="5712" y1="624" y2="624" x1="5664" />
-            <wire x2="5792" y1="688" y2="752" x1="5792" />
-            <wire x2="6528" y1="688" y2="688" x1="5792" />
+            <wire x2="5968" y1="704" y2="704" x1="5872" />
+            <wire x2="5968" y1="704" y2="752" x1="5968" />
+            <wire x2="6000" y1="752" y2="752" x1="5968" />
+            <wire x2="6064" y1="752" y2="752" x1="6000" />
+            <wire x2="6080" y1="752" y2="752" x1="6064" />
+            <wire x2="6016" y1="624" y2="624" x1="6000" />
+            <wire x2="6000" y1="624" y2="752" x1="6000" />
+            <wire x2="6960" y1="688" y2="688" x1="6064" />
+            <wire x2="6064" y1="688" y2="752" x1="6064" />
         </branch>
         <branch name="SignExt">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4176" y="1136" type="branch" />
@@ -1109,24 +1083,6 @@
             <wire x2="3744" y1="1056" y2="1184" x1="3744" />
             <wire x2="3808" y1="800" y2="1184" x1="3808" />
             <wire x2="3920" y1="800" y2="800" x1="3808" />
-        </branch>
-        <branch name="ALU_outAfter(15:0)">
-            <wire x2="576" y1="1312" y2="1328" x1="576" />
-            <wire x2="576" y1="1328" y2="2032" x1="576" />
-            <wire x2="3296" y1="2032" y2="2032" x1="576" />
-            <wire x2="6256" y1="2032" y2="2032" x1="3296" />
-            <wire x2="928" y1="1328" y2="1328" x1="576" />
-            <wire x2="736" y1="1312" y2="1312" x1="576" />
-            <wire x2="736" y1="736" y2="1312" x1="736" />
-            <wire x2="1008" y1="736" y2="736" x1="736" />
-            <wire x2="3296" y1="1312" y2="2032" x1="3296" />
-            <wire x2="3328" y1="1312" y2="1312" x1="3296" />
-            <wire x2="6256" y1="752" y2="752" x1="6240" />
-            <wire x2="6256" y1="752" y2="2032" x1="6256" />
-            <wire x2="6288" y1="752" y2="752" x1="6256" />
-            <wire x2="6528" y1="752" y2="752" x1="6288" />
-            <wire x2="6288" y1="720" y2="752" x1="6288" />
-            <wire x2="6304" y1="720" y2="720" x1="6288" />
         </branch>
         <instance x="3328" y="1744" name="XLXI_40" orien="R0">
         </instance>
@@ -1190,12 +1146,6 @@
             <wire x2="32" y1="1456" y2="1536" x1="32" />
             <wire x2="48" y1="1536" y2="1536" x1="32" />
         </branch>
-        <instance x="6352" y="784" name="XLXI_168" orien="R0">
-        </instance>
-        <branch name="XLXN_254(15:0)">
-            <wire x2="6512" y1="816" y2="816" x1="6496" />
-            <wire x2="6528" y1="816" y2="816" x1="6512" />
-        </branch>
         <instance x="2768" y="832" name="XLXI_17" orien="R0">
         </instance>
         <branch name="XLXN_261(3:0)">
@@ -1214,17 +1164,13 @@
         </branch>
         <instance x="4768" y="1392" name="XLXI_169" orien="R0">
         </instance>
-        <instance x="6528" y="1616" name="XLXI_170" orien="R0">
-        </instance>
         <branch name="G,PCData(2:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6496" y="1584" type="branch" />
-            <wire x2="6512" y1="1584" y2="1584" x1="6496" />
-            <wire x2="6528" y1="1584" y2="1584" x1="6512" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6896" y="1584" type="branch" />
+            <wire x2="6960" y1="1584" y2="1584" x1="6896" />
         </branch>
         <branch name="PC(15:12),IROut(11:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6496" y="944" type="branch" />
-            <wire x2="6512" y1="944" y2="944" x1="6496" />
-            <wire x2="6528" y1="944" y2="944" x1="6512" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6832" y="944" type="branch" />
+            <wire x2="6960" y1="944" y2="944" x1="6832" />
         </branch>
         <branch name="CLK">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="192" y="656" type="branch" />
@@ -1232,75 +1178,44 @@
             <wire x2="208" y1="672" y2="672" x1="192" />
         </branch>
         <branch name="PC_Input(15:0)">
-            <wire x2="6976" y1="48" y2="48" x1="176" />
-            <wire x2="6976" y1="48" y2="560" x1="6976" />
-            <wire x2="176" y1="48" y2="320" x1="176" />
+            <wire x2="176" y1="96" y2="320" x1="176" />
             <wire x2="176" y1="320" y2="736" x1="176" />
-            <wire x2="192" y1="736" y2="736" x1="176" />
-            <wire x2="208" y1="736" y2="736" x1="192" />
+            <wire x2="208" y1="736" y2="736" x1="176" />
             <wire x2="288" y1="320" y2="320" x1="176" />
-            <wire x2="6976" y1="560" y2="560" x1="6912" />
+            <wire x2="7408" y1="96" y2="96" x1="176" />
+            <wire x2="7408" y1="96" y2="560" x1="7408" />
+            <wire x2="7408" y1="560" y2="560" x1="7344" />
         </branch>
         <branch name="XLXN_268(15:0)">
-            <wire x2="6512" y1="1008" y2="1008" x1="6496" />
-            <wire x2="6528" y1="1008" y2="1008" x1="6512" />
+            <wire x2="6960" y1="1008" y2="1008" x1="6896" />
         </branch>
-        <instance x="6352" y="976" name="XLXI_172" orien="R0">
-        </instance>
         <branch name="XLXN_269(15:0)">
-            <wire x2="6512" y1="1072" y2="1072" x1="6496" />
-            <wire x2="6528" y1="1072" y2="1072" x1="6512" />
+            <wire x2="6960" y1="1072" y2="1072" x1="6896" />
         </branch>
-        <instance x="6352" y="1040" name="XLXI_173" orien="R0">
-        </instance>
         <branch name="XLXN_270(15:0)">
-            <wire x2="6512" y1="1136" y2="1136" x1="6496" />
-            <wire x2="6528" y1="1136" y2="1136" x1="6512" />
+            <wire x2="6960" y1="1136" y2="1136" x1="6896" />
         </branch>
-        <instance x="6352" y="1104" name="XLXI_174" orien="R0">
-        </instance>
         <branch name="XLXN_271(15:0)">
-            <wire x2="6512" y1="1200" y2="1200" x1="6496" />
-            <wire x2="6528" y1="1200" y2="1200" x1="6512" />
+            <wire x2="6960" y1="1200" y2="1200" x1="6896" />
         </branch>
-        <instance x="6352" y="1168" name="XLXI_175" orien="R0">
-        </instance>
         <branch name="XLXN_272(15:0)">
-            <wire x2="6512" y1="1264" y2="1264" x1="6496" />
-            <wire x2="6528" y1="1264" y2="1264" x1="6512" />
+            <wire x2="6960" y1="1264" y2="1264" x1="6896" />
         </branch>
-        <instance x="6352" y="1232" name="XLXI_176" orien="R0">
-        </instance>
         <branch name="XLXN_273(15:0)">
-            <wire x2="6512" y1="1328" y2="1328" x1="6496" />
-            <wire x2="6528" y1="1328" y2="1328" x1="6512" />
+            <wire x2="6960" y1="1328" y2="1328" x1="6896" />
         </branch>
-        <instance x="6352" y="1296" name="XLXI_177" orien="R0">
-        </instance>
         <branch name="XLXN_274(15:0)">
-            <wire x2="6512" y1="1392" y2="1392" x1="6496" />
-            <wire x2="6528" y1="1392" y2="1392" x1="6512" />
+            <wire x2="6960" y1="1392" y2="1392" x1="6896" />
         </branch>
-        <instance x="6352" y="1360" name="XLXI_178" orien="R0">
-        </instance>
         <branch name="XLXN_275(15:0)">
-            <wire x2="6512" y1="1456" y2="1456" x1="6496" />
-            <wire x2="6528" y1="1456" y2="1456" x1="6512" />
+            <wire x2="6960" y1="1456" y2="1456" x1="6896" />
         </branch>
-        <instance x="6352" y="1424" name="XLXI_179" orien="R0">
-        </instance>
         <branch name="XLXN_276(15:0)">
-            <wire x2="6512" y1="1520" y2="1520" x1="6496" />
-            <wire x2="6528" y1="1520" y2="1520" x1="6512" />
+            <wire x2="6960" y1="1520" y2="1520" x1="6896" />
         </branch>
-        <instance x="6352" y="1488" name="XLXI_180" orien="R0">
-        </instance>
         <branch name="XLXN_277(15:0)">
-            <wire x2="6512" y1="560" y2="560" x1="6496" />
-            <wire x2="6528" y1="560" y2="560" x1="6512" />
+            <wire x2="6960" y1="560" y2="560" x1="6896" />
         </branch>
-        <instance x="6352" y="528" name="XLXI_181" orien="R0">
-        </instance>
         <branch name="MDR_Out(15:0)">
             <wire x2="2768" y1="1008" y2="1008" x1="2736" />
             <wire x2="2768" y1="1008" y2="1072" x1="2768" />
@@ -1313,7 +1228,6 @@
             <wire x2="2160" y1="480" y2="480" x1="2080" />
         </branch>
         <iomarker fontsize="28" x="2160" y="480" name="MemOut(15:0)" orien="R0" />
-        <iomarker fontsize="28" x="5712" y="624" name="ALU_Out(15:0)" orien="R0" />
         <iomarker fontsize="28" x="5408" y="336" name="A_Input(15:0)" orien="R270" />
         <iomarker fontsize="28" x="5424" y="1136" name="B_Input(15:0)" orien="R0" />
         <branch name="IROut(15:0)">
@@ -1349,7 +1263,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4928" y="1360" type="branch" />
             <wire x2="4944" y1="1360" y2="1360" x1="4928" />
         </branch>
-        <iomarker fontsize="28" x="6304" y="720" name="ALU_outAfter(15:0)" orien="R0" />
         <iomarker fontsize="28" x="3472" y="544" name="WriteAddress(3:0)" orien="R0" />
         <branch name="GRegWrite">
             <wire x2="4176" y1="3328" y2="3328" x1="4080" />
@@ -1382,22 +1295,18 @@
             <wire x2="4432" y1="2240" y2="2256" x1="4432" />
         </branch>
         <branch name="XLXN_301">
-            <wire x2="4016" y1="2352" y2="2352" x1="4000" />
-            <wire x2="4080" y1="2352" y2="2352" x1="4016" />
+            <wire x2="4080" y1="2352" y2="2352" x1="4000" />
         </branch>
         <branch name="IROut(13)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4032" y="2288" type="branch" />
-            <wire x2="4048" y1="2288" y2="2288" x1="4032" />
-            <wire x2="4080" y1="2288" y2="2288" x1="4048" />
+            <wire x2="4080" y1="2288" y2="2288" x1="4032" />
         </branch>
         <branch name="IROut(14)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4032" y="2224" type="branch" />
-            <wire x2="4048" y1="2224" y2="2224" x1="4032" />
-            <wire x2="4080" y1="2224" y2="2224" x1="4048" />
+            <wire x2="4080" y1="2224" y2="2224" x1="4032" />
         </branch>
         <branch name="XLXN_298">
-            <wire x2="4016" y1="2160" y2="2160" x1="4000" />
-            <wire x2="4080" y1="2160" y2="2160" x1="4016" />
+            <wire x2="4080" y1="2160" y2="2160" x1="4000" />
         </branch>
         <instance x="4080" y="2416" name="XLXI_183" orien="R0" />
         <iomarker fontsize="28" x="288" y="320" name="PC_Input(15:0)" orien="R0" />
@@ -1593,8 +1502,7 @@
         </branch>
         <branch name="IROut(15:12)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2400" y="4144" type="branch" />
-            <wire x2="2448" y1="4144" y2="4144" x1="2400" />
-            <wire x2="2672" y1="4144" y2="4144" x1="2448" />
+            <wire x2="2672" y1="4144" y2="4144" x1="2400" />
         </branch>
         <branch name="G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2608" y="3584" type="branch" />
@@ -1602,8 +1510,7 @@
         </branch>
         <branch name="IROut(3:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2608" y="3824" type="branch" />
-            <wire x2="2624" y1="3824" y2="3824" x1="2608" />
-            <wire x2="2672" y1="3824" y2="3824" x1="2624" />
+            <wire x2="2672" y1="3824" y2="3824" x1="2608" />
         </branch>
         <branch name="PC(15:12)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2608" y="4064" type="branch" />
@@ -1616,6 +1523,76 @@
         <branch name="G,G,G,G,G,G,G,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2624" y="3104" type="branch" />
             <wire x2="2672" y1="3104" y2="3104" x1="2624" />
+        </branch>
+        <instance x="6960" y="1616" name="XLXI_170" orien="R0">
+        </instance>
+        <instance x="6752" y="1104" name="XLXI_174" orien="R0">
+        </instance>
+        <instance x="6752" y="1168" name="XLXI_175" orien="R0">
+        </instance>
+        <instance x="6752" y="1232" name="XLXI_176" orien="R0">
+        </instance>
+        <instance x="6752" y="1296" name="XLXI_177" orien="R0">
+        </instance>
+        <instance x="6752" y="1360" name="XLXI_178" orien="R0">
+        </instance>
+        <instance x="6752" y="1424" name="XLXI_179" orien="R0">
+        </instance>
+        <instance x="6752" y="1488" name="XLXI_180" orien="R0">
+        </instance>
+        <instance x="6752" y="1040" name="XLXI_173" orien="R0">
+        </instance>
+        <instance x="6752" y="976" name="XLXI_172" orien="R0">
+        </instance>
+        <branch name="XLXN_254(15:0)">
+            <wire x2="6960" y1="816" y2="816" x1="6896" />
+        </branch>
+        <instance x="6752" y="784" name="XLXI_168" orien="R0">
+        </instance>
+        <instance x="6752" y="528" name="XLXI_181" orien="R0">
+        </instance>
+        <branch name="ALU_outAfter(15:0)">
+            <wire x2="736" y1="1312" y2="1312" x1="576" />
+            <wire x2="576" y1="1312" y2="1328" x1="576" />
+            <wire x2="928" y1="1328" y2="1328" x1="576" />
+            <wire x2="576" y1="1328" y2="2032" x1="576" />
+            <wire x2="3296" y1="2032" y2="2032" x1="576" />
+            <wire x2="6528" y1="2032" y2="2032" x1="3296" />
+            <wire x2="1008" y1="736" y2="736" x1="736" />
+            <wire x2="736" y1="736" y2="1312" x1="736" />
+            <wire x2="3328" y1="1312" y2="1312" x1="3296" />
+            <wire x2="3296" y1="1312" y2="2032" x1="3296" />
+            <wire x2="6528" y1="752" y2="752" x1="6512" />
+            <wire x2="6960" y1="752" y2="752" x1="6528" />
+            <wire x2="6528" y1="752" y2="2032" x1="6528" />
+            <wire x2="6560" y1="704" y2="704" x1="6528" />
+            <wire x2="6528" y1="704" y2="752" x1="6528" />
+        </branch>
+        <iomarker fontsize="28" x="6560" y="704" name="ALU_outAfter(15:0)" orien="R0" />
+        <instance x="6080" y="848" name="XLXI_43" orien="R0">
+        </instance>
+        <iomarker fontsize="28" x="6016" y="624" name="ALU_Out(15:0)" orien="R0" />
+        <instance x="5488" y="864" name="XLXI_203" orien="R0">
+        </instance>
+        <branch name="A_Input(15:0)">
+            <wire x2="5344" y1="384" y2="384" x1="5328" />
+            <wire x2="5344" y1="384" y2="464" x1="5344" />
+            <wire x2="5408" y1="464" y2="464" x1="5344" />
+            <wire x2="5344" y1="464" y2="640" x1="5344" />
+            <wire x2="5488" y1="640" y2="640" x1="5344" />
+            <wire x2="5408" y1="336" y2="464" x1="5408" />
+        </branch>
+        <branch name="B_Input(15:0)">
+            <wire x2="5344" y1="1232" y2="1232" x1="5328" />
+            <wire x2="5488" y1="704" y2="704" x1="5344" />
+            <wire x2="5344" y1="704" y2="896" x1="5344" />
+            <wire x2="5344" y1="896" y2="1136" x1="5344" />
+            <wire x2="5344" y1="1136" y2="1232" x1="5344" />
+            <wire x2="5424" y1="1136" y2="1136" x1="5344" />
+        </branch>
+        <branch name="Is_Zero">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5888" y="832" type="branch" />
+            <wire x2="5888" y1="832" y2="832" x1="5872" />
         </branch>
     </sheet>
 </drawing>

@@ -46,7 +46,6 @@
         <signal name="op(2:0)" />
         <signal name="r(1)" />
         <signal name="r(2)" />
-        <signal name="XLXN_39" />
         <signal name="r(3)" />
         <signal name="zero" />
         <signal name="ground" />
@@ -59,6 +58,8 @@
         <signal name="nb0" />
         <signal name="nb1" />
         <signal name="nb3" />
+        <signal name="set_less" />
+        <signal name="less" />
         <port polarity="Input" name="a(3:0)" />
         <port polarity="Input" name="b(3:0)" />
         <port polarity="Input" name="ci" />
@@ -69,6 +70,8 @@
         <port polarity="Output" name="c_out" />
         <port polarity="Input" name="op(2:0)" />
         <port polarity="Output" name="zero" />
+        <port polarity="Output" name="set_less" />
+        <port polarity="Input" name="less" />
         <blockdef name="and2">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-64" x1="0" />
@@ -360,7 +363,7 @@
             <blockpin signalname="b(0)" name="b" />
             <blockpin signalname="ci" name="ci" />
             <blockpin name="co" />
-            <blockpin signalname="XLXN_39" name="l" />
+            <blockpin signalname="less" name="l" />
             <blockpin signalname="op(2:0)" name="op(2:0)" />
             <blockpin signalname="r(0)" name="r" />
             <blockpin name="s" />
@@ -393,7 +396,7 @@
             <blockpin signalname="ground" name="l" />
             <blockpin signalname="op(2:0)" name="op(2:0)" />
             <blockpin signalname="r(3)" name="r" />
-            <blockpin signalname="XLXN_39" name="s" />
+            <blockpin signalname="set_less" name="s" />
         </block>
         <block symbolname="nor4" name="XLXI_85">
             <blockpin signalname="r(3)" name="I0" />
@@ -914,14 +917,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="880" type="branch" />
             <wire x2="2896" y1="880" y2="880" x1="2816" />
         </branch>
-        <branch name="XLXN_39">
-            <wire x2="2640" y1="448" y2="1920" x1="2640" />
-            <wire x2="3520" y1="1920" y2="1920" x1="2640" />
-            <wire x2="2832" y1="448" y2="448" x1="2640" />
-            <wire x2="2896" y1="448" y2="448" x1="2832" />
-            <wire x2="3520" y1="1552" y2="1552" x1="3280" />
-            <wire x2="3520" y1="1552" y2="1920" x1="3520" />
-        </branch>
         <branch name="c3">
             <wire x2="2384" y1="928" y2="928" x1="2320" />
         </branch>
@@ -1054,6 +1049,18 @@
         <branch name="sb0">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="1984" type="branch" />
             <wire x2="672" y1="1984" y2="1984" x1="624" />
+        </branch>
+        <branch name="set_less">
+            <wire x2="3376" y1="1552" y2="1552" x1="3280" />
+        </branch>
+        <iomarker fontsize="28" x="3376" y="1552" name="set_less" orien="R0" />
+        <branch name="less">
+            <wire x2="240" y1="480" y2="480" x1="160" />
+        </branch>
+        <iomarker fontsize="28" x="160" y="480" name="less" orien="R180" />
+        <branch name="less">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2848" y="448" type="branch" />
+            <wire x2="2896" y1="448" y2="448" x1="2848" />
         </branch>
     </sheet>
 </drawing>

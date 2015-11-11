@@ -69,7 +69,7 @@
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="STATE_CONTROL_UNIT_2">
-            <timestamp>2015-11-11T18:45:36</timestamp>
+            <timestamp>2015-11-11T19:10:1</timestamp>
             <line x2="464" y1="800" y2="800" x1="400" />
             <line x2="464" y1="736" y2="736" x1="400" />
             <line x2="0" y1="672" y2="672" x1="64" />
@@ -92,7 +92,6 @@
             <line x2="464" y1="-736" y2="-736" x1="400" />
             <line x2="464" y1="-672" y2="-672" x1="400" />
             <line x2="464" y1="-608" y2="-608" x1="400" />
-            <line x2="464" y1="-544" y2="-544" x1="400" />
             <line x2="464" y1="-480" y2="-480" x1="400" />
             <rect width="64" x="400" y="-428" height="24" />
             <line x2="464" y1="-416" y2="-416" x1="400" />
@@ -127,7 +126,6 @@
             <blockpin signalname="SignExt" name="SignExt" />
             <blockpin signalname="GRegWrite" name="GRegWrite" />
             <blockpin signalname="ALUSrcA" name="ALUSrcA" />
-            <blockpin signalname="MemRead" name="MemRead" />
             <blockpin signalname="MemWrite" name="MemWrite" />
             <blockpin signalname="EPCWrite" name="EPCWrite" />
             <blockpin signalname="CLR" name="CLR" />
