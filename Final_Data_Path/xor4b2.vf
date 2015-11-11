@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : xor4b2.vf
+// /___/   /\     Timestamp : 11/11/2015 14:13:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/xor4b2.vf -w /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/xor4b2.sch
+//Design Name: xor4b2
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module xor4b2(I0, 
+              I1, 
+              O);
+
+    input [3:0] I0;
+    input [3:0] I1;
+   output [3:0] O;
+   
+   
+   XOR2  XLXI_1 (.I0(I1[0]), 
+                .I1(I0[0]), 
+                .O(O[0]));
+   XOR2  XLXI_2 (.I0(I1[1]), 
+                .I1(I0[1]), 
+                .O(O[1]));
+   XOR2  XLXI_3 (.I0(I1[2]), 
+                .I1(I0[2]), 
+                .O(O[2]));
+   XOR2  XLXI_4 (.I0(I1[3]), 
+                .I1(I0[3]), 
+                .O(O[3]));
+endmodule

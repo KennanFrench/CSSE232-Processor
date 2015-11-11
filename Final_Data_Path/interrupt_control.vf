@@ -1,0 +1,585 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : interrupt_control.vf
+// /___/   /\     Timestamp : 11/11/2015 14:17:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/interrupt_control.vf -w /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/interrupt_control.sch
+//Design Name: interrupt_control
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module buf16b_MUSER_interrupt_control(Input, 
+                                      Output);
+
+    input [15:0] Input;
+   output [15:0] Output;
+   
+   
+   BUF  XLXI_1 (.I(Input[0]), 
+               .O(Output[0]));
+   BUF  XLXI_2 (.I(Input[1]), 
+               .O(Output[1]));
+   BUF  XLXI_3 (.I(Input[2]), 
+               .O(Output[2]));
+   BUF  XLXI_4 (.I(Input[3]), 
+               .O(Output[3]));
+   BUF  XLXI_5 (.I(Input[4]), 
+               .O(Output[4]));
+   BUF  XLXI_6 (.I(Input[5]), 
+               .O(Output[5]));
+   BUF  XLXI_7 (.I(Input[6]), 
+               .O(Output[6]));
+   BUF  XLXI_8 (.I(Input[7]), 
+               .O(Output[7]));
+   BUF  XLXI_9 (.I(Input[8]), 
+               .O(Output[8]));
+   BUF  XLXI_10 (.I(Input[9]), 
+                .O(Output[9]));
+   BUF  XLXI_11 (.I(Input[10]), 
+                .O(Output[10]));
+   BUF  XLXI_12 (.I(Input[11]), 
+                .O(Output[11]));
+   BUF  XLXI_13 (.I(Input[12]), 
+                .O(Output[12]));
+   BUF  XLXI_14 (.I(Input[13]), 
+                .O(Output[13]));
+   BUF  XLXI_17 (.I(Input[14]), 
+                .O(Output[14]));
+   BUF  XLXI_18 (.I(Input[15]), 
+                .O(Output[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module extend8b16_MUSER_interrupt_control(I, 
+                                          O);
+
+    input [7:0] I;
+   output [15:0] O;
+   
+   wire G;
+   
+   GND  XLXI_1 (.G(G));
+   buf16b_MUSER_interrupt_control  XLXI_2 (.Input({G, G, G, G, G, G, G, G, 
+         I[7], I[6], I[5], I[4], I[3], I[2], I[1], I[0]}), 
+                                          .Output(O[15:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module OR8_MXILINX_interrupt_control(I0, 
+                                     I1, 
+                                     I2, 
+                                     I3, 
+                                     I4, 
+                                     I5, 
+                                     I6, 
+                                     I7, 
+                                     O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_91 (.I1(S0), 
+                 .I2(S1), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(O_DUMMY));
+   OR2  I_36_94 (.I0(S0), 
+                .I1(S1), 
+                .O(O_DUMMY));
+   OR4  I_36_95 (.I0(I4), 
+                .I1(I5), 
+                .I2(I6), 
+                .I3(I7), 
+                .O(S1));
+   OR4  I_36_112 (.I0(I0), 
+                 .I1(I1), 
+                 .I2(I2), 
+                 .I3(I3), 
+                 .O(S0));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_116 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I3), 
+                  .O(S0));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_117 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+endmodule
+`timescale 1ns / 1ps
+
+module xor4b2_MUSER_interrupt_control(I0, 
+                                      I1, 
+                                      O);
+
+    input [3:0] I0;
+    input [3:0] I1;
+   output [3:0] O;
+   
+   
+   XOR2  XLXI_1 (.I0(I1[0]), 
+                .I1(I0[0]), 
+                .O(O[0]));
+   XOR2  XLXI_2 (.I0(I1[1]), 
+                .I1(I0[1]), 
+                .O(O[1]));
+   XOR2  XLXI_3 (.I0(I1[2]), 
+                .I1(I0[2]), 
+                .O(O[2]));
+   XOR2  XLXI_4 (.I0(I1[3]), 
+                .I1(I0[3]), 
+                .O(O[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_interrupt_control(D0, 
+                                      D1, 
+                                      S0, 
+                                      O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module mux4b2_MUSER_interrupt_control(I0, 
+                                      I1, 
+                                      S, 
+                                      O);
+
+    input [3:0] I0;
+    input [3:0] I1;
+    input S;
+   output [3:0] O;
+   
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   M2_1_MXILINX_interrupt_control  XLXI_1 (.D0(I0[0]), 
+                                          .D1(I1[0]), 
+                                          .S0(S), 
+                                          .O(O[0]));
+   (* HU_SET = "XLXI_2_1" *) 
+   M2_1_MXILINX_interrupt_control  XLXI_2 (.D0(I0[1]), 
+                                          .D1(I1[1]), 
+                                          .S0(S), 
+                                          .O(O[1]));
+   (* HU_SET = "XLXI_3_2" *) 
+   M2_1_MXILINX_interrupt_control  XLXI_3 (.D0(I0[2]), 
+                                          .D1(I1[2]), 
+                                          .S0(S), 
+                                          .O(O[2]));
+   (* HU_SET = "XLXI_4_3" *) 
+   M2_1_MXILINX_interrupt_control  XLXI_4 (.D0(I0[3]), 
+                                          .D1(I1[3]), 
+                                          .S0(S), 
+                                          .O(O[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module Or16b2_MUSER_interrupt_control(Int, 
+                                      Num, 
+                                      Ans);
+
+    input [7:0] Int;
+    input [7:0] Num;
+   output [7:0] Ans;
+   
+   
+   OR2  XLXI_1 (.I0(Num[0]), 
+               .I1(Int[0]), 
+               .O(Ans[0]));
+   OR2  XLXI_2 (.I0(Num[1]), 
+               .I1(Int[1]), 
+               .O(Ans[1]));
+   OR2  XLXI_3 (.I0(Num[2]), 
+               .I1(Int[2]), 
+               .O(Ans[2]));
+   OR2  XLXI_4 (.I0(Num[3]), 
+               .I1(Int[3]), 
+               .O(Ans[3]));
+   OR2  XLXI_5 (.I0(Num[4]), 
+               .I1(Int[4]), 
+               .O(Ans[4]));
+   OR2  XLXI_6 (.I0(Num[5]), 
+               .I1(Int[5]), 
+               .O(Ans[5]));
+   OR2  XLXI_7 (.I0(Num[6]), 
+               .I1(Int[6]), 
+               .O(Ans[6]));
+   OR2  XLXI_8 (.I0(Num[7]), 
+               .I1(Int[7]), 
+               .O(Ans[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module Decoder3b8_MUSER_interrupt_control(Address, 
+                                          CLR0, 
+                                          CLR1, 
+                                          CLR2, 
+                                          CLR3, 
+                                          CLR4, 
+                                          CLR5, 
+                                          CLR6, 
+                                          CLR7);
+
+    input [3:0] Address;
+   output CLR0;
+   output CLR1;
+   output CLR2;
+   output CLR3;
+   output CLR4;
+   output CLR5;
+   output CLR6;
+   output CLR7;
+   
+   wire N0;
+   wire N1;
+   wire N2;
+   wire N3;
+   
+   AND4  XLXI_1 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(Address[1]), 
+                .I3(Address[0]), 
+                .O(CLR7));
+   AND4  XLXI_2 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(Address[1]), 
+                .I3(N0), 
+                .O(CLR6));
+   AND4  XLXI_3 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(N1), 
+                .I3(Address[0]), 
+                .O(CLR5));
+   AND4  XLXI_4 (.I0(N3), 
+                .I1(Address[2]), 
+                .I2(N1), 
+                .I3(N0), 
+                .O(CLR4));
+   AND4  XLXI_5 (.I0(N3), 
+                .I1(N2), 
+                .I2(Address[1]), 
+                .I3(Address[0]), 
+                .O(CLR3));
+   AND4  XLXI_6 (.I0(N3), 
+                .I1(N2), 
+                .I2(Address[1]), 
+                .I3(N0), 
+                .O(CLR2));
+   AND4  XLXI_7 (.I0(N3), 
+                .I1(N2), 
+                .I2(N1), 
+                .I3(Address[0]), 
+                .O(CLR1));
+   AND4  XLXI_8 (.I0(N3), 
+                .I1(N2), 
+                .I2(N1), 
+                .I3(N0), 
+                .O(CLR0));
+   INV  XLXI_17 (.I(Address[0]), 
+                .O(N0));
+   INV  XLXI_18 (.I(Address[1]), 
+                .O(N1));
+   INV  XLXI_19 (.I(Address[2]), 
+                .O(N2));
+   INV  XLXI_20 (.I(Address[3]), 
+                .O(N3));
+endmodule
+`timescale 1ns / 1ps
+
+module Interrupt_Register_MUSER_interrupt_control(CLK, 
+                                                  CLR, 
+                                                  East_Button, 
+                                                  North_Button, 
+                                                  South_Button, 
+                                                  Sw0, 
+                                                  Sw1, 
+                                                  Sw2, 
+                                                  Sw3, 
+                                                  West_Button, 
+                                                  State);
+
+    input CLK;
+    input [3:0] CLR;
+    input East_Button;
+    input North_Button;
+    input South_Button;
+    input Sw0;
+    input Sw1;
+    input Sw2;
+    input Sw3;
+    input West_Button;
+   output [7:0] State;
+   
+   wire CLR0;
+   wire CLR1;
+   wire CLR2;
+   wire CLR3;
+   wire CLR4;
+   wire CLR5;
+   wire CLR6;
+   wire CLR7;
+   wire G;
+   
+   FDRSE #( .INIT(1'b0) ) XLXI_8 (.C(CLK), 
+                 .CE(G), 
+                 .D(G), 
+                 .R(CLR0), 
+                 .S(West_Button), 
+                 .Q(State[0]));
+   GND  XLXI_15 (.G(G));
+   FDRSE #( .INIT(1'b0) ) XLXI_16 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR1), 
+                  .S(South_Button), 
+                  .Q(State[1]));
+   FDRSE #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR2), 
+                  .S(East_Button), 
+                  .Q(State[2]));
+   FDRSE #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR3), 
+                  .S(North_Button), 
+                  .Q(State[3]));
+   FDRSE #( .INIT(1'b0) ) XLXI_20 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR4), 
+                  .S(Sw3), 
+                  .Q(State[4]));
+   FDRSE #( .INIT(1'b0) ) XLXI_21 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR5), 
+                  .S(Sw2), 
+                  .Q(State[5]));
+   FDRSE #( .INIT(1'b0) ) XLXI_22 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR6), 
+                  .S(Sw1), 
+                  .Q(State[6]));
+   FDRSE #( .INIT(1'b0) ) XLXI_23 (.C(CLK), 
+                  .CE(G), 
+                  .D(G), 
+                  .R(CLR7), 
+                  .S(Sw0), 
+                  .Q(State[7]));
+   Decoder3b8_MUSER_interrupt_control  XLXI_25 (.Address(CLR[3:0]), 
+                                               .CLR0(CLR0), 
+                                               .CLR1(CLR1), 
+                                               .CLR2(CLR2), 
+                                               .CLR3(CLR3), 
+                                               .CLR4(CLR4), 
+                                               .CLR5(CLR5), 
+                                               .CLR6(CLR6), 
+                                               .CLR7(CLR7));
+endmodule
+`timescale 1ns / 1ps
+
+module Old_and_New_Interrupt_MUSER_interrupt_control(CLK, 
+                                                     CLR_Input, 
+                                                     HARDWARE, 
+                                                     State);
+
+    input CLK;
+    input [3:0] CLR_Input;
+    input [7:0] HARDWARE;
+   output [7:0] State;
+   
+   wire [7:0] Ans;
+   wire [7:0] State_DUMMY;
+   
+   assign State[7:0] = State_DUMMY[7:0];
+   Interrupt_Register_MUSER_interrupt_control  XLXI_1 (.CLK(CLK), 
+                                                      .CLR(CLR_Input[3:0]), 
+                                                      .East_Button(Ans[2]), 
+                                                      .North_Button(Ans[0]), 
+                                                      .South_Button(Ans[1]), 
+                                                      .Sw0(Ans[4]), 
+                                                      .Sw1(Ans[5]), 
+                                                      .Sw2(Ans[6]), 
+                                                      .Sw3(Ans[7]), 
+                                                      .West_Button(Ans[3]), 
+                                                      .State(State_DUMMY[7:0]));
+   Or16b2_MUSER_interrupt_control  XLXI_3 (.Int(State_DUMMY[7:0]), 
+                                          .Num(HARDWARE[7:0]), 
+                                          .Ans(Ans[7:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module interrupt_control(CLK, 
+                         FCODE, 
+                         HARDWARE, 
+                         IR_CLR_SELECT, 
+                         Opcode, 
+                         PC, 
+                         RESET, 
+                         ALUOp, 
+                         ALUSrcA, 
+                         ALUSrcB, 
+                         current_state, 
+                         EPCWrite, 
+                         GRegWrite, 
+                         Interrupt_Register, 
+                         IorD, 
+                         IRegWrite, 
+                         MemWrite, 
+                         MemWriteData, 
+                         next_state, 
+                         PCData, 
+                         PCWrite, 
+                         PCWriteBeq, 
+                         PCWriteBne, 
+                         SignExt, 
+                         WriteAddr, 
+                         WriteData);
+
+    input CLK;
+    input [3:0] FCODE;
+    input [7:0] HARDWARE;
+    input [3:0] IR_CLR_SELECT;
+    input [3:0] Opcode;
+    input [3:0] PC;
+    input RESET;
+   output [2:0] ALUOp;
+   output ALUSrcA;
+   output [1:0] ALUSrcB;
+   output [4:0] current_state;
+   output EPCWrite;
+   output GRegWrite;
+   output [15:0] Interrupt_Register;
+   output [1:0] IorD;
+   output IRegWrite;
+   output MemWrite;
+   output [1:0] MemWriteData;
+   output [4:0] next_state;
+   output [2:0] PCData;
+   output PCWrite;
+   output PCWriteBeq;
+   output PCWriteBne;
+   output SignExt;
+   output [1:0] WriteAddr;
+   output [1:0] WriteData;
+   
+   wire CLR;
+   wire G;
+   wire [3:0] HANDLE;
+   wire [7:0] State;
+   wire V;
+   wire XLXN_29;
+   wire [3:0] XLXN_94;
+   wire XLXN_119;
+   wire XLXN_120;
+   
+   STATE_CONTROL_UNIT_2  XLXI_3 (.CLK(CLK), 
+                                .Functioncode(FCODE[3:0]), 
+                                .InterruptHandler(XLXN_120), 
+                                .InterruptIn(XLXN_29), 
+                                .Opcode(Opcode[3:0]), 
+                                .Reset(RESET), 
+                                .ALUOp(ALUOp[2:0]), 
+                                .ALUSrcA(ALUSrcA), 
+                                .ALUSrcB(ALUSrcB[1:0]), 
+                                .CLR(CLR), 
+                                .current_state(current_state[4:0]), 
+                                .EPCWrite(EPCWrite), 
+                                .GRegWrite(GRegWrite), 
+                                .IorD(IorD[1:0]), 
+                                .IRegWrite(IRegWrite), 
+                                .LCDWrite(), 
+                                .MemWrite(MemWrite), 
+                                .MemWriteData(MemWriteData[1:0]), 
+                                .next_state(next_state[4:0]), 
+                                .PCData(PCData[2:0]), 
+                                .PCWrite(PCWrite), 
+                                .PCWriteBeq(PCWriteBeq), 
+                                .PCWriteBne(PCWriteBne), 
+                                .SignExt(SignExt), 
+                                .WriteAddr(WriteAddr[1:0]), 
+                                .WriteData(WriteData[1:0]));
+   Old_and_New_Interrupt_MUSER_interrupt_control  XLXI_4 (.CLK(CLK), 
+                                                         
+         .CLR_Input(XLXN_94[3:0]), 
+                                                         
+         .HARDWARE(HARDWARE[7:0]), 
+                                                         .State(State[7:0]));
+   xor4b2_MUSER_interrupt_control  XLXI_5 (.I0(PC[3:0]), 
+                                          .I1({G, G, V, V}), 
+                                          .O(HANDLE[3:0]));
+   GND  XLXI_6 (.G(G));
+   VCC  XLXI_7 (.P(V));
+   OR4  XLXI_10 (.I0(HANDLE[3]), 
+                .I1(HANDLE[2]), 
+                .I2(HANDLE[1]), 
+                .I3(HANDLE[0]), 
+                .O(XLXN_119));
+   (* HU_SET = "XLXI_11_4" *) 
+   OR8_MXILINX_interrupt_control  XLXI_11 (.I0(State[7]), 
+                                          .I1(State[6]), 
+                                          .I2(State[5]), 
+                                          .I3(State[4]), 
+                                          .I4(State[3]), 
+                                          .I5(State[2]), 
+                                          .I6(State[1]), 
+                                          .I7(State[0]), 
+                                          .O(XLXN_29));
+   mux4b2_MUSER_interrupt_control  XLXI_17 (.I0({V, G, G, G}), 
+                                           .I1(IR_CLR_SELECT[3:0]), 
+                                           .S(CLR), 
+                                           .O(XLXN_94[3:0]));
+   INV  XLXI_21 (.I(XLXN_119), 
+                .O(XLXN_120));
+   extend8b16_MUSER_interrupt_control  XLXI_22 (.I(State[7:0]), 
+                                               .O(Interrupt_Register[15:0]));
+endmodule
