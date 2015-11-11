@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">ipcore_dir/memory.v</arg>&quot; line <arg fmt="%d" index="2">2557</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">memory</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">ipcore_dir/memory.v</arg>&quot; line <arg fmt="%d" index="2">2557</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">memory</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">Final_Data_Path.vf</arg>&quot; line <arg fmt="%d" index="2">2617</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_40</arg>&apos; is tied to GND.
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">Final_Data_Path.vf</arg>&quot; line <arg fmt="%d" index="2">2617</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_40</arg>&apos; is tied to GND.
 </msg>
 
 <msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">122</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
