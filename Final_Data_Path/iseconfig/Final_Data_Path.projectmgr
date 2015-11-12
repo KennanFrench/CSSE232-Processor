@@ -49,6 +49,7 @@
          <ClosedNode>/mux3b16 |home|frenchkt|Documents|School|Sophomore|Q1|CSSE232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|mux3b16.sch</ClosedNode>
          <ClosedNode>/mux5b16 |home|frenchkt|Documents|School|Sophomore|Q1|CSSE232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|mux5b16.sch</ClosedNode>
          <ClosedNode>/mux5b16 |home|knightcm|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|mux5b16.sch</ClosedNode>
+         <ClosedNode>/mux5b16 |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|mux5b16.sch</ClosedNode>
          <ClosedNode>/mux8b16 |home|frenchkt|Documents|School|Sophomore|Q1|CSSE232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|mux8b16.sch</ClosedNode>
          <ClosedNode>/mux8b16 |home|knightcm|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|mux8b16.sch</ClosedNode>
          <ClosedNode>/reg16b |home|frenchkt|Documents|School|Sophomore|Q1|CSSE232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|reg16b.sch</ClosedNode>
@@ -59,13 +60,13 @@
          <ClosedNode>/signext8b16 |home|frenchkt|Documents|School|Sophomore|Q1|CSSE232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|signext8b16.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Final_Data_Path (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Final_Data_Path.sch)</SelectedItem>
+         <SelectedItem>mux5b16 (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/mux5b16.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >141</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000205000000020000000000000000000000000200000064ffffffff000000810000000300000002000002050000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Final_Data_Path (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Final_Data_Path.sch)</CurrentItem>
+      <CurrentItem>mux5b16 (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/mux5b16.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -117,7 +118,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b20000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -164,13 +165,13 @@
          <ClosedNode>/signext12b16 |home|knightcm|1516a-csse232-frenchkt-knightcm-lamd-peterseo|Final_Data_Path|signext12b16.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Final_Data_Path_Final_Data_Path_sch_tb (/home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Test.v)</SelectedItem>
+         <SelectedItem>Final_Data_Path_Final_Data_Path_sch_tb (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Final_Data_Path_tb_08.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001df000000020000000000000000000000000200000064ffffffff000000810000000300000002000001df0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000219000000020000000000000000000000000200000064ffffffff000000810000000300000002000002190000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Final_Data_Path_Final_Data_Path_sch_tb (/home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Test.v)</CurrentItem>
+      <CurrentItem>Final_Data_Path_Final_Data_Path_sch_tb (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Final_Data_Path_tb_08.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -178,39 +179,39 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -221,7 +222,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Create Schematic Symbol</CurrentItem>
    </ItemView>
@@ -230,13 +231,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>

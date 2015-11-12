@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : xor4b2.vf
-// /___/   /\     Timestamp : 11/11/2015 15:15:55
+// /___/   /\     Timestamp : 11/11/2015 19:25:16
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/xor4b2.vf -w /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/xor4b2.sch
+//Command: sch2hdl -sympath /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/xor4b2.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/xor4b2.sch
 //Design Name: xor4b2
 //Device: spartan3e
 //Purpose:

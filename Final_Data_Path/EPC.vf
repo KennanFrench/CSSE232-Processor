@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : EPC.vf
-// /___/   /\     Timestamp : 11/11/2015 15:15:55
+// /___/   /\     Timestamp : 11/11/2015 19:25:22
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/EPC.vf -w /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/EPC.sch
+//Command: sch2hdl -sympath /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/EPC.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/EPC.sch
 //Design Name: EPC
 //Device: spartan3e
 //Purpose:
@@ -128,7 +128,7 @@ module Instruction_Register_MUSER_EPC(CLK,
    
    wire G;
    
-   (* HU_SET = "XLXI_2_227" *) 
+   (* HU_SET = "XLXI_2_418" *) 
    FD16CE_MXILINX_EPC  XLXI_2 (.C(CLK), 
                               .CE(RegWrite), 
                               .CLR(G), 
