@@ -2,7 +2,7 @@ add $sp $0 $0
 lui $sp 0x00
 ori $sp 0xff
 add $a0 $0 $0
-addi $a0 1
+addi $a0 6
 add $a1 $0 $0
 addi $a1 2
 add $t0 $0 $0
