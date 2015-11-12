@@ -1,5 +1,6 @@
 add $sp $0 $0
-addi $sp 255
+lui $sp 0x00
+ori $sp 0xff
 add $a0 $0 $0
 addi $a0 1
 add $a1 $0 $0
@@ -11,7 +12,6 @@ add $t3 $0 $0
 add $s0 $0 $0
 add $s1 $0 $0
 add $s2 $0 $0
-add $sp $0 $0
 add $ra $0 $0
 addi $ra 50
 add $rv $0 $0
