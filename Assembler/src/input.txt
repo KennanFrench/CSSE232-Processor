@@ -3,7 +3,7 @@ addi $sp 255
 add $a0 $0 $0
 addi $a0 1
 add $a1 $0 $0
-addi $a1 1
+addi $a1 2
 add $t0 $0 $0
 add $t1 $0 $0
 add $t2 $0 $0
@@ -19,31 +19,31 @@ add $at $0 $0
 add $k0 $0 $0
 add $k1 $0 $0
 addi $sp -3
-addi $a1 1
 sw $ra $sp 0
 sw $a0 $sp 2
 lw $a0 $sp 2
-sw $a0 $sp 2
 sw $a1 $sp 1
-addi $a1 1
-jal 0x024 
+jal 0x024
 lw $a1 $sp 1
+addi $a1 1
 addi $rv -1
 bne $rv $0 0x8
 add $rv $0 $a1
+addi $rv -1
 lw $ra $sp 0
 addi $sp 3
 jr $ra
 bne $a0 $0 0x1
-j 0x02e
+j 0x02f
 bne $a1 $0 0x1
-j 0x030
+j 0x031
+beq $a1 $a0 0x4
 slt $t0 $a1 $a0
 beq $t0 $0 0x2
 sub $a0 $a0 $a1
-j 0x024
+j 0x026
 sub $a1 $a1 $a0
-j 0x024
+j 0x026
 add $rv $a1 $0
 jr $ra
 add $rv $a0 $0
