@@ -84,7 +84,7 @@
         <port polarity="Input" name="PC(3:0)" />
         <port polarity="Output" name="lcdWrite" />
         <blockdef name="STATE_CONTROL_UNIT_2">
-            <timestamp>2015-11-13T2:46:42</timestamp>
+            <timestamp>2015-11-13T21:39:28</timestamp>
             <line x2="464" y1="800" y2="800" x1="400" />
             <line x2="464" y1="736" y2="736" x1="400" />
             <line x2="0" y1="672" y2="672" x1="64" />
