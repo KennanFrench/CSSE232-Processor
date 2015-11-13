@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Old_and_New_Interrupt.vf
-// /___/   /\     Timestamp : 11/11/2015 19:25:22
+// /___/   /\     Timestamp : 11/12/2015 22:32:43
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Old_and_New_Interrupt.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Old_and_New_Interrupt.sch
+//Command: sch2hdl -sympath /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Old_and_New_Interrupt.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/Old_and_New_Interrupt.sch
 //Design Name: Old_and_New_Interrupt
 //Device: spartan3e
 //Purpose:
@@ -245,14 +245,14 @@ module Old_and_New_Interrupt(CLK,
                                                           .CLR(CLR_Input[3:0]), 
                                                           .East_Button(Ans[2]), 
                                                           
-         .North_Button(Ans[0]), 
+         .North_Button(Ans[3]), 
                                                           
          .South_Button(Ans[1]), 
                                                           .Sw0(Ans[4]), 
                                                           .Sw1(Ans[5]), 
                                                           .Sw2(Ans[6]), 
                                                           .Sw3(Ans[7]), 
-                                                          .West_Button(Ans[3]), 
+                                                          .West_Button(Ans[0]), 
                                                           
          .State(State_DUMMY[7:0]));
    Or16b2_MUSER_Old_and_New_Interrupt  XLXI_3 (.Int(State_DUMMY[7:0]), 

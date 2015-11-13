@@ -10,22 +10,22 @@
         <signal name="S(3:0)" />
         <signal name="G" />
         <signal name="V" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,G,G,G,G" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,G,G,G,V" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,G,G,V,G" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,G,G,V,V" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,G,V,G,G" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,G,V,G,V" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,G,V,V,G" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,G,V,V,V" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,V,G,G,G" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,V,G,G,V" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,V,G,V,G" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,V,G,V,V" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,V,V,G,G" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,V,V,V,G" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,V,V,V,V" />
-        <signal name="G,G,V,V,V,V,V,V,V,V,V,V,V,V,G,V" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,G,G,G,G" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,G,G,G,V" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,G,G,V,G" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,G,G,V,V" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,G,V,G,G" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,G,V,G,V" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,G,V,V,G" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,G,V,V,V" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,V,G,G,G" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,V,G,G,V" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,V,G,V,G" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,V,G,V,V" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,V,V,G,G" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,V,V,V,G" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,V,V,V,V" />
+        <signal name="G,G,V,G,V,V,V,V,V,V,V,V,V,V,G,V" />
         <port polarity="Output" name="mapOut(15:0)" />
         <port polarity="Input" name="S(3:0)" />
         <blockdef name="mux16b16">
@@ -84,22 +84,22 @@
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <block symbolname="mux16b16" name="XLXI_3">
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,V,V,G,G" name="M(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,G,G,G,G" name="A(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,G,G,G,V" name="B(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,G,G,V,G" name="C(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,G,G,V,V" name="D(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,G,V,G,G" name="E(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,G,V,G,V" name="F(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,G,V,V,G" name="G(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,G,V,V,V" name="H(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,V,G,G,G" name="I(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,V,G,G,V" name="J(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,V,G,V,G" name="K(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,V,G,V,V" name="L(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,V,V,G,V" name="N(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,V,V,V,G" name="O(15:0)" />
-            <blockpin signalname="G,G,V,V,V,V,V,V,V,V,V,V,V,V,V,V" name="P(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,V,V,G,G" name="M(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,G,G,G,G" name="A(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,G,G,G,V" name="B(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,G,G,V,G" name="C(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,G,G,V,V" name="D(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,G,V,G,G" name="E(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,G,V,G,V" name="F(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,G,V,V,G" name="G(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,G,V,V,V" name="H(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,V,G,G,G" name="I(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,V,G,G,V" name="J(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,V,G,V,G" name="K(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,V,G,V,V" name="L(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,V,V,G,V" name="N(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,V,V,V,G" name="O(15:0)" />
+            <blockpin signalname="G,G,V,G,V,V,V,V,V,V,V,V,V,V,V,V" name="P(15:0)" />
             <blockpin signalname="S(3:0)" name="S(3:0)" />
             <blockpin signalname="mapOut(15:0)" name="Result(15:0)" />
         </block>
@@ -135,67 +135,67 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1200" y="304" type="branch" />
             <wire x2="1200" y1="304" y2="304" x1="880" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,V,V,G,G">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,V,V,G,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1328" y="640" type="branch" />
             <wire x2="1504" y1="640" y2="640" x1="1328" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,G,G,G,G">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,G,G,G,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="704" type="branch" />
             <wire x2="1504" y1="704" y2="704" x1="1344" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,G,G,G,V">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,G,G,G,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="768" type="branch" />
             <wire x2="1504" y1="768" y2="768" x1="1344" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,G,G,V,G">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,G,G,V,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="832" type="branch" />
             <wire x2="1504" y1="832" y2="832" x1="1344" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,G,G,V,V">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,G,G,V,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="896" type="branch" />
             <wire x2="1504" y1="896" y2="896" x1="1344" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,G,V,G,G">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,G,V,G,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="960" type="branch" />
             <wire x2="1504" y1="960" y2="960" x1="1344" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,G,V,G,V">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,G,V,G,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="1024" type="branch" />
             <wire x2="1504" y1="1024" y2="1024" x1="1344" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,G,V,V,G">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,G,V,V,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1088" type="branch" />
             <wire x2="1504" y1="1088" y2="1088" x1="1360" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,G,V,V,V">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,G,V,V,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1152" type="branch" />
             <wire x2="1504" y1="1152" y2="1152" x1="1360" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,V,G,G,G">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,V,G,G,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1216" type="branch" />
             <wire x2="1504" y1="1216" y2="1216" x1="1360" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,V,G,G,V">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,V,G,G,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1280" type="branch" />
             <wire x2="1504" y1="1280" y2="1280" x1="1360" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,V,G,V,G">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,V,G,V,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1344" type="branch" />
             <wire x2="1504" y1="1344" y2="1344" x1="1360" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,V,G,V,V">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,V,G,V,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1408" type="branch" />
             <wire x2="1504" y1="1408" y2="1408" x1="1360" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,V,V,G,V">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,V,V,G,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1472" type="branch" />
             <wire x2="1504" y1="1472" y2="1472" x1="1360" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,V,V,V,G">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,V,V,V,G">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1536" type="branch" />
             <wire x2="1504" y1="1536" y2="1536" x1="1360" />
         </branch>
-        <branch name="G,G,V,V,V,V,V,V,V,V,V,V,V,V,V,V">
+        <branch name="G,G,V,G,V,V,V,V,V,V,V,V,V,V,V,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="1600" type="branch" />
             <wire x2="1504" y1="1600" y2="1600" x1="1344" />
         </branch>

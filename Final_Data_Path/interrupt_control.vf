@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : interrupt_control.vf
-// /___/   /\     Timestamp : 11/11/2015 19:25:22
+// /___/   /\     Timestamp : 11/12/2015 22:32:43
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/interrupt_control.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/interrupt_control.sch
+//Command: sch2hdl -sympath /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/interrupt_control.vf -w /home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/interrupt_control.sch
 //Design Name: interrupt_control
 //Device: spartan3e
 //Purpose:
@@ -197,22 +197,22 @@ module mux4b2_MUSER_interrupt_control(I0,
    output [3:0] O;
    
    
-   (* HU_SET = "XLXI_1_419" *) 
+   (* HU_SET = "XLXI_1_423" *) 
    M2_1_MXILINX_interrupt_control  XLXI_1 (.D0(I0[0]), 
                                           .D1(I1[0]), 
                                           .S0(S), 
                                           .O(O[0]));
-   (* HU_SET = "XLXI_2_420" *) 
+   (* HU_SET = "XLXI_2_424" *) 
    M2_1_MXILINX_interrupt_control  XLXI_2 (.D0(I0[1]), 
                                           .D1(I1[1]), 
                                           .S0(S), 
                                           .O(O[1]));
-   (* HU_SET = "XLXI_3_421" *) 
+   (* HU_SET = "XLXI_3_425" *) 
    M2_1_MXILINX_interrupt_control  XLXI_3 (.D0(I0[2]), 
                                           .D1(I1[2]), 
                                           .S0(S), 
                                           .O(O[2]));
-   (* HU_SET = "XLXI_4_422" *) 
+   (* HU_SET = "XLXI_4_426" *) 
    M2_1_MXILINX_interrupt_control  XLXI_4 (.D0(I0[3]), 
                                           .D1(I1[3]), 
                                           .S0(S), 
@@ -444,13 +444,13 @@ module Old_and_New_Interrupt_MUSER_interrupt_control(CLK,
    Interrupt_Register_MUSER_interrupt_control  XLXI_1 (.CLK(CLK), 
                                                       .CLR(CLR_Input[3:0]), 
                                                       .East_Button(Ans[2]), 
-                                                      .North_Button(Ans[0]), 
+                                                      .North_Button(Ans[3]), 
                                                       .South_Button(Ans[1]), 
                                                       .Sw0(Ans[4]), 
                                                       .Sw1(Ans[5]), 
                                                       .Sw2(Ans[6]), 
                                                       .Sw3(Ans[7]), 
-                                                      .West_Button(Ans[3]), 
+                                                      .West_Button(Ans[0]), 
                                                       .State(State_DUMMY[7:0]));
    Or16b2_MUSER_interrupt_control  XLXI_3 (.Int(State_DUMMY[7:0]), 
                                           .Num(HARDWARE[7:0]), 
@@ -474,6 +474,7 @@ module interrupt_control(CLK,
                          Interrupt_Register, 
                          IorD, 
                          IRegWrite, 
+                         lcdWrite, 
                          MemWrite, 
                          MemWriteData, 
                          next_state, 
@@ -501,6 +502,7 @@ module interrupt_control(CLK,
    output [15:0] Interrupt_Register;
    output [1:0] IorD;
    output IRegWrite;
+   output lcdWrite;
    output MemWrite;
    output [1:0] MemWriteData;
    output [4:0] next_state;
@@ -537,7 +539,7 @@ module interrupt_control(CLK,
                                 .GRegWrite(GRegWrite), 
                                 .IorD(IorD[1:0]), 
                                 .IRegWrite(IRegWrite), 
-                                .LCDWrite(), 
+                                .LCDWrite(lcdWrite), 
                                 .MemWrite(MemWrite), 
                                 .MemWriteData(MemWriteData[1:0]), 
                                 .next_state(next_state[4:0]), 
@@ -564,7 +566,7 @@ module interrupt_control(CLK,
                 .I2(HANDLE[1]), 
                 .I3(HANDLE[0]), 
                 .O(XLXN_119));
-   (* HU_SET = "XLXI_11_423" *) 
+   (* HU_SET = "XLXI_11_427" *) 
    OR8_MXILINX_interrupt_control  XLXI_11 (.I0(State[7]), 
                                           .I1(State[6]), 
                                           .I2(State[5]), 
