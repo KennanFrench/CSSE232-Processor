@@ -832,7 +832,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
             end
 			Display:
             begin
-               next_state = Blank;
+               next_state = Fetch;
                $display("In A_3, the next_state is %d", next_state);
             end
 			Mv:

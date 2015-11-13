@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Fri Nov 13 04:30:50 2015
+# Date: Fri Nov 13 20:38:48 2015
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=/home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Assembler/src/interrupt.coe
+CSET coe_file=/home/frenchkt/Documents/School/Sophomore/Q1/CSSE232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Assembler/src/euclid.coe
 CSET collision_warnings=ALL
 CSET component_name=memory
 CSET disable_collision_warnings=false
@@ -103,4 +103,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-03-20T18:34:43Z
 # END Extra information
 GENERATE
-# CRC: de637556
+# CRC: 3411a3ae

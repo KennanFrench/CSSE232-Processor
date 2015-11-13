@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : interrupt_control.vf
-// /___/   /\     Timestamp : 11/12/2015 22:32:43
+// /___/   /\     Timestamp : 11/13/2015 16:40:25
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -197,22 +197,22 @@ module mux4b2_MUSER_interrupt_control(I0,
    output [3:0] O;
    
    
-   (* HU_SET = "XLXI_1_423" *) 
+   (* HU_SET = "XLXI_1_95" *) 
    M2_1_MXILINX_interrupt_control  XLXI_1 (.D0(I0[0]), 
                                           .D1(I1[0]), 
                                           .S0(S), 
                                           .O(O[0]));
-   (* HU_SET = "XLXI_2_424" *) 
+   (* HU_SET = "XLXI_2_96" *) 
    M2_1_MXILINX_interrupt_control  XLXI_2 (.D0(I0[1]), 
                                           .D1(I1[1]), 
                                           .S0(S), 
                                           .O(O[1]));
-   (* HU_SET = "XLXI_3_425" *) 
+   (* HU_SET = "XLXI_3_97" *) 
    M2_1_MXILINX_interrupt_control  XLXI_3 (.D0(I0[2]), 
                                           .D1(I1[2]), 
                                           .S0(S), 
                                           .O(O[2]));
-   (* HU_SET = "XLXI_4_426" *) 
+   (* HU_SET = "XLXI_4_98" *) 
    M2_1_MXILINX_interrupt_control  XLXI_4 (.D0(I0[3]), 
                                           .D1(I1[3]), 
                                           .S0(S), 
@@ -566,7 +566,7 @@ module interrupt_control(CLK,
                 .I2(HANDLE[1]), 
                 .I3(HANDLE[0]), 
                 .O(XLXN_119));
-   (* HU_SET = "XLXI_11_427" *) 
+   (* HU_SET = "XLXI_11_99" *) 
    OR8_MXILINX_interrupt_control  XLXI_11 (.I0(State[7]), 
                                           .I1(State[6]), 
                                           .I2(State[5]), 
