@@ -227,7 +227,8 @@ public class AssemblerMain {
 				immediate = immediate.substring(0, 4)
 						+ immediate.substring(4, 8) + immediate.substring(8);
 			} else if (op.equals("warp") && (i >= 2)) {
-				immediate = current;
+				extension = 4 - immediate.length();
+				immediate = appendZeros(immediate, extension);
 			}
 			// sb.append(immediate + " ");
 			sb.append(immediate);
