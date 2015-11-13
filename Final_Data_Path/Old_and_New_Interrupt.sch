@@ -7,10 +7,6 @@
     </attr>
     <netlist>
         <signal name="CLR_Input(3:0)" />
-        <signal name="Ans(0)" />
-        <signal name="Ans(1)" />
-        <signal name="Ans(2)" />
-        <signal name="Ans(3)" />
         <signal name="Ans(7)" />
         <signal name="Ans(6)" />
         <signal name="Ans(5)" />
@@ -19,6 +15,10 @@
         <signal name="HARDWARE(7:0)" />
         <signal name="State(7:0)" />
         <signal name="CLK" />
+        <signal name="Ans(0)" />
+        <signal name="Ans(2)" />
+        <signal name="Ans(1)" />
+        <signal name="Ans(3)" />
         <port polarity="Input" name="CLR_Input(3:0)" />
         <port polarity="Input" name="HARDWARE(7:0)" />
         <port polarity="Output" name="State(7:0)" />
@@ -51,13 +51,13 @@
         </blockdef>
         <block symbolname="Interrupt_Register" name="XLXI_1">
             <blockpin signalname="CLR_Input(3:0)" name="CLR(3:0)" />
-            <blockpin signalname="Ans(3)" name="West_Button" />
+            <blockpin signalname="Ans(0)" name="West_Button" />
             <blockpin signalname="Ans(1)" name="South_Button" />
             <blockpin signalname="Ans(2)" name="East_Button" />
             <blockpin signalname="Ans(5)" name="Sw1" />
             <blockpin signalname="Ans(6)" name="Sw2" />
             <blockpin signalname="Ans(7)" name="Sw3" />
-            <blockpin signalname="Ans(0)" name="North_Button" />
+            <blockpin signalname="Ans(3)" name="North_Button" />
             <blockpin signalname="Ans(4)" name="Sw0" />
             <blockpin signalname="State(7:0)" name="State(7:0)" />
             <blockpin signalname="CLK" name="CLK" />
@@ -76,22 +76,6 @@
         </branch>
         <instance x="1120" y="1280" name="XLXI_3" orien="R0">
         </instance>
-        <branch name="Ans(0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2000" y="992" type="branch" />
-            <wire x2="2096" y1="992" y2="992" x1="2000" />
-        </branch>
-        <branch name="Ans(1)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2000" y="1056" type="branch" />
-            <wire x2="2096" y1="1056" y2="1056" x1="2000" />
-        </branch>
-        <branch name="Ans(2)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2000" y="1120" type="branch" />
-            <wire x2="2096" y1="1120" y2="1120" x1="2000" />
-        </branch>
-        <branch name="Ans(3)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2000" y="1184" type="branch" />
-            <wire x2="2096" y1="1184" y2="1184" x1="2000" />
-        </branch>
         <branch name="Ans(7)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="1312" type="branch" />
             <wire x2="2096" y1="1312" y2="1312" x1="2016" />
@@ -135,5 +119,21 @@
             <wire x2="2096" y1="1696" y2="1696" x1="2016" />
         </branch>
         <iomarker fontsize="28" x="2016" y="1696" name="CLK" orien="R180" />
+        <branch name="Ans(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="1184" type="branch" />
+            <wire x2="2096" y1="1184" y2="1184" x1="2016" />
+        </branch>
+        <branch name="Ans(2)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="1120" type="branch" />
+            <wire x2="2096" y1="1120" y2="1120" x1="2016" />
+        </branch>
+        <branch name="Ans(1)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="1056" type="branch" />
+            <wire x2="2096" y1="1056" y2="1056" x1="2016" />
+        </branch>
+        <branch name="Ans(3)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="992" type="branch" />
+            <wire x2="2096" y1="992" y2="992" x1="2016" />
+        </branch>
     </sheet>
 </drawing>

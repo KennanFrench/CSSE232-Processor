@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Old_and_New_Interrupt">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2015-11-8T3:31:23</timestamp>
+    <timestamp>2015-11-13T1:37:28</timestamp>
     <pin polarity="Input" x="0" y="-160" name="CLR_Input(3:0)" />
     <pin polarity="Input" x="0" y="-96" name="HARDWARE(7:0)" />
     <pin polarity="Input" x="0" y="-32" name="CLK" />
