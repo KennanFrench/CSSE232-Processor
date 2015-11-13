@@ -198,7 +198,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                IorD <= 0;
                IRegWrite <= 0;
                WriteAddr <= 0;
-               WriteData <= 4;
+               WriteData <= 3;
 					SignExt <= 0;
 					GRegWrite <= 1;
 					ALUSrcA <= 0;
@@ -274,7 +274,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					ALUSrcB <= 0;
 					PCData <= 0;
 					MemWrite <= 1;
-					MemWriteData <= 1;
+					MemWriteData <= 2;
 					LCDWrite <= 0;
 					CLR <= 0;
 				end
@@ -736,18 +736,22 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 							case (Functioncode)
 								0:
 									begin
+							         $display("Mv Functioncode = %b", Functioncode);
 										next_state = Mv;
 									end
 								1:
 									begin
+										$display("Clear Functioncode = %b", Functioncode);
 										next_state = Clear;
 									end
 								2:
 									begin
+										$display("Read Functioncode = %b", Functioncode);
 										next_state = Read;
 									end
 								3:
 									begin
+										$display("Display Functioncode = %b", Functioncode);
 										next_state = Display;
 									end
 							endcase
@@ -814,6 +818,26 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           A_3:
             begin
                next_state = A_4;
+               $display("In A_3, the next_state is %d", next_state);
+            end
+			Clear:
+            begin
+               next_state = Fetch;
+               $display("In A_3, the next_state is %d", next_state);
+            end
+			Read:
+            begin
+               next_state = Blank;
+               $display("In A_3, the next_state is %d", next_state);
+            end
+			Display:
+            begin
+               next_state = Blank;
+               $display("In A_3, the next_state is %d", next_state);
+            end
+			Mv:
+            begin
+               next_state = Fetch;
                $display("In A_3, the next_state is %d", next_state);
             end
           

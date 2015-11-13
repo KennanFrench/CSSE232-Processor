@@ -55,6 +55,7 @@
         <signal name="HANDLE(3)" />
         <signal name="XLXN_119" />
         <signal name="XLXN_120" />
+        <signal name="lcdWrite" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="HARDWARE(7:0)" />
         <port polarity="Output" name="Interrupt_Register(15:0)" />
@@ -81,8 +82,9 @@
         <port polarity="Input" name="Opcode(3:0)" />
         <port polarity="Input" name="FCODE(3:0)" />
         <port polarity="Input" name="PC(3:0)" />
+        <port polarity="Output" name="lcdWrite" />
         <blockdef name="STATE_CONTROL_UNIT_2">
-            <timestamp>2015-11-11T19:10:1</timestamp>
+            <timestamp>2015-11-13T2:46:42</timestamp>
             <line x2="464" y1="800" y2="800" x1="400" />
             <line x2="464" y1="736" y2="736" x1="400" />
             <line x2="0" y1="672" y2="672" x1="64" />
@@ -123,7 +125,7 @@
             <rect width="336" x="64" y="-1088" height="1920" />
         </blockdef>
         <blockdef name="Old_and_New_Interrupt">
-            <timestamp>2015-11-8T3:31:23</timestamp>
+            <timestamp>2015-11-13T1:37:28</timestamp>
             <rect width="304" x="64" y="-192" height="192" />
             <rect width="64" x="0" y="-172" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
@@ -255,7 +257,7 @@
             <blockpin signalname="MemWrite" name="MemWrite" />
             <blockpin signalname="EPCWrite" name="EPCWrite" />
             <blockpin signalname="CLR" name="CLR" />
-            <blockpin name="LCDWrite" />
+            <blockpin signalname="lcdWrite" name="LCDWrite" />
             <blockpin signalname="ALUOp(2:0)" name="ALUOp(2:0)" />
             <blockpin signalname="IorD(1:0)" name="IorD(1:0)" />
             <blockpin signalname="WriteAddr(1:0)" name="WriteAddr(1:0)" />
@@ -567,5 +569,9 @@
         <iomarker fontsize="28" x="2512" y="2224" name="Opcode(3:0)" orien="R180" />
         <instance x="4976" y="656" name="XLXI_22" orien="R0">
         </instance>
+        <branch name="lcdWrite">
+            <wire x2="3280" y1="3056" y2="3056" x1="3184" />
+        </branch>
+        <iomarker fontsize="28" x="3280" y="3056" name="lcdWrite" orien="R0" />
     </sheet>
 </drawing>
