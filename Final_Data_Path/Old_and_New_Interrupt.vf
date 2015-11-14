@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Old_and_New_Interrupt.vf
-// /___/   /\     Timestamp : 11/13/2015 18:45:42
+// /___/   /\     Timestamp : 11/13/2015 20:43:02
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -196,25 +196,25 @@ module Interrupt_Register_MUSER_Old_and_New_Interrupt(CLK,
                   .D(G), 
                   .R(CLR4), 
                   .S(Sw3), 
-                  .Q(State[4]));
+                  .Q(State[7]));
    FDRSE #( .INIT(1'b0) ) XLXI_21 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR5), 
                   .S(Sw2), 
-                  .Q(State[5]));
+                  .Q(State[6]));
    FDRSE #( .INIT(1'b0) ) XLXI_22 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR6), 
                   .S(Sw1), 
-                  .Q(State[6]));
+                  .Q(State[5]));
    FDRSE #( .INIT(1'b0) ) XLXI_23 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR7), 
                   .S(Sw0), 
-                  .Q(State[7]));
+                  .Q(State[4]));
    Decoder3b8_MUSER_Old_and_New_Interrupt  XLXI_25 (.Address(CLR[3:0]), 
                                                    .CLR0(CLR0), 
                                                    .CLR1(CLR1), 
