@@ -5,44 +5,44 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">ipcore_dir/memory.v</arg>&quot; line <arg fmt="%d" index="2">3056</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">memory</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">ipcore_dir/memory.v</arg>&quot; line <arg fmt="%d" index="2">3059</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">memory</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">120</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">121</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;InterruptIn&gt;, &lt;InterruptHandler&gt;, &lt;Opcode&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">696</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">720</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">708</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">732</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">739</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">763</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">744</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">768</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">749</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">773</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">754</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">778</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">810</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">834</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">815</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">839</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">852</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">881</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">956</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">985</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">694</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">718</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;Functioncode&gt;</arg>
 </msg>
 

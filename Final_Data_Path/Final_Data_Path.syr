@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: Final_Data_Path.prj
@@ -490,6 +490,7 @@ Analyzing hierarchy for module <STATE_CONTROL_UNIT_2> in library <work> with par
 	LW_SW_3 = "00000000000000000000000000000100"
 	Lui_3 = "00000000000000000000000000001010"
 	Mv = "00000000000000000000000000010001"
+	Prepare_Display = "00000000000000000000000000010110"
 	Read = "00000000000000000000000000010011"
 	SW_4 = "00000000000000000000000000001110"
 
@@ -654,7 +655,7 @@ Analyzing hierarchy for module <M2_1E_MXILINX_Final_Data_Path> in library <work>
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <Final_Data_Path>.
-WARNING:Xst:2211 - "ipcore_dir/memory.v" line 3056: Instantiating black box module <memory>.
+WARNING:Xst:2211 - "ipcore_dir/memory.v" line 3059: Instantiating black box module <memory>.
 Module <Final_Data_Path> is correct for synthesis.
  
     Set user-defined property "HU_SET =  XLXI_219_93" for instance <XLXI_219> in unit <Final_Data_Path>.
@@ -1523,92 +1524,95 @@ Analyzing module <STATE_CONTROL_UNIT_2> in library <work>.
 	LW_SW_3 = 32'sb00000000000000000000000000000100
 	Lui_3 = 32'sb00000000000000000000000000001010
 	Mv = 32'sb00000000000000000000000000010001
+	Prepare_Display = 32'sb00000000000000000000000000010110
 	Read = 32'sb00000000000000000000000000010011
 	SW_4 = 32'sb00000000000000000000000000001110
-"STATE_CONTROL_UNIT_2.v" line 125: $display : Fetch
-"STATE_CONTROL_UNIT_2.v" line 168: $display : Decode
-"STATE_CONTROL_UNIT_2.v" line 191: $display : Mv
-"STATE_CONTROL_UNIT_2.v" line 214: $display : Clear
-"STATE_CONTROL_UNIT_2.v" line 237: $display : Display
-"STATE_CONTROL_UNIT_2.v" line 260: $display : Read
-"STATE_CONTROL_UNIT_2.v" line 284: $display : A Type Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 329: $display : C Type Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 366: $display : Lw/Sw Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 390: $display : Branch Equal Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 413: $display : Branch Not Equal Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 436: $display : Jump Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 459: $display : Jump Register Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 482: $display : Jump And Link Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 505: $display : Load Upper Immidiate Cycle 3
-"STATE_CONTROL_UNIT_2.v" line 528: $display : A Type Cycle 4
-"STATE_CONTROL_UNIT_2.v" line 551: $display : C Type Cycle 4
-"STATE_CONTROL_UNIT_2.v" line 574: $display : LW Cycle 4
-"STATE_CONTROL_UNIT_2.v" line 597: $display : SW Cycle 4
-"STATE_CONTROL_UNIT_2.v" line 620: $display : Jump and Link Cycle 4
-"STATE_CONTROL_UNIT_2.v" line 643: $display : LW Cycle 5
-"STATE_CONTROL_UNIT_2.v" line 665: $display : Blank Cycle 5
-"STATE_CONTROL_UNIT_2.v" line 687: $display : not implemented
-WARNING:Xst:905 - "STATE_CONTROL_UNIT_2.v" line 120: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+"STATE_CONTROL_UNIT_2.v" line 126: $display : Fetch
+"STATE_CONTROL_UNIT_2.v" line 169: $display : Decode
+"STATE_CONTROL_UNIT_2.v" line 192: $display : Mv
+"STATE_CONTROL_UNIT_2.v" line 215: $display : Clear
+"STATE_CONTROL_UNIT_2.v" line 238: $display : Display
+"STATE_CONTROL_UNIT_2.v" line 261: $display : Display
+"STATE_CONTROL_UNIT_2.v" line 284: $display : Read
+"STATE_CONTROL_UNIT_2.v" line 308: $display : A Type Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 353: $display : C Type Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 390: $display : Lw/Sw Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 414: $display : Branch Equal Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 437: $display : Branch Not Equal Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 460: $display : Jump Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 483: $display : Jump Register Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 506: $display : Jump And Link Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 529: $display : Load Upper Immidiate Cycle 3
+"STATE_CONTROL_UNIT_2.v" line 552: $display : A Type Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 575: $display : C Type Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 598: $display : LW Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 621: $display : SW Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 644: $display : Jump and Link Cycle 4
+"STATE_CONTROL_UNIT_2.v" line 667: $display : LW Cycle 5
+"STATE_CONTROL_UNIT_2.v" line 689: $display : Blank Cycle 5
+"STATE_CONTROL_UNIT_2.v" line 711: $display : not implemented
+WARNING:Xst:905 - "STATE_CONTROL_UNIT_2.v" line 121: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <InterruptIn>, <InterruptHandler>, <Opcode>
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 696: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 696: $display : The current state is %d
-"STATE_CONTROL_UNIT_2.v" line 703: $display : In Fetch, the next_state is 1
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 708: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 708: $display : The opcode is %d
-"STATE_CONTROL_UNIT_2.v" line 713: $display : The next state is A_3
-"STATE_CONTROL_UNIT_2.v" line 718: $display : The next state is A_3
-"STATE_CONTROL_UNIT_2.v" line 723: $display : The next state is A_3
-"STATE_CONTROL_UNIT_2.v" line 728: $display : The next state is A_3
-"STATE_CONTROL_UNIT_2.v" line 732: $display : The next state is C_3
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 739: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 739: $display : Mv Functioncode = %b
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 744: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 744: $display : Clear Functioncode = %b
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 749: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 749: $display : Read Functioncode = %b
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 754: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 754: $display : Display Functioncode = %b
-"STATE_CONTROL_UNIT_2.v" line 762: $display : The next state is C_3
-"STATE_CONTROL_UNIT_2.v" line 767: $display : The next state is A_3
-"STATE_CONTROL_UNIT_2.v" line 772: $display : The next state is LW_SW_3
-"STATE_CONTROL_UNIT_2.v" line 776: $display : The next state is LW_SW_3
-"STATE_CONTROL_UNIT_2.v" line 781: $display : The next state is Lui_3
-"STATE_CONTROL_UNIT_2.v" line 786: $display : The next state is Beq_3
-"STATE_CONTROL_UNIT_2.v" line 791: $display : The next state is Bne_3
-"STATE_CONTROL_UNIT_2.v" line 796: $display : The next state is Jal_3
-"STATE_CONTROL_UNIT_2.v" line 800: $display : The next state is Jump_3
-"STATE_CONTROL_UNIT_2.v" line 805: $display : The next state is JR_3
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 810: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 810: $display :  Wrong Opcode %d 
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 815: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 815: $display : In Decode, the next_state is %d
-"STATE_CONTROL_UNIT_2.v" line 821: $display : In A_3, the next_state is 11
-"STATE_CONTROL_UNIT_2.v" line 826: $display : In A_3, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 831: $display : In A_3, the next_state is 21
-"STATE_CONTROL_UNIT_2.v" line 836: $display : In A_3, the next_state is 21
-"STATE_CONTROL_UNIT_2.v" line 841: $display : In A_3, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 847: $display : In C_4, the next_state is 12
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 852: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 852: $display : The opcode is %d
-"STATE_CONTROL_UNIT_2.v" line 857: $display : The next state is LW_4
-"STATE_CONTROL_UNIT_2.v" line 862: $display : The next state is SW_4
-"STATE_CONTROL_UNIT_2.v" line 871: $display : In Beq_3, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 877: $display : In Bne_3, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 883: $display : In Jump_3, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 889: $display : In JR_3, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 895: $display : In Jal_3, the next_state is 15
-"STATE_CONTROL_UNIT_2.v" line 902: $display : In Lui_3, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 908: $display : In A_4, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 914: $display : In C_4, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 920: $display : In LW_4, the next_state is 16
-"STATE_CONTROL_UNIT_2.v" line 926: $display : In SW_4, the next_state is 21
-"STATE_CONTROL_UNIT_2.v" line 932: $display : In Jal_4, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 939: $display : In LW_5, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 945: $display : In Blank, the next_state is 0
-"STATE_CONTROL_UNIT_2.v" line 950: $display :  Not implemented!
-WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 956: Parameter 2 is not constant in call of system task $display.
-"STATE_CONTROL_UNIT_2.v" line 956: $display : After the tests, the next_state is %d
-WARNING:Xst:905 - "STATE_CONTROL_UNIT_2.v" line 694: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 720: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 720: $display : The current state is %d
+"STATE_CONTROL_UNIT_2.v" line 727: $display : In Fetch, the next_state is 1
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 732: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 732: $display : The opcode is %d
+"STATE_CONTROL_UNIT_2.v" line 737: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 742: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 747: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 752: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 756: $display : The next state is C_3
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 763: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 763: $display : Mv Functioncode = %b
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 768: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 768: $display : Clear Functioncode = %b
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 773: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 773: $display : Read Functioncode = %b
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 778: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 778: $display : Display Functioncode = %b
+"STATE_CONTROL_UNIT_2.v" line 786: $display : The next state is C_3
+"STATE_CONTROL_UNIT_2.v" line 791: $display : The next state is A_3
+"STATE_CONTROL_UNIT_2.v" line 796: $display : The next state is LW_SW_3
+"STATE_CONTROL_UNIT_2.v" line 800: $display : The next state is LW_SW_3
+"STATE_CONTROL_UNIT_2.v" line 805: $display : The next state is Lui_3
+"STATE_CONTROL_UNIT_2.v" line 810: $display : The next state is Beq_3
+"STATE_CONTROL_UNIT_2.v" line 815: $display : The next state is Bne_3
+"STATE_CONTROL_UNIT_2.v" line 820: $display : The next state is Jal_3
+"STATE_CONTROL_UNIT_2.v" line 824: $display : The next state is Jump_3
+"STATE_CONTROL_UNIT_2.v" line 829: $display : The next state is JR_3
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 834: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 834: $display :  Wrong Opcode %d 
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 839: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 839: $display : In Decode, the next_state is %d
+"STATE_CONTROL_UNIT_2.v" line 845: $display : In A_3, the next_state is 11
+"STATE_CONTROL_UNIT_2.v" line 850: $display : In A_3, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 855: $display : In A_3, the next_state is 21
+"STATE_CONTROL_UNIT_2.v" line 860: $display : In A_3, the next_state is 20
+"STATE_CONTROL_UNIT_2.v" line 865: $display : In A_3, the next_state is 21
+"STATE_CONTROL_UNIT_2.v" line 870: $display : In A_3, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 876: $display : In C_4, the next_state is 12
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 881: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 881: $display : The opcode is %d
+"STATE_CONTROL_UNIT_2.v" line 886: $display : The next state is LW_4
+"STATE_CONTROL_UNIT_2.v" line 891: $display : The next state is SW_4
+"STATE_CONTROL_UNIT_2.v" line 900: $display : In Beq_3, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 906: $display : In Bne_3, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 912: $display : In Jump_3, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 918: $display : In JR_3, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 924: $display : In Jal_3, the next_state is 15
+"STATE_CONTROL_UNIT_2.v" line 931: $display : In Lui_3, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 937: $display : In A_4, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 943: $display : In C_4, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 949: $display : In LW_4, the next_state is 16
+"STATE_CONTROL_UNIT_2.v" line 955: $display : In SW_4, the next_state is 21
+"STATE_CONTROL_UNIT_2.v" line 961: $display : In Jal_4, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 968: $display : In LW_5, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 974: $display : In Blank, the next_state is 0
+"STATE_CONTROL_UNIT_2.v" line 979: $display :  Not implemented!
+WARNING:Xst:2323 - "STATE_CONTROL_UNIT_2.v" line 985: Parameter 2 is not constant in call of system task $display.
+"STATE_CONTROL_UNIT_2.v" line 985: $display : After the tests, the next_state is %d
+WARNING:Xst:905 - "STATE_CONTROL_UNIT_2.v" line 718: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Functioncode>
 Module <STATE_CONTROL_UNIT_2> is correct for synthesis.
  
@@ -1739,7 +1743,7 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <STATE_CONTROL_UNIT_2>.
     Related source file is "STATE_CONTROL_UNIT_2.v".
-    Found 4x5-bit ROM for signal <old_next_state_4$mux0000> created at line 736.
+    Found 4x5-bit ROM for signal <old_next_state_4$mux0000> created at line 760.
 WARNING:Xst:737 - Found 1-bit latch for signal <EPCWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 3-bit latch for signal <PCData>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -2734,10 +2738,10 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 248
+# IOs                              : 264
 
 Cell Usage :
-# BELS                             : 3574
+# BELS                             : 3577
 #      AND2                        : 810
 #      AND2B1                      : 613
 #      AND3                        : 233
@@ -2749,9 +2753,9 @@ Cell Usage :
 #      GND                         : 4
 #      INV                         : 129
 #      LUT2                        : 3
-#      LUT3                        : 73
-#      LUT4                        : 50
-#      MUXF5                       : 76
+#      LUT3                        : 68
+#      LUT4                        : 57
+#      MUXF5                       : 77
 #      MUXF5_L                     : 256
 #      MUXF6                       : 137
 #      OR2                         : 826
@@ -2772,9 +2776,9 @@ Cell Usage :
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 247
+# IO Buffers                       : 263
 #      IBUF                        : 24
-#      OBUF                        : 223
+#      OBUF                        : 239
 # Logical                          : 132
 #      NAND2                       : 96
 #      NAND3                       : 32
@@ -2790,9 +2794,9 @@ Selected Device : 3s500efg320-4
 
  Number of Slices:                      200  out of   4656     4%  
  Number of Slice Flip Flops:            400  out of   9312     4%  
- Number of 4 input LUTs:                255  out of   9312     2%  
- Number of IOs:                         248
- Number of bonded IOBs:                 248  out of    232   106% (*) 
+ Number of 4 input LUTs:                257  out of   9312     2%  
+ Number of IOs:                         264
+ Number of bonded IOBs:                 264  out of    232   113% (*) 
     IOB Flip Flops:                       6
  Number of BRAMs:                        15  out of     20    75%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -2822,9 +2826,9 @@ Clock Signal                                                                    
 -------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
 CLK                                                                                  | BUFGP                                                                                                                      | 388   |
 XLXI_4/N0                                                                            | NONE(XLXI_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram)| 15    |
-XLXI_202/XLXI_3/EPCWrite_or00001(XLXI_202/XLXI_3/EPCWrite_or00001:O)                 | BUFG(*)(XLXI_202/XLXI_3/CLR)                                                                                               | 25    |
+XLXI_202/XLXI_3/EPCWrite_or00001(XLXI_202/XLXI_3/EPCWrite_or0000_f5:O)               | BUFG(*)(XLXI_202/XLXI_3/CLR)                                                                                               | 25    |
 XLXI_202/XLXI_3/old_next_state_5_not0001(XLXI_202/XLXI_3/old_next_state_5_not00011:O)| NONE(*)(XLXI_202/XLXI_3/_old_next_state_5_0)                                                                               | 5     |
-XLXI_202/XLXI_3/ALUOp_not0001(XLXI_202/XLXI_3/ALUOp_not0001109:O)                    | NONE(*)(XLXI_202/XLXI_3/ALUOp_0)                                                                                           | 3     |
+XLXI_202/XLXI_3/ALUOp_not0001(XLXI_202/XLXI_3/ALUOp_not0001123:O)                    | NONE(*)(XLXI_202/XLXI_3/ALUOp_0)                                                                                           | 3     |
 -------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
 (*) These 3 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -2931,10 +2935,10 @@ Delay:               44.229ns (Levels of Logic = 46)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_202/XLXI_3/old_next_state_5_not0001'
-  Clock period: 5.738ns (frequency: 174.277MHz)
+  Clock period: 5.756ns (frequency: 173.732MHz)
   Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Delay:               5.738ns (Levels of Logic = 4)
+Delay:               5.756ns (Levels of Logic = 4)
   Source:            XLXI_202/XLXI_3/_old_next_state_5_0 (LATCH)
   Destination:       XLXI_202/XLXI_3/_old_next_state_5_0 (LATCH)
   Source Clock:      XLXI_202/XLXI_3/old_next_state_5_not0001 falling
@@ -2944,15 +2948,15 @@ Delay:               5.738ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               4   0.676   0.666  XLXI_202/XLXI_3/_old_next_state_5_0 (XLXI_202/XLXI_3/_old_next_state_5_0)
-     LUT4:I1->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_5_mux0000<0>64_SW0 (N16)
-     LUT4:I3->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_5_mux0000<0>64 (XLXI_202/XLXI_3/old_next_state_5_mux0000<0>64)
-     LUT4:I3->O            1   0.704   0.424  XLXI_202/XLXI_3/old_next_state_5_mux0000<0>120 (XLXI_202/XLXI_3/old_next_state_5_mux0000<0>120)
-     LUT4:I3->O            1   0.704   0.000  XLXI_202/XLXI_3/old_next_state_5_mux0000<0>134 (XLXI_202/XLXI_3/old_next_state_5_mux0000<0>)
+     LD:G->Q               4   0.676   0.591  XLXI_202/XLXI_3/_old_next_state_5_0 (XLXI_202/XLXI_3/_old_next_state_5_0)
+     LUT4:I3->O            1   0.704   0.420  XLXI_202/XLXI_3/old_next_state_5_mux0000<0>61 (XLXI_202/XLXI_3/old_next_state_5_mux0000<0>61)
+     MUXF5:S->O            1   0.739   0.455  XLXI_202/XLXI_3/old_next_state_5_mux0000<0>90 (XLXI_202/XLXI_3/old_next_state_5_mux0000<0>90)
+     LUT4:I2->O            1   0.704   0.455  XLXI_202/XLXI_3/old_next_state_5_mux0000<0>117_SW1 (N30)
+     LUT4:I2->O            1   0.704   0.000  XLXI_202/XLXI_3/old_next_state_5_mux0000<0>117 (XLXI_202/XLXI_3/old_next_state_5_mux0000<0>)
      LD:D                      0.308          XLXI_202/XLXI_3/_old_next_state_5_0
     ----------------------------------------
-    Total                      5.738ns (3.800ns logic, 1.938ns route)
-                                       (66.2% logic, 33.8% route)
+    Total                      5.756ns (3.835ns logic, 1.921ns route)
+                                       (66.6% logic, 33.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -3049,7 +3053,7 @@ Offset:              44.773ns (Levels of Logic = 44)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 3760725 / 217
+  Total number of paths / destination ports: 3760733 / 225
 -------------------------------------------------------------------------
 Offset:              45.432ns (Levels of Logic = 46)
   Source:            XLXI_8/XLXI_2/I_Q1 (FF)
@@ -3215,13 +3219,13 @@ Delay:               7.558ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 13.01 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.57 secs
  
 --> 
 
 
-Total memory usage is 607592 kilobytes
+Total memory usage is 608684 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   37 (   0 filtered)

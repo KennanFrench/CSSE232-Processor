@@ -102,8 +102,9 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	parameter    Mv = 17;
 	parameter    Clear = 18;
 	parameter    Read = 19;
-	parameter    Display = 20;
+	parameter    Display = 20;	
 	parameter    Blank = 21;
+	parameter    Prepare_Display = 22;
 	
    //register calculation
    always @ (posedge CLK, posedge Reset)
@@ -231,6 +232,29 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					MemWriteData <= 0;
 					CLR <= 1;
 					LCDWrite <= 0;
+				end
+			Prepare_Display:
+					begin
+					$display("Display");
+					//ALUOp depends on op code
+					ALUOp <= 0;
+					EPCWrite <= 0;
+               PCWriteBeq <= 0;
+               PCWriteBne <= 0;
+               PCWrite <= 0;
+               IorD <= 2;
+               IRegWrite <= 0;
+               WriteAddr <= 0;
+               WriteData <= 0;
+					SignExt <= 0;
+					GRegWrite <= 0;
+					ALUSrcA <= 0;
+					ALUSrcB <= 0;
+					PCData <= 0;
+					MemWrite <= 0;
+					MemWriteData <= 0;
+					LCDWrite <= 0;
+					CLR <= 0;
 				end
 			Display:
 					begin
@@ -752,7 +776,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 								3:
 									begin
 										$display("Display Functioncode = %b", Functioncode);
-										next_state = Display;
+										next_state = Prepare_Display;
 									end
 							endcase
                    end
@@ -830,9 +854,14 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                next_state = Blank;
                $display("In A_3, the next_state is %d", next_state);
             end
+			Prepare_Display:
+            begin
+               next_state = Display;
+               $display("In A_3, the next_state is %d", next_state);
+            end
 			Display:
             begin
-               next_state = Fetch;
+               next_state = Blank;
                $display("In A_3, the next_state is %d", next_state);
             end
 			Mv:
