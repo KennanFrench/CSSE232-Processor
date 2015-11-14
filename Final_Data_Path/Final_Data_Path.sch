@@ -121,6 +121,7 @@
         <port polarity="Output" name="current_state(4:0)" />
         <port polarity="Output" name="next_state(4:0)" />
         <port polarity="Input" name="hardware(7:0)" />
+        <port polarity="Output" name="interrupt_reg(15:0)" />
         <port polarity="Output" name="displayOut(15:0)" />
         <blockdef name="PC_Register">
             <timestamp>2015-11-8T1:37:13</timestamp>
@@ -136,7 +137,7 @@
             <line x2="432" y1="-352" y2="-352" x1="368" />
         </blockdef>
         <blockdef name="memory">
-            <timestamp>2015-11-13T20:40:21</timestamp>
+            <timestamp>2015-11-14T1:0:4</timestamp>
             <rect width="512" x="32" y="32" height="1344" />
             <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
             <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
@@ -399,7 +400,7 @@
             <line x2="64" y1="-64" y2="-192" x1="64" />
         </blockdef>
         <blockdef name="interrupt_control">
-            <timestamp>2015-11-13T21:39:48</timestamp>
+            <timestamp>2015-11-14T0:19:34</timestamp>
             <line x2="608" y1="96" y2="96" x1="544" />
             <rect width="64" x="0" y="20" height="24" />
             <line x2="0" y1="32" y2="32" x1="64" />
@@ -1745,5 +1746,9 @@
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1328" y="2240" type="branch" />
             <wire x2="1328" y1="2240" y2="2272" x1="1328" />
         </branch>
+        <branch name="interrupt_reg(15:0)">
+            <wire x2="4192" y1="3200" y2="3200" x1="4064" />
+        </branch>
+        <iomarker fontsize="28" x="4192" y="3200" name="interrupt_reg(15:0)" orien="R0" />
     </sheet>
 </drawing>
