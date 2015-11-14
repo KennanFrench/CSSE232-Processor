@@ -24,7 +24,7 @@
         <port polarity="Output" name="State(7:0)" />
         <port polarity="Input" name="CLK" />
         <blockdef name="Interrupt_Register">
-            <timestamp>2015-11-8T3:30:34</timestamp>
+            <timestamp>2015-11-14T1:41:51</timestamp>
             <line x2="0" y1="736" y2="736" x1="64" />
             <line x2="384" y1="672" y2="672" x1="320" />
             <line x2="0" y1="352" y2="352" x1="64" />
@@ -51,6 +51,7 @@
         </blockdef>
         <block symbolname="Interrupt_Register" name="XLXI_1">
             <blockpin signalname="CLR_Input(3:0)" name="CLR(3:0)" />
+            <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="Ans(0)" name="West_Button" />
             <blockpin signalname="Ans(1)" name="South_Button" />
             <blockpin signalname="Ans(2)" name="East_Button" />
@@ -60,7 +61,6 @@
             <blockpin signalname="Ans(3)" name="North_Button" />
             <blockpin signalname="Ans(4)" name="Sw0" />
             <blockpin signalname="State(7:0)" name="State(7:0)" />
-            <blockpin signalname="CLK" name="CLK" />
         </block>
         <block symbolname="Or16b2" name="XLXI_3">
             <blockpin signalname="State(7:0)" name="Int(7:0)" />

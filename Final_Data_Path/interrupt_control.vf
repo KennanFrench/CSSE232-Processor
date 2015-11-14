@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : interrupt_control.vf
-// /___/   /\     Timestamp : 11/13/2015 19:19:56
+// /___/   /\     Timestamp : 11/13/2015 20:43:02
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -197,22 +197,22 @@ module mux4b2_MUSER_interrupt_control(I0,
    output [3:0] O;
    
    
-   (* HU_SET = "XLXI_1_95" *) 
+   (* HU_SET = "XLXI_1_195" *) 
    M2_1_MXILINX_interrupt_control  XLXI_1 (.D0(I0[0]), 
                                           .D1(I1[0]), 
                                           .S0(S), 
                                           .O(O[0]));
-   (* HU_SET = "XLXI_2_96" *) 
+   (* HU_SET = "XLXI_2_196" *) 
    M2_1_MXILINX_interrupt_control  XLXI_2 (.D0(I0[1]), 
                                           .D1(I1[1]), 
                                           .S0(S), 
                                           .O(O[1]));
-   (* HU_SET = "XLXI_3_97" *) 
+   (* HU_SET = "XLXI_3_197" *) 
    M2_1_MXILINX_interrupt_control  XLXI_3 (.D0(I0[2]), 
                                           .D1(I1[2]), 
                                           .S0(S), 
                                           .O(O[2]));
-   (* HU_SET = "XLXI_4_98" *) 
+   (* HU_SET = "XLXI_4_198" *) 
    M2_1_MXILINX_interrupt_control  XLXI_4 (.D0(I0[3]), 
                                           .D1(I1[3]), 
                                           .S0(S), 
@@ -396,25 +396,25 @@ module Interrupt_Register_MUSER_interrupt_control(CLK,
                   .D(G), 
                   .R(CLR4), 
                   .S(Sw3), 
-                  .Q(State[4]));
+                  .Q(State[7]));
    FDRSE #( .INIT(1'b0) ) XLXI_21 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR5), 
                   .S(Sw2), 
-                  .Q(State[5]));
+                  .Q(State[6]));
    FDRSE #( .INIT(1'b0) ) XLXI_22 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR6), 
                   .S(Sw1), 
-                  .Q(State[6]));
+                  .Q(State[5]));
    FDRSE #( .INIT(1'b0) ) XLXI_23 (.C(CLK), 
                   .CE(G), 
                   .D(G), 
                   .R(CLR7), 
                   .S(Sw0), 
-                  .Q(State[7]));
+                  .Q(State[4]));
    Decoder3b8_MUSER_interrupt_control  XLXI_25 (.Address(CLR[3:0]), 
                                                .CLR0(CLR0), 
                                                .CLR1(CLR1), 
@@ -566,7 +566,7 @@ module interrupt_control(CLK,
                 .I2(HANDLE[1]), 
                 .I3(HANDLE[0]), 
                 .O(XLXN_119));
-   (* HU_SET = "XLXI_11_99" *) 
+   (* HU_SET = "XLXI_11_199" *) 
    OR8_MXILINX_interrupt_control  XLXI_11 (.I0(State[7]), 
                                           .I1(State[6]), 
                                           .I2(State[5]), 

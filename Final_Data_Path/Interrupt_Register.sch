@@ -7,8 +7,6 @@
     </attr>
     <netlist>
         <signal name="G" />
-        <signal name="State(7)" />
-        <signal name="State(6)" />
         <signal name="State(5)" />
         <signal name="State(4)" />
         <signal name="State(1)" />
@@ -34,6 +32,8 @@
         <signal name="Sw3" />
         <signal name="North_Button" />
         <signal name="Sw0" />
+        <signal name="State(6)" />
+        <signal name="State(7)" />
         <port polarity="Input" name="CLR(3:0)" />
         <port polarity="Output" name="State(7:0)" />
         <port polarity="Input" name="CLK" />
@@ -117,7 +117,7 @@
             <blockpin signalname="G" name="D" />
             <blockpin signalname="CLR4" name="R" />
             <blockpin signalname="Sw3" name="S" />
-            <blockpin signalname="State(4)" name="Q" />
+            <blockpin signalname="State(7)" name="Q" />
         </block>
         <block symbolname="fdrse" name="XLXI_21">
             <blockpin signalname="CLK" name="C" />
@@ -125,7 +125,7 @@
             <blockpin signalname="G" name="D" />
             <blockpin signalname="CLR5" name="R" />
             <blockpin signalname="Sw2" name="S" />
-            <blockpin signalname="State(5)" name="Q" />
+            <blockpin signalname="State(6)" name="Q" />
         </block>
         <block symbolname="fdrse" name="XLXI_22">
             <blockpin signalname="CLK" name="C" />
@@ -133,7 +133,7 @@
             <blockpin signalname="G" name="D" />
             <blockpin signalname="CLR6" name="R" />
             <blockpin signalname="Sw1" name="S" />
-            <blockpin signalname="State(6)" name="Q" />
+            <blockpin signalname="State(5)" name="Q" />
         </block>
         <block symbolname="fdrse" name="XLXI_23">
             <blockpin signalname="CLK" name="C" />
@@ -141,7 +141,7 @@
             <blockpin signalname="G" name="D" />
             <blockpin signalname="CLR7" name="R" />
             <blockpin signalname="Sw0" name="S" />
-            <blockpin signalname="State(7)" name="Q" />
+            <blockpin signalname="State(4)" name="Q" />
         </block>
         <block symbolname="fdrse" name="XLXI_18">
             <blockpin signalname="CLK" name="C" />
@@ -234,7 +234,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3328" y="3488" type="branch" />
             <wire x2="3408" y1="3488" y2="3488" x1="3328" />
         </branch>
-        <branch name="State(7)">
+        <branch name="State(4)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3872" y="3360" type="branch" />
             <wire x2="3872" y1="3360" y2="3360" x1="3792" />
         </branch>
@@ -250,11 +250,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3344" y="2864" type="branch" />
             <wire x2="3392" y1="2864" y2="2864" x1="3344" />
         </branch>
-        <branch name="State(6)">
+        <branch name="State(5)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3824" y="2864" type="branch" />
             <wire x2="3824" y1="2864" y2="2864" x1="3776" />
         </branch>
-        <branch name="State(5)">
+        <branch name="State(6)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3872" y="2336" type="branch" />
             <wire x2="3872" y1="2336" y2="2336" x1="3808" />
         </branch>
@@ -282,7 +282,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3376" y="1904" type="branch" />
             <wire x2="3504" y1="1904" y2="1904" x1="3376" />
         </branch>
-        <branch name="State(4)">
+        <branch name="State(7)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3952" y="1904" type="branch" />
             <wire x2="3952" y1="1904" y2="1904" x1="3888" />
         </branch>
