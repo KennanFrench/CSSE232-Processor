@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluio/aluIO.ncd
+OUTFILE=/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluio/aluIO.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluio
+LICENSE=ISE
+USER_INFO=174114502_1777496879_210571720_904

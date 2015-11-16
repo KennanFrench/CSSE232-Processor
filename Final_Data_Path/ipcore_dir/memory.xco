@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Sat Nov 14 00:58:27 2015
+# Date: Sat Nov 14 23:33:30 2015
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=/home/knightcm/Desktop/interruptTRUE.coe
+CSET coe_file=/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Assembler/src/output.coe
 CSET collision_warnings=ALL
 CSET component_name=memory
 CSET disable_collision_warnings=false
@@ -103,4 +103,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-03-20T18:34:43Z
 # END Extra information
 GENERATE
-# CRC: 4d2bdf59
+# CRC: 6a761d56

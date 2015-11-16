@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : claAdder4b.vf
-// /___/   /\     Timestamp : 11/13/2015 18:45:43
+// /___/   /\     Timestamp : 11/14/2015 18:37:30
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/claAdder4b.vf -w /home/knightcm/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/claAdder4b.sch
+//Command: sch2hdl -sympath /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/ipcore_dir -intstyle ise -family spartan3e -verilog /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/claAdder4b.vf -w /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/Final_Data_Path/claAdder4b.sch
 //Design Name: claAdder4b
 //Device: spartan3e
 //Purpose:
@@ -125,13 +125,13 @@ module M4_1E_MXILINX_claAdder4b(D0,
    wire M01;
    wire M23;
    
-   (* HU_SET = "I_M01_442" *) 
+   (* HU_SET = "I_M01_253" *) 
    M2_1E_MXILINX_claAdder4b  I_M01 (.D0(D0), 
                                    .D1(D1), 
                                    .E(E), 
                                    .S0(S0), 
                                    .O(M01));
-   (* HU_SET = "I_M23_441" *) 
+   (* HU_SET = "I_M23_252" *) 
    M2_1E_MXILINX_claAdder4b  I_M23 (.D0(D2), 
                                    .D1(D3), 
                                    .E(E), 
@@ -247,7 +247,7 @@ module alu1b_MUSER_claAdder4b(a,
                                   .ci(ci), 
                                   .co(co), 
                                   .r(s_DUMMY));
-   (* HU_SET = "XLXI_8_443" *) 
+   (* HU_SET = "XLXI_8_254" *) 
    M4_1E_MXILINX_claAdder4b  XLXI_8 (.D0(XLXN_8), 
                                     .D1(XLXN_9), 
                                     .D2(s_DUMMY), 
@@ -257,7 +257,7 @@ module alu1b_MUSER_claAdder4b(a,
                                     .S1(op[1]), 
                                     .O(r));
    VCC  XLXI_9 (.P(XLXN_13));
-   (* HU_SET = "XLXI_15_444" *) 
+   (* HU_SET = "XLXI_15_255" *) 
    M2_1_MXILINX_claAdder4b  XLXI_15 (.D0(b), 
                                     .D1(XLXN_38), 
                                     .S0(op[2]), 
@@ -447,7 +447,7 @@ module claAdder4b(a,
                  .I3(r_DUMMY[0]), 
                  .O(zero));
    GND  XLXI_86 (.G(ground));
-   (* HU_SET = "XLXI_87_445" *) 
+   (* HU_SET = "XLXI_87_256" *) 
    INV4_MXILINX_claAdder4b  XLXI_87 (.I0(b[3]), 
                                     .I1(b[2]), 
                                     .I2(b[1]), 
@@ -456,22 +456,22 @@ module claAdder4b(a,
                                     .O1(nb2), 
                                     .O2(nb1), 
                                     .O3(nb0));
-   (* HU_SET = "XLXI_92_446" *) 
+   (* HU_SET = "XLXI_92_257" *) 
    M2_1_MXILINX_claAdder4b  XLXI_92 (.D0(b[0]), 
                                     .D1(nb0), 
                                     .S0(op[2]), 
                                     .O(sb0));
-   (* HU_SET = "XLXI_93_447" *) 
+   (* HU_SET = "XLXI_93_258" *) 
    M2_1_MXILINX_claAdder4b  XLXI_93 (.D0(b[1]), 
                                     .D1(nb1), 
                                     .S0(op[2]), 
                                     .O(sb1));
-   (* HU_SET = "XLXI_94_448" *) 
+   (* HU_SET = "XLXI_94_259" *) 
    M2_1_MXILINX_claAdder4b  XLXI_94 (.D0(b[2]), 
                                     .D1(nb2), 
                                     .S0(op[2]), 
                                     .O(sb2));
-   (* HU_SET = "XLXI_95_449" *) 
+   (* HU_SET = "XLXI_95_260" *) 
    M2_1_MXILINX_claAdder4b  XLXI_95 (.D0(b[3]), 
                                     .D1(nb3), 
                                     .S0(op[2]), 
