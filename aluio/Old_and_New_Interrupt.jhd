@@ -1,0 +1,5 @@
+MODULE Old_and_New_Interrupt
+	SUBMODULE Interrupt_Register
+		INSTANCE XLXI_1
+	SUBMODULE Or16b2
+		INSTANCE XLXI_3

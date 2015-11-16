@@ -1,0 +1,3 @@
+MODULE EPC
+	SUBMODULE Instruction_Register
+		INSTANCE XLXI_1

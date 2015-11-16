@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="mux4b4">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2015-11-8T4:44:35</timestamp>
+    <pin polarity="Output" x="384" y="-544" name="O(3:0)" />
+    <pin polarity="Input" x="0" y="-480" name="B(3:0)" />
+    <pin polarity="Input" x="0" y="-416" name="C(3:0)" />
+    <pin polarity="Input" x="0" y="-352" name="D(3:0)" />
+    <pin polarity="Input" x="0" y="-544" name="A(3:0)" />
+    <pin polarity="Input" x="192" y="-768" name="S(1:0)" />
+    <graph>
+        <rect width="64" x="320" y="-556" height="24" />
+        <line x2="384" y1="-544" y2="-544" x1="320" />
+        <line x2="320" y1="-576" y2="-256" x1="320" />
+        <arc ex="64" ey="-576" sx="320" sy="-576" r="127" cx="191" cy="-585" />
+        <arc ex="320" ey="-260" sx="64" sy="-260" r="127" cx="191" cy="-262" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-544" type="pin O(3:0)" />
+        <line x2="64" y1="-576" y2="-256" x1="64" />
+        <rect width="64" x="0" y="-492" height="24" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <rect width="64" x="0" y="-428" height="24" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <rect width="64" x="0" y="-364" height="24" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <rect width="64" x="0" y="-556" height="24" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin B(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin C(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin D(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin A(3:0)" />
+        <line x2="192" y1="-712" y2="-772" x1="192" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="164" y="-700" type="pin S(1:0)" />
+        <rect width="16" x="184" y="-772" height="60" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="188" y="-772" type="symbol" />
+    </graph>
+</symbol>

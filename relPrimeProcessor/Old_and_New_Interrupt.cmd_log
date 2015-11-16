@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Old_and_New_Interrupt /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluio/Old_and_New_Interrupt.sch /home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluio/Old_and_New_Interrupt.sym 
