@@ -32,6 +32,26 @@
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_60 - debouncer</ClosedNode>
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_64 - input_2_hex_op</ClosedNode>
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_7 - debouncer</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_1 - lcd_control</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_10 - debouncer</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_124 - debouncer</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_142 - debouncer</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_14 - regFile16b16</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_156 - reg16b</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_163 - EPC</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_202 - interrupt_control</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_203 - claAdde16b</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_27 - mux3b16</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_29 - reg16b</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_34 - signext8b16</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_39 - signext4b16</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_41 - loadupper8b</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_43 - reg16b</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_47 - mux3b16</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_148 - Final_Data_Path/XLXI_48 - MemoryMapDecoder</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_60 - debouncer</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_64 - input_2_hex_op</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch/XLXI_7 - debouncer</ClosedNode>
          <ClosedNode>/aluIO |home|mellor|ProfessionalArchives|Teaching|Class|csse232_csse_svn|trunk|xilinx-projects|aluIO|aluIO.sch</ClosedNode>
          <ClosedNode>/aluIO |home|mellor|ProfessionalArchives|Teaching|Class|csse232_csse_svn|trunk|xilinx-projects|aluIO|aluIO.sch/XLXI_1 - lcd_control</ClosedNode>
          <ClosedNode>/aluIO |home|mellor|ProfessionalArchives|Teaching|Class|csse232_csse_svn|trunk|xilinx-projects|aluIO|aluIO.sch/XLXI_10 - debouncer</ClosedNode>
@@ -44,12 +64,14 @@
          <ClosedNode>/signext12b16 |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|signext12b16.sch</ClosedNode>
          <ClosedNode>/timing |home|mellor|ProfessionalArchives|Teaching|Class|csse232_csse_svn|trunk|xilinx-projects|aluIO|timing.sch</ClosedNode>
       </ClosedNodes>
-      <SelectedItems/>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <SelectedItems>
+         <SelectedItem>aluIO (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/aluIO.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000296000000020000000000000000000000000200000064ffffffff000000810000000300000002000002960000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>XLXI_148 - Final_Data_Path (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluio/Final_Data_Path.sch)</CurrentItem>
+      <CurrentItem>aluIO (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/aluIO.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -66,7 +88,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -105,7 +127,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
@@ -113,6 +135,7 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Final_Data_Path_Final_Data_Path_sch_tb |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|FinalTest_tb_00.v/UUT - Final_Data_Path</ClosedNode>
+         <ClosedNode>/Final_Data_Path_Final_Data_Path_sch_tb |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|FinalTest_tb_00.v</ClosedNode>
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_1 - lcd_control</ClosedNode>
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_10 - debouncer</ClosedNode>
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_124 - debouncer</ClosedNode>
@@ -121,16 +144,18 @@
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_60 - debouncer</ClosedNode>
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_64 - input_2_hex_op</ClosedNode>
          <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|aluio|aluIO.sch/XLXI_7 - debouncer</ClosedNode>
+         <ClosedNode>/aluIO |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|aluIO.sch</ClosedNode>
          <ClosedNode>/aluIO |home|mellor|ProfessionalArchives|Teaching|Class|csse232_csse_svn|trunk|xilinx-projects|aluIO|aluIO.sch</ClosedNode>
+         <ClosedNode>/mux6b16_tb_00 |home|lamd|Documents|csse232|1516a-csse232-frenchkt-knightcm-lamd-peterseo|relPrimeProcessor|mux6b16_tb_00.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Final_Data_Path_Final_Data_Path_sch_tb (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluio/FinalTest_tb_00.v)</SelectedItem>
+         <SelectedItem>aluIO (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/aluIO.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000296000000020000000000000000000000000200000064ffffffff000000810000000300000002000002960000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000248000000020000000000000000000000000200000064ffffffff000000810000000300000002000002480000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Final_Data_Path_Final_Data_Path_sch_tb (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/aluio/FinalTest_tb_00.v)</CurrentItem>
+      <CurrentItem>aluIO (/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/aluIO.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -139,16 +164,16 @@
          <ClosedNode>ISim Simulator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Design Utilities</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000018a0000011b01000000040100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -158,7 +183,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -223,7 +248,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>

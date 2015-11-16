@@ -8,42 +8,21 @@
 <msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">ipcore_dir/memory.v</arg>&quot; line <arg fmt="%d" index="2">2992</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">memory</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">121</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">125</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;InterruptIn&gt;, &lt;InterruptHandler&gt;, &lt;Opcode&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">728</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">740</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">771</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">776</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">781</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">786</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">844</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">849</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">891</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">997</arg>: Parameter <arg fmt="%d" index="3">2</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">726</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">STATE_CONTROL_UNIT_2.v</arg>&quot; line <arg fmt="%d" index="2">731</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;Functioncode&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">17</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">instructionCount</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">17</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cycleCount</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">EPCWrite</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -154,7 +133,7 @@
 <msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">5</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">$old_next_state_5</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">5</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">next_state</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
 <msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
@@ -179,6 +158,111 @@
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">MemReadAddr&lt;15:14&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cycleCount_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instructionCount_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">STATE_CONTROL_UNIT_2</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

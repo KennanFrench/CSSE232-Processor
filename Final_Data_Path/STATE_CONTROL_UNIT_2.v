@@ -106,6 +106,10 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 	parameter    Blank = 21;
 	parameter    Prepare_Display = 22;
 	
+	// internal variables.
+	reg [16:0] instructionCount = 0;
+	reg [16:0] cycleCount = 0;
+	
    //register calculation
    always @ (posedge CLK, posedge Reset)
      begin
@@ -123,7 +127,8 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 
           Fetch:
             begin
-					$display("Fetch");
+				instructionCount = instructionCount + 1;
+				cycleCount = cycleCount + 1;
 				case (InterruptIn)
                  0:
                    begin
@@ -170,7 +175,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                          
           Decode:
             begin
-	       $display("Decode");
+					cycleCount = cycleCount + 1;
 					ALUOp <= 2; //addition
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -193,7 +198,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				
 			Mv:
 				begin
-				$display("Mv");
+				cycleCount = cycleCount + 1;
 					//ALUOp depends on op code
 					ALUOp <= 0;
 					EPCWrite <= 0;
@@ -216,7 +221,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				end
 			Clear:
 					begin
-				$display("Clear");
+				cycleCount = cycleCount + 1;
 					//ALUOp depends on op code
 					ALUOp <= 0;
 					EPCWrite <= 0;
@@ -239,7 +244,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				end
 			Prepare_Display:
 					begin
-					$display("Display");
+					cycleCount = cycleCount + 1;
 					//ALUOp depends on op code
 					ALUOp <= 0;
 					EPCWrite <= 0;
@@ -262,7 +267,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				end
 			Display:
 					begin
-					$display("Display");
+					cycleCount = cycleCount + 1;
 					//ALUOp depends on op code
 					ALUOp <= 0;
 					EPCWrite <= 0;
@@ -285,7 +290,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 				end
 			Read:
 					begin
-				$display("Read");
+				cycleCount = cycleCount + 1;
 					//ALUOp depends on op code
 					ALUOp <= 0;
 					EPCWrite <= 0;
@@ -309,7 +314,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 					
           A_3:
             begin
-               $display("A Type Cycle 3");
+               cycleCount = cycleCount + 1;
 					//ALUOp depends on op code
 					case (Opcode)
                  0:
@@ -356,7 +361,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			
           C_3:
             begin
-               $display("C Type Cycle 3");
+               cycleCount = cycleCount + 1;
 					//ALUOp depends on op code
 					case (Opcode)
                  4:
@@ -395,7 +400,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
         
           LW_SW_3:
             begin
-				$display("Lw/Sw Cycle 3");
+				cycleCount = cycleCount + 1;
 					//ALUOp depends on op code
 					ALUOp <= 2;
 					EPCWrite <= 0;
@@ -419,7 +424,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			
           Beq_3:
             begin
-               $display("Branch Equal Cycle 3");
+              cycleCount = cycleCount + 1;
                ALUOp <= 6; //subtraction
 					EPCWrite <= 0;
 					PCWriteBeq <= 1; 
@@ -442,7 +447,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           
           Bne_3:
             begin
-               $display("Branch Not Equal Cycle 3");
+              cycleCount = cycleCount + 1;
 					ALUOp <= 6; //subtraction
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -465,7 +470,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			
 	  Jump_3:
             begin
-               $display("Jump Cycle 3");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //or
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -488,7 +493,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			
           JR_3:
             begin
-               $display("Jump Register Cycle 3");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -511,7 +516,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			
           Jal_3:
             begin
-               $display("Jump And Link Cycle 3");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 2; //addition
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -534,7 +539,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			
           Lui_3:
             begin
-               $display("Load Upper Immidiate Cycle 3");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -557,7 +562,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
         
           A_4:
             begin
-               $display("A Type Cycle 4");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -580,7 +585,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           
           C_4:
             begin
-               $display("C Type Cycle 4");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -603,7 +608,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 		
 	  LW_4:
             begin
-               $display("LW Cycle 4");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -626,7 +631,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
           
           SW_4:
             begin
-               $display("SW Cycle 4");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -649,7 +654,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			
 			Jal_4:
             begin
-               $display("Jump and Link Cycle 4");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -672,7 +677,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
 			
           LW_5:
             begin
-               $display("LW Cycle 5");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -694,7 +699,7 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
             end
 			Blank:
             begin
-               $display("Blank Cycle 5");
+               cycleCount = cycleCount + 1;
 					ALUOp <= 0; //ALUOp doesn't matter
 					EPCWrite <= 0;
                PCWriteBeq <= 0;
@@ -723,67 +728,53 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                 
    //NEXT STATE calculation (depends on current state and opcode)       
    always @ (current_state, next_state, Opcode)
-     begin         
-
-        $display("The current state is %d", current_state);
-        
+     begin                 
         case (current_state)
           
           Fetch:
             begin
                next_state = Decode;
-               $display("In Fetch, the next_state is %d", next_state);
             end
           
           Decode: 
             begin       
-               $display("The opcode is %d", Opcode);
                case (Opcode)
                  0:
                    begin
                       next_state = A_3;
-                      $display("The next state is A_3");
                    end
                  1:
                    begin
                       next_state = A_3;
-                      $display("The next state is A_3");
                    end
                  2:
                    begin
                       next_state = A_3;
-                      $display("The next state is A_3");
                    end
                  3:
                    begin
                       next_state = A_3;
-                      $display("The next state is A_3");
                    end
                  4:
                    begin next_state = C_3;
-                      $display("The next state is C_3");
                    end
 					  5:
                    begin
 							case (Functioncode)
 								0:
 									begin
-							         $display("Mv Functioncode = %b", Functioncode);
 										next_state = Mv;
 									end
 								1:
 									begin
-										$display("Clear Functioncode = %b", Functioncode);
 										next_state = 18;
 									end
 								2:
 									begin
-										$display("Read Functioncode = %b", Functioncode);
 										next_state = Read;
 									end
 								3:
 									begin
-										$display("Display Functioncode = %b", Functioncode);
 										next_state = Prepare_Display;
 									end
 								default:
@@ -793,112 +784,89 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
                  6:
                    begin
                       next_state = C_3;
-                      $display("The next state is C_3");
                    end
                  7:
                    begin
                       next_state = A_3;
-                      $display("The next state is A_3");
                    end
                  8:
                    begin
                       next_state = LW_SW_3;
-                      $display("The next state is LW_SW_3");
                    end
                  9:
                    begin next_state = LW_SW_3;
-                      $display("The next state is LW_SW_3");
                    end
 						10:
                    begin
                       next_state = Lui_3;
-                      $display("The next state is Lui_3");
                    end
                  11:
                    begin
                       next_state = Beq_3;
-                      $display("The next state is Beq_3");
                    end
                  12:
                    begin
                       next_state = Bne_3;
-                      $display("The next state is Bne_3");
                    end
                  13:
                    begin
                       next_state = Jal_3;
-                      $display("The next state is Jal_3");
                    end
                  14:
                    begin next_state = Jump_3;
-                      $display("The next state is Jump_3");
                    end
 						15:
                    begin
                       next_state = JR_3;
-                      $display("The next state is JR_3");
                    end
 
                  default:
                    begin 
-                      $display(" Wrong Opcode %d ", Opcode);  
                       next_state = Fetch; 
                    end
-               endcase  
-               
-               $display("In Decode, the next_state is %d", next_state);
+               endcase         
             end
           
           A_3:
             begin
                next_state = A_4;
-               $display("In A_3, the next_state is %d", next_state);
             end
 			Clear:
             begin
                next_state = Blank;
-               $display("In A_3, the next_state is %d", next_state);
             end
 			Read:
             begin
                next_state = Blank;
-               $display("In A_3, the next_state is %d", next_state);
             end
 			Prepare_Display:
             begin
                next_state = Display;
-               $display("In A_3, the next_state is %d", next_state);
             end
 			Display:
             begin
                next_state = Blank;
-               $display("In A_3, the next_state is %d", next_state);
             end
 			Mv:
             begin
                next_state = Fetch;
-               $display("In A_3, the next_state is %d", next_state);
             end
           
           C_3:
             begin
                next_state = C_4;
-               $display("In C_4, the next_state is %d", next_state);
             end
           
           LW_SW_3:
             begin
-               $display("The opcode is %d", Opcode);
                case (Opcode)
                  8:
                    begin
                       next_state = LW_4;
-                      $display("The next state is LW_4");
                    end
                  9:
                    begin 
 							next_state = SW_4;
-                      $display("The next state is SW_4");
                    end
 					  default:
 							begin $display ("not implemented"); end
@@ -909,93 +877,75 @@ module STATE_CONTROL_UNIT_2 (ALUOp,
             begin
                //not implemented - forcing return to cycle 1
                next_state = Fetch;
-               $display("In Beq_3, the next_state is %d", next_state);
             end
           
           Bne_3:
             begin
                next_state = Fetch;
-               $display("In Bne_3, the next_state is %d", next_state);
             end
         
           Jump_3:
             begin
                next_state = Fetch;
-               $display("In Jump_3, the next_state is %d", next_state);
             end
           
           JR_3:
             begin
                next_state = Fetch;
-               $display("In JR_3, the next_state is %d", next_state);
             end
           
           Jal_3:
             begin
                next_state = Jal_4;
-               $display("In Jal_3, the next_state is %d", next_state);
             end
 
           Lui_3:
             begin
                //not implemented - forcing return to cycle 1
                next_state = Fetch;
-               $display("In Lui_3, the next_state is %d", next_state);
             end
           
           A_4:
             begin
                next_state = Fetch;
-               $display("In A_4, the next_state is %d", next_state);
             end
 
 	  C_4:
             begin
                next_state = Fetch;
-               $display("In C_4, the next_state is %d", next_state);
             end
         
           LW_4:
             begin
                next_state = LW_5;
-               $display("In LW_4, the next_state is %d", next_state);
             end
           
           SW_4:
             begin
                next_state = Blank;
-               $display("In SW_4, the next_state is %d", next_state);
             end
           
           Jal_4:
             begin
                next_state = Fetch;
-               $display("In Jal_4, the next_state is %d", next_state);
             end
 
           LW_5:
             begin
                //not implemented - forcing return to cycle 1
                next_state = Fetch;
-               $display("In LW_5, the next_state is %d", next_state);
             end
 			 Blank:
             begin
                //not implemented - forcing return to cycle 1
                next_state = Fetch;
-               $display("In Blank, the next_state is %d", next_state);
             end
 
           default:
             begin
-               $display(" Not implemented!");
                next_state = Fetch;
             end
    
-        endcase
-        
-        $display("After the tests, the next_state is %d", next_state);
-                
+        endcase                
      end
-
 endmodule

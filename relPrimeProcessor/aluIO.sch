@@ -55,6 +55,7 @@
         <signal name="switch(3)" />
         <signal name="XLXN_546(15:0)" />
         <signal name="XLXN_549" />
+        <signal name="XLXN_552" />
         <port polarity="Input" name="CLK" />
         <port polarity="Output" name="lcdReady" />
         <port polarity="Output" name="lcd_rs" />
@@ -373,7 +374,7 @@
         </block>
         <block symbolname="fd16ce" name="XLXI_149">
             <blockpin signalname="CLK" name="C" />
-            <blockpin signalname="switch(2)" name="CE" />
+            <blockpin signalname="XLXN_552" name="CE" />
             <blockpin signalname="G" name="CLR" />
             <blockpin signalname="XLXN_521(15:0)" name="D(15:0)" />
             <blockpin signalname="XLXN_546(15:0)" name="Q(15:0)" />
@@ -381,6 +382,11 @@
         <block symbolname="inv" name="XLXI_153">
             <blockpin signalname="switch(2)" name="I" />
             <blockpin signalname="XLXN_549" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_154">
+            <blockpin signalname="switch(1)" name="I0" />
+            <blockpin signalname="switch(2)" name="I1" />
+            <blockpin signalname="XLXN_552" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -717,10 +723,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1392" y="2864" type="branch" />
             <wire x2="1472" y1="2864" y2="2864" x1="1392" />
         </branch>
-        <branch name="switch(2)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3184" y="1840" type="branch" />
-            <wire x2="3264" y1="1840" y2="1840" x1="3184" />
-        </branch>
         <branch name="XLXN_546(15:0)">
             <wire x2="3696" y1="1776" y2="1776" x1="3648" />
             <wire x2="3696" y1="1776" y2="2896" x1="3696" />
@@ -735,6 +737,19 @@
         <branch name="switch(2)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="1392" type="branch" />
             <wire x2="2928" y1="1392" y2="1392" x1="2896" />
+        </branch>
+        <instance x="3168" y="2240" name="XLXI_154" orien="R270" />
+        <branch name="switch(2)">
+            <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3040" y="2272" type="branch" />
+            <wire x2="3040" y1="2240" y2="2272" x1="3040" />
+        </branch>
+        <branch name="switch(1)">
+            <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3104" y="2272" type="branch" />
+            <wire x2="3104" y1="2240" y2="2272" x1="3104" />
+        </branch>
+        <branch name="XLXN_552">
+            <wire x2="3264" y1="1840" y2="1840" x1="3072" />
+            <wire x2="3072" y1="1840" y2="1984" x1="3072" />
         </branch>
     </sheet>
 </drawing>

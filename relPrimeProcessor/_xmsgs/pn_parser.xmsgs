@@ -8,5 +8,23 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/STATE_CONTROL_UNIT_2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/mux6b16.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/remote_sources/_/lcdDisplayControl/lcd_cfg_display.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/remote_sources/_/lcdDisplayControl/lcd_control_master.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/remote_sources/_/lcdDisplayControl/lcd_pwr_on_init.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/lamd/Documents/csse232/1516a-csse232-frenchkt-knightcm-lamd-peterseo/relPrimeProcessor/remote_sources/_/lcdDisplayControl/lcd_write_byte.v&quot; into library work</arg>
+</msg>
+
 </messages>
 
